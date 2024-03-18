@@ -281,18 +281,35 @@
 		<div class="article-content" id="article-content">
 			<!-- toc -->
 
-<h1 id="burpsuit"><a href="#burpsuit" class="headerlink" title="burpsuit"></a>burpsuit</h1><h2 id="端口占用"><a href="#端口占用" class="headerlink" title="端口占用"></a>端口占用</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">C:\<span class="title">Users</span>\<span class="title">yzz</span>&gt;<span class="title">netstat</span> -<span class="title">aon</span> | <span class="title">findstr</span> :8080</span></span><br><span class="line"><span class="function">  <span class="title">TCP</span>    0.0.0.0:8080           0.0.0.0:0              <span class="title">LISTENING</span>       11056</span></span><br><span class="line"><span class="function"><span class="title">C</span>:\<span class="title">Users</span>\<span class="title">yzz</span>&gt;<span class="title">tasklist</span> | <span class="title">findstr</span> 11056</span></span><br><span class="line"><span class="function"><span class="title">ApplicationWebServer.exe</span>     11056 <span class="title">Services</span>                   0     19,608 <span class="title">K</span></span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="#burpsuit">burpsuit</a><ul>
+<li><a href="#%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8">端口占用</a></li>
+</ul>
+</li>
+<li><a href="#python">python</a><ul>
+<li><a href="#%E8%B7%AF%E5%BE%84%E9%80%89%E6%8B%A9">路径选择</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%8D%E6%98%AF%E5%AE%88%E6%94%AF%E6%8C%81%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8Chttpssocsdnnetsosearchq%E5%91%BD%E4%BB%A4%E8%A1%8Cspm1001210130017020%E6%A0%87%E8%AE%B0extensions">使用的不是守支持的<a href="https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020">命令行</a>标记extensions</a></li>
+<li><a href="#1%E6%89%93%E5%BC%80%E7%BD%91%E5%9D%80-edgeflags">1.打开网址: edge:&#x2F;&#x2F;flags&#x2F;</a></li>
+<li><a href="#2%E6%90%9C%E7%B4%A2%E6%A1%86%E6%90%9C%E7%B4%A2-extensions-on-edge-urls">2.搜索框搜索 Extensions on edge:&#x2F;&#x2F; URLs</a></li>
+<li><a href="#3%E6%94%B9%E4%B8%BA%E7%A6%81%E7%94%A8">3.改为禁用</a></li>
+</ul>
+</li>
+<li><a href="#%E5%81%9C%E6%AD%A2eage%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0">停止eage自动更新</a></li>
+</ul>
+<!-- tocstop -->
+
+<h1><span id="burpsuit">burpsuit</span></h1><h2><span id="端口占用">端口占用</span></h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">C:\<span class="title">Users</span>\<span class="title">yzz</span>&gt;<span class="title">netstat</span> -<span class="title">aon</span> | <span class="title">findstr</span> :8080</span></span><br><span class="line"><span class="function">  <span class="title">TCP</span>    0.0.0.0:8080           0.0.0.0:0              <span class="title">LISTENING</span>       11056</span></span><br><span class="line"><span class="function"><span class="title">C</span>:\<span class="title">Users</span>\<span class="title">yzz</span>&gt;<span class="title">tasklist</span> | <span class="title">findstr</span> 11056</span></span><br><span class="line"><span class="function"><span class="title">ApplicationWebServer.exe</span>     11056 <span class="title">Services</span>                   0     19,608 <span class="title">K</span></span></span><br></pre></td></tr></table></figure>
 
 <p>用任务栏管理器搜索ApplicationWebServer.exe,关闭即可</p>
-<h1 id="python"><a href="#python" class="headerlink" title="python"></a>python</h1><h2 id="路径选择"><a href="#路径选择" class="headerlink" title="路径选择"></a>路径选择</h2><p>c盘的路径才是有效路径</p>
+<h1><span id="python">python</span></h1><h2><span id="路径选择">路径选择</span></h2><p>c盘的路径才是有效路径</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">C:\<span class="title">Users</span>\<span class="title">yzz</span>\<span class="title">AppData</span>\<span class="title">Local</span>\<span class="title">Programs</span>\<span class="title">Python</span>\<span class="title">Python312</span></span></span><br></pre></td></tr></table></figure>
 
-<h2 id="使用的不是守支持的命令行标记extensions"><a href="#使用的不是守支持的命令行标记extensions" class="headerlink" title="使用的不是守支持的命令行标记extensions"></a>使用的不是守支持的<a href="https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020">命令行</a>标记extensions</h2><p>2024&#x2F;03&#x2F;15</p>
-<h2 id="1-打开网址-edge-flags"><a href="#1-打开网址-edge-flags" class="headerlink" title="1.打开网址: edge:&#x2F;&#x2F;flags&#x2F;"></a>1.打开网址: edge:&#x2F;&#x2F;flags&#x2F;</h2><h2 id="2-搜索框搜索-Extensions-on-edge-URLs"><a href="#2-搜索框搜索-Extensions-on-edge-URLs" class="headerlink" title="2.搜索框搜索 Extensions on edge:&#x2F;&#x2F; URLs"></a>2.搜索框搜索 Extensions on edge:&#x2F;&#x2F; URLs</h2><p><img src="/..%5Cimg%5C2f86aaeec36d4d99a1b26c7d1bb839c5.png" alt="img"></p>
+<h2><span id="使用的不是守支持的命令行标记extensions">使用的不是守支持的标记extensions</span></h2><p>2024&#x2F;03&#x2F;15</p>
+<h2><span id="1打开网址-edgex2fx2fflagsx2f">1.打开网址: edge:&#x2F;&#x2F;flags&#x2F;</span></h2><h2><span id="2搜索框搜索-extensions-on-edgex2fx2f-urls">2.搜索框搜索 Extensions on edge:&#x2F;&#x2F; URLs</span></h2><p><img src="/..%5Cimg%5C2f86aaeec36d4d99a1b26c7d1bb839c5.png" alt="img"></p>
 <p><img src="/..%5Cimg%5C2.png" alt="2"></p>
 <p><img src="https://img-blog.csdnimg.cn/direct/9bf6317a714f418fbd4891690a6f8373.png" alt="img"></p>
-<h2 id="3-改为禁用"><a href="#3-改为禁用" class="headerlink" title="3.改为禁用"></a>3.改为禁用</h2><p><a href="https://answers.microsoft.com/zh-hans/microsoftedge/forum/all/%E8%A7%A3%E5%86%B3%E4%BD%A0%E4%BD%BF%E7%94%A8/9d0c45ca-fb8d-410d-bf86-0b7a3c5c3ead">【解决】你使用的是不受支持的命令行标记：–extensions-on-edge-urls。这会带来稳定性和安全风险。 - Microsoft Community</a></p>
-<h1 id="停止eage自动更新"><a href="#停止eage自动更新" class="headerlink" title="停止eage自动更新"></a>停止eage自动更新</h1><p>找到eage路径,修改名字(MicrosoftEdgeUpdate.exe和EdgeUpdate文件夹&amp;spm&#x3D;1001.2101.3001.7020)),即可</p>
+<h2><span id="3改为禁用">3.改为禁用</span></h2><p><a href="https://answers.microsoft.com/zh-hans/microsoftedge/forum/all/%E8%A7%A3%E5%86%B3%E4%BD%A0%E4%BD%BF%E7%94%A8/9d0c45ca-fb8d-410d-bf86-0b7a3c5c3ead">【解决】你使用的是不受支持的命令行标记：–extensions-on-edge-urls。这会带来稳定性和安全风险。 - Microsoft Community</a></p>
+<h1><span id="停止eage自动更新">停止eage自动更新</span></h1><p>找到eage路径,修改名字(MicrosoftEdgeUpdate.exe和EdgeUpdate文件夹&amp;spm&#x3D;1001.2101.3001.7020)),即可</p>
 <p><img src="https://img-blog.csdnimg.cn/direct/9bf6317a714f418fbd4891690a6f8373.png" alt="img"></p>
 	
 		</div>
@@ -335,30 +352,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="write_up">
-								write_up			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 18日, 2024				
-							</p>
-							<p class="relate-post-content">
-								11.比赛名 2.题目类别 3.题目名称 4.知识点关键词 5.知识点细节
-
-2021 第一届浙江师范大学网络安全与信息安全竞赛webeasy_md5123456789101112131415161718192021222324252...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="write_up">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="write_up"/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -426,10 +419,19 @@
 								
 
 
+
+PHP_UNSERIALIZE(反序列化)
+触发条件
+PHP_UNSERIALIZE ( 2 )
+
+
+SQL注入
+
+
+
 PHP_UNSERIALIZE(反序列化)触发条件12constructtostring
 
-PHP_UNSERIALIZE ( 2 )🤩敲门砖-带你入门 CTF - A1::CTF (a1natas.com)
-12345678...
+PHP_UNS...
 							</p>
 						</div>
 
@@ -453,7 +455,18 @@ PHP_UNSERIALIZE ( 2 )🤩敲门砖-带你入门 CTF - A1::CTF (a1natas.com)
 							<p class="relate-post-content">
 								
 
-Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when usin...
+
+Quick Start
+Create a new post
+Run server
+Generate static files
+Deploy to remote sites
+
+
+
+
+
+Welcome to Hexo! This i...
 							</p>
 						</div>
 
@@ -477,8 +490,34 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
 							<p class="relate-post-content">
 								
 
-misc0x05. 明文攻击
-明文攻击是一种较为高效的攻击手段，大致原理是当你不知道一个zip的密码，但是你有zip中的一个已知文件（文件大小要大于12Byte）时，因为同一个zip压缩包里的所有文件都是使用同一个加密密钥来加密的...
+
+misc
+0x05. 明文攻击
+⻰之舞
+
+
+web
+常用
+远程包含
+sql
+LoginMe
+What the cow say?
+
+
+
+
+re
+ezupx
+ezPYC
+
+
+
+
+其他
+i++和++i的区别
+区别
+爬虫
+request...
 							</p>
 						</div>
 
@@ -486,6 +525,30 @@ misc0x05. 明文攻击
 							<a href="/2024/03/18/ctf/" title="ctf">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="ctf"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/18/write_up/" title="write_up">
+								write_up			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 18日, 2024				
+							</p>
+							<p class="relate-post-content">
+								11.比赛名 2.题目类别 3.题目名称 4.知识点关键词 5.知识点细节
+
+2021 第一届浙江师范大学网络安全与信息安全竞赛webeasy_md5123456789101112131415161718192021222324252...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/18/write_up/" title="write_up">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="write_up"/>
 							</a>
 						</div>
 					</li>												

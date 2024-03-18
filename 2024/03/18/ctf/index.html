@@ -281,7 +281,42 @@
 		<div class="article-content" id="article-content">
 			<!-- toc -->
 
-<h2 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h2><h3 id="0x05-明文攻击"><a href="#0x05-明文攻击" class="headerlink" title="0x05. 明文攻击"></a>0x05. 明文攻击</h3><hr>
+<ul>
+<li><a href="#misc">misc</a><ul>
+<li><a href="#0x05-%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB">0x05. 明文攻击</a></li>
+<li><a href="#%E4%B9%8B%E8%88%9E">⻰之舞</a></li>
+</ul>
+</li>
+<li><a href="#web">web</a><ul>
+<li><a href="#%E5%B8%B8%E7%94%A8">常用</a></li>
+<li><a href="#%E8%BF%9C%E7%A8%8B%E5%8C%85%E5%90%AB">远程包含</a></li>
+<li><a href="#sql">sql</a><ul>
+<li><a href="#loginme">LoginMe</a></li>
+<li><a href="#what-the-cow-say">What the cow say?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#re">re</a><ul>
+<li><a href="#ezupx">ezupx</a></li>
+<li><a href="#ezpyc">ezPYC</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="#%E5%85%B6%E4%BB%96">其他</a><ul>
+<li><a href="#i%E5%92%8Ci%E7%9A%84%E5%8C%BA%E5%88%AB">i++和++i的区别</a></li>
+<li><a href="#%E5%8C%BA%E5%88%AB">区别</a></li>
+<li><a href="#%E7%88%AC%E8%99%AB">爬虫</a><ul>
+<li><a href="#requests">requests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+<h2><span id="misc">misc</span></h2><h3><span id="0x05-明文攻击">0x05. 明文攻击</span></h3><hr>
 <p>明文攻击是一种较为高效的攻击手段，大致原理是当你不知道一个zip的密码，但是你有zip中的一个已知文件（文件大小要大于12Byte）时，因为同一个zip压缩包里的所有文件都是使用同一个加密密钥来加密的，所以可以用已知文件来找加密密钥，利用密钥来解锁其他加密文件，更详细的原理请读者自行谷歌</p>
 <p>举个例子，已知 明文攻击.zip 中存在的文件 明文.txt，</p>
 <p>因此将 明文.txt 压缩，这里需要判断明文压缩后的CRC32是否与加密文件中的一致，若不一致可以换一个压缩工具。</p>
@@ -291,7 +326,7 @@
 <p>点击开始，很快就恢复了密码</p>
 <p><a href="http://p5.qhimg.com/t01cd0b316ad60e7877.png"><img src="http://p5.qhimg.com/t01cd0b316ad60e7877.png" alt="http://p4.qhimg.com/t016abbabfa89c43970.png"></a></p>
 <p>另：当明文的大小比较小时，攻击速度会比较慢；即使有时没有恢复密码，也可以使用明文攻击，最后点保存还是能得到压缩包里内容的。</p>
-<h3 id="⻰之舞"><a href="#⻰之舞" class="headerlink" title="⻰之舞"></a>⻰之舞</h3><p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240216100333625.png" alt="image-20240216100333625"></p>
+<h3><span id="之舞">⻰之舞</span></h3><p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240216100333625.png" alt="image-20240216100333625"></p>
 <ol>
 <li><p>deepsound分解&gt;&gt;需要密码</p>
 </li>
@@ -305,12 +340,12 @@
 </ol>
 <p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240216100651634.png" alt="image-20240216100651634"></p>
 <p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240216100712893.png" alt="image-20240216100712893"></p>
-<h2 id="web"><a href="#web" class="headerlink" title="web"></a>web</h2><h3 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://150.158.160.64:20990/?kiseki=586.1&amp;rena=miracle%0a&amp;cmd=//%27,%20$%111%117t%112%117t</span><br><span class="line">http://63f8519b-e507-4c10-bdbe-17e5c2d9e43f.node5.buuoj.cn:81/read?url=local_file:///sys/class/net/eth0/address</span><br></pre></td></tr></table></figure>
+<h2><span id="web">web</span></h2><h3><span id="常用">常用</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://150.158.160.64:20990/?kiseki=586.1&amp;rena=miracle%0a&amp;cmd=//%27,%20$%111%117t%112%117t</span><br><span class="line">http://63f8519b-e507-4c10-bdbe-17e5c2d9e43f.node5.buuoj.cn:81/read?url=local_file:///sys/class/net/eth0/address</span><br></pre></td></tr></table></figure>
 
-<h3 id="远程包含"><a href="#远程包含" class="headerlink" title="远程包含"></a>远程包含</h3><p><img src="D:\yzzob\Desktop\ty图片\953b7b5a532141189727d69bf5c6d2eb.png" alt="953b7b5a532141189727d69bf5c6d2eb"></p>
+<h3><span id="远程包含">远程包含</span></h3><p><img src="D:\yzzob\Desktop\ty图片\953b7b5a532141189727d69bf5c6d2eb.png" alt="953b7b5a532141189727d69bf5c6d2eb"></p>
 <p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240211101903261.png" alt="image-20240211101903261"></p>
 <p><img src="D:\yzzob\Desktop\ty图片\3e5e7e84ca194caf9ec300aaa6f320be.png" alt="3e5e7e84ca194caf9ec300aaa6f320be"></p>
-<h3 id="sql"><a href="#sql" class="headerlink" title="sql"></a>sql</h3><h4 id="LoginMe"><a href="#LoginMe" class="headerlink" title="LoginMe"></a>LoginMe</h4><p>题目考察的是SQL注入中的布尔盲注</p>
+<h3><span id="sql">sql</span></h3><h4><span id="loginme">LoginMe</span></h4><p>题目考察的是SQL注入中的布尔盲注</p>
 <p>我们先以默认账号登录</p>
 <p><img src="https://ek1ng-typora.oss-cn-hangzhou.aliyuncs.com/img/image-20220206193144770.png" alt="image-20220206193144770"></p>
 <p>题目意思是要求以admin身份登录拿到flag，然后f12也是可以发现有个hint，打开看后发现sql语句中，用户名是用引号括号闭合的，那么这里也是会有sql注入点</p>
@@ -329,20 +364,20 @@
 <p><img src="https://ek1ng-typora.oss-cn-hangzhou.aliyuncs.com/img/image-20220210160657860.png" alt="image-20220210160657860"></p>
 <p>登录admin拿到flag</p>
 <p><img src="https://ek1ng-typora.oss-cn-hangzhou.aliyuncs.com/img/image-20220210160724115.png" alt="image-20220210160724115"></p>
-<h4 id="What-the-cow-say"><a href="#What-the-cow-say" class="headerlink" title="What the cow say?"></a>What the cow say?</h4><p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240216100915346.png" alt="image-20240216100915346"></p>
+<h4><span id="what-the-cow-say">What the cow say?</span></h4><p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240216100915346.png" alt="image-20240216100915346"></p>
 <p><a href="https://blog.csdn.net/cainsoftware/article/details/120667879?ops_request_misc=%7B%22request_id%22:%22170804938716800215043548%22,%22scm%22:%2220140713.130102334..%22%7D&request_id=170804938716800215043548&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-120667879-null-null.142%5Ev99%5Epc_search_result_base5&utm_term=%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5%E7%BB%95%E8%BF%87&spm=1018.2226.3001.4187">命令注入绕过方式总结-CSDN博客</a></p>
-<h2 id="re"><a href="#re" class="headerlink" title="re"></a>re</h2><h3 id="ezupx"><a href="#ezupx" class="headerlink" title="ezupx"></a>ezupx</h3><p>通过查壳软件可以得知⼆进制⽂件经过UPX壳加密</p>
+<h2><span id="re">re</span></h2><h3><span id="ezupx">ezupx</span></h3><p>通过查壳软件可以得知⼆进制⽂件经过UPX壳加密</p>
 <p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240210211312416.png" alt="image-20240210211312416"></p>
 <p>linux解密</p>
 <p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240210211347860.png" alt="image-20240210211347860"></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">unsigned</span>  <span class="type">char</span> c[] =</span><br><span class="line">&#123;</span><br><span class="line"><span class="number">0x64</span>, <span class="number">0x7B</span>, <span class="number">0x76</span>, <span class="number">0x73</span>, <span class="number">0x60</span>, <span class="number">0x49</span>, <span class="number">0x65</span>, <span class="number">0x5D</span>, <span class="number">0x45</span>, <span class="number">0x13</span>, </span><br><span class="line"><span class="number">0x6B</span>, <span class="number">0x02</span>, <span class="number">0x47</span>, <span class="number">0x6D</span>, <span class="number">0x59</span>, <span class="number">0x5C</span>, <span class="number">0x02</span>, <span class="number">0x45</span>, <span class="number">0x6D</span>, <span class="number">0x06</span>, </span><br><span class="line"><span class="number">0x6D</span>, <span class="number">0x5E</span>, <span class="number">0x03</span>, <span class="number">0x46</span>, <span class="number">0x46</span>, <span class="number">0x5E</span>, <span class="number">0x01</span>, <span class="number">0x6D</span>, <span class="number">0x02</span>, <span class="number">0x54</span>, </span><br><span class="line"><span class="number">0x6D</span>, <span class="number">0x67</span>, <span class="number">0x62</span>, <span class="number">0x6A</span>, <span class="number">0x13</span>, <span class="number">0x4F</span>, <span class="number">0x32</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">     <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;  <span class="built_in">sizeof</span>(c ); i++)</span><br><span class="line">     &#123;</span><br><span class="line">     	<span class="built_in">printf</span>( <span class="string">&quot;%c&quot;</span>, c[i] ^ <span class="number">0x32</span>)</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="ezPYC"><a href="#ezPYC" class="headerlink" title="ezPYC"></a>ezPYC</h3><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="i-和-i的区别"><a href="#i-和-i的区别" class="headerlink" title="i++和++i的区别"></a>i++和++i的区别</h2><p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240131083501602.png" alt="image-20240131083501602"></p>
+<h3><span id="ezpyc">ezPYC</span></h3><h1><span id="其他">其他</span></h1><h2><span id="i和i的区别">i++和++i的区别</span></h2><p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240131083501602.png" alt="image-20240131083501602"></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Using i++</span></span><br><span class="line">    <span class="type">int</span> result1 = i++;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Using i++: result1 = &quot;</span> &lt;&lt; result1 &lt;&lt; <span class="string">&quot;, i = &quot;</span> &lt;&lt; i &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    i = <span class="number">1</span>; <span class="comment">// Reset i to 1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// Using ++i</span></span><br><span class="line">    <span class="type">int</span> result2 = ++i;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Using ++i: result2 = &quot;</span> &lt;&lt; result2 &lt;&lt; <span class="string">&quot;, i = &quot;</span> &lt;&lt; i &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">考察了png的LSB隐写和wav的steghide隐写</span><br><span class="line">LSB隐写这⼀部分是我们培训中提到的内容，先⽤培训中提到的StegSolve或者Zsteg,对图⽚中LSB隐</span><br><span class="line">写的内容进⾏提取，如果使⽤StegSolve,因为这⾥是将⽂本内容隐写在图⽚中，选择DataExtract,对勾</span><br><span class="line">选三个通道最低位进⾏提取，就可以得到lsb的隐写内容。</span><br><span class="line">⽤stegsolve选择Analyese,点击extrac</span><br></pre></td></tr></table></figure>
+<h2><span id="区别">区别</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">考察了png的LSB隐写和wav的steghide隐写</span><br><span class="line">LSB隐写这⼀部分是我们培训中提到的内容，先⽤培训中提到的StegSolve或者Zsteg,对图⽚中LSB隐</span><br><span class="line">写的内容进⾏提取，如果使⽤StegSolve,因为这⾥是将⽂本内容隐写在图⽚中，选择DataExtract,对勾</span><br><span class="line">选三个通道最低位进⾏提取，就可以得到lsb的隐写内容。</span><br><span class="line">⽤stegsolve选择Analyese,点击extrac</span><br></pre></td></tr></table></figure>
 
-<h2 id="爬虫"><a href="#爬虫" class="headerlink" title="爬虫"></a>爬虫</h2><h3 id="requests"><a href="#requests" class="headerlink" title="requests"></a>requests</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> string</span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;*/*&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Accept-Encoding&#x27;</span>: <span class="string">&#x27;gzip, deflate&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Accept-Language&#x27;</span>: <span class="string">&#x27;zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;application/json&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Host&#x27;</span>: <span class="string">&#x27;47.100.137.175:31650&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Origin&#x27;</span>: <span class="string">&#x27;http://47.100.137.175:31650&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Proxy-Connection&#x27;</span>: <span class="string">&#x27;keep-alive&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Referer&#x27;</span>: <span class="string">&#x27;http://47.100.137.175:31650/&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 目标url</span></span><br><span class="line">url = <span class="string">&#x27;http://47.100.137.175:31650/api/courses&#x27;</span></span><br><span class="line"><span class="comment"># 请求体数据</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">payload2 = &#123;&quot;id&quot;:5&#125;</span></span><br><span class="line"><span class="string">while True:</span></span><br><span class="line"><span class="string">    response = requests.post(url, json=payload2, headers=headers)</span></span><br><span class="line"><span class="string">    print(response.text)</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> (<span class="number">1</span>,<span class="number">3</span>):</span><br><span class="line">        payload = &#123;<span class="string">&quot;id&quot;</span>: i&#125;</span><br><span class="line">        response = requests.post(url, json=payload, headers=headers)</span><br><span class="line">        <span class="keyword">if</span> json.loads(response.text) != &#123;<span class="string">&quot;full&quot;</span>: <span class="number">1</span>, <span class="string">&quot;message&quot;</span>: <span class="string">&quot;\u8bfe\u7a0b\u5df2\u6ee1\uff01&quot;</span>&#125;:</span><br><span class="line">            <span class="built_in">print</span>(i)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2><span id="爬虫">爬虫</span></h2><h3><span id="requests">requests</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> string</span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;*/*&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Accept-Encoding&#x27;</span>: <span class="string">&#x27;gzip, deflate&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Accept-Language&#x27;</span>: <span class="string">&#x27;zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;application/json&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Host&#x27;</span>: <span class="string">&#x27;47.100.137.175:31650&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Origin&#x27;</span>: <span class="string">&#x27;http://47.100.137.175:31650&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Proxy-Connection&#x27;</span>: <span class="string">&#x27;keep-alive&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Referer&#x27;</span>: <span class="string">&#x27;http://47.100.137.175:31650/&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 目标url</span></span><br><span class="line">url = <span class="string">&#x27;http://47.100.137.175:31650/api/courses&#x27;</span></span><br><span class="line"><span class="comment"># 请求体数据</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">payload2 = &#123;&quot;id&quot;:5&#125;</span></span><br><span class="line"><span class="string">while True:</span></span><br><span class="line"><span class="string">    response = requests.post(url, json=payload2, headers=headers)</span></span><br><span class="line"><span class="string">    print(response.text)</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> (<span class="number">1</span>,<span class="number">3</span>):</span><br><span class="line">        payload = &#123;<span class="string">&quot;id&quot;</span>: i&#125;</span><br><span class="line">        response = requests.post(url, json=payload, headers=headers)</span><br><span class="line">        <span class="keyword">if</span> json.loads(response.text) != &#123;<span class="string">&quot;full&quot;</span>: <span class="number">1</span>, <span class="string">&quot;message&quot;</span>: <span class="string">&quot;\u8bfe\u7a0b\u5df2\u6ee1\uff01&quot;</span>&#125;:</span><br><span class="line">            <span class="built_in">print</span>(i)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 	
 		</div>
@@ -385,30 +420,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="write_up">
-								write_up			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 18日, 2024				
-							</p>
-							<p class="relate-post-content">
-								11.比赛名 2.题目类别 3.题目名称 4.知识点关键词 5.知识点细节
-
-2021 第一届浙江师范大学网络安全与信息安全竞赛webeasy_md5123456789101112131415161718192021222324252...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="write_up">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="write_up"/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -476,10 +487,19 @@
 								
 
 
+
+PHP_UNSERIALIZE(反序列化)
+触发条件
+PHP_UNSERIALIZE ( 2 )
+
+
+SQL注入
+
+
+
 PHP_UNSERIALIZE(反序列化)触发条件12constructtostring
 
-PHP_UNSERIALIZE ( 2 )🤩敲门砖-带你入门 CTF - A1::CTF (a1natas.com)
-12345678...
+PHP_UNS...
 							</p>
 						</div>
 
@@ -503,7 +523,16 @@ PHP_UNSERIALIZE ( 2 )🤩敲门砖-带你入门 CTF - A1::CTF (a1natas.com)
 							<p class="relate-post-content">
 								
 
-burpsuit端口占用1234C:\Users\yzz&gt;netstat -aon | findstr :8080  TCP    0.0.0.0:8080           0.0.0.0:0              ...
+
+burpsuit
+端口占用
+
+
+python
+路径选择
+使用的不是守支持的命令行标记extensions
+1.打开网址: edge:&#x2F;&#x2F;flags&#x2F;
+2.搜索框搜索 Extensions on ed...
 							</p>
 						</div>
 
@@ -527,7 +556,18 @@ burpsuit端口占用1234C:\Users\yzz&gt;netstat -aon | findstr :8080  TCP    0.0
 							<p class="relate-post-content">
 								
 
-Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when usin...
+
+Quick Start
+Create a new post
+Run server
+Generate static files
+Deploy to remote sites
+
+
+
+
+
+Welcome to Hexo! This i...
 							</p>
 						</div>
 
@@ -535,6 +575,30 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
 							<a href="/2024/03/18/hello-world/" title="Hello World">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/18/write_up/" title="write_up">
+								write_up			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 18日, 2024				
+							</p>
+							<p class="relate-post-content">
+								11.比赛名 2.题目类别 3.题目名称 4.知识点关键词 5.知识点细节
+
+2021 第一届浙江师范大学网络安全与信息安全竞赛webeasy_md5123456789101112131415161718192021222324252...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/18/write_up/" title="write_up">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="write_up"/>
 							</a>
 						</div>
 					</li>												
