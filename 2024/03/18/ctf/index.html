@@ -1,0 +1,836 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      ctf | SARIAY-Blog
+    
+  </title>
+  <meta name="author" content="Sariay">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「ctf」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+	<a href="/2024/03/18/ctf/" itemprop="url">
+		ctf
+	</a>
+
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/2024/03/18/ctf/" itemprop="url">
+		<time datetime="2024-03-18T00:56:35.139Z" itemprop="dateUpdated">
+	  		2024-03-17
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<!-- toc -->
+
+<h2 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h2><h3 id="0x05-明文攻击"><a href="#0x05-明文攻击" class="headerlink" title="0x05. 明文攻击"></a>0x05. 明文攻击</h3><hr>
+<p>明文攻击是一种较为高效的攻击手段，大致原理是当你不知道一个zip的密码，但是你有zip中的一个已知文件（文件大小要大于12Byte）时，因为同一个zip压缩包里的所有文件都是使用同一个加密密钥来加密的，所以可以用已知文件来找加密密钥，利用密钥来解锁其他加密文件，更详细的原理请读者自行谷歌</p>
+<p>举个例子，已知 明文攻击.zip 中存在的文件 明文.txt，</p>
+<p>因此将 明文.txt 压缩，这里需要判断明文压缩后的CRC32是否与加密文件中的一致，若不一致可以换一个压缩工具。</p>
+<p><a href="http://p2.qhimg.com/t0107750043c12b6292.png"><img src="http://p2.qhimg.com/t0107750043c12b6292.png" alt="http://p4.qhimg.com/t0112994a09cc25c574.png"></a></p>
+<p>攻击过程如下：</p>
+<p><a href="http://p7.qhimg.com/t01cd9b7d0eb7174d74.png"><img src="http://p7.qhimg.com/t01cd9b7d0eb7174d74.png" alt="http://p2.qhimg.com/t0170f27bf19e30b533.png"></a></p>
+<p>点击开始，很快就恢复了密码</p>
+<p><a href="http://p5.qhimg.com/t01cd0b316ad60e7877.png"><img src="http://p5.qhimg.com/t01cd0b316ad60e7877.png" alt="http://p4.qhimg.com/t016abbabfa89c43970.png"></a></p>
+<p>另：当明文的大小比较小时，攻击速度会比较慢；即使有时没有恢复密码，也可以使用明文攻击，最后点保存还是能得到压缩包里内容的。</p>
+<h3 id="⻰之舞"><a href="#⻰之舞" class="headerlink" title="⻰之舞"></a>⻰之舞</h3><p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240216100333625.png" alt="image-20240216100333625"></p>
+<ol>
+<li><p>deepsound分解&gt;&gt;需要密码</p>
+</li>
+<li><p>Audacity查看频谱图&gt;&gt;截图翻转&gt;&gt;得到密码</p>
+</li>
+<li><p>得到文件gif&gt;&gt;python分解&gt;&gt;python合成</p>
+</li>
+<li><p>qrazybox打开合成二维码</p>
+</li>
+<li></li>
+</ol>
+<p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240216100651634.png" alt="image-20240216100651634"></p>
+<p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240216100712893.png" alt="image-20240216100712893"></p>
+<h2 id="web"><a href="#web" class="headerlink" title="web"></a>web</h2><h3 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://150.158.160.64:20990/?kiseki=586.1&amp;rena=miracle%0a&amp;cmd=//%27,%20$%111%117t%112%117t</span><br><span class="line">http://63f8519b-e507-4c10-bdbe-17e5c2d9e43f.node5.buuoj.cn:81/read?url=local_file:///sys/class/net/eth0/address</span><br></pre></td></tr></table></figure>
+
+<h3 id="远程包含"><a href="#远程包含" class="headerlink" title="远程包含"></a>远程包含</h3><p><img src="D:\yzzob\Desktop\ty图片\953b7b5a532141189727d69bf5c6d2eb.png" alt="953b7b5a532141189727d69bf5c6d2eb"></p>
+<p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240211101903261.png" alt="image-20240211101903261"></p>
+<p><img src="D:\yzzob\Desktop\ty图片\3e5e7e84ca194caf9ec300aaa6f320be.png" alt="3e5e7e84ca194caf9ec300aaa6f320be"></p>
+<h3 id="sql"><a href="#sql" class="headerlink" title="sql"></a>sql</h3><h4 id="LoginMe"><a href="#LoginMe" class="headerlink" title="LoginMe"></a>LoginMe</h4><p>题目考察的是SQL注入中的布尔盲注</p>
+<p>我们先以默认账号登录</p>
+<p><img src="https://ek1ng-typora.oss-cn-hangzhou.aliyuncs.com/img/image-20220206193144770.png" alt="image-20220206193144770"></p>
+<p>题目意思是要求以admin身份登录拿到flag，然后f12也是可以发现有个hint，打开看后发现sql语句中，用户名是用引号括号闭合的，那么这里也是会有sql注入点</p>
+<p>用burpsuite抓个包</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">POST http://2aaa006c94.login.summ3r.top:60067/login HTTP/1.1</span><br><span class="line">Host: 2aaa006c94.login.summ3r.top:60067</span><br><span class="line">Connection: keep-alive</span><br><span class="line">Content-Length: 37</span><br><span class="line">Pragma: no-cache</span><br><span class="line">Cache-Control: no-cache</span><br><span class="line">Accept: application/json, text/plain, */*</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36</span><br><span class="line">Content-Type: application/json</span><br><span class="line">Origin: http://2aaa006c94.login.summ3r.top:60067</span><br><span class="line">Referer: http://2aaa006c94.login.summ3r.top:60067/</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">Accept-Language: zh-CN,zh;q=0.9</span><br><span class="line">Cookie: _cc_id=38df55cc273a625ab8545d27d050d966; _ga_RPLKYTT36G=GS1.1.1643187303.2.1.1643187427.0; _ga=GA1.2.1251016364.1631076415; __gads=ID=fbcf8fffebd3f3a0-22c47ba239d000e5:T=1643269841:RT=1643269841:S=ALNI_Mahlyuy3rW4MynjwsfSVJP5442J7g; SESSION=MTY0NDQ2ODIxNXxEdi1CQkFFQ180SUFBUkFCRUFBQUl2LUNBQUVHYzNSeWFXNW5EQVlBQkhWelpYSUdjM1J5YVc1bkRBWUFCSFJsYzNRPXyReprfeawkqo54Hb_e4TRT4khqbm175VqaGsCA2kz37A==</span><br><span class="line"></span><br><span class="line">&#123;&quot;username&quot;:&quot;test&quot;,&quot;password&quot;:&quot;test&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>将抓到的包存为文件，使用sqlmap扫描，发现注入点</p>
+<p><img src="https://ek1ng-typora.oss-cn-hangzhou.aliyuncs.com/img/image-20220210160441834.png" alt="image-20220210160441834"></p>
+<p>无法直接爆出数据库名</p>
+<p><img src="https://ek1ng-typora.oss-cn-hangzhou.aliyuncs.com/img/image-20220210160524906.png" alt="image-20220210160524906"></p>
+<p>直接爆数据表名试一试</p>
+<p><img src="https://ek1ng-typora.oss-cn-hangzhou.aliyuncs.com/img/image-20220210160558737.png" alt="image-20220210160558737"></p>
+<p>用数据表名爆出字段名</p>
+<p><img src="https://ek1ng-typora.oss-cn-hangzhou.aliyuncs.com/img/image-20220210160627782.png" alt="image-20220210160627782"></p>
+<p>用数据表名和字段名爆出账号</p>
+<p><img src="https://ek1ng-typora.oss-cn-hangzhou.aliyuncs.com/img/image-20220210160657860.png" alt="image-20220210160657860"></p>
+<p>登录admin拿到flag</p>
+<p><img src="https://ek1ng-typora.oss-cn-hangzhou.aliyuncs.com/img/image-20220210160724115.png" alt="image-20220210160724115"></p>
+<h4 id="What-the-cow-say"><a href="#What-the-cow-say" class="headerlink" title="What the cow say?"></a>What the cow say?</h4><p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240216100915346.png" alt="image-20240216100915346"></p>
+<p><a href="https://blog.csdn.net/cainsoftware/article/details/120667879?ops_request_misc=%7B%22request_id%22:%22170804938716800215043548%22,%22scm%22:%2220140713.130102334..%22%7D&request_id=170804938716800215043548&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-120667879-null-null.142%5Ev99%5Epc_search_result_base5&utm_term=%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5%E7%BB%95%E8%BF%87&spm=1018.2226.3001.4187">命令注入绕过方式总结-CSDN博客</a></p>
+<h2 id="re"><a href="#re" class="headerlink" title="re"></a>re</h2><h3 id="ezupx"><a href="#ezupx" class="headerlink" title="ezupx"></a>ezupx</h3><p>通过查壳软件可以得知⼆进制⽂件经过UPX壳加密</p>
+<p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240210211312416.png" alt="image-20240210211312416"></p>
+<p>linux解密</p>
+<p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240210211347860.png" alt="image-20240210211347860"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">unsigned</span>  <span class="type">char</span> c[] =</span><br><span class="line">&#123;</span><br><span class="line"><span class="number">0x64</span>, <span class="number">0x7B</span>, <span class="number">0x76</span>, <span class="number">0x73</span>, <span class="number">0x60</span>, <span class="number">0x49</span>, <span class="number">0x65</span>, <span class="number">0x5D</span>, <span class="number">0x45</span>, <span class="number">0x13</span>, </span><br><span class="line"><span class="number">0x6B</span>, <span class="number">0x02</span>, <span class="number">0x47</span>, <span class="number">0x6D</span>, <span class="number">0x59</span>, <span class="number">0x5C</span>, <span class="number">0x02</span>, <span class="number">0x45</span>, <span class="number">0x6D</span>, <span class="number">0x06</span>, </span><br><span class="line"><span class="number">0x6D</span>, <span class="number">0x5E</span>, <span class="number">0x03</span>, <span class="number">0x46</span>, <span class="number">0x46</span>, <span class="number">0x5E</span>, <span class="number">0x01</span>, <span class="number">0x6D</span>, <span class="number">0x02</span>, <span class="number">0x54</span>, </span><br><span class="line"><span class="number">0x6D</span>, <span class="number">0x67</span>, <span class="number">0x62</span>, <span class="number">0x6A</span>, <span class="number">0x13</span>, <span class="number">0x4F</span>, <span class="number">0x32</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">     <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;  <span class="built_in">sizeof</span>(c ); i++)</span><br><span class="line">     &#123;</span><br><span class="line">     	<span class="built_in">printf</span>( <span class="string">&quot;%c&quot;</span>, c[i] ^ <span class="number">0x32</span>)</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="ezPYC"><a href="#ezPYC" class="headerlink" title="ezPYC"></a>ezPYC</h3><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="i-和-i的区别"><a href="#i-和-i的区别" class="headerlink" title="i++和++i的区别"></a>i++和++i的区别</h2><p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240131083501602.png" alt="image-20240131083501602"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Using i++</span></span><br><span class="line">    <span class="type">int</span> result1 = i++;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Using i++: result1 = &quot;</span> &lt;&lt; result1 &lt;&lt; <span class="string">&quot;, i = &quot;</span> &lt;&lt; i &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    i = <span class="number">1</span>; <span class="comment">// Reset i to 1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// Using ++i</span></span><br><span class="line">    <span class="type">int</span> result2 = ++i;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Using ++i: result2 = &quot;</span> &lt;&lt; result2 &lt;&lt; <span class="string">&quot;, i = &quot;</span> &lt;&lt; i &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">考察了png的LSB隐写和wav的steghide隐写</span><br><span class="line">LSB隐写这⼀部分是我们培训中提到的内容，先⽤培训中提到的StegSolve或者Zsteg,对图⽚中LSB隐</span><br><span class="line">写的内容进⾏提取，如果使⽤StegSolve,因为这⾥是将⽂本内容隐写在图⽚中，选择DataExtract,对勾</span><br><span class="line">选三个通道最低位进⾏提取，就可以得到lsb的隐写内容。</span><br><span class="line">⽤stegsolve选择Analyese,点击extrac</span><br></pre></td></tr></table></figure>
+
+<h2 id="爬虫"><a href="#爬虫" class="headerlink" title="爬虫"></a>爬虫</h2><h3 id="requests"><a href="#requests" class="headerlink" title="requests"></a>requests</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> string</span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;*/*&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Accept-Encoding&#x27;</span>: <span class="string">&#x27;gzip, deflate&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Accept-Language&#x27;</span>: <span class="string">&#x27;zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;application/json&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Host&#x27;</span>: <span class="string">&#x27;47.100.137.175:31650&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Origin&#x27;</span>: <span class="string">&#x27;http://47.100.137.175:31650&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Proxy-Connection&#x27;</span>: <span class="string">&#x27;keep-alive&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Referer&#x27;</span>: <span class="string">&#x27;http://47.100.137.175:31650/&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 目标url</span></span><br><span class="line">url = <span class="string">&#x27;http://47.100.137.175:31650/api/courses&#x27;</span></span><br><span class="line"><span class="comment"># 请求体数据</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">payload2 = &#123;&quot;id&quot;:5&#125;</span></span><br><span class="line"><span class="string">while True:</span></span><br><span class="line"><span class="string">    response = requests.post(url, json=payload2, headers=headers)</span></span><br><span class="line"><span class="string">    print(response.text)</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> (<span class="number">1</span>,<span class="number">3</span>):</span><br><span class="line">        payload = &#123;<span class="string">&quot;id&quot;</span>: i&#125;</span><br><span class="line">        response = requests.post(url, json=payload, headers=headers)</span><br><span class="line">        <span class="keyword">if</span> json.loads(response.text) != &#123;<span class="string">&quot;full&quot;</span>: <span class="number">1</span>, <span class="string">&quot;message&quot;</span>: <span class="string">&quot;\u8bfe\u7a0b\u5df2\u6ee1\uff01&quot;</span>&#125;:</span><br><span class="line">            <span class="built_in">print</span>(i)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/2024/03/18/hello-world/" title="Hello World" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="2021 第一届浙江师范大学网络安全与信息安全竞赛" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/18/hexo/" title="hexo">
+								hexo			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 18日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+
+
+小记标题格式1title:%20(标题)
+
+目录设置1&lt;!-- toc --&gt;
+
+安装插件在D:\10_yzzob_web_again下打开git bash here
+1npm install hexo-toc --...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/18/hexo/" title="hexo">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="hexo"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/18/web/" title="web">
+								web			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 18日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+
+
+PHP_UNSERIALIZE(反序列化)触发条件12constructtostring
+
+PHP_UNSERIALIZE ( 2 )🤩敲门砖-带你入门 CTF - A1::CTF (a1natas.com)
+12345678...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/18/web/" title="web">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="web"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/18/%E6%9D%82%E9%A1%B9/" title="杂项">
+								杂项			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 18日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+
+burpsuit端口占用1234C:\Users\yzz&gt;netstat -aon | findstr :8080  TCP    0.0.0.0:8080           0.0.0.0:0              ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/18/%E6%9D%82%E9%A1%B9/" title="杂项">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂项"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/18/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 18日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+
+Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when usin...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/18/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="2021 第一届浙江师范大学网络安全与信息安全竞赛">
+								2021 第一届浙江师范大学网络安全与信息安全竞赛			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 18日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+
+
+easy_md512345678910111213141516171819202122232425262728&lt;?phpshow_source(__FILE__);error_reporting(0);if($_GET[&...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/18/2021%20%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%B5%99%E6%B1%9F%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9B/" title="2021 第一届浙江师范大学网络安全与信息安全竞赛">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="2021 第一届浙江师范大学网络安全与信息安全竞赛"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2024, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>
