@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      C# | zzysu_blog
+      大二下 | zzysu_blog
     
   </title>
   <meta name="author" content="yzz">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「C#」
+			「大二下」
 		
 	</p>
 
@@ -242,8 +242,8 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2024/03/19/csharp_visual_studio/" itemprop="url">
-		C#
+	<a href="/2024/03/19/%E5%A4%A7%E4%BA%8C%E4%B8%8B/" itemprop="url">
+		大二下
 	</a>
 
 		</div>
@@ -259,9 +259,9 @@
 
 	更新于
 
-	<a href="/2024/03/19/csharp_visual_studio/" itemprop="url">
+	<a href="/2024/03/19/%E5%A4%A7%E4%BA%8C%E4%B8%8B/" itemprop="url">
 		<time datetime="2024-03-19T07:55:58.929Z" itemprop="dateUpdated">
-	  		2024-03-19
+	  		2024-03-20
 	  </time>
 	</a> 
 
@@ -279,15 +279,23 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<h1><span id="c软件项目实训">C#(软件项目实训)</span></h1><h1><span id="1execute的区别">1.Execute的区别</span></h1><ul>
+			<h1><span id="c软件项目实训">C#(软件项目实训)</span></h1><h2><span id="execute的区别">Execute的区别</span></h2><ul>
 <li><code>ExecuteNonQuery()</code>: 用于执行不返回任何结果集的SQL语句，例如INSERT、UPDATE、DELETE等操作。它返回受影响的行数，通常用于执行非查询语句。</li>
 <li><code>ExecuteReader(CommandBehavior.CloseConnection)</code>: 用于执行查询语句并返回一个SqlDataReader对象，该对象提供了对查询结果的只读、向前的访问。<code>CommandBehavior.CloseConnection</code> 参数指示在关闭 SqlDataReader 对象时关闭关联的连接。</li>
 <li><code>ExecuteScalar()</code>: 用于执行一个查询，并返回结果集的第一行第一列的值。通常用于执行返回单个值的查询，如返回一个聚合函数的结果或一个计算字段的值。</li>
 </ul>
-<h1><span id="2快捷键汇总">2.快捷键汇总</span></h1><p>1.ctrl+u:快捷小写</p>
+<h2><span id="快捷键汇总">快捷键汇总</span></h2><p>1.ctrl+u:快捷小写</p>
 <p>2.快捷注释:</p>
 <p>注释ctrl+k-&gt;ctrl+c</p>
 <p>取消注释ctrl+k-&gt;ctrl+u</p>
+<h2><span id="删除contentpanel的办法">删除contentpanel的办法</span></h2><p>打开文档大纲,进行删除</p>
+<p><img src="/../img/2024-03-20093317.png"></p>
+<h1><span id="sql">sql</span></h1><p>升序和降序</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">升序:ASC</span><br><span class="line">降序:DESC</span><br><span class="line">去重:dintinct,用在<span class="keyword">select</span>后面</span><br><span class="line">natural <span class="built_in">join</span>:</span><br><span class="line">NATURAL JOIN 是 SQL 中的一种连接方式，它会自动根据两个表中相同列名的列进行连接。具体来说，NATURAL JOIN 会查找两个表中列名相同且数据类型相同的列，并且在这些列上进行等值连接。</span><br><span class="line">not exists 与 <span class="keyword">select</span> 1</span><br><span class="line">使用<span class="built_in">join</span>了,<span class="keyword">select</span> 后面的内容要加上表名</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> id,name,salary <span class="keyword">from</span> instructor <span class="keyword">where</span> dept_name<span class="operator">=</span><span class="string">&#x27;Comp. Sci.&#x27;</span> <span class="keyword">union</span></span><br><span class="line"><span class="keyword">select</span> id,name,salary <span class="keyword">from</span> instructor <span class="keyword">where</span> dept_name<span class="operator">=</span><span class="string">&#x27;Finance&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">--union合并去除重复项groupby是分组</span></span><br><span class="line"><span class="keyword">select</span> id,name,salary <span class="keyword">from</span> instructor <span class="keyword">where</span> dept_name<span class="operator">=</span><span class="string">&#x27;Comp. Sci.&#x27;</span> <span class="keyword">union</span></span><br><span class="line"><span class="keyword">select</span> id,name,salary <span class="keyword">from</span> instructor <span class="keyword">where</span> salary<span class="operator">&gt;</span><span class="number">80000</span>;</span><br><span class="line">如果你有一个销售表 sales_table，其中包含 department 列和 sales 列，你可以使用 <span class="keyword">GROUP</span> <span class="keyword">BY</span> 子句按部门对销售额进行分组，并计算每个部门的总销售额：</span><br><span class="line"><span class="keyword">SELECT</span> department, <span class="built_in">SUM</span>(sales)</span><br><span class="line"><span class="keyword">FROM</span> sales_table</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> department;</span><br><span class="line"><span class="comment">--AVG(salary) 函数计算每个部门的平均工资。然后，使用 HAVING 子句过滤出平均工资大于 42000 的部门。</span></span><br><span class="line"><span class="keyword">select</span> dept_name,<span class="built_in">avg</span>(salary) <span class="keyword">from</span> instructor <span class="keyword">group</span> <span class="keyword">by</span> dept_name <span class="keyword">having</span> <span class="built_in">avg</span>(salary)<span class="operator">&gt;</span><span class="number">42000</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> student,takes <span class="keyword">where</span> student.id<span class="operator">=</span>takes.id;</span><br><span class="line"></span><br><span class="line"><span class="keyword">desc</span> student;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> takes.<span class="operator">*</span>,student.name,student.dept_name,student.tot_cred <span class="keyword">from</span> student,takes <span class="keyword">where</span> student.id<span class="operator">=</span>takes.id;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> student <span class="keyword">natural</span> <span class="keyword">join</span> takes;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> name,title <span class="keyword">from</span> student <span class="keyword">natural</span> <span class="keyword">join</span> takes,course <span class="keyword">where</span> takes.course_id<span class="operator">=</span>course.course_id;</span><br><span class="line"></span><br><span class="line"><span class="keyword">update</span> student <span class="keyword">set</span> dept_name<span class="operator">=</span><span class="string">&#x27;Finance&#x27;</span> <span class="keyword">where</span> dept_name<span class="operator">=</span><span class="string">&#x27;music&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> s.<span class="operator">*</span>,d.<span class="operator">*</span> <span class="keyword">from</span> student s,department d <span class="keyword">where</span> s.dept_name<span class="operator">=</span>d.dept_name;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> s.<span class="operator">*</span>,d.<span class="operator">*</span> <span class="keyword">from</span> department d <span class="keyword">left</span> <span class="keyword">outer</span> <span class="keyword">join</span> student s <span class="keyword">on</span> s.dept_name<span class="operator">=</span>d.dept_name;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> s.<span class="operator">*</span>,d.<span class="operator">*</span> <span class="keyword">from</span> student s  <span class="keyword">left</span> <span class="keyword">outer</span> <span class="keyword">join</span> department d <span class="keyword">on</span> s.dept_name<span class="operator">=</span>d.dept_name;</span><br><span class="line"><span class="comment">--右外连接</span></span><br><span class="line">右外连接会返回右表 department 中的所有行，以及左表 student 中与之匹配的行。如果左表中没有匹配的行，将会返回 <span class="keyword">NULL</span> 值。</span><br><span class="line"><span class="keyword">select</span> s.<span class="operator">*</span>,d.<span class="operator">*</span> <span class="keyword">from</span> student s  <span class="keyword">right</span> <span class="keyword">outer</span> <span class="keyword">join</span> department d <span class="keyword">on</span> s.dept_na</span><br><span class="line">me<span class="operator">=</span>d.dept_name;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> instructor <span class="keyword">where</span> dept_name<span class="operator">=</span><span class="string">&#x27;finance&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">view</span> info_finiance;</span><br><span class="line"></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">view</span> info_finiance <span class="keyword">as</span> <span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> instructor <span class="keyword">where</span> dept_name<span class="operator">=</span><span class="string">&#x27;</span></span><br><span class="line"><span class="string">nance&#x27;</span> <span class="keyword">with</span> <span class="keyword">check</span> option;</span><br><span class="line"><span class="comment">--连接instructor,takes,teaches,student四个表,输出,连接后的表</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> instructor <span class="keyword">natural</span> <span class="keyword">join</span> teaches <span class="keyword">join</span> takes <span class="keyword">on</span> takes.course_id<span class="operator">=</span>teaches.course_id <span class="keyword">join</span> student <span class="keyword">on</span> student.ID<span class="operator">=</span>takes.ID;</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> info_finiance </span><br><span class="line"><span class="keyword">values</span>(<span class="number">44444</span>,<span class="string">&#x27;zhangsan&#x27;</span>,<span class="string">&#x27;Finance&#x27;</span>,<span class="number">898900</span>);</span><br><span class="line"><span class="comment">--连接instructor,takes,teaches,student四个表,输出每个教授教的学生的数量</span></span><br><span class="line"><span class="keyword">select</span> instructor.name,<span class="built_in">count</span>(<span class="keyword">distinct</span> student.name) <span class="keyword">from</span> instructor <span class="keyword">natural</span> <span class="keyword">join</span> teaches <span class="keyword">join</span> takes <span class="keyword">on</span> takes.course_id<span class="operator">=</span>teaches.course_id <span class="keyword">join</span> student <span class="keyword">on</span> student.ID<span class="operator">=</span>takes.ID <span class="keyword">group</span> <span class="keyword">by</span> instructor.name <span class="keyword">order</span> <span class="keyword">by</span> instructor.name <span class="keyword">having</span> <span class="built_in">count</span>(<span class="keyword">distinct</span> student.name)<span class="operator">&gt;</span><span class="number">5</span>;</span><br><span class="line"><span class="comment">--该带引号还是要带</span></span><br><span class="line"><span class="keyword">select</span> course.title <span class="keyword">from</span> course <span class="keyword">join</span> section <span class="keyword">on</span> course.course_id<span class="operator">=</span>section.course_id <span class="keyword">where</span> section.year<span class="operator">=</span><span class="number">2017</span> <span class="keyword">and</span> section.semester<span class="operator">=</span><span class="string">&#x27;spring&#x27;</span>  <span class="keyword">and</span> <span class="keyword">not</span> <span class="keyword">exists</span> (<span class="keyword">select</span> <span class="number">1</span> <span class="keyword">from</span> section <span class="keyword">where</span> <span class="keyword">year</span> <span class="operator">=</span><span class="number">2018</span> <span class="keyword">and</span> semester<span class="operator">=</span><span class="string">&#x27;fall&#x27;</span> <span class="keyword">and</span> course_id<span class="operator">=</span>section.course_id);</span><br></pre></td></tr></table></figure>
+
+<p><a href="/files/%E6%95%B0%E6%8D%AE%E5%BA%93.doc">sql课程作业</a></p>
 	
 		</div>
 		
@@ -305,6 +313,10 @@
 					
 	<span>
 		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/2024/03/20/c_sharp_visual_studio/" title="大二下" rel="prev">
+				&laquo;上一篇
+			</a>
 		
 		
 			<a href="/2024/03/18/pwn/" title="pwn" rel="next">

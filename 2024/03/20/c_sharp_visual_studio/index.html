@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      hexo | zzysu_blog
+      大二下 | zzysu_blog
     
   </title>
   <meta name="author" content="yzz">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「hexo」
+			「大二下」
 		
 	</p>
 
@@ -242,8 +242,8 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2024/03/18/hexo/" itemprop="url">
-		hexo
+	<a href="/2024/03/20/c_sharp_visual_studio/" itemprop="url">
+		大二下
 	</a>
 
 		</div>
@@ -259,8 +259,8 @@
 
 	更新于
 
-	<a href="/2024/03/18/hexo/" itemprop="url">
-		<time datetime="2024-03-18T00:56:35.147Z" itemprop="dateUpdated">
+	<a href="/2024/03/20/c_sharp_visual_studio/" itemprop="url">
+		<time datetime="2024-03-20T02:40:57.348Z" itemprop="dateUpdated">
 	  		2024-03-20
 	  </time>
 	</a> 
@@ -279,35 +279,19 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<h1><span id="小记">小记</span></h1><h2><span id="标题格式">标题格式</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title:%20(标题)</span><br></pre></td></tr></table></figure>
+			<h1><span id="c软件项目实训">C#(软件项目实训)</span></h1><h2><span id="execute的区别">Execute的区别</span></h2><ul>
+<li><code>ExecuteNonQuery()</code>: 用于执行不返回任何结果集的SQL语句，例如INSERT、UPDATE、DELETE等操作。它返回受影响的行数，通常用于执行非查询语句。</li>
+<li><code>ExecuteReader(CommandBehavior.CloseConnection)</code>: 用于执行查询语句并返回一个SqlDataReader对象，该对象提供了对查询结果的只读、向前的访问。<code>CommandBehavior.CloseConnection</code> 参数指示在关闭 SqlDataReader 对象时关闭关联的连接。</li>
+<li><code>ExecuteScalar()</code>: 用于执行一个查询，并返回结果集的第一行第一列的值。通常用于执行返回单个值的查询，如返回一个聚合函数的结果或一个计算字段的值。</li>
+</ul>
+<h2><span id="快捷键汇总">快捷键汇总</span></h2><p>1.ctrl+u:快捷小写</p>
+<p>2.快捷注释:</p>
+<p>注释ctrl+k-&gt;ctrl+c</p>
+<p>取消注释ctrl+k-&gt;ctrl+u</p>
+<h2><span id="删除contentpanel的办法">删除contentpanel的办法</span></h2><p>打开文档大纲,进行删除</p>
+<p><img src="/../img/2024-03-20093317.png"></p>
+<h1><span id="sql">SQL</span></h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--查找2009年秋季和2010年春季的所有课程</span></span><br><span class="line"><span class="keyword">select</span> course,id </span><br><span class="line"><span class="keyword">from</span> section <span class="keyword">as</span> S</span><br><span class="line"><span class="keyword">where</span> semester<span class="operator">=</span><span class="string">&#x27;Fall&#x27;</span> <span class="keyword">and</span> <span class="keyword">year</span><span class="operator">=</span><span class="number">2010</span> <span class="keyword">and</span></span><br><span class="line"><span class="keyword">exists</span>(<span class="keyword">select</span> <span class="operator">*</span></span><br><span class="line">      <span class="keyword">from</span> section <span class="keyword">as</span> T</span><br><span class="line">      <span class="keyword">where</span> semester <span class="operator">=</span><span class="string">&#x27;Spring&#x27;</span> <span class="keyword">and</span> <span class="keyword">year</span><span class="operator">=</span><span class="number">2010</span></span><br><span class="line">      <span class="keyword">and</span> S.course_id <span class="operator">=</span>T.course_id)</span><br></pre></td></tr></table></figure>
 
-<h2><span id="目录设置">目录设置</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- toc --&gt;</span><br></pre></td></tr></table></figure>
-
-<h3><span id="安装插件">安装插件</span></h3><p>在D:\10_yzzob_web_again下打开git bash here</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-toc --save</span><br></pre></td></tr></table></figure>
-
-<h3><span id="配置hexo-toc插件">配置<code>hexo-toc</code>插件：</span></h3><p>安装完成后，你需要在Hexo的配置文件中配置<code>hexo-toc</code>插件。找到你的Hexo项目根目录下的 <code>_config.yml</code> 文件，在文件末尾添加以下配置：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Hexo-toc configuration</span><br><span class="line">toc:</span><br><span class="line">  article: true</span><br><span class="line">  max_depth: 3</span><br><span class="line">  list_number: true</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3><span id="使用插件">使用插件</span></h3><p>在想要的位置(我放在标题下)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">添加&lt;!-- toc --&gt;即可</span><br></pre></td></tr></table></figure>
-
-<h2><span id="导入图片">导入图片</span></h2><p><img src="/../img/2.png" alt="1"></p>
-<h2><span id="导入文件">导入文件</span></h2><h3><span id="网站打开">网站打开</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[附件](/files/2.zip)</span><br><span class="line">&lt;a href=&quot;/files/2.zip&quot;&gt;附件&lt;/a&gt;</span><br></pre></td></tr></table></figure>
-
-<p><a href="/files/2.zip">附件</a></p>
-<p><a href="/files/2.zip">附件</a></p>
-<h3><span id="本地打开">本地打开</span></h3><p><a href="../files/2.zip">附件</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;../files/2.zip&quot;&gt;附件&lt;/a&gt;</span><br></pre></td></tr></table></figure>
-
-<h2><span id="passphrase">passphrase</span></h2><h3><span id="使用-ssh-公钥认证的情况下避免输入-passphrase">使用 SSH 公钥认证的情况下避免输入 passphrase</span></h3><h3><span id="启动-ssh-agent">启动 SSH Agent:</span></h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eval $(ssh-agent)</span><br></pre></td></tr></table></figure>
-
-<h3><span id="添加私钥到-ssh-agent">添加私钥到 SSH Agent：</span></h3><p> 使用以下命令将私钥添加到 SSH Agent 中（请将路径替换为你的私钥路径）：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-add /c/Users/yzz/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-
-<h3><span id="测试-ssh-连接">测试 SSH 连接:</span></h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-<h2><span id="文件名禁止">文件名禁止</span></h2><p>1.#</p>
 	
 		</div>
 		
@@ -326,12 +310,8 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2024/03/18/pwn/" title="pwn" rel="prev">
-				&laquo;上一篇
-			</a>
 		
-		
-			<a href="/2024/03/18/%E6%9D%82%E9%A1%B9/" title="杂项" rel="next">
+			<a href="/2024/03/19/%E5%A4%A7%E4%BA%8C%E4%B8%8B/" title="大二下" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -349,30 +329,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/20/c_sharp_visual_studio/" title="大二下">
-								大二下			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 20日, 2024				
-							</p>
-							<p class="relate-post-content">
-								C#(软件项目实训)Execute的区别
-ExecuteNonQuery(): 用于执行不返回任何结果集的SQL语句，例如INSERT、UPDATE、DELETE等操作。它返回受影响的行数，通常用于执行非查询语句。
-ExecuteRe...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/20/c_sharp_visual_studio/" title="大二下">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大二下"/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -396,6 +352,33 @@ ExecuteRe...
 							<a href="/2024/03/18/pwn/" title="pwn">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="pwn"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/18/hexo/" title="hexo">
+								hexo			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 18日, 2024				
+							</p>
+							<p class="relate-post-content">
+								小记标题格式1title:%20(标题)
+
+目录设置1&lt;!-- toc --&gt;
+
+安装插件在D:\10_yzzob_web_again下打开git bash here
+1npm install hexo-toc --sav...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/18/hexo/" title="hexo">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="hexo"/>
 							</a>
 						</div>
 					</li>												
