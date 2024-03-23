@@ -261,7 +261,7 @@
 
 	<a href="/2024/03/18/ctf/" itemprop="url">
 		<time datetime="2024-03-18T00:56:35.139Z" itemprop="dateUpdated">
-	  		2024-03-17
+	  		2024-03-23
 	  </time>
 	</a> 
 
@@ -300,6 +300,26 @@
 <li><a href="#re">re</a><ul>
 <li><a href="#ezupx">ezupx</a></li>
 <li><a href="#ezpyc">ezPYC</a></li>
+</ul>
+</li>
+<li><a href="#crypto">crypto</a><ul>
+<li><a href="#31%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81">3.1古典密码</a><ul>
+<li><a href="#1%E5%87%AF%E6%92%92%E5%AF%86%E7%A0%81">1.凯撒密码</a></li>
+<li><a href="#2%E6%A0%85%E6%A0%8F%E5%AF%86%E7%A0%81">2.栅栏密码</a><ul>
+<li><a href="#w%E5%9E%8B%E6%A0%85%E6%A0%8F%E5%AF%86%E7%A0%81">w型栅栏密码</a></li>
+</ul>
+</li>
+<li><a href="#44%E7%BB%B4%E5%90%89%E5%B0%BC%E4%BA%9A%E5%AF%86%E7%A0%81">4.4.维吉尼亚密码</a></li>
+<li><a href="#45%E6%94%BE%E5%B0%84%E5%AF%86%E7%A0%81">4.5.放射密码</a><ul>
+<li><a href="#5%E9%80%86%E5%85%83">5.逆元</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#32%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81">3.2现代密码</a><ul>
+<li><a href="#41rsa%E5%AF%86%E7%A0%81">4.1RSA密码</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -372,7 +392,12 @@
 <p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240210211347860.png" alt="image-20240210211347860"></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">unsigned</span>  <span class="type">char</span> c[] =</span><br><span class="line">&#123;</span><br><span class="line"><span class="number">0x64</span>, <span class="number">0x7B</span>, <span class="number">0x76</span>, <span class="number">0x73</span>, <span class="number">0x60</span>, <span class="number">0x49</span>, <span class="number">0x65</span>, <span class="number">0x5D</span>, <span class="number">0x45</span>, <span class="number">0x13</span>, </span><br><span class="line"><span class="number">0x6B</span>, <span class="number">0x02</span>, <span class="number">0x47</span>, <span class="number">0x6D</span>, <span class="number">0x59</span>, <span class="number">0x5C</span>, <span class="number">0x02</span>, <span class="number">0x45</span>, <span class="number">0x6D</span>, <span class="number">0x06</span>, </span><br><span class="line"><span class="number">0x6D</span>, <span class="number">0x5E</span>, <span class="number">0x03</span>, <span class="number">0x46</span>, <span class="number">0x46</span>, <span class="number">0x5E</span>, <span class="number">0x01</span>, <span class="number">0x6D</span>, <span class="number">0x02</span>, <span class="number">0x54</span>, </span><br><span class="line"><span class="number">0x6D</span>, <span class="number">0x67</span>, <span class="number">0x62</span>, <span class="number">0x6A</span>, <span class="number">0x13</span>, <span class="number">0x4F</span>, <span class="number">0x32</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">     <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;  <span class="built_in">sizeof</span>(c ); i++)</span><br><span class="line">     &#123;</span><br><span class="line">     	<span class="built_in">printf</span>( <span class="string">&quot;%c&quot;</span>, c[i] ^ <span class="number">0x32</span>)</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3><span id="ezpyc">ezPYC</span></h3><h1><span id="其他">其他</span></h1><h2><span id="i和i的区别">i++和++i的区别</span></h2><p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240131083501602.png" alt="image-20240131083501602"></p>
+<h3><span id="ezpyc">ezPYC</span></h3><h2><span id="crypto">crypto</span></h2><h3><span id="31古典密码">3.1古典密码</span></h3><h4><span id="1凯撒密码">1.凯撒密码</span></h4><h4><span id="2栅栏密码">2.栅栏密码</span></h4><p>每组第a个进行组合</p>
+<h5><span id="w型栅栏密码">w型栅栏密码</span></h5><h4><span id="44维吉尼亚密码">4.4.维吉尼亚密码</span></h4><p><a href="https://www.guballa.de/vigenere-solver">Vigenere Solver | guballa.de</a></p>
+<h4><span id="45放射密码">4.5.放射密码</span></h4><h5><span id="5逆元">5.逆元</span></h5><p>在数论中，给定一个整数a和一个模数m，如果存在一个整数x，使得ax ≡ 1 (mod m)，则x称为a关于模m的逆元。换句话说，逆元是在模m下，使得a乘以它的逆元等于1的元素。逆元在数论和密码学等领域中有重要的应用。</p>
+<h3><span id="32现代密码">3.2现代密码</span></h3><h4><span id="41rsa密码">4.1RSA密码</span></h4><p><img src="/../img/1838.png"></p>
+<p><img src="D:/10_yzzob_web_again/source/img/image-20240323185247869.png" alt="image-20240323185247869"></p>
+<h1><span id="其他">其他</span></h1><h2><span id="i和i的区别">i++和++i的区别</span></h2><p><img src="C:\Users\yzz\AppData\Roaming\Typora\typora-user-images\image-20240131083501602.png" alt="image-20240131083501602"></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Using i++</span></span><br><span class="line">    <span class="type">int</span> result1 = i++;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Using i++: result1 = &quot;</span> &lt;&lt; result1 &lt;&lt; <span class="string">&quot;, i = &quot;</span> &lt;&lt; i &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    i = <span class="number">1</span>; <span class="comment">// Reset i to 1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// Using ++i</span></span><br><span class="line">    <span class="type">int</span> result2 = ++i;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Using ++i: result2 = &quot;</span> &lt;&lt; result2 &lt;&lt; <span class="string">&quot;, i = &quot;</span> &lt;&lt; i &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h2><span id="区别">区别</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">考察了png的LSB隐写和wav的steghide隐写</span><br><span class="line">LSB隐写这⼀部分是我们培训中提到的内容，先⽤培训中提到的StegSolve或者Zsteg,对图⽚中LSB隐</span><br><span class="line">写的内容进⾏提取，如果使⽤StegSolve,因为这⾥是将⽂本内容隐写在图⽚中，选择DataExtract,对勾</span><br><span class="line">选三个通道最低位进⾏提取，就可以得到lsb的隐写内容。</span><br><span class="line">⽤stegsolve选择Analyese,点击extrac</span><br></pre></td></tr></table></figure>
