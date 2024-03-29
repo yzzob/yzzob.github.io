@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      web | zzysu_blog
+      Diary | zzysu_blog
     
   </title>
   <meta name="author" content="yzz">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「web」
+			「Diary」
 		
 	</p>
 
@@ -223,27 +223,14 @@
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
-
-	
-		<div class="layout-toc">
-			<div id="layout-toc">
-				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
-			</div>
-		</div>
-
-		
-<script src="/plugin/toc/katelog.min.js"></script>
-
-
-		
 	 
 
 <div class="layout-post">
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2024/03/18/web/" itemprop="url">
-		web
+	<a href="/2024/03/29/Diary/" itemprop="url">
+		Diary
 	</a>
 
 		</div>
@@ -259,9 +246,9 @@
 
 	更新于
 
-	<a href="/2024/03/18/web/" itemprop="url">
-		<time datetime="2024-03-18T00:56:35.147Z" itemprop="dateUpdated">
-	  		2024-03-16
+	<a href="/2024/03/29/Diary/" itemprop="url">
+		<time datetime="2024-03-29T12:09:44.000Z" itemprop="dateUpdated">
+	  		2024-03-29
 	  </time>
 	</a> 
 
@@ -279,27 +266,18 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<hr>
-<!-- toc -->
-
-<ul>
-<li><a href="#php_unserialize%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96">PHP_UNSERIALIZE(反序列化)</a><ul>
-<li><a href="#%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6">触发条件</a></li>
-<li><a href="#php_unserialize-2">PHP_UNSERIALIZE ( 2 )</a></li>
-</ul>
-</li>
-<li><a href="#sql%E6%B3%A8%E5%85%A5">SQL注入</a></li>
-</ul>
-<!-- tocstop -->
-
-<h1><span id="php_unserialize反序列化">PHP_UNSERIALIZE(反序列化)</span></h1><h2><span id="触发条件">触发条件</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">construct</span><br><span class="line">tostring</span><br></pre></td></tr></table></figure>
-
-<h2><span id="php_unserialize-2">PHP_UNSERIALIZE ( 2 )</span></h2><p><a href="https://ctf.a1natas.com/games/10/challenges">🤩敲门砖-带你入门 CTF - A1::CTF (a1natas.com)</a></p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ctf</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$name</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$type</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">__construct</span>(<span class="params"><span class="variable">$name</span>, <span class="variable">$type</span></span>)</span>&#123;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;name = <span class="string">&quot;AsaL1n&quot;</span>;</span><br><span class="line">        <span class="variable language_">$this</span>-&gt;type = <span class="string">&quot;web&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">__destruct</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="title function_ invoke__">md5</span>(<span class="variable">$this</span>-&gt;name);</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">welcome</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$web</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">__toString</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="variable">$func</span>=<span class="variable language_">$this</span>-&gt;web;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable">$func</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">world</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$flag</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">__invoke</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="title function_ invoke__">passthru</span>(<span class="variable">$this</span>-&gt;flag);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable">$hello</span>=<span class="variable">$_POST</span>[<span class="string">&quot;weber&quot;</span>];</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$hello</span>))&#123;</span><br><span class="line">    <span class="title function_ invoke__">unserialize</span>(<span class="variable">$hello</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span>  </span><br></pre></td></tr></table></figure>
-
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ctf</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$name</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$type</span>;</span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">welcome</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$web</span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">world</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$flag</span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$a</span>=<span class="keyword">new</span> <span class="title function_ invoke__">world</span>();</span><br><span class="line"><span class="variable">$a</span>-&gt;flag=<span class="string">&quot;cat /flag&quot;</span>;</span><br><span class="line"><span class="variable">$b</span>=<span class="keyword">new</span> <span class="title function_ invoke__">welcome</span>();</span><br><span class="line"><span class="variable">$b</span>-&gt;web=<span class="variable">$a</span>;</span><br><span class="line"><span class="variable">$c</span>=<span class="keyword">new</span> <span class="title function_ invoke__">ctf</span>();</span><br><span class="line"><span class="variable">$c</span>-&gt;name=<span class="variable">$b</span>;</span><br><span class="line"><span class="keyword">echo</span>(<span class="title function_ invoke__">serialize</span>(<span class="variable">$c</span>));</span><br></pre></td></tr></table></figure>
-
-<h1><span id="sql注入">SQL注入</span></h1>	
+			<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="790b6ff3b1f78218d2b50324ca2bec5d910be2f35241dc1b45dd6ede8aca582f">d6f56c30b4c0fda7307e35c7ae839cc3895bb057fcd67a3fab2422f6e33dde91</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">	
 		</div>
 		
 		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
@@ -317,12 +295,8 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2024/03/18/%E6%9D%82%E9%A1%B9/" title="杂项" rel="prev">
-				&laquo;上一篇
-			</a>
 		
-		
-			<a href="/2024/03/18/ctf/" title="ctf" rel="next">
+			<a href="/2024/03/29/Feel-Bad/" title="Diary" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -340,34 +314,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/29/Diary/" title="Diary">
-								Diary			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 29日, 2024				
-							</p>
-							<p class="relate-post-content">
-								
-  d6f56c30b4c0fda7307e35c7ae839cc3895bb057fcd67a3fab2422f6e33dde91
-  
-    
-      
-      
-        Hey, password is re...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/29/Diary/" title="Diary">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Diary"/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -513,6 +459,43 @@ VM？VM！1
 							<a href="/2024/03/18/%E6%9D%82%E9%A1%B9/" title="杂项">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂项"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/18/web/" title="web">
+								web			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 18日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+
+
+
+PHP_UNSERIALIZE(反序列化)
+触发条件
+PHP_UNSERIALIZE ( 2 )
+
+
+SQL注入
+
+
+
+PHP_UNSERIALIZE(反序列化)触发条件12constructtostring
+
+PHP_UNS...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/18/web/" title="web">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="web"/>
 							</a>
 						</div>
 					</li>												
