@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      hexo | zzysu_blog
+      cpp | zzysu_blog
     
   </title>
   <meta name="author" content="yzz">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「hexo」
+			「cpp」
 		
 	</p>
 
@@ -242,8 +242,8 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2024/03/18/hexo/" itemprop="url">
-		hexo
+	<a href="/2024/03/30/cpp/" itemprop="url">
+		cpp
 	</a>
 
 		</div>
@@ -259,9 +259,9 @@
 
 	更新于
 
-	<a href="/2024/03/18/hexo/" itemprop="url">
-		<time datetime="2024-03-18T00:56:35.147Z" itemprop="dateUpdated">
-	  		2024-03-29
+	<a href="/2024/03/30/cpp/" itemprop="url">
+		<time datetime="2024-03-30T06:01:50.544Z" itemprop="dateUpdated">
+	  		2024-03-30
 	  </time>
 	</a> 
 
@@ -279,43 +279,27 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<h1><span id="小记">小记</span></h1><h2><span id="标题格式">标题格式</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title:%20(标题)</span><br></pre></td></tr></table></figure>
+			<h1><span id="amp">&amp;</span></h1><h2><span id="取地址运算符">取地址运算符</span></h2><p><code>&amp;</code> 可以用作取地址运算符，用于获取变量或函数的地址。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cppCopy codeint x = 10;</span><br><span class="line">int* ptr = &amp;x; // ptr 指向变量 x 的地址</span><br></pre></td></tr></table></figure>
 
-<h2><span id="目录设置">目录设置</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- toc --&gt;</span><br></pre></td></tr></table></figure>
+<h2><span id="按位与运算符">按位与运算符</span></h2><p><code>&amp;</code> 可以用作按位与运算符，对两个整数的对应位进行与运算。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cppCopy code</span><br><span class="line">int result = 5 &amp; 3; // 结果为 1，因为 5 的二进制表示是 101，3 的二进制表示是 011，按位与后得到 001</span><br></pre></td></tr></table></figure>
 
-<h3><span id="安装插件">安装插件</span></h3><p>在D:\10_yzzob_web_again下打开git bash here</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-toc --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int main()&#123;</span><br><span class="line">    int b = 4&amp;1;</span><br><span class="line">    cout&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3><span id="配置hexo-toc插件">配置<code>hexo-toc</code>插件：</span></h3><p>安装完成后，你需要在Hexo的配置文件中配置<code>hexo-toc</code>插件。找到你的Hexo项目根目录下的 <code>_config.yml</code> 文件，在文件末尾添加以下配置：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Hexo-toc configuration</span><br><span class="line">toc:</span><br><span class="line">  article: true</span><br><span class="line">  max_depth: 3</span><br><span class="line">  list_number: true</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0</span><br></pre></td></tr></table></figure>
 
-<h3><span id="使用插件">使用插件</span></h3><p>在想要的位置(我放在标题下)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">添加&lt;!-- toc --&gt;即可</span><br></pre></td></tr></table></figure>
+<h2><span id="引用类型">引用类型</span></h2><p>在变量声明中，<code>&amp;</code> 可以用于定义引用类型。引用是一个别名，允许使用另一个变量的名称来访问相同的内存位置。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cppCopy codeint x = 10;</span><br><span class="line">int&amp; y = x; // y 是 x 的引用，修改 y 也会修改 x 的值</span><br></pre></td></tr></table></figure>
 
-<h2><span id="导入图片">导入图片</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![1](../img/2.png)</span><br></pre></td></tr></table></figure>
+<h2><span id="地址与指针运算符">地址与指针运算符</span></h2><p>在类或结构体中，<code>&amp;</code> 用于获取类或结构体实例的地址，类似于指针的 <code>this</code> 指针。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cppCopy codeclass MyClass &#123;</span><br><span class="line">public:</span><br><span class="line">    void printAddress() &#123;</span><br><span class="line">        std::cout &lt;&lt; &quot;Address of this object: &quot; &lt;&lt; this &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/../img/2.png" alt="1"></p>
-<p>可在typora中设置,点击”文件”&gt;&gt;”偏好设置”&gt;&gt;”图像”</p>
-<p><img src="/../img/image-20240323185721126.png" alt="image-20240323185721126"></p>
-<p>即可免除繁杂的人工活动:)</p>
-<h2><span id="导入文件">导入文件</span></h2><h3><span id="网站打开">网站打开</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[附件](/files/2.zip)</span><br><span class="line">&lt;a href=&quot;/files/2.zip&quot;&gt;附件&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<h2><span id="位域">位域</span></h2><p>在结构体或类中定义位域时，<code>&amp;</code> 可以用于指定一个位域的宽度。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cppCopy codestruct &#123;</span><br><span class="line">    unsigned int isSquare : 1;</span><br><span class="line">    unsigned int isTriangle : 1;</span><br><span class="line">&#125; shape;</span><br></pre></td></tr></table></figure>
 
-<p><a href="/files/2.zip">附件</a></p>
-<p><a href="/files/2.zip">附件</a></p>
-<h3><span id="本地打开">本地打开</span></h3><p><a href="../files/2.zip">附件</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;../files/2.zip&quot;&gt;附件&lt;/a&gt;</span><br></pre></td></tr></table></figure>
-
-<h2><span id="passphrase">passphrase</span></h2><h3><span id="使用-ssh-公钥认证的情况下避免输入-passphrase">使用 SSH 公钥认证的情况下避免输入 passphrase</span></h3><h3><span id="启动-ssh-agent">启动 SSH Agent:</span></h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eval $(ssh-agent)</span><br></pre></td></tr></table></figure>
-
-<h3><span id="添加私钥到-ssh-agent">添加私钥到 SSH Agent：</span></h3><p> 使用以下命令将私钥添加到 SSH Agent 中（请将路径替换为你的私钥路径）：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-add /c/Users/yzz/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-
-<h3><span id="测试-ssh-连接">测试 SSH 连接:</span></h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-<h2><span id="文件名禁止">文件名禁止</span></h2><p>1.#</p>
-<h2><span id="文章按修改日期排序">文章按修改日期排序</span></h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">index_generator</span>:</span><br><span class="line">  <span class="attr">path</span>: <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">per_page</span>: <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by</span>: -updated #-date是按照文件创建日期</span><br></pre></td></tr></table></figure>
-
-<h2><span id="hexo-list-post">hexo list post</span></h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">yzz@LAPTOP-HB1ONQMF MINGW64 /d/10_yzzob_web_again</span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo list post</span></span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">Date        Title        Path                   Category  Tags</span><br><span class="line">2024-03-18  ctf          _posts/ctf.md</span><br><span class="line">2024-03-18  Hello World  _posts/hello-world.md</span><br><span class="line">2024-03-18  write_up     _posts/write_up.md</span><br><span class="line">2024-03-18  hexo         _posts/hexo.md</span><br><span class="line">2024-03-18  web          _posts/web.md</span><br><span class="line">2024-03-18  杂项         _posts/杂项.md                   加密</span><br><span class="line">2024-03-18  pwn          _posts/pwn.md</span><br><span class="line">2024-03-19  大二下       _posts/大二下.md</span><br><span class="line">2024-03-24  draft        _posts/draft.md</span><br><span class="line">2024-03-24  NKCTF        _posts/NKCTF2024.md</span><br></pre></td></tr></table></figure>
+<p>这些只是 <code>&amp;</code> 运算符的一些常见用法，实际上 <code>&amp;</code> 还有其他用途，具体取决于它在表达式中的上下文。</p>
+<h1><span id>|</span></h1><h2><span id="按位或运算">按位或运算</span></h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">unsigned</span> <span class="type">char</span> a = <span class="number">0xAA</span>;   <span class="comment">// 10101010</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> b = <span class="number">0xCC</span>;   <span class="comment">// 11001100</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> result = a | b;  <span class="comment">// 结果为 11101110</span></span><br></pre></td></tr></table></figure>
 
 	
 		</div>
@@ -335,12 +319,8 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2024/03/18/pwn/" title="pwn" rel="prev">
-				&laquo;上一篇
-			</a>
 		
-		
-			<a href="/2024/03/18/web/" title="web" rel="next">
+			<a href="/2024/03/30/%E6%B0%B4%E8%AF%BE%E6%9C%9F%E6%9C%AB/" title="水课期末" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -358,31 +338,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/30/cpp/" title="cpp">
-								cpp			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 30日, 2024				
-							</p>
-							<p class="relate-post-content">
-								&amp;取地址运算符&amp; 可以用作取地址运算符，用于获取变量或函数的地址。例如：
-12cppCopy codeint x = 10;int* ptr = &amp;x; // ptr 指向变量 x 的地址
-
-按位与运算符&am...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/30/cpp/" title="cpp">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="cpp"/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -501,6 +456,33 @@ VM？VM！1
 							<a href="/2024/03/18/pwn/" title="pwn">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="pwn"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/18/hexo/" title="hexo">
+								hexo			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 18日, 2024				
+							</p>
+							<p class="relate-post-content">
+								小记标题格式1title:%20(标题)
+
+目录设置1&lt;!-- toc --&gt;
+
+安装插件在D:\10_yzzob_web_again下打开git bash here
+1npm install hexo-toc --sav...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/18/hexo/" title="hexo">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="hexo"/>
 							</a>
 						</div>
 					</li>												
