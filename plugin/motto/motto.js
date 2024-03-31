@@ -13,7 +13,8 @@
 */
 var mingyan = [
   {'index':1, 'content':'海阔凭鱼跃,天高任鸟飞。</br> - </br>阮阅《诗话总龟前集》'},
-  {'index':2, 'content':'慕强便会世俗</br> - </br>鲁迅'}
+  {'index':2, 'content':'慕强便会世俗</br> - </br>鲁迅'},
+  {'index':3, 'content':'你想活出怎样的人生</br> - </br>宫崎骏'}
 ];
 
 /**
