@@ -1,22 +1,9 @@
-/**
-  随机获取名言.
-
-  author:prd.
-  version:2016.7.22
-  note:名言均来自[一个](https://www.wufazhuce.com)
-
-  使用示例(关于使用的调用,请参考最底部的函数.):
-        1.先引入本js.
-        2.在想使用的地方,调用getMingYan()函数即可获取名言.[getMingYanHref()获取可以跳转至One的名言,getMingYanContent():只获取名言内容]
-        3.名言中存储为json数据,index对应One的每一期号,content是名言.
-        4.请尊重版权,在展示名言的同时,可将名言链接至One.例如:<a href="https://wufazhuce.com/one/14">是狼是人，日久见心。</br> - </br>小饭</a>其中的14为期号.
-*/
 var mingyan = [
-  {'index':1, 'content':'海阔凭鱼跃,天高任鸟飞。</br> - </br>阮阅《诗话总龟前集》'},
-  {'index':2, 'content':'慕强便会世俗</br> - </br>鲁迅'},
-  {'index':3, 'content':'你想活出怎样的人生</br> - </br>宫崎骏'}
+  '海阔凭鱼跃,天高任鸟飞。</br> - </br>阮阅《诗话总龟前集》',
+  '慕强便会世俗</br> - </br>鲁迅',
+  '你想活出怎样的人生</br> - </br>宫崎骏',
+  '滚滚长江东逝水，浪花淘尽英雄。是非成败转头空。<br>青山依旧在，几度夕阳红。<br>白发渔樵江渚上，惯看秋月春风。一壶浊酒喜相逢。<br>古今多少事，都付笑谈中。</br> - </br>杨慎 《临江仙·滚滚长江东逝水》'
 ];
-
 /**
   随机获取名言.
 
@@ -26,10 +13,7 @@ function getMingYan(){
   return mingyan[Math.floor(Math.random() * mingyan.length)];
 }
 
-/*
-只获取内容.
-*/
 function getMingYanContent(){
-  var item = getMingYan();
-  return item['content'];
+  return getMingYan();
 }
+
