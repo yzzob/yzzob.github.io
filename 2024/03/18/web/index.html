@@ -261,7 +261,7 @@
 
 	<a href="/2024/03/18/web/" itemprop="url">
 		<time datetime="2024-03-18T00:56:35.147Z" itemprop="dateUpdated">
-	  		2024-03-16
+	  		2024-04-05
 	  </time>
 	</a> 
 
@@ -289,6 +289,7 @@
 </ul>
 </li>
 <li><a href="#sql%E6%B3%A8%E5%85%A5">SQL注入</a></li>
+<li><a href="#http">HTTP</a></li>
 </ul>
 <!-- tocstop -->
 
@@ -299,7 +300,9 @@
 
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ctf</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$name</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$type</span>;</span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">welcome</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$web</span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">world</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$flag</span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$a</span>=<span class="keyword">new</span> <span class="title function_ invoke__">world</span>();</span><br><span class="line"><span class="variable">$a</span>-&gt;flag=<span class="string">&quot;cat /flag&quot;</span>;</span><br><span class="line"><span class="variable">$b</span>=<span class="keyword">new</span> <span class="title function_ invoke__">welcome</span>();</span><br><span class="line"><span class="variable">$b</span>-&gt;web=<span class="variable">$a</span>;</span><br><span class="line"><span class="variable">$c</span>=<span class="keyword">new</span> <span class="title function_ invoke__">ctf</span>();</span><br><span class="line"><span class="variable">$c</span>-&gt;name=<span class="variable">$b</span>;</span><br><span class="line"><span class="keyword">echo</span>(<span class="title function_ invoke__">serialize</span>(<span class="variable">$c</span>));</span><br></pre></td></tr></table></figure>
 
-<h1><span id="sql注入">SQL注入</span></h1>	
+<h1><span id="sql注入">SQL注入</span></h1><h1><span id="http">HTTP</span></h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">POST /index.php HTTP/1.1</span><br><span class="line">Host: xyctf.top:43466</span><br><span class="line">Content-Length: 48</span><br><span class="line">Cache-Control: max-age=0</span><br><span class="line">Upgrade-Insecure-Requests: 1</span><br><span class="line">Origin: http://xyctf.top:43466</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line">User-Agent: XYCTF</span><br><span class="line">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</span><br><span class="line">Referer: yuanshen.com</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">Accept-Language: zh-CN,zh;q=0.9</span><br><span class="line">Connection: close</span><br><span class="line">Client-IP: 127.0.0.1</span><br><span class="line">Via: ymzx.qq.com</span><br><span class="line">Cookie: XYCTF</span><br><span class="line"></span><br><span class="line">username=XYCTF&amp;password=%40JOILha%21wuigqi123%24</span><br></pre></td></tr></table></figure>
+
+	
 		</div>
 		
 		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
@@ -340,6 +343,52 @@
 <div class="relate-post">
 	
 		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/04/05/RSA/" title="CRYPTO">
+								CRYPTO			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								四月 5日, 2024				
+							</p>
+							<p class="relate-post-content">
+								RSAinverse(e, a)概念版:
+公钥的获取
+123456def get_D(e,phi):    i=1    while True:    	i = i + 1        if (e*i) % p == 1:     ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/04/05/RSA/" title="CRYPTO">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="CRYPTO"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/04/05/2024_XYCTF/" title="2024_XYCTF">
+								2024_XYCTF			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								四月 5日, 2024				
+							</p>
+							<p class="relate-post-content">
+								WEBezhttp12345678910111213141516171819扫描得到http://xyctf.top:43531/robots.txt得到账号密码! username=XYCTF&amp;password=%40JOI...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/04/05/2024_XYCTF/" title="2024_XYCTF">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="2024_XYCTF"/>
+							</a>
+						</div>
+					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -384,30 +433,6 @@
 							<a href="/2024/04/01/different%20views/" title="different views">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="different views"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/31/RSA/" title="RSA">
-								RSA			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 31日, 2024				
-							</p>
-							<p class="relate-post-content">
-								知识点inverse(e, a)概念版:
-公钥的获取
-123456def get_D(e,phi):    i=1    while True:    	i = i + 1        if (e*i) % p == 1:     ...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/31/RSA/" title="RSA">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="RSA"/>
 							</a>
 						</div>
 					</li>												
@@ -554,33 +579,6 @@ VM？VM！1
 							<a href="/2024/03/18/pwn/" title="pwn">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="pwn"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/18/hexo/" title="hexo">
-								hexo			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 18日, 2024				
-							</p>
-							<p class="relate-post-content">
-								小记标题格式1title:%20(标题)
-
-目录设置1&lt;!-- toc --&gt;
-
-安装插件在D:\10_yzzob_web_again下打开git bash here
-1npm install hexo-toc --sav...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/18/hexo/" title="hexo">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="hexo"/>
 							</a>
 						</div>
 					</li>												

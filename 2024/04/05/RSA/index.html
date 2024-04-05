@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      RSA | zzysu_blog
+      CRYPTO | zzysu_blog
     
   </title>
   <meta name="author" content="yzz">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「RSA」
+			「CRYPTO」
 		
 	</p>
 
@@ -242,8 +242,8 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2024/03/31/RSA/" itemprop="url">
-		RSA
+	<a href="/2024/04/05/RSA/" itemprop="url">
+		CRYPTO
 	</a>
 
 		</div>
@@ -259,9 +259,9 @@
 
 	更新于
 
-	<a href="/2024/03/31/RSA/" itemprop="url">
-		<time datetime="2024-03-31T10:57:12.921Z" itemprop="dateUpdated">
-	  		2024-03-31
+	<a href="/2024/04/05/RSA/" itemprop="url">
+		<time datetime="2024-04-05T09:29:56.370Z" itemprop="dateUpdated">
+	  		2024-04-05
 	  </time>
 	</a> 
 
@@ -279,7 +279,7 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<h1><span id="知识点">知识点</span></h1><h2><span id="inversee-a">inverse(e, a)</span></h2><p>概念版:</p>
+			<h1><span id="rsa">RSA</span></h1><h2><span id="inversee-a">inverse(e, a)</span></h2><p>概念版:</p>
 <p>公钥的获取</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def get_D(e,phi):</span><br><span class="line">    i=1</span><br><span class="line">    while True:</span><br><span class="line">    	i = i + 1</span><br><span class="line">        if (e*i) % p == 1:</span><br><span class="line">            return i</span><br></pre></td></tr></table></figure>
 
@@ -295,17 +295,21 @@
 
 
 
-<h1><span id="baigeirsa">baigeiRSA *</span></h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> libnum</span><br><span class="line"><span class="keyword">from</span> Crypto.Util <span class="keyword">import</span> number</span><br><span class="line">n = <span class="number">88503001447845031603457048661635807319447136634748350130947825183012205093541</span></span><br><span class="line">c = <span class="number">40876621398366534035989065383910105526025410999058860023908252093679681817257</span></span><br><span class="line">size = <span class="number">128</span></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">p = number.getPrime(size)</span><br><span class="line">q = number.getPrime(size)</span><br><span class="line">n = p*q</span><br><span class="line">m = libnum.s2n(flag)</span><br><span class="line">c = <span class="built_in">pow</span>(m, e, n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;n = %d&#x27;</span> % n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;c = %d&#x27;</span> % c)</span><br></pre></td></tr></table></figure>
+<h2><span id="baigeirsa">baigeiRSA *</span></h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> libnum</span><br><span class="line"><span class="keyword">from</span> Crypto.Util <span class="keyword">import</span> number</span><br><span class="line">n = <span class="number">88503001447845031603457048661635807319447136634748350130947825183012205093541</span></span><br><span class="line">c = <span class="number">40876621398366534035989065383910105526025410999058860023908252093679681817257</span></span><br><span class="line">size = <span class="number">128</span></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">p = number.getPrime(size)</span><br><span class="line">q = number.getPrime(size)</span><br><span class="line">n = p*q</span><br><span class="line">m = libnum.s2n(flag)</span><br><span class="line">c = <span class="built_in">pow</span>(m, e, n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;n = %d&#x27;</span> % n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;c = %d&#x27;</span> % c)</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line">n = <span class="number">88503001447845031603457048661635807319447136634748350130947825183012205093541</span></span><br><span class="line">c = <span class="number">40876621398366534035989065383910105526025410999058860023908252093679681817257</span></span><br><span class="line">p = <span class="number">274539690398523616505159415195049044439</span></span><br><span class="line">q = <span class="number">322368694010594584041053487661458382819</span></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">phi = (p-<span class="number">1</span>)*(q-<span class="number">1</span>)</span><br><span class="line">d = inverse(e, phi)</span><br><span class="line">flag = long_to_bytes(<span class="built_in">pow</span>(c, d, n))</span><br><span class="line"><span class="built_in">print</span>(flag)</span><br></pre></td></tr></table></figure>
 
-<h1><span id="baigeirsa2">baigeiRSA2 **</span></h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> libnum</span><br><span class="line"><span class="keyword">from</span> Crypto.Util <span class="keyword">import</span> number</span><br><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> reduce</span><br><span class="line"><span class="keyword">from</span> secret <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line">n = <span class="number">5</span></span><br><span class="line">size = <span class="number">64</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    ps = [number.getPrime(size) <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(n)]</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(<span class="built_in">set</span>(ps)) == n:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">n = reduce(<span class="keyword">lambda</span> x, y: x*y, ps)</span><br><span class="line">m = libnum.s2n(flag)</span><br><span class="line">c = <span class="built_in">pow</span>(m, e, n)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;n = %d&#x27;</span> % n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;c = %d&#x27;</span> % c)</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">n = 175797137276517400024170861198192089021253920489351812147043687817076482376379806063372376015921</span></span><br><span class="line"><span class="string">c = 144009221781172353636339988896910912047726260759108847257566019412382083853598735817869933202168</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+<h2><span id="baigeirsa2">baigeiRSA2 **</span></h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> libnum</span><br><span class="line"><span class="keyword">from</span> Crypto.Util <span class="keyword">import</span> number</span><br><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> reduce</span><br><span class="line"><span class="keyword">from</span> secret <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line">n = <span class="number">5</span></span><br><span class="line">size = <span class="number">64</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    ps = [number.getPrime(size) <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(n)]</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(<span class="built_in">set</span>(ps)) == n:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">n = reduce(<span class="keyword">lambda</span> x, y: x*y, ps)</span><br><span class="line">m = libnum.s2n(flag)</span><br><span class="line">c = <span class="built_in">pow</span>(m, e, n)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;n = %d&#x27;</span> % n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;c = %d&#x27;</span> % c)</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">n = 175797137276517400024170861198192089021253920489351812147043687817076482376379806063372376015921</span></span><br><span class="line"><span class="string">c = 144009221781172353636339988896910912047726260759108847257566019412382083853598735817869933202168</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">long_to_chars</span>(<span class="params">long</span>):</span><br><span class="line">    chars = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">while</span> long:</span><br><span class="line">        mod_ = long % <span class="number">256</span></span><br><span class="line">        s = <span class="built_in">chr</span>(mod_)</span><br><span class="line">        chars += s</span><br><span class="line">        long //= <span class="number">256</span></span><br><span class="line">    <span class="keyword">return</span> chars[::-<span class="number">1</span>]</span><br><span class="line">n = <span class="number">175797137276517400024170861198192089021253920489351812147043687817076482376379806063372376015921</span></span><br><span class="line">c = <span class="number">144009221781172353636339988896910912047726260759108847257566019412382083853598735817869933202168</span></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">r = <span class="number">9401433281508038261</span></span><br><span class="line">t = <span class="number">13716847112310466417</span></span><br><span class="line">y = <span class="number">11855687732085186571</span></span><br><span class="line">u = <span class="number">11215197893925590897</span></span><br><span class="line">i = <span class="number">10252499084912054759</span></span><br><span class="line">a = (r - <span class="number">1</span>) * (t - <span class="number">1</span>) * (y - <span class="number">1</span>) * (u - <span class="number">1</span>) * (i - <span class="number">1</span>)</span><br><span class="line">d = inverse(e, a)</span><br><span class="line">m = <span class="built_in">pow</span>(c, d, n)</span><br><span class="line">mm = long_to_chars(m)</span><br><span class="line"><span class="built_in">print</span>(mm)</span><br></pre></td></tr></table></figure>
 
-<h1><span id="简单-初识rsa">[简单] 初识RSA *</span></h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> bytes_to_long,inverse,getPrime</span><br><span class="line"><span class="keyword">from</span> flag <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line">m = bytes_to_long(flag)</span><br><span class="line">p = getPrime(<span class="number">1024</span>)</span><br><span class="line">q = getPrime(<span class="number">1024</span>)</span><br><span class="line">n = p*q</span><br><span class="line"><span class="built_in">print</span>(n)</span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">c = <span class="built_in">pow</span>(m,e,n)</span><br><span class="line">pq = p*(q-<span class="number">1</span>)</span><br><span class="line">qp = q*(p-<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c=&quot;</span>,c)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;n=&quot;</span>,n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;pq=&quot;</span>,pq)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;qp=&quot;</span>,qp)</span><br></pre></td></tr></table></figure>
+<h2><span id="简单-初识rsa">[简单] 初识RSA *</span></h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> bytes_to_long,inverse,getPrime</span><br><span class="line"><span class="keyword">from</span> flag <span class="keyword">import</span> flag</span><br><span class="line"></span><br><span class="line">m = bytes_to_long(flag)</span><br><span class="line">p = getPrime(<span class="number">1024</span>)</span><br><span class="line">q = getPrime(<span class="number">1024</span>)</span><br><span class="line">n = p*q</span><br><span class="line"><span class="built_in">print</span>(n)</span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">c = <span class="built_in">pow</span>(m,e,n)</span><br><span class="line">pq = p*(q-<span class="number">1</span>)</span><br><span class="line">qp = q*(p-<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c=&quot;</span>,c)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;n=&quot;</span>,n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;pq=&quot;</span>,pq)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;qp=&quot;</span>,qp)</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">long_to_chars</span>(<span class="params">long</span>):</span><br><span class="line">    chars = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">while</span> long:</span><br><span class="line">        mod_ = long % <span class="number">256</span></span><br><span class="line">        s = <span class="built_in">chr</span>(mod_)</span><br><span class="line">        chars += s</span><br><span class="line">        long //= <span class="number">256</span></span><br><span class="line">    <span class="keyword">return</span> chars[::-<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">c = <span class="number">8722269075970644434253339592758512788160408912707387632591552130175707843950684315083250494010055435391879036285103810263591951437829414438640307561645721347859659807138051841516634704123100270651976676182059252251162982609391666023674158274992400910869692389001622774140191223807887675081808561012755545464977015973615407965906513878979919700065923364884766974187303774330319143647840846354404070430118235352622445115153298578370521811697710289716188726587743282814946239856766713516166990341116198180068191759095913957606379780234116317390622824096667107736103270907349927467971817639795094030622157581511033950777</span></span><br><span class="line">n = <span class="number">10466186506773626671397261081802640650185744558208505628349249045496105597268556020207175016523119333667851114848452038431498926527983706092607207796937431312520131882751891731564121558651246025754915145600686076505962750195353958781726515647847167067621799990588328894365930423844435964506372428647802381074584935050067254029262890188260006596141011807724688556673520261743199388391094490191001701011230322653422314758778116196105077883955436582364267530633358016652912054880813710531145973799193443828969535902856467548523653920307742364119002349899553478815101092655897400295925170383678499125295006364960124859003</span></span><br><span class="line">pq = <span class="number">10466186506773626671397261081802640650185744558208505628349249045496105597268556020207175016523119333667851114848452038431498926527983706092607207796937431312520131882751891731564121558651246025754915145600686076505962750195353958781726515647847167067621799990588328894365930423844435964506372428647802381074488896197029704465200125337817646702009123916866455067019234171839614862660036737875747177391796376553159880972782837853473250804807544086701088829096838316550146794766718580877976153967582795248676367265069623900208276878140709691073369415161936376086988069213820933152601453587292943483693378833664901178324</span></span><br><span class="line">qp = <span class="number">10466186506773626671397261081802640650185744558208505628349249045496105597268556020207175016523119333667851114848452038431498926527983706092607207796937431312520131882751891731564121558651246025754915145600686076505962750195353958781726515647847167067621799990588328894365930423844435964506372428647802381074475956379708898904933143429835002718457573266164923043251954374464149976302585916538814746811455883837138715445492053610047383292461097590195481556557381952895539341802954749542143253491617052100969586396996063822508764438280468492894012685918249843558593322831683872737943676955669923498182824352081785243246</span></span><br><span class="line"><span class="comment"># pq-p+qp-q</span></span><br><span class="line"><span class="comment"># pq-q-p+1</span></span><br><span class="line">phi = qp+pq-n+<span class="number">1</span></span><br><span class="line">e = <span class="number">65537</span></span><br><span class="line">d = inverse(e, phi)</span><br><span class="line">flag = long_to_chars(<span class="built_in">pow</span>(c, d, n))</span><br><span class="line"><span class="built_in">print</span>(flag)</span><br></pre></td></tr></table></figure>
+
+<p>else</p>
+<h1><span id="sign1n签到">Sign1n[签到]</span></h1><p>寄语:从头开始一步一步写逆代码,分析原因</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">long_to_chars</span>(<span class="params">long</span>):</span><br><span class="line">    chars = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">while</span> long:</span><br><span class="line">        mod_ = long % <span class="number">256</span></span><br><span class="line">        s = <span class="built_in">chr</span>(mod_)</span><br><span class="line">        chars += s</span><br><span class="line">        long //= <span class="number">256</span></span><br><span class="line">    <span class="keyword">return</span> chars[::-<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">res = <span class="string">&#x27;&#x27;</span></span><br><span class="line">len_ = <span class="number">1</span></span><br><span class="line">x = <span class="string">&quot;12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567891134567799012455688912235667900133556899022346778011344578890233456890013345788902235667990134457799122355788001334678890123566780112455678012235578800123556899112346778901344567991223557880012445689902334677991134456899023355788001335578890133467789113445678012234577801133556899113356679901344578801233467789112355779912234577990233556780113&quot;</span></span><br><span class="line"><span class="keyword">for</span> xx <span class="keyword">in</span> x:</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">int</span>(xx) == len_:</span><br><span class="line">        res += <span class="string">&quot;0&quot;</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        res += <span class="string">&quot;1&quot;</span></span><br><span class="line">    len_+=<span class="number">1</span></span><br><span class="line">    len_%=<span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(res)</span><br><span class="line">count = <span class="number">0</span></span><br><span class="line">a = res</span><br><span class="line"><span class="keyword">for</span> aa <span class="keyword">in</span> a:</span><br><span class="line">    <span class="keyword">if</span> aa == <span class="string">&quot;1&quot;</span>: <span class="keyword">break</span></span><br><span class="line">    count += <span class="number">1</span></span><br><span class="line"><span class="built_in">print</span>(count)</span><br><span class="line">b = a[::-<span class="number">1</span>]</span><br><span class="line">bb = b[:-count]</span><br><span class="line"><span class="built_in">print</span>(bb)</span><br><span class="line">binary_str = bb</span><br><span class="line">decimal_num = <span class="built_in">int</span>(binary_str, <span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(long_to_chars(decimal_num))</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">24929</span></span><br><span class="line"><span class="string">0b110000101100001</span></span><br><span class="line"><span class="string">0b11000010110000100000000000000000</span></span><br><span class="line"><span class="string">0b11000010110000100000000000000000</span></span><br><span class="line"><span class="string">00000000000000000100001101000011</span></span><br><span class="line"><span class="string">12345678901234567990124557789023</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
 
 	
 		</div>
@@ -325,12 +329,8 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2024/04/01/different%20views/" title="different views" rel="prev">
-				&laquo;上一篇
-			</a>
 		
-		
-			<a href="/2024/03/30/cpp/" title="cpp" rel="next">
+			<a href="/2024/04/05/2024_XYCTF/" title="2024_XYCTF" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -348,6 +348,28 @@
 <div class="relate-post">
 	
 		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/04/05/2024_XYCTF/" title="2024_XYCTF">
+								2024_XYCTF			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								四月 5日, 2024				
+							</p>
+							<p class="relate-post-content">
+								WEBezhttp12345678910111213141516171819扫描得到http://xyctf.top:43531/robots.txt得到账号密码! username=XYCTF&amp;password=%40JOI...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/04/05/2024_XYCTF/" title="2024_XYCTF">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="2024_XYCTF"/>
+							</a>
+						</div>
+					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -565,43 +587,6 @@ VM？VM！1
 							<a href="/2024/03/18/hexo/" title="hexo">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="hexo"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/18/web/" title="web">
-								web			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 18日, 2024				
-							</p>
-							<p class="relate-post-content">
-								
-
-
-
-PHP_UNSERIALIZE(反序列化)
-触发条件
-PHP_UNSERIALIZE ( 2 )
-
-
-SQL注入
-
-
-
-PHP_UNSERIALIZE(反序列化)触发条件12constructtostring
-
-PHP_UNS...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/18/web/" title="web">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="web"/>
 							</a>
 						</div>
 					</li>												
