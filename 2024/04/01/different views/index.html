@@ -261,7 +261,7 @@
 
 	<a href="/2024/04/01/different%20views/" itemprop="url">
 		<time datetime="2024-04-01T12:04:49.843Z" itemprop="dateUpdated">
-	  		2024-04-04
+	  		2024-04-18
 	  </time>
 	</a> 
 
@@ -279,7 +279,13 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<h1><span id="1题目分类2所给内容">1.题目分类2.所给内容</span></h1><h1><span id="misc">MISC</span></h1><h2><span id="条形码">条形码</span></h2><p><img src="/../img/3.png" alt="3.png"></p>
+			<h1><span id="1题目分类2所给内容">1.题目分类2.所给内容</span></h1><h1><span id="misc">MISC</span></h1><h2><span id="损坏的文件">损坏的文件</span></h2><p>2.来自提瓦特的神秘文件.zip</p>
+<p>用010editor打开</p>
+<p>不全zip头:504B0304</p>
+<p>解压缩是奇怪的文字图片,</p>
+<p>根据题目可以翻译的到flag</p>
+<p>也可以保存下来用百度等浏览器扫扫看</p>
+<h2><span id="条形码">条形码</span></h2><p><img src="/../img/3.png" alt="3.png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">process_barcode</span>(<span class="params">image_path</span>):</span><br><span class="line">    <span class="keyword">with</span> Image.<span class="built_in">open</span>(image_path) <span class="keyword">as</span> img:</span><br><span class="line">        width, height = img.size</span><br><span class="line">        pixels = img.load()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(width):</span><br><span class="line">            color_count = &#123;&#125;</span><br><span class="line">            <span class="keyword">for</span> y <span class="keyword">in</span> <span class="built_in">range</span>(height):</span><br><span class="line">                color = pixels[x, y]</span><br><span class="line">                <span class="keyword">if</span> color <span class="keyword">in</span> color_count:</span><br><span class="line">                    color_count[color] += <span class="number">1</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    color_count[color] = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">            sorted_colors = <span class="built_in">sorted</span>(color_count.items(), key=<span class="keyword">lambda</span> x: x[<span class="number">1</span>], reverse=<span class="literal">True</span>)</span><br><span class="line">            most_common_color = sorted_colors[<span class="number">0</span>][<span class="number">0</span>]</span><br><span class="line">            black_count = color_count.get((<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>), <span class="number">0</span>)</span><br><span class="line">            white_count = color_count.get((<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>), <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> black_count &gt;= white_count:</span><br><span class="line">                dominant_color = (<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                dominant_color = (<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>)</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> y <span class="keyword">in</span> <span class="built_in">range</span>(height):</span><br><span class="line">                <span class="keyword">if</span> y &lt; <span class="number">5</span> <span class="keyword">or</span> y &gt;= height - <span class="number">5</span>:</span><br><span class="line">                    pixels[x, y] = (<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>)</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    pixels[x, y] = dominant_color</span><br><span class="line"></span><br><span class="line">        img.save(<span class="string">r&quot;D:\yzzob\Desktop\2.png&quot;</span>)</span><br><span class="line">        img.show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用示例</span></span><br><span class="line">process_barcode(<span class="string">r&quot;D:\yzzob\Desktop\secret.png&quot;</span>)</span><br><span class="line"><span class="comment">#https://products.aspose.app/barcode/zh-hans/recognize#/recognized</span></span><br></pre></td></tr></table></figure>
 
 <h2><span id="wavzip">wav+zip</span></h2><h3><span id="电话音分析得到密码">电话音分析,得到密码</span></h3><h2><span id="jpg">jpg</span></h2><h3><span id="lsb隐写用stegsolve">lsb隐写,用stegsolve,</span></h3><h3><span id="谷歌图片搜索相关内容">谷歌图片搜索相关内容</span></h3><p><a href="D:\10_yzzob_web_again\ctf_file\game.jpg">1</a></p>
@@ -327,6 +333,38 @@
 <div class="relate-post">
 	
 		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/04/14/Reverse/" title="Reverse">
+								Reverse			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								四月 14日, 2024				
+							</p>
+							<p class="relate-post-content">
+								12n:改名h:16j
+
+界面介绍
+伪代码窗口
+汇编窗口
+代码流窗口
+不同窗体间的转换12代码流窗口与汇编窗口 通过space切换ctrl+1 选择Disassembly即可打开代码流窗口或汇编窗口 
+
+
+
+Tea(Tiny Encr...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/04/14/Reverse/" title="Reverse">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Reverse"/>
+							</a>
+						</div>
+					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -538,32 +576,6 @@ VM？VM！1
 							<a href="/2024/03/19/%E5%A4%A7%E4%BA%8C%E4%B8%8B/" title="大二下">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大二下"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/03/18/pwn/" title="pwn">
-								pwn			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 18日, 2024				
-							</p>
-							<p class="relate-post-content">
-								pwn简单的python攻击程序12#查看几位程序和保护机制check 附件
-
-
-
-123456789from pwn import *#连接服务器p=remote(&quot;150.158.160.64&quot;,42045)#...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/03/18/pwn/" title="pwn">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="pwn"/>
 							</a>
 						</div>
 					</li>												
