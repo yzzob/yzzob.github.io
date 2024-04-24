@@ -261,7 +261,7 @@
 
 	<a href="/2024/03/18/%E6%9D%82%E9%A1%B9/" itemprop="url">
 		<time datetime="2024-03-18T00:56:35.147Z" itemprop="dateUpdated">
-	  		2024-04-22
+	  		2024-04-24
 	  </time>
 	</a> 
 
@@ -284,7 +284,27 @@
 <h1><span id="burpsuit">burpsuit</span></h1><h2><span id="端口占用">端口占用</span></h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">netstat -aon | <span class="built_in">findstr</span> :<span class="number">8080</span></span><br><span class="line">  TCP    <span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>:<span class="number">8080</span>           <span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>:<span class="number">0</span>              LISTENING       <span class="number">11056</span></span><br><span class="line">tasklist | <span class="built_in">findstr</span> <span class="number">11056</span></span><br><span class="line">ApplicationWebServer.exe     <span class="number">11056</span> Services                   <span class="number">0</span>     <span class="number">19</span>,<span class="number">608</span> K</span><br></pre></td></tr></table></figure>
 
 <p>用任务栏管理器搜索ApplicationWebServer.exe,关闭即可</p>
-<h1><span id="python">python</span></h1><p><img src="/../img/image-20240422151642604.png" alt="image-20240422151642604"></p>
+<h1><span id="python">python</span></h1><h2><span id="re">RE</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.：匹配任意字符（除换行符外）。</span><br><span class="line">*：匹配前面的元素零次或多次。</span><br><span class="line">?：使匹配变为非贪婪匹配，尽可能少地匹配字符。</span><br></pre></td></tr></table></figure>
+
+
+
+<p>假设有一个字符串 <code>s = &#39;abc123def456ghi&#39;</code>，我们想要匹配其中的数字部分。使用贪婪匹配<code>.*</code>会尽可能匹配更多字符，而非贪婪匹配<code>.*?</code>会尽可能少地匹配字符。比较一下两者的区别：</p>
+<p>使用贪婪匹配<code>.*</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import re</span><br><span class="line">s = &#x27;abc123def456ghi&#x27;</span><br><span class="line">pattern = r&#x27;\d.*&#x27;</span><br><span class="line">matches = re.findall(pattern, s)</span><br><span class="line">print(matches)</span><br></pre></td></tr></table></figure>
+
+<p>输出结果是：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#x27;123def456ghi&#x27;]</span><br></pre></td></tr></table></figure>
+
+<p>使用非贪婪匹配<code>.*?</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import re</span><br><span class="line">s = &#x27;abc123def456ghi&#x27;</span><br><span class="line">pattern = r&#x27;\d.*?\d&#x27;</span><br><span class="line">matches = re.findall(pattern, s)</span><br><span class="line">print(matches)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>输出结果是：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#x27;12&#x27;, &#x27;3def4&#x27;, &#x27;56&#x27;]</span><br></pre></td></tr></table></figure>
+
+<p>可以看到，使用贪婪匹配<code>.*</code>时，会尽可能匹配更多字符，直到无法继续匹配为止，而非贪婪匹配<code>.*?</code>会尽可能少地匹配字符，只要满足条件就会停止匹配。</p>
+<h2><span id="text和content">text和content</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">response.text：返回的是以Unicode编码的文本内容，适用于处理文本类型的响应，比如HTML、JSON等。如果响应内容是二进制数据，response.text会尝试根据响应头部的字符编码自动解码成Unicode文本。如果自动解码失败，你可以手动指定编码，例如response.text.encode(&#x27;utf-8&#x27;)。</span><br><span class="line">response.content：返回的是以字节(bytes)形式表示的二进制内容，适用于处理非文本类型的响应，比如图片、音频、视频等。这种情况下，你可以直接将response.content写入文件或者以其他方式处理二进制数据。</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/image-20240422151642604.png" alt="image-20240422151642604"></p>
 <p><img src="/../img/image-20240422151606214.png" alt="image-20240422151606214"></p>
 <h2><span id="退出科学模式">退出科学模式</span></h2><p><img src="/../img/image-20240422144911261.png" alt="image-20240422144911261"></p>
 <h2><span id="201">201</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">需要登录从而得到token</span><br></pre></td></tr></table></figure>

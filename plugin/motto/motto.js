@@ -1,4 +1,7 @@
 var mingyan = [
+  '再见咯,我的青春.<br1>应知钊',
+];
+/*
   '海阔凭鱼跃,天高任鸟飞。<br1>阮阅《诗话总龟前集》',
   '慕强便会世俗<br1>鲁迅',
   '你想活出怎样的人生<br1>宫崎骏',
@@ -8,7 +11,7 @@ var mingyan = [
   'ta赞美的是人类领袖,<br>从来不是一个不败的帝国<br1>鲁迅',
   '如今的高校林立,几分像从前,<br>王侯将相<br1>鲁迅',
   '后来我渐渐懂了,<br>为什么生死存亡时,能让them先走.<br1>鲁迅',
-];
+*/
 function getMingYan(){
   return mingyan[Math.floor(Math.random() * mingyan.length)];
 }
