@@ -10,7 +10,10 @@ var mingyan = [
   '如今的高校林立,几分像从前,<br>王侯将相<br1>鲁迅',
   '后来我渐渐懂了,<br>为什么生死存亡时,能让them先走.<br1>鲁迅',
   '只是刚好情窦初开遇到你:(:(:(<br1>鲁迅',
-  '有剑不用和无剑可用是两件事<br1>鲁迅'
+  '有剑不用和无剑可用是两件事<br1>鲁迅',
+  'I never give up.<br1>鲁迅',
+  '永恒燃烧的羽翼,带我脱离凡间的沉沦.<br1>记,亚伦布什内尔<br>20240225',
+  '正义是杀不完的,因为真理永远存在.<br1>记,闻一多'
 ];
 function getMingYan(){
   return mingyan[Math.floor(Math.random() * mingyan.length)];
