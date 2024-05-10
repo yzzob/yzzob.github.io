@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      cpp | yzzob_blog
+       | yzzob_blog
     
   </title>
   <meta name="author" content="yzz">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「cpp」
+			「」
 		
 	</p>
 
@@ -242,10 +242,6 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2024/03/30/cpp/" itemprop="url">
-		cpp
-	</a>
-
 		</div>
 
 		<div class="article-meta">
@@ -259,9 +255,9 @@
 
 	更新于
 
-	<a href="/2024/03/30/cpp/" itemprop="url">
-		<time datetime="2024-03-30T06:01:50.544Z" itemprop="dateUpdated">
-	  		2024-03-30
+	<a href="/2024/05/09/3_mics/" itemprop="url">
+		<time datetime="2024-05-09T12:56:27.696Z" itemprop="dateUpdated">
+	  		2024-05-09
 	  </time>
 	</a> 
 
@@ -279,28 +275,20 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<h1><span id="amp">&amp;</span></h1><h2><span id="取地址运算符">取地址运算符</span></h2><p><code>&amp;</code> 可以用作取地址运算符，用于获取变量或函数的地址。例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cppCopy codeint x = 10;</span><br><span class="line">int* ptr = &amp;x; // ptr 指向变量 x 的地址</span><br></pre></td></tr></table></figure>
+			<hr>
+<h2><span id="titlemisc">‘title:misc’</span></h2><h1><span id="题目">题目</span></h1><h2><span id="谷歌识图-game">谷歌识图-game</span></h2><p>XYCTF{Papers Please}</p>
+<h2><span id="html-zzl的护理小课堂">*html-zzl的护理小课堂</span></h2><p>wdf</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file:///D:/yzzob/Desktop/ctf/wp/xyctf/%E5%B8%B8%E4%B9%90%E6%9D%91%E9%A9%BE%E6%A0%A1-XYCTF-WP.pdf</span><br></pre></td></tr></table></figure>
 
-<h2><span id="按位与运算符">按位与运算符</span></h2><p><code>&amp;</code> 可以用作按位与运算符，对两个整数的对应位进行与运算。例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cppCopy code</span><br><span class="line">int result = 5 &amp; 3; // 结果为 1，因为 5 的二进制表示是 101，3 的二进制表示是 011，按位与后得到 001</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;quizForm&#x27;</span>).<span class="title function_">addEventListener</span>(<span class="string">&#x27;submit&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>) &#123;</span><br><span class="line">    event.<span class="title function_">preventDefault</span>(); </span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> formData = <span class="keyword">new</span> <span class="title class_">FormData</span>(<span class="variable language_">this</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> xhr = <span class="keyword">new</span> <span class="title class_">XMLHttpRequest</span>(); </span><br><span class="line">    xhr.<span class="title function_">open</span>(<span class="string">&#x27;POST&#x27;</span>, <span class="string">&#x27;getScore.php&#x27;</span>, <span class="literal">true</span>); </span><br><span class="line">    xhr.<span class="property">onreadystatechange</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (xhr.<span class="property">readyState</span> === <span class="number">4</span> &amp;&amp; xhr.<span class="property">status</span> === <span class="number">200</span>) &#123; </span><br><span class="line">            <span class="keyword">var</span> score = xhr.<span class="property">responseText</span>;</span><br><span class="line">            <span class="keyword">if</span> (score == <span class="number">100</span>) &#123;</span><br><span class="line">                <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;scoreDisplay&#x27;</span>).<span class="property">innerText</span> = <span class="string">&quot;你的分数是: &quot;</span> + score + <span class="string">&quot;/100 杂鱼,怎么才100分啊&quot;</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (score &lt; <span class="number">100</span>) &#123;</span><br><span class="line">                <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;scoreDisplay&#x27;</span>).<span class="property">innerText</span> = <span class="string">&quot;你的分数是: &quot;</span> + score + <span class="string">&quot;/100 noooooob!!&quot;</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">var</span> flagXhr = <span class="keyword">new</span> <span class="title class_">XMLHttpRequest</span>(); </span><br><span class="line">                flagXhr.<span class="title function_">open</span>(<span class="string">&#x27;GET&#x27;</span>, <span class="string">&#x27;flag.php&#x27;</span>, <span class="literal">true</span>);</span><br><span class="line">                flagXhr.<span class="property">onreadystatechange</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (flagXhr.<span class="property">readyState</span> === <span class="number">4</span> &amp;&amp; flagXhr.<span class="property">status</span> === <span class="number">200</span>) &#123;</span><br><span class="line">                        <span class="keyword">var</span> flag = flagXhr.<span class="property">responseText</span>;</span><br><span class="line">                        <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;scoreDisplay&#x27;</span>).<span class="property">innerText</span> = <span class="string">&quot;Flag: &quot;</span> + flag;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;;</span><br><span class="line">                flagXhr.<span class="title function_">send</span>(); <span class="comment">// 发送请求获取 flag</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    xhr.<span class="title function_">send</span>(formData); <span class="comment">// 发送请求获取分数</span></span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int main()&#123;</span><br><span class="line">    int b = 4&amp;1;</span><br><span class="line">    cout&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var flagXhr = new XMLHttpRequest(); </span><br><span class="line">flagXhr.open(&#x27;GET&#x27;,&#x27;flag.php&#x27;,true);</span><br><span class="line">flagXhr.onreadystatechange=function() &#123;</span><br><span class="line">if (flagXhr.readyState === 4 &amp;&amp; flagXhr.status === 200) </span><br><span class="line">&#123;</span><br><span class="line">    var flag = flagXhr.responseText;</span><br><span class="line">    console.log(flag);</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br><span class="line">flagXhr.send(); </span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0</span><br></pre></td></tr></table></figure>
+<p><img src="/../img/image-20240509211141576.png" alt="image-20240509211141576"></p>
+<h2><span id="简单密码-熊博士">简单密码-熊博士</span></h2><p>输出ascell码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="string">&quot;CBXGU&#123;ORF_BV_NVR_BLF_CRZL_QQ&#125;&quot;</span></span><br><span class="line">b=<span class="string">&quot;XYCTF&quot;</span></span><br><span class="line"><span class="keyword">for</span> bb <span class="keyword">in</span> b:</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">ord</span>(bb),end=<span class="string">&quot; &quot;</span>)</span><br><span class="line"><span class="built_in">print</span>()</span><br><span class="line"><span class="keyword">for</span> aa <span class="keyword">in</span> a:</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">ord</span>(aa),end=<span class="string">&quot; &quot;</span>)</span><br><span class="line"><span class="built_in">print</span>()</span><br><span class="line"><span class="keyword">for</span> aa <span class="keyword">in</span> a:</span><br><span class="line">    <span class="keyword">if</span> aa.isalpha():</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">chr</span>(<span class="number">155</span>-<span class="built_in">ord</span>(aa)),end=<span class="string">&quot;&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:<span class="built_in">print</span>(aa,end=<span class="string">&quot;&quot;</span>)</span><br></pre></td></tr></table></figure>
 
-<h2><span id="引用类型">引用类型</span></h2><p>在变量声明中，<code>&amp;</code> 可以用于定义引用类型。引用是一个别名，允许使用另一个变量的名称来访问相同的内存位置。例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cppCopy codeint x = 10;</span><br><span class="line">int&amp; y = x; // y 是 x 的引用，修改 y 也会修改 x 的值</span><br></pre></td></tr></table></figure>
-
-<h2><span id="地址与指针运算符">地址与指针运算符</span></h2><p>在类或结构体中，<code>&amp;</code> 用于获取类或结构体实例的地址，类似于指针的 <code>this</code> 指针。例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cppCopy codeclass MyClass &#123;</span><br><span class="line">public:</span><br><span class="line">    void printAddress() &#123;</span><br><span class="line">        std::cout &lt;&lt; &quot;Address of this object: &quot; &lt;&lt; this &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2><span id="位域">位域</span></h2><p>在结构体或类中定义位域时，<code>&amp;</code> 可以用于指定一个位域的宽度。例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cppCopy codestruct &#123;</span><br><span class="line">    unsigned int isSquare : 1;</span><br><span class="line">    unsigned int isTriangle : 1;</span><br><span class="line">&#125; shape;</span><br></pre></td></tr></table></figure>
-
-<p>这些只是 <code>&amp;</code> 运算符的一些常见用法，实际上 <code>&amp;</code> 还有其他用途，具体取决于它在表达式中的上下文。</p>
-<h1><span id>|</span></h1><h2><span id="按位或运算">按位或运算</span></h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">unsigned</span> <span class="type">char</span> a = <span class="number">0xAA</span>;   <span class="comment">// 10101010</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> b = <span class="number">0xCC</span>;   <span class="comment">// 11001100</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> result = a | b;  <span class="comment">// 结果为 11101110</span></span><br></pre></td></tr></table></figure>
-
+<p>XYCTF{LIU_YE_MEI_YOU_XIAO_JJ}</p>
 	
 		</div>
 		
@@ -319,12 +307,8 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2024/03/31/CRYPTO/" title="CRYPTO" rel="prev">
-				&laquo;上一篇
-			</a>
 		
-		
-			<a href="/2024/03/30/%E6%B0%B4%E8%AF%BE%E6%9C%9F%E6%9C%AB/" title="水课期末" rel="next">
+			<a href="/2024/04/14/1_Reverse/" title="Reverse" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -342,31 +326,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/05/09/3_mics/" title="">
-											
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								五月 9日, 2024				
-							</p>
-							<p class="relate-post-content">
-								
-‘title:misc’题目谷歌识图-gameXYCTF{Papers Please}
-*html-zzl的护理小课堂wdf
-1file:///D:/yzzob/Desktop/ctf/wp/xyctf/%E5%B8%B8%E4%B...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/05/09/3_mics/" title="">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -542,6 +501,31 @@ WEBezhttp12345678910111213141516...
 							<a href="/2024/04/01/different%20views/" title="different views">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="different views"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/03/30/cpp/" title="cpp">
+								cpp			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 30日, 2024				
+							</p>
+							<p class="relate-post-content">
+								&amp;取地址运算符&amp; 可以用作取地址运算符，用于获取变量或函数的地址。例如：
+12cppCopy codeint x = 10;int* ptr = &amp;x; // ptr 指向变量 x 的地址
+
+按位与运算符&am...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/03/30/cpp/" title="cpp">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="cpp"/>
 							</a>
 						</div>
 					</li>												
