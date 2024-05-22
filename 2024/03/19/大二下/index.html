@@ -261,7 +261,7 @@
 
 	<a href="/2024/03/19/%E5%A4%A7%E4%BA%8C%E4%B8%8B/" itemprop="url">
 		<time datetime="2024-03-19T07:55:58.929Z" itemprop="dateUpdated">
-	  		2024-05-07
+	  		2024-05-18
 	  </time>
 	</a> 
 
@@ -279,7 +279,13 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<h1><span id="c软件项目实训">C#(软件项目实训)</span></h1><h2><span id="sql的移动">sql的移动</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.添加数据库</span><br><span class="line">2.找到保存的位置,将ldf和mdf文件移至其他位置</span><br><span class="line">3.将之前的ldf和mdf文件移到当前位置即可</span><br></pre></td></tr></table></figure>
+			<h1><span id="c软件项目实训">C#(软件项目实训)</span></h1><h2><span id="未能找到元数据文件">未能找到元数据文件</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">严重性	代码	说明	项目	文件	行	禁止显示状态	详细信息</span><br><span class="line">错误	CS0006	未能找到元数据文件“D:\2_c#\zjnuMaster_Y\zjnuMaster.DAL\obj\Debug\net6.0-windows\ref\zjnuMaster.DAL.dll”	zjnuMaster	D:\2_c#\zjnuMaster_Y\zjnuMaster\CSC	1	活动	</span><br></pre></td></tr></table></figure>
+
+<p>修改每个项目的project</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;PropertyGroup&gt;</span><br><span class="line">	&lt;TargetFramework&gt;net6.0&lt;/TargetFramework&gt;</span><br><span class="line">	&lt;ImplicitUsings&gt;enable&lt;/ImplicitUsings&gt;</span><br><span class="line">	&lt;Nullable&gt;enable&lt;/Nullable&gt;</span><br><span class="line">&lt;/PropertyGroup&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../../../yzzob/Desktop/image-20240512142408178.png" alt="image-20240512142408178"></p>
+<h2><span id="sql的移动">sql的移动</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.添加数据库</span><br><span class="line">2.找到保存的位置,将ldf和mdf文件移至其他位置</span><br><span class="line">3.将之前的ldf和mdf文件移到当前位置即可</span><br></pre></td></tr></table></figure>
 
 <p><img src="/../img/image-20240422202643590.png" alt="image-20240422202643590"></p>
 <h2><span id="c的基本架构">c#的基本架构</span></h2><p>在C#中，通常使用一种称为”三层架构”或”三层架构模式”的设计模式来组织代码。这种模式将应用程序分为三个主要部分：业务逻辑层（BLL），数据访问层（DAL），和用户界面层（通常是UI层或Presentation层）。有时还会包括一个模型层（Model层）来表示应用程序的数据模型。这些层次的主要区别在于其职责和功能：</p>
