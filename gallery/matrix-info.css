@@ -1,0 +1,96 @@
+body {
+    background-image: url(photo/zjnu.jpeg);
+    background-size: cover; /* 使用 cover 值让背景图片完全覆盖元素 */
+    background-repeat: no-repeat; /* 禁止背景图片重复 */
+    background-position: center; /* 居中显示背景图片 */
+    width: 100%; /* 设置宽度为父元素的宽度 */
+    height: 100vh; /* 设置高度为视口的高度，也可以使用具体的像素值 */
+}
+div.pic{
+	float:left;						/* 向左浮动 */
+	height:160px; width:160px;		/* 每幅图片块的大小 */
+	margin:10px;
+	
+}
+div.pic img{
+	border:none;
+}
+div.ls{
+	background:url(framels.jpg) no-repeat center;	/* 水平图片的背景 */
+}
+div.pt{
+	background:url(framept.jpg) no-repeat center;	/* 竖直图片的背景 */
+}
+div.ls img{									/* 水平图片 */
+	margin:0px;
+	height:90px; width:135px;
+}
+div.pt img{											/* 竖直图片 */
+	margin:0px;
+	height:135px; width:90px;
+}
+div.ls a{
+	background-color: #b2e4dd;	
+	display:block;					/* 定义为块元素 */
+	padding:34px 14px 36px 11px;	/* 将超链接区域扩大到整个背景块 */
+}
+div.pt a{
+	background-color: #b2e4dd;	
+	display:block;
+	padding:11px 36px 14px 34px;	/* 将超链接区域扩大到整个背景块 */
+}
+div.ls a:hover{						/* 鼠标经过时修改背景图片 */
+	background:url(framels_hover.jpg) no-repeat center;
+}
+div.pt a:hover{
+	background:url(framept_hover.jpg) no-repeat center;
+}
+div.pic ul{
+	display:none;					/* 幻灯片模式，不显式图片信息 */
+}
+div.pic:hover ul{
+ display:block;
+ position:absolute;
+}
+div.pic ul{
+    margin:-5px 0 0 0px; /* 设置 ul 元素的外边距 */
+    padding:0 0 0 0em; /* 设置 ul 元素的内边距 */
+    background:#dceeff; /* 设置 ul 元素的背景颜色 */
+    border:2px solid #a7d5ff; /* 设置 ul 元素的边框样式 */
+    font-size:12px; /* 设置 ul 元素中文本的字体大小 */
+    list-style:none; /* 去除 ul 元素的默认列表样式 */
+    font-family:Arial, Helvetica, sans-serif; /* 设置 ul 元素中文本的字体 */
+}
+
+div.pic li{
+    line-height:1.2em; /* 设置 li 元素的行高 */
+    margin:0; /* 设置 li 元素的外边距 */
+    padding:0; /* 设置 li 元素的内边距 */
+}
+
+div.pic li.title{    
+    text-align: center; /* 设置标题文本居中对齐 */
+    font-weight:bold; /* 设置标题文本为粗体 */
+    padding-top:0.4em; /* 设置标题文本的上内边距 */
+    padding-bottom:0.2em; /* 设置标题文本的下内边距 */
+    padding-left:0em; /* 设置标题文本的左内边距 */
+    border-bottom:1px solid #a7d5ff; /* 设置标题文本的底部边框样式 */
+    color:#004586; /* 设置标题文本的颜色 */
+}
+
+div.pic li.catno{
+    color:#0068c9; /* 设置 catno 文本的颜色 */
+    margin:0 2px 0 0em; /* 设置 catno 文本的外边距 */
+    padding-left:20px; /* 设置 catno 文本的左内边距 */
+    padding-right:20px; /* 设置 catno 文本的右内边距 */
+    border-left:0px solid #a7d5ff; /* 设置 catno 文本的左边框样式 */
+}
+
+div.pic li.price{
+    color:#0068c9; /* 设置 price 文本的颜色 */
+    font-style:italic; /* 设置 price 文本的字体样式为斜体 */
+    margin:-1.2em 2px 0px 6em; /* 设置 price 文本的外边距 */
+    padding-left:20px; /* 设置 price 文本的左内边距 */
+    padding-right:20px; /* 设置 price 文本的右内边距 */
+    border-left:1px solid #a7d5ff; /* 设置 price 文本的左边框样式 */
+}
