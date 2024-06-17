@@ -16,7 +16,7 @@ var mingyan = [
   '正义是杀不完的,因为真理永远存在.<br1>记,闻一多',
   '我不要脸<br1>鲁迅',
   'power is force<br1>鲁迅',
-  '在大多数情况下,都是环境塑造了我们,只能经历过了独当一面,孤立无援,才真正拥有了自我.<br1>鲁迅'
+  '在大多数情况下,都是环境塑造了我们,<br>只有经历了孤立无援,独当一面,<br>才算真正拥有了自我.<br1>鲁迅'
 ];
 function getMingYan(){
   return mingyan[Math.floor(Math.random() * mingyan.length)];
