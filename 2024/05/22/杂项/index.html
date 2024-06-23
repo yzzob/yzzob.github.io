@@ -261,7 +261,7 @@
 
 	<a href="/2024/05/22/%E6%9D%82%E9%A1%B9/" itemprop="url">
 		<time datetime="2024-05-22T09:50:44.901Z" itemprop="dateUpdated">
-	  		2024-06-10
+	  		2024-06-19
 	  </time>
 	</a> 
 
@@ -317,7 +317,26 @@
 <h1><span id="burpsuit">burpsuit</span></h1><h2><span id="端口占用">端口占用</span></h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">netstat -aon | <span class="built_in">findstr</span> :<span class="number">8080</span></span><br><span class="line">  TCP    <span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>:<span class="number">8080</span>           <span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>:<span class="number">0</span>              LISTENING       <span class="number">11056</span></span><br><span class="line">tasklist | <span class="built_in">findstr</span> <span class="number">11056</span></span><br><span class="line">ApplicationWebServer.exe     <span class="number">11056</span> Services                   <span class="number">0</span>     <span class="number">19</span>,<span class="number">608</span> K</span><br></pre></td></tr></table></figure>
 
 <p>用任务栏管理器搜索ApplicationWebServer.exe,关闭即可</p>
-<h1><span id="python">python</span></h1><h2><span id="session和requests">session和requests</span></h2><p><code>requests</code>库是Python中用于发送HTTP请求的库，而<code>Session</code>对象是该库提供的一种高级功能。以下是两者的区别和用途：</p>
+<h1><span id="python">python</span></h1><h2><span id="re">re</span></h2><p>正则表达式 <code>&#39;&lt;[^&gt;]+&gt;&#39;</code> 用于匹配 HTML 标签。我们来逐步解释这个表达式的每个部分：</p>
+<p>**<code>&lt;</code>**：匹配 HTML 标签的开始符 <code>&lt;</code>。</p>
+<p>**<code>[^&gt;]+</code>**：匹配一个或多个不是 <code>&gt;</code> 的字符，也就是标签内容部分。</p>
+<p>**<code>&gt;</code>**：匹配 HTML 标签的结束符 <code>&gt;</code>。</p>
+<p>**<code>&lt;</code>**：</p>
+<ul>
+<li>这个符号直接匹配 HTML 标签的起始字符 <code>&lt;</code>。</li>
+</ul>
+<p>**<code>[^&gt;]+</code>**：</p>
+<ul>
+<li>**<code>[</code> 和 <code>]</code>**：表示字符集，也就是在方括号内定义的一组字符。字符集中包括的字符会被匹配。</li>
+<li>**<code>^</code>**：在字符集的开头，表示取反，即不包含字符集中的字符。</li>
+<li>**<code>&gt;</code>**：这是字符集中唯一的字符。因为 <code>^</code> 取反的作用，所以 <code>[^&gt;]</code> 表示匹配任何不是 <code>&gt;</code> 的字符。</li>
+<li>**<code>+</code>**：表示前面的字符（在这里是 <code>[^&gt;]</code>）至少出现一次，或多次。换句话说，匹配一个或多个不包含 <code>&gt;</code> 的字符。</li>
+</ul>
+<p>**<code>&gt;</code>**：</p>
+<ul>
+<li>这个符号直接匹配 HTML 标签的结束字符 <code>&gt;</code>。</li>
+</ul>
+<h2><span id="session和requests">session和requests</span></h2><p><code>requests</code>库是Python中用于发送HTTP请求的库，而<code>Session</code>对象是该库提供的一种高级功能。以下是两者的区别和用途：</p>
 <h3><span id="requests"><code>requests</code></span></h3><ul>
 <li><p><strong>功能</strong>：<code>requests</code>库的基础功能是发送HTTP请求，包括GET、POST、PUT、DELETE等请求。</p>
 </li>
@@ -565,6 +584,31 @@
 			
 					<li>
 						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/06/17/9_trash/" title="">
+											
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 17日, 2024				
+							</p>
+							<p class="relate-post-content">
+								简答题1. 数据库、数据库系统与数据库管理系统的区别和联系1区别:数据库是数据的集合,数据库管理系统是提供与数据库交互的接口,数据库系统是宝海了数据库,数据库管理系统及相关应用程序的整体
+
+数据库（Database）
+定义：数据库是一...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/06/17/9_trash/" title="">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2024/06/09/%E5%A4%A7%E4%BA%8C%E4%B8%8B%E6%9C%9F%E6%9C%AB/" title="大二下期末">
 								大二下期末			
 							</a>
@@ -573,7 +617,10 @@
 								六月 9日, 2024				
 							</p>
 							<p class="relate-post-content">
-								操作系统第一章12345678910111213141516171819202122232425262728293031323334351.在计算机系统中配置操作系统的主要目的是（A）。操作系统的主要功能是管理计算机系统中的（B），其...
+								数字电路作业题逻辑变量的取值,1比0大——–no:逻辑电路的取值不能进行比较
+存储容量为8K×8的ROM（只读存储器）中的”8K”和”8”分别代表了两个不同的属性：
+
+8K：这里的”K”代表千（kilo），所以8K表示8000。这意味...
 							</p>
 						</div>
 
@@ -786,35 +833,6 @@ Welcome to Hexo! This i...
 							<a href="/2024/05/22/draft/" title="draft">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="draft"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/05/22/different%20views/" title="different views">
-								different views			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								五月 22日, 2024				
-							</p>
-							<p class="relate-post-content">
-								1.题目分类2.所给内容MISC损坏的文件2.来自提瓦特的神秘文件.zip
-用010editor打开
-不全zip头:504B0304
-解压缩是奇怪的文字图片,
-根据题目可以翻译的到flag
-也可以保存下来用百度等浏览器扫扫看
-条形码
-...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/05/22/different%20views/" title="different views">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="different views"/>
 							</a>
 						</div>
 					</li>												

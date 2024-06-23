@@ -1,0 +1,1158 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+       | yzzob_blog
+    
+  </title>
+  <meta name="author" content="yzz">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/2024/06/17/9_trash/" itemprop="url">
+		<time datetime="2024-06-17T11:55:18.668Z" itemprop="dateUpdated">
+	  		2024-06-19
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<h2><span id="简答题">简答题</span></h2><h3><span id="1-数据库-数据库系统与数据库管理系统的区别和联系">1. 数据库、数据库系统与数据库管理系统的区别和联系</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">区别:数据库是数据的集合,数据库管理系统是提供与数据库交互的接口,数据库系统是宝海了数据库,数据库管理系统及相关应用程序的整体</span><br></pre></td></tr></table></figure>
+
+<h4><span id="数据库database">数据库（Database）</span></h4><ul>
+<li><strong>定义</strong>：数据库是一个有组织的数据集合，存储在计算机系统中，能够高效地存储、检索和管理数据。</li>
+<li><strong>例子</strong>：一个公司的人事数据库，包括员工的信息（姓名、年龄、职位等）。</li>
+</ul>
+<h4><span id="数据库管理系统dbmsdatabase-management-system">数据库管理系统（DBMS，Database Management System）</span></h4><ul>
+<li><strong>定义</strong>：数据库管理系统是用于创建、管理、操作和维护数据库的软件。它提供了与数据库交互的接口。</li>
+<li><strong>例子</strong>：Oracle、MySQL、Microsoft SQL Server等。</li>
+</ul>
+<h4><span id="数据库系统dbsdatabase-system">数据库系统（DBS，Database System）</span></h4><ul>
+<li><strong>定义</strong>：数据库系统是指包含数据库、数据库管理系统及相关应用程序的整体。</li>
+<li><strong>例子</strong>：一个公司的HR系统，包含员工数据库（数据）、用于操作该数据库的MySQL（DBMS），以及HR管理软件（应用程序）。</li>
+</ul>
+<h4><span id="联系">联系</span></h4><ul>
+<li><strong>数据库</strong>是<strong>数据库系统</strong>的核心部分，存储实际的数据。</li>
+<li><strong>数据库管理系统</strong>是管理和操作数据库的工具。</li>
+<li><strong>数据库系统</strong>是综合的体系，包括数据库、DBMS以及相关的应用程序和硬件支持。</li>
+</ul>
+<h3><span id="2-数据和程序的物理独立性和逻辑独立性">2. 数据和程序的物理独立性和逻辑独立性</span></h3><h4><span id="物理独立性physical-independence">物理独立性（Physical Independence）</span></h4><ul>
+<li><strong>定义</strong>：指用户和应用程序不需要了解数据的物理存储结构，即使数据的存储结构发生变化，也不影响应用程序。</li>
+<li><strong>例子</strong>：如果数据库管理员改变了数据存储的文件系统或存储设备，应用程序依旧可以正常运行。</li>
+</ul>
+<h4><span id="逻辑独立性logical-independence">逻辑独立性（Logical Independence）</span></h4><ul>
+<li><strong>定义</strong>：指用户和应用程序不需要了解数据的逻辑结构变化，即使数据的逻辑结构（如表的字段、视图等）发生变化，也不影响应用程序。</li>
+<li><strong>例子</strong>：如果数据库管理员增加一个新字段，现有的应用程序依旧可以使用，不受影响。</li>
+</ul>
+<h3><span id="3-数据库故障的种类及恢复步骤">3. 数据库故障的种类及恢复步骤</span></h3><h4><span id="数据库故障种类">数据库故障种类</span></h4><ol>
+<li><strong>事务故障</strong>：事务在执行过程中因错误或异常中断。</li>
+<li><strong>系统故障</strong>：系统硬件或软件故障导致数据库服务中断。</li>
+<li><strong>介质故障</strong>：存储介质（如磁盘）损坏导致数据丢失。</li>
+</ol>
+<h4><span id="恢复步骤">恢复步骤</span></h4><ol>
+<li><strong>事务故障恢复</strong><ul>
+<li><strong>步骤</strong>：回滚未完成的事务，恢复到事务开始前的状态。</li>
+<li><strong>工具</strong>：事务日志、回滚操作。</li>
+</ul>
+</li>
+<li><strong>系统故障恢复</strong><ul>
+<li><strong>步骤</strong>：重启系统，利用日志文件恢复未提交事务。</li>
+<li><strong>工具</strong>：检查点（Checkpoint）、日志文件。</li>
+</ul>
+</li>
+<li><strong>介质故障恢复</strong><ul>
+<li><strong>步骤</strong>：从备份文件中恢复数据库，然后利用日志文件恢复最近的事务。</li>
+<li><strong>工具</strong>：备份文件、日志文件。</li>
+</ul>
+</li>
+</ol>
+<h3><span id="4-事务的4个性质及其含义和必要性">4. 事务的4个性质及其含义和必要性</span></h3><ol>
+<li><p><strong>原子性（Atomicity）</strong></p>
+<ul>
+<li><strong>含义</strong>：事务中的所有操作要么全部成功，要么全部失败。</li>
+<li><strong>必要性</strong>：确保事务在错误情况下可以回滚，保持数据一致性。</li>
+</ul>
+</li>
+<li><p><strong>一致性（Consistency）</strong></p>
+<ul>
+<li><strong>含义</strong>：事务在执行前后，数据库必须保持一致的状态。</li>
+<li><strong>必要性</strong>：保证事务完成后，数据库的完整性约束和业务规则不被破坏。</li>
+</ul>
+</li>
+<li><p><strong>隔离性（Isolation）</strong></p>
+<ul>
+<li><strong>含义</strong>：多个并发事务互不干扰，中间状态对其他事务不可见。</li>
+<li><strong>必要性</strong>：确保事务在并发执行时不互相影响，避免脏读、幻读等问题。</li>
+</ul>
+</li>
+<li><p><strong>持久性（Durability）</strong></p>
+<ul>
+<li><strong>含义</strong>：事务完成后，其对数据库的更改是永久的，即使系统崩溃也不会丢失。</li>
+<li><strong>必要性</strong>：确保提交的事务不会丢失，保证数据的持久性。</li>
+</ul>
+</li>
+</ol>
+<h3><span id="5-登记日志文件的两条原则">5. 登记日志文件的两条原则</span></h3><ol>
+<li><p><strong>日志先行（Write-Ahead Logging）</strong></p>
+<ul>
+<li><strong>原则</strong>：在修改数据库之前，先将相关日志记录写入日志文件。</li>
+<li><strong>必要性</strong>：确保即使在故障发生时，也可以根据日志记录进行恢复。</li>
+</ul>
+</li>
+<li><p><strong>立即写入（Immediate Logging）</strong></p>
+<ul>
+<li><strong>原则</strong>：一旦事务操作完成，立即将日志记录写入稳定存储（如磁盘）。</li>
+<li><strong>必要性</strong>：确保日志记录及时持久化，防止系统崩溃后数据丢失。</li>
+</ul>
+</li>
+</ol>
+<h3><span id="6-数据库完整性与安全性区别">6. 数据库完整性与安全性区别</span></h3><h4><span id="完整性integrity">完整性（Integrity）</span></h4><ul>
+<li><strong>定义</strong>：完整性是指数据库中数据的准确性和一致性，包括实体完整性、参照完整性和域完整性。</li>
+<li><strong>保障方式</strong>：通过约束（如主键约束、外键约束、检查约束等）来保证数据的完整性。</li>
+</ul>
+<h4><span id="安全性security">安全性（Security）</span></h4><ul>
+<li><strong>定义</strong>：安全性是指保护数据库免受非法访问和恶意破坏，确保数据的保密性和完整性。</li>
+<li><strong>保障方式</strong>：通过用户认证、权限控制、加密等手段来保护数据的安全性。</li>
+</ul>
+<h3><span id="7-一级-二级-三级封锁协议及解决的数据不一致性问题">7. 一级、二级、三级封锁协议及解决的数据不一致性问题</span></h3><h4><span id="一级封锁协议level-1-read-uncommitted">一级封锁协议（Level 1: Read Uncommitted）</span></h4><ul>
+<li><strong>定义</strong>：事务可以读取未提交的数据。</li>
+<li><strong>问题</strong>：解决脏读问题，但仍存在不可重复读和幻读问题。</li>
+</ul>
+<h4><span id="二级封锁协议level-2-read-committed">二级封锁协议（Level 2: Read Committed）</span></h4><ul>
+<li><strong>定义</strong>：事务只能读取已提交的数据。</li>
+<li><strong>问题</strong>：解决脏读问题，但仍存在不可重复读和幻读问题。</li>
+</ul>
+<h4><span id="三级封锁协议level-3-repeatable-read">三级封锁协议（Level 3: Repeatable Read）</span></h4><ul>
+<li><strong>定义</strong>：事务在读取数据时，会锁住所读取的数据，直到事务结束。</li>
+<li><strong>问题</strong>：解决脏读和不可重复读问题，但仍可能存在幻读问题。</li>
+</ul>
+<h4><span id="序列化级别serializable">序列化级别（Serializable）</span></h4><ul>
+<li><strong>定义</strong>：事务完全隔离，事务在执行时不会看到其他事务的中间结果。</li>
+<li><strong>问题</strong>：解决脏读、不可重复读和幻读问题，确保数据一致性。</li>
+</ul>
+<h3><span id="总结">总结</span></h3><p>通过以上内容，可以清晰地了解关系数据库的重要概念、事务的ACID特性、故障类型及其恢复步骤、日志文件的原则、完整性与安全性的区别，以及不同封锁协议解决的数据不一致性问题。</p>
+<h3><span id="结合日志文件说明dbms系统是如何实现事务故障的恢复">结合日志文件说明DBMS系统是如何实现事务故障的恢复</span></h3><p>反向扫描日志文件，对该事务的每个动作进行回退操作，一直找到该事务的开始标 记为止。</p>
+<h3><span id="二级封锁协议与三级封锁协议的相同点与不同点">二级封锁协议与三级封锁协议的相同点与不同点</span></h3><p>相同点：一个事务在要写一个数据对象前，都需要加上X锁，到事务结束才释放；一 个事务在读一个数据对象前，都需要加上S锁，  不同点：二级封锁协议读完即可释放，三级要求到事务结束才释放S锁； </p>
+<h2><span id="并发控制">并发控制</span></h2><h4><span id="必要性">必要性</span></h4><p>并发控制是为了保证在多个事务同时访问数据库时，数据的一致性和完整性。由于多个用户可能同时对数据库进行读写操作，如果不进行并发控制，可能会导致数据不一致、丢失或破坏。</p>
+<h4><span id="并发操作可能引起的问题">并发操作可能引起的问题</span></h4><ol>
+<li><strong>丢失更新</strong>：两个事务同时更新同一数据，导致一个事务的更新被另一个事务覆盖。</li>
+<li><strong>不可重复读</strong>：一个事务在两次读取同一数据时，读到的数据不同，因为在两次读取期间，另一事务修改了数据。</li>
+<li><strong>脏读</strong>：一个事务读到了另一个未提交事务的修改数据。</li>
+<li><strong>幻读</strong>：一个事务在两次查询同一条件的数据集时，读到的结果集不同，因为在两次查询之间，另一事务插入或删除了数据。</li>
+</ol>
+<h4><span id="如何利用封锁解决这些问题3级封锁协议及能解决的问题种类">如何利用封锁解决这些问题（3级封锁协议及能解决的问题种类）</span></h4><h5><span id="三级封锁协议的定义">三级封锁协议的定义</span></h5><ol>
+<li><strong>一级封锁协议</strong>：事务在修改数据前必须先对其加排他锁，直到事务结束。解决了丢失更新问题。</li>
+<li><strong>二级封锁协议</strong>：事务在读取数据前必须对其加共享锁，读取数据后可以立即释放。事务在修改数据前必须对其加排他锁，直到事务结束。解决了丢失更新和脏读问题。</li>
+<li><strong>三级封锁协议</strong>：事务在读取数据前必须对其加共享锁，直到事务结束。事务在修改数据前必须对其加排他锁，直到事务结束。解决了丢失更新、脏读和不可重复读问题。</li>
+</ol>
+<h5><span id="封锁的联系和区别">封锁的联系和区别</span></h5><ul>
+<li>一级封锁协议只解决了丢失更新问题，而二级和三级封锁协议解决了更多的问题。</li>
+<li>二级封锁协议在读取后可以释放共享锁，而三级封锁协议则在事务结束前都保持锁，这使得三级封锁协议能够防止不可重复读和幻读问题。</li>
+</ul>
+<h4><span id="并发控制举例">并发控制举例</span></h4><p>假设有两个事务 T1T1T1 和 T2T2T2，它们同时对同一个数据项进行操作。 T1T1T1 读取数据项A，并在某个时刻修改它，而 T2T2T2 在 T1T1T1 修改之前也读取了数据项A，并在修改后提交。</p>
+<p>通过三级封锁协议：</p>
+<ul>
+<li>T1T1T1 在读取数据项A时对其加共享锁，直至事务结束。</li>
+<li>T2T2T2 尝试读取数据项A时，发现已经被共享锁定，必须等待直到 T1T1T1 结束。</li>
+<li>T1T1T1 修改数据项A时，加排他锁，完成操作并提交。</li>
+<li>T2T2T2 获取共享锁并读取最新的数据项A，避免脏读和不可重复读。</li>
+</ul>
+<h2><span id="数据库故障">数据库故障</span></h2><h4><span id="分类">分类</span></h4><ol>
+<li><strong>事务故障</strong>：由于事务逻辑错误或其他原因导致的事务中断。</li>
+<li><strong>系统故障</strong>：由于操作系统、数据库管理系统崩溃或其他硬件问题导致的数据库中断。</li>
+<li><strong>介质故障</strong>：由于磁盘损坏等原因导致的数据丢失。</li>
+</ol>
+<h4><span id="日志文件的作用">日志文件的作用</span></h4><ul>
+<li><strong>REDO日志</strong>：用于记录已提交事务的修改操作，以便在系统故障后进行重做，恢复数据。</li>
+<li><strong>UNDO日志</strong>：用于记录未提交事务的修改操作，以便在事务或系统故障后进行撤销，恢复数据到一致状态。</li>
+</ul>
+<h5><span id="日志文件登记的遵守2条原则">日志文件登记的遵守2条原则</span></h5><ol>
+<li><strong>先写日志原则（Write-Ahead Logging, WAL）</strong>：在对数据库进行任何修改之前，必须先将相应的日志记录写入磁盘。</li>
+<li><strong>立即写日志原则</strong>：事务的每一步操作都必须立即记录在日志中。</li>
+</ol>
+<h4><span id="故障恢复步骤">故障恢复步骤</span></h4><ol>
+<li><strong>事务故障</strong>：<ul>
+<li>撤销（UNDO）该事务的所有操作，使数据库恢复到事务开始前的状态。</li>
+<li>重新执行（REDO）已提交事务的操作。</li>
+</ul>
+</li>
+<li><strong>系统故障</strong>：<ul>
+<li>检查日志文件，找出未提交的事务并撤销（UNDO）它们的操作。</li>
+<li>重做（REDO）已提交事务的操作，确保所有已提交的事务都持久化到数据库中。</li>
+</ul>
+</li>
+<li><strong>介质故障</strong>：<ul>
+<li>从备份中恢复数据库。</li>
+<li>使用日志文件重做（REDO）所有已提交的事务，以确保数据库恢复到最近一次提交的状态。</li>
+</ul>
+</li>
+</ol>
+<h4><span id="故障恢复举例">故障恢复举例</span></h4><p>假设有两个事务 T1T1T1 和 T2T2T2，在系统崩溃前 T1T1T1 已提交，而 T2T2T2 尚未提交。恢复步骤：</p>
+<ol>
+<li>检查日志，发现 T1T1T1 已提交， T2T2T2 未提交。</li>
+<li>重做 T1T1T1 的操作，确保其修改应用到数据库中。</li>
+<li>撤销 T2T2T2 的操作，恢复到事务开始前的状态。</li>
+</ol>
+<h3><span id="ppt总结">ppt总结:</span></h3><h4><span id="82-故障分类">8.2 故障分类</span></h4><ul>
+<li><strong>事务故障</strong>：分为可以预期的事务故障和非预期的事务故障。可以预期的事务故障如存款透支，非预期的如数据错误或死锁等。</li>
+<li><strong>系统故障</strong>：可能导致未完成的事务结果写入数据库，或已提交事务的更改未写回磁盘。</li>
+<li><strong>介质故障</strong>：通常需要重新装入转储的后备副本到新的磁盘，并结合日志文件进行REDO处理。</li>
+</ul>
+<h4><span id="83-恢复的实现技术">8.3 恢复的实现技术</span></h4><ul>
+<li><strong>日志文件的作用</strong>：用于事务故障恢复和系统故障恢复，记录事务的所有变更，保证数据库的可恢复性。</li>
+<li><strong>REDO（重做）</strong>：对已提交但未写入磁盘的事务操作进行重做，以恢复数据库到故障前的状态。</li>
+<li><strong>UNDO（撤销）</strong>：对未提交的事务操作进行撤销，恢复数据库到一致状态。</li>
+</ul>
+<h4><span id="84-恢复策略">8.4 恢复策略</span></h4><ul>
+<li><strong>事务故障恢复步骤</strong>：扫描日志，找到故障事务并撤销所有更新操作，释放资源。</li>
+<li><strong>系统故障恢复步骤</strong>：重启系统，使用日志文件对已提交事务进行REDO，对未提交事务进行UNDO。</li>
+<li><strong>介质故障恢复步骤</strong>：修复或更换磁盘系统，装入最近的数据库后备副本和日志副本，进行REDO处理。</li>
+</ul>
+<h4><span id="85-具有检查点的恢复技术">8.5 具有检查点的恢复技术</span></h4><ul>
+<li>引入检查点机制以减少恢复时间，只考虑最近检查点前的事务。</li>
+</ul>
+<h2><span id="概念题汇总">概念题汇总</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">6、事务概念：ACID特性含义、举例(原一隔持)</span><br><span class="line">7、并发控制：必要性、并发操作可能引起的问题、如何利用封锁解决这几类问题（3级封锁协议及能解决的问题种类）、3级封锁协议的定义、联系和区别</span><br><span class="line">8、数据库故障：</span><br><span class="line">分类：事务故障、系统故障、介质故障</span><br><span class="line">日志文件的作用：redo\uodo含义；日志文件登记的遵守2条原则</span><br><span class="line">故障恢复步骤：事务故障、系统故障、介质故障</span><br></pre></td></tr></table></figure>
+
+<h3><span id="6-事务概念acid特性含义-举例原一隔持">6、事务概念：ACID特性含义、举例(原一隔持)</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">6、事务概念：ACID特性含义、举例(原一隔持)</span><br><span class="line">1. **原子性（Atomicity）**</span><br><span class="line">   - **含义**：事务中的所有操作要么全部完成，要么全部不完成。事务的任何部分的失败都会导致整个事务的失败，并且数据库会回滚到事务开始前的状态。</span><br><span class="line">   - **举例**：银行转账操作，假设从账户A转账100元到账户B。这个事务包含两个操作：从账户A中扣除100元，以及在账户B中增加100元。原子性保证了要么两个操作都成功，要么都失败。如果在扣除账户A的100元后发生错误，则事务回滚，账户A的100元会恢复。</span><br><span class="line">   - 银行转账,a给b100元,包含了,a-100,b+100,原子性保证了,若a-100发生错误,则事务回滚,a+100</span><br><span class="line"></span><br><span class="line">2. **一致性（Consistency）**</span><br><span class="line">   - **含义**：事务开始前和结束后，数据库必须处于一致的状态。事务完成后，所有数据的状态必须符合数据库的所有约束条件。</span><br><span class="line">   - **举例**：在银行转账操作中，假设账户A和账户B的初始总余额是1000元。一致性保证在事务完成后，无论转账发生了什么，总余额仍然是1000元。</span><br><span class="line"></span><br><span class="line">3. **隔离性（Isolation）**</span><br><span class="line">   - **含义**：多个并发事务互不干扰，事务的执行效果不受其他事务的影响。事务的中间状态对其他事务不可见。</span><br><span class="line">   - **举例**：在并发执行的情况下，如果事务T1正在执行A转账给B操作，而事务T2也想访问账户A或B，隔离性保证了T2不会看到部分完成的转账操作，从而避免了数据不一致的问题。</span><br><span class="line"></span><br><span class="line">4. **持久性（Durability）**</span><br><span class="line">   - **含义**：一旦事务完成（提交），其对数据库的所有更改都将被永久保存，即使系统故障也不会丢失。</span><br><span class="line">   - **举例**：在银行转账操作中，一旦事务提交，从账户A扣除100元并增加到账户B的操作是持久的，即使之后系统崩溃或断电，这些更改也不会丢失。</span><br><span class="line">   </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3><span id="7-并发控制必要性-并发操作可能引起的问题">7、并发控制：必要性、并发操作可能引起的问题、</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#### 必要性</span><br><span class="line"></span><br><span class="line">并发控制是为了保证在多个事务同时访问数据库时，数据的一致性和完整性。由于多个用户可能同时对数据库进行读写操作，如果不进行并发控制，可能会导致数据不一致、丢失或破坏。</span><br><span class="line"></span><br><span class="line">#### 并发操作可能引起的问题</span><br><span class="line"></span><br><span class="line">1. **丢失更新**：两个事务同时更新同一数据，导致一个事务的更新被另一个事务覆盖。</span><br><span class="line">2. **不可重复读**：一个事务在两次读取同一数据时，读到的数据不同，因为在两次读取期间，另一事务修改了数据。</span><br><span class="line">3. **脏读**：一个事务读到了另一个未提交事务的修改数据。</span><br><span class="line">4. **幻读**：一个事务在两次查询同一条件的数据集时，读到的结果集不同，因为在两次查询之间，另一事务插入或删除了数据。</span><br></pre></td></tr></table></figure>
+
+<h3><span id="如何利用封锁解决这几类问题3级封锁协议及能解决的问题种类">如何利用封锁解决这几类问题（3级封锁协议及能解决的问题种类）</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">封锁（Locking）是解决并发控制问题的主要机制，通过锁定数据项来控制事务的并发执行，确保数据的一致性和完整性。封锁协议规定了事务在执行过程中如何申请、持有和释放锁。</span><br><span class="line"></span><br><span class="line">1. 封锁的类型</span><br><span class="line">共享锁（S锁，Shared Lock）：允许多个事务读取数据，但不允许修改数据。</span><br><span class="line">排他锁（X锁，Exclusive Lock）：只允许一个事务读取和修改数据，其他事务不能同时读或写。</span><br><span class="line">2. 封锁的级别</span><br><span class="line">三级封锁协议：不同级别的封锁协议可以解决不同种类的并发问题。</span><br><span class="line">一级封锁协议（1PL）：禁止脏写。</span><br><span class="line"></span><br><span class="line">规则：事务T必须在修改数据R之前对其加X锁，直到事务结束才释放。</span><br><span class="line">能解决的问题：丢失更新。</span><br><span class="line">二级封锁协议（2PL）：禁止脏读。</span><br><span class="line"></span><br><span class="line">规则：事务T必须在读取数据R之前对其加S锁，在修改数据R之前加X锁，直到事务结束才释放X锁。</span><br><span class="line">能解决的问题：丢失更新、脏读。</span><br><span class="line">三级封锁协议（3PL）：禁止不可重复读。</span><br><span class="line"></span><br><span class="line">规则：事务T必须在读取数据R之前对其加S锁，在修改数据R之前加X锁，直到事务结束才释放所有锁。</span><br><span class="line">能解决的问题：丢失更新、脏读、不可重复读。</span><br><span class="line">3. 三级封锁协议能够解决的问题种类</span><br><span class="line">丢失更新（Lost Update）：通过在修改数据前加X锁，确保只有一个事务能修改数据，避免了更新丢失。</span><br><span class="line">脏读（Dirty Read）：通过在读取数据前加S锁，确保事务只能读取已提交的数据，避免了读取未提交的数据。</span><br><span class="line">不可重复读（Non-repeatable Read）：通过在读取数据前加S锁，保证读取的数据在事务结束前不会被其他事务修改。</span><br><span class="line">幻读（Phantom Read）：三级封锁协议本身不能完全解决幻读问题，通常需要使用更高级的并发控制机制如多版本并发控制（MVCC）或额外的范围锁。</span><br></pre></td></tr></table></figure>
+
+<p>3级封锁协议的定义、联系和区别</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">##### 三级封锁协议的定义</span><br><span class="line"></span><br><span class="line">1. **一级封锁协议**：事务在修改数据前必须先对其加排他锁，直到事务结束。解决了丢失更新问题。</span><br><span class="line">2. **二级封锁协议**：事务在读取数据前必须对其加共享锁，读取数据后可以立即释放。事务在修改数据前必须对其加排他锁，直到事务结束。解决了丢失更新和脏读问题。</span><br><span class="line">3. **三级封锁协议**：事务在读取数据前必须对其加共享锁，直到事务结束。事务在修改数据前必须对其加排他锁，直到事务结束。解决了丢失更新、脏读和不可重复读问题。</span><br><span class="line"></span><br><span class="line">##### 封锁的联系和区别</span><br><span class="line"></span><br><span class="line">- 一级封锁协议只解决了丢失更新问题，而二级和三级封锁协议解决了更多的问题。</span><br><span class="line">- 二级封锁协议在读取后可以释放共享锁，而三级封锁协议则在事务结束前都保持锁，这使得三级封锁协议能够防止不可重复读和幻读问题。</span><br></pre></td></tr></table></figure>
+
+<h3><span id="8-数据库故障">8、数据库故障：</span></h3><p>分类：事务故障、系统故障、介质故障</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">## 数据库故障</span><br><span class="line">#### 分类</span><br><span class="line">1. **事务故障**：由于事务逻辑错误或其他原因导致的事务中断。</span><br><span class="line">2. **系统故障**：由于操作系统、数据库管理系统崩溃或其他硬件问题导致的数据库中断。</span><br><span class="line">3. **介质故障**：由于磁盘损坏等原因导致的数据丢失。</span><br></pre></td></tr></table></figure>
+
+<h3><span id="日志文件的作用redouodo含义日志文件登记的遵守2条原则">日志文件的作用：redo\uodo含义；日志文件登记的遵守2条原则</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#### 日志文件的作用</span><br><span class="line"></span><br><span class="line">- **REDO日志**：用于记录已提交事务的修改操作，以便在系统故障后进行重做，恢复数据。</span><br><span class="line">- **UNDO日志**：用于记录未提交事务的修改操作，以便在事务或系统故障后进行撤销，恢复数据到一致状态。</span><br><span class="line"></span><br><span class="line">##### 日志文件登记的遵守2条原则</span><br><span class="line"></span><br><span class="line">1. **先写日志原则（Write-Ahead Logging, WAL）**：在对数据库进行任何修改之前，必须先将相应的日志记录写入磁盘。</span><br><span class="line">2. **立即写日志原则**：事务的每一步操作都必须立即记录在日志中。</span><br></pre></td></tr></table></figure>
+
+<h3><span id="故障恢复步骤事务故障-系统故障-介质故障">故障恢复步骤：事务故障、系统故障、介质故障</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#### 故障恢复步骤</span><br><span class="line">1. **事务故障**：</span><br><span class="line">   - 撤销（UNDO）该事务的所有操作，使数据库恢复到事务开始前的状态。</span><br><span class="line">   - 重新执行（REDO）已提交事务的操作。</span><br><span class="line">2. **系统故障**：</span><br><span class="line">   - 检查日志文件，找出未提交的事务并撤销（UNDO）它们的操作。</span><br><span class="line">   - 重做（REDO）已提交事务的操作，确保所有已提交的事务都持久化到数据库中。</span><br><span class="line">3. **介质故障**：</span><br><span class="line">   - 从备份中恢复数据库。</span><br><span class="line">   - 使用日志文件重做（REDO）所有已提交的事务，以确保数据库恢复到最近一次提交的状态。</span><br><span class="line"></span><br><span class="line">#### 故障恢复举例</span><br><span class="line"></span><br><span class="line">假设有两个事务 T1T1T1 和 T2T2T2，在系统崩溃前 T1T1T1 已提交，而 T2T2T2 尚未提交。恢复步骤：</span><br><span class="line"></span><br><span class="line">1. 检查日志，发现 T1T1T1 已提交， T2T2T2 未提交。</span><br><span class="line">2. 重做 T1T1T1 的操作，确保其修改应用到数据库中。</span><br><span class="line">3. 撤销 T2T2T2 的操作，恢复到事务开始前的状态。</span><br></pre></td></tr></table></figure>
+
+<h2><span id="事务概念acid特性含义-举例">事务概念：ACID特性含义、举例</span></h2><h4><span id="事务transaction">事务（Transaction）</span></h4><p>事务是一个或多个操作的集合，这些操作作为一个单一的逻辑单元执行。在数据库中，事务保证了数据的完整性和一致性。事务具有以下ACID特性：</p>
+<h4><span id="acid特性">ACID特性</span></h4><ol>
+<li><p><strong>原子性（Atomicity）</strong></p>
+<ul>
+<li><strong>含义</strong>：事务中的所有操作要么全部完成，要么全部不完成。事务的任何部分的失败都会导致整个事务的失败，并且数据库会回滚到事务开始前的状态。</li>
+<li><strong>举例</strong>：银行转账操作，假设从账户A转账100元到账户B。这个事务包含两个操作：从账户A中扣除100元，以及在账户B中增加100元。原子性保证了要么两个操作都成功，要么都失败。如果在扣除账户A的100元后发生错误，则事务回滚，账户A的100元会恢复。</li>
+<li>银行转账,a给b100元,包含了,a-100,b+100,原子性保证了,若a-100发生错误,则事务回滚,a+100</li>
+</ul>
+</li>
+<li><p><strong>一致性（Consistency）</strong></p>
+<ul>
+<li><strong>含义</strong>：事务开始前和结束后，数据库必须处于一致的状态。事务完成后，所有数据的状态必须符合数据库的所有约束条件。</li>
+<li><strong>举例</strong>：在银行转账操作中，假设账户A和账户B的初始总余额是1000元。一致性保证在事务完成后，无论转账发生了什么，总余额仍然是1000元。</li>
+</ul>
+</li>
+<li><p><strong>隔离性（Isolation）</strong></p>
+<ul>
+<li><strong>含义</strong>：多个并发事务互不干扰，事务的执行效果不受其他事务的影响。事务的中间状态对其他事务不可见。</li>
+<li><strong>举例</strong>：在并发执行的情况下，如果事务T1正在执行A转账给B操作，而事务T2也想访问账户A或B，隔离性保证了T2不会看到部分完成的转账操作，从而避免了数据不一致的问题。</li>
+</ul>
+</li>
+<li><p><strong>持久性（Durability）</strong></p>
+<ul>
+<li><strong>含义</strong>：一旦事务完成（提交），其对数据库的所有更改都将被永久保存，即使系统故障也不会丢失。</li>
+<li><strong>举例</strong>：在银行转账操作中，一旦事务提交，从账户A扣除100元并增加到账户B的操作是持久的，即使之后系统崩溃或断电，这些更改也不会丢失。</li>
+</ul>
+</li>
+</ol>
+<h3><span id="举例说明">举例说明</span></h3><h4><span id="举例银行转账操作">举例：银行转账操作</span></h4><p>假设我们有一个银行系统，其中包含以下两个账户：</p>
+<ul>
+<li>账户A：余额500元</li>
+<li>账户B：余额300元</li>
+</ul>
+<p>我们进行一次转账操作，从账户A转账100元到账户B。这一操作可以表示为一个事务，具有以下步骤：</p>
+<ol>
+<li>从账户A扣除100元。</li>
+<li>向账户B增加100元。</li>
+</ol>
+<h4><span id="acid特性在此事务中的应用">ACID特性在此事务中的应用</span></h4><ol>
+<li><p><strong>原子性</strong></p>
+<ul>
+<li>如果在执行过程中，扣除账户A的100元成功，但增加账户B的100元失败，系统会回滚事务，账户A的100元会恢复。确保整个转账操作要么完全成功，要么完全失败。</li>
+</ul>
+</li>
+<li><p><strong>一致性</strong></p>
+<ul>
+<li>转账前：账户A余额500元，账户B余额300元，总余额800元。</li>
+<li>转账后：账户A余额400元，账户B余额400元，总余额800元。事务前后，总余额不变，保持一致性。</li>
+</ul>
+</li>
+<li><p><strong>隔离性</strong></p>
+<ul>
+<li>在转账操作进行时，其他任何读取账户A或账户B余额的事务，都不会看到中间状态（例如，账户A余额已扣除100元，但账户B余额尚未增加100元）。只有在转账事务提交后，其他事务才会看到账户A和账户B的最终状态。</li>
+</ul>
+</li>
+<li><p><strong>持久性</strong></p>
+<ul>
+<li>一旦转账操作成功并提交，即使系统随后崩溃或断电，账户A的余额变为400元，账户B的余额变为400元的结果也将被永久保存，不会丢失。</li>
+</ul>
+</li>
+</ol>
+<p>通过上述示例，可以清晰地理解ACID特性在事务中的具体应用和重要性。</p>
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+		
+			<a href="/2024/06/09/%E5%A4%A7%E4%BA%8C%E4%B8%8B%E6%9C%9F%E6%9C%AB/" title="大二下期末" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/06/09/%E5%A4%A7%E4%BA%8C%E4%B8%8B%E6%9C%9F%E6%9C%AB/" title="大二下期末">
+								大二下期末			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 9日, 2024				
+							</p>
+							<p class="relate-post-content">
+								数字电路作业题逻辑变量的取值,1比0大——–no:逻辑电路的取值不能进行比较
+存储容量为8K×8的ROM（只读存储器）中的”8K”和”8”分别代表了两个不同的属性：
+
+8K：这里的”K”代表千（kilo），所以8K表示8000。这意味...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/06/09/%E5%A4%A7%E4%BA%8C%E4%B8%8B%E6%9C%9F%E6%9C%AB/" title="大二下期末">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大二下期末"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/%E6%9D%82%E8%A8%80/" title="杂言">
+								杂言			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+  46dd145f76e505a9a6c269068bf920ad40b558a3340574b16606fabf2fd2f4d0fcc53141661e2222cc25e406d10dba105ca71d0b93f79fbf26...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/%E6%9D%82%E8%A8%80/" title="杂言">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂言"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/%E6%9D%82%E9%A1%B9/" title="杂项">
+								杂项			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1.问题方向 2.问题分类todolist123456789101112131415161.木马//2.pyhton&#x27;s sql//3.java&#x27;s sql//4.ocr --  tesseract ocr5.sk...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/%E6%9D%82%E9%A1%B9/" title="杂项">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂项"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/zjnu_write_up/" title="zjnu_write_up">
+								zjnu_write_up			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1.比赛名 2.题目类别 3.题目名称 4.知识点关键词 5.知识点细节12https://ctf.a1natas.com/games/14/scoreboardhttps://ctf.a1natas.com/games/12/sco...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/zjnu_write_up/" title="zjnu_write_up">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="zjnu_write_up"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/RSA/" title="CRYPTO">
+								CRYPTO			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								RSAinverse(e, a)概念版:
+公钥的获取
+123456def get_D(e,phi):    i=1    while True:    	i = i + 1        if (e*i) % p == 1:     ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/RSA/" title="CRYPTO">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="CRYPTO"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/pwn/" title="pwn">
+								pwn			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								pwn参考链接1https://blog.csdn.net/weixin_45004513/article/details/117332121
+
+简易快速入门12345678910111213141516导入Pwntoolsfrom ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/pwn/" title="pwn">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="pwn"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/NKCTF2024/" title="NKCTF">
+								NKCTF			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+1.题目类别 2.题目名称MISCWebshell_pro1
+CRYPTOPWN来签个到1
+WEBREVERSElogin_system1
+VM？VM！1
+1VM虚拟机，我们喜欢你，我们喜欢vmware，QEMU，还有Hyper-V...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/NKCTF2024/" title="NKCTF">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="NKCTF"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/hexo/" title="hexo">
+								hexo			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								小记标题格式1title:%20(标题)
+
+目录设置1&lt;!-- toc --&gt;
+
+安装插件在D:\10_yzzob_web_again下打开git bash here
+1npm install hexo-toc --sav...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/hexo/" title="hexo">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="hexo"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+
+
+Quick Start
+Create a new post
+Run server
+Generate static files
+Deploy to remote sites
+
+
+
+
+
+Welcome to Hexo! This i...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/draft/" title="draft">
+								draft			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+  46dd145f76e505a9a6c269068bf920add17329ee7b381137cf8d07d2b9c90cbbf197cd240bb5a7eeb75a5d288900ed1b4fbc3474eda54c4290...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/draft/" title="draft">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="draft"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2024, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('<br1>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>
