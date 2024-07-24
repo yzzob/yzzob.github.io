@@ -1,0 +1,987 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+       | yzzob_blog
+    
+  </title>
+  <meta name="author" content="yzz">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/2024/07/06/%E5%A4%A7%E4%BA%8C%E6%9A%91%E5%81%87/" itemprop="url">
+		<time datetime="2024-07-06T02:52:49.137Z" itemprop="dateUpdated">
+	  		2024-07-23
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">titile: 暑假</span><br></pre></td></tr></table></figure>
+
+<h2><span id="easy-to-explain">easy to explain</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DNS:DNS translates domain names to IP addresses</span><br><span class="line">np:Node Package Manager</span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="set">set</span></h1><p>[171, 172, 181]表示有顺序</p>
+<p>{171, 172, 181}没有顺序</p>
+<p>a &#x3D; [1,2,3]</p>
+<p>a.pop() &#x3D; 3</p>
+<p>for aa in a:</p>
+<p>​	print(aa)</p>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p><code>a = set(a)</code> 和 <code>a = list(set(a))</code> 之间的主要区别在于它们最终产生的数据类型和用途：</p>
+<ol>
+<li><p><strong><code>a = set(a)</code></strong>:</p>
+<ul>
+<li>将列表 <code>a</code> 转换为集合 <code>set</code>。</li>
+<li>集合中的元素是唯一的，重复的元素会被移除。</li>
+<li>转换后的 <code>a</code> 是一个集合，不是列表。</li>
+<li>集合是无序的，因此转换后的顺序不一定与原列表顺序相同。</li>
+</ul>
+<p>示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">171</span>, <span class="number">172</span>, <span class="number">172</span>, <span class="number">181</span>]</span><br><span class="line">a = <span class="built_in">set</span>(a)</span><br><span class="line"><span class="built_in">print</span>(a)  <span class="comment"># 输出: &#123;171, 172, 181&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>a = list(set(a))</code></strong>:</p>
+<ul>
+<li>首先将列表 <code>a</code> 转换为集合 <code>set</code>，以移除重复元素。</li>
+<li>然后将这个集合转换回列表 <code>list</code>。</li>
+<li>转换后的 <code>a</code> 是一个列表。</li>
+<li>列表是有序的，但由于集合是无序的，转换后的列表顺序不一定与原列表顺序相同。</li>
+</ul>
+<p>示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">171</span>, <span class="number">172</span>, <span class="number">172</span>, <span class="number">181</span>]</span><br><span class="line">a = <span class="built_in">list</span>(<span class="built_in">set</span>(a))</span><br><span class="line"><span class="built_in">print</span>(a)  <span class="comment"># 输出: [171, 172, 181]（顺序可能不同）</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2><span id="总结">总结</span></h2><ul>
+<li>使用 <code>a = set(a)</code> 时，<code>a</code> 将变成一个集合，且集合中没有重复元素，但顺序无关。</li>
+<li>使用 <code>a = list(set(a))</code> 时，<code>a</code> 将最终变成一个列表，列表中没有重复元素，但顺序可能与原列表不同。</li>
+</ul>
+<p>如果你需要最终的结果仍然是列表，并且不在乎顺序，那么使用 <code>a = list(set(a))</code> 是更合适的。如果你需要 <code>a</code> 是集合，或者后续操作需要集合类型，那么使用 <code>a = set(a)</code> 就可以了。</p>
+<h1><span id="utf-8">utf-8</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">UTF-8（8-bit Unicode Transformation Format）是一种用于将Unicode字符编码为字节序列的字符编码方式。它的特点是能够兼容ASCII编码，同时又能表示Unicode标准中的所有字符。UTF-8编码方式有以下几个特点：</span><br><span class="line"></span><br><span class="line">兼容性：UTF-8与ASCII编码兼容，ASCII编码范围（0-127）的字符在UTF-8中仍然使用一个字节表示，与ASCII编码完全相同。</span><br><span class="line">可变长度：UTF-8使用1到4个字节表示一个字符，根据字符的不同选择合适的字节数。例如，常用的英文字符只需要1个字节，而中文字符通常需要3个字节。</span><br><span class="line">无BOM（Byte Order Mark）：UTF-8没有字节序问题，因为它是按字节存储的，字节序是唯一的，不需要BOM来指示字节序。</span><br><span class="line">自同步：UTF-8编码具有自同步特性，这意味着在解码时可以轻易找到字符的边界，即使在中间插入或删除字节，也不会影响解码。</span><br><span class="line"></span><br><span class="line">text = &quot;你好&quot;</span><br><span class="line">utf8_encoded = text.encode(&#x27;utf-8&#x27;)</span><br><span class="line">print(utf8_encoded)  </span><br><span class="line"># 输出：b&#x27;\xe4\xbd\xa0\xe5\xa5\xbd&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>ASCII编码仍是原内容,中文不是</p>
+<h1><span id="google搜索">google搜索</span></h1><p>与 <code>数据结构 试卷</code> 或者 <code>数据结构+试卷</code></p>
+<p>或 <code>关键词1 OR 关键词2</code> 或 <code>关键词1 | 关键词2</code></p>
+<p>非 <code>数据结构试卷 -考试大纲</code></p>
+<p>精确匹配：<code>&quot; &quot;</code></p>
+<p>site <code>数据结构试卷 site:.edu</code>或 <code>数据结构试卷 site:https://blog.csdn.net</code><br>filetype <code>数据结构试卷 filetype:pdf</code></p>
+<h1><span id="md语法">md语法</span></h1><h2><span id="强调">强调</span></h2><h3><span id="粗体"><strong>粗体</strong></span></h3><p><code>**haha**</code></p>
+<p><code>__haha__</code></p>
+<h3><span id="斜体"><em>斜体</em></span></h3><p><code>*haha*</code></p>
+<h2><span id="引用">引用</span></h2><blockquote>
+<p>haha</p>
+</blockquote>
+<blockquote>
+<p>haha</p>
+<blockquote>
+<p>hah</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<h4><span id="the-quarterly-results-look-great">The quarterly results look great!</span></h4><ul>
+<li>Revenue was off the chart.</li>
+<li>Profits were higher than ever.</li>
+</ul>
+<p> <em>Everything</em> is going according to <strong>plan</strong>.</p>
+</blockquote>
+<p><code>- hello</code></p>
+<h2><span id="代码"><code>代码</code></span></h2><p><code>hello</code></p>
+<h1><span id="windows快捷操作">windows快捷操作</span></h1><p>alt+tab窗口切换，左窗口往右切换，</p>
+<p>alt+shift+tab，右窗口往左切换。</p>
+<p>win+tab 窗口切换，后窗口往前切换，</p>
+<p>win +shift+tab，前窗口往后切换。</p>
+<h1><span id="csharpy">csharpy</span></h1><p>为 <code>sys.argv</code> 包含脚本的文件名作为第一个元素，所以参数总数是 6</p>
+<h1><span id="python">python</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.w3schools.com/python</span><br></pre></td></tr></table></figure>
+
+<h2><span id="python-lambda">Python Lambda</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def myfunc(n):</span><br><span class="line">  return lambda a : a * n</span><br><span class="line"></span><br><span class="line">mytripler = myfunc(3)</span><br><span class="line"></span><br><span class="line">print(mytripler(11))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">33</span><br></pre></td></tr></table></figure>
+
+<h2><span id="class">class</span></h2><p>The <code>self</code> parameter is a reference to the current instance of the class, and is used to access variables that belong to the class.</p>
+<h2><span id="raise-exception">raise Exception</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = &quot;hello&quot;</span><br><span class="line"></span><br><span class="line">if not type(x) is int:</span><br><span class="line">  raise TypeError(&quot;Only integers are allowed&quot;)</span><br></pre></td></tr></table></figure>
+
+<h2><span id="配置编译器">配置编译器</span></h2><p>ctrl+shift+p</p>
+<h2><span id="py_web">py_web</span></h2><h3><span id="flask">flask</span></h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PS D:\yzzob\Desktop\python_web_learner&gt; set FLASK_APP=app.py</span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt; python -m flask run</span></span><br><span class="line"> * Debug mode: off</span><br><span class="line">WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.</span><br><span class="line"> * Running on http://127.0.0.1:5000</span><br><span class="line">Press CTRL+C to quit</span><br><span class="line">127.0.0.1 - - [21/Jul/2024 10:51:22] &quot;GET / HTTP/1.1&quot; 200 -</span><br><span class="line">127.0.0.1 - - [21/Jul/2024 10:51:22] &quot;GET /favicon.ico HTTP/1.1&quot; 404 -</span><br></pre></td></tr></table></figure>
+
+<h1><span id="vuejs">vue.js</span></h1><h2><span id="dom">dom</span></h2><p>html是静态的各个元素的集合，JavaScript提供动态的能力，但是又没有直接操纵html的能力。所以需要引入DOM这个模型去做一个桥梁，让JS能操做html的静态元素。</p>
+<h2><span id="练习题">练习题</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line">5-0</span><br><span class="line">&lt;script setup&gt;</span><br><span class="line">import &#123; ref &#125; from &#x27;vue&#x27;</span><br><span class="line"></span><br><span class="line">const text = ref(&#x27;&#x27;)</span><br><span class="line"></span><br><span class="line">function onInput(e) &#123;</span><br><span class="line">  text.value = e.target.value</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;input :value=&quot;text&quot; @input=&quot;onInput&quot; placeholder=&quot;Type here&quot;&gt;</span><br><span class="line">  &lt;p&gt;&#123;&#123; text &#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">5-1</span><br><span class="line">&lt;script setup&gt;</span><br><span class="line">import &#123; ref &#125; from &#x27;vue&#x27;</span><br><span class="line"></span><br><span class="line">const text = ref(&#x27;&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;input v-model=&quot;text&quot; placeholder=&quot;Type here&quot;&gt;</span><br><span class="line">  &lt;p&gt;&#123;&#123; text &#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script setup&gt;</span><br><span class="line">import &#123; ref &#125; from &#x27;vue&#x27;</span><br><span class="line"></span><br><span class="line">const awesome = ref(true)</span><br><span class="line"></span><br><span class="line">function toggle() &#123;</span><br><span class="line">  awesome.value = !awesome.value</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">6-1</span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;button @click=&quot;toggle&quot;&gt;Toggle&lt;/button&gt;</span><br><span class="line">  &lt;h1 v-if=&quot;awesome&quot;&gt;Vue is awesome!&lt;/h1&gt;</span><br><span class="line">  &lt;h1 v-else&gt;Oh no 😢&lt;/h1&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">7.1</span><br><span class="line">&lt;script setup&gt;</span><br><span class="line">import &#123; ref &#125; from &#x27;vue&#x27;</span><br><span class="line"></span><br><span class="line">// 给每个 todo 对象一个唯一的 id</span><br><span class="line">let id = 0</span><br><span class="line"></span><br><span class="line">const newTodo = ref(&#x27;&#x27;)</span><br><span class="line">const todos = ref([</span><br><span class="line">  &#123; id: id++, text: &#x27;Learn HTML&#x27; &#125;,</span><br><span class="line">  &#123; id: id++, text: &#x27;Learn JavaScript&#x27; &#125;,</span><br><span class="line">  &#123; id: id++, text: &#x27;Learn Vue&#x27; &#125;</span><br><span class="line">])</span><br><span class="line"></span><br><span class="line">function addTodo() &#123;</span><br><span class="line">  todos.value.push(&#123;id:id++, text:newTodo.value&#125;)</span><br><span class="line">  newTodo.value=&#x27;&#x27;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function removeTodo(todo) &#123;</span><br><span class="line">  todos.value = todos.value.filter((t) =&gt; t !== todo)</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;form @submit.prevent=&quot;addTodo&quot;&gt;</span><br><span class="line">    &lt;input v-model=&quot;newTodo&quot; required placeholder=&quot;new todo&quot;&gt;</span><br><span class="line">    &lt;button&gt;Add Todo&lt;/button&gt;</span><br><span class="line">  &lt;/form&gt;</span><br><span class="line">  &lt;ul&gt;</span><br><span class="line">    &lt;li v-for=&quot;todo in todos&quot; :key=&quot;todo.id&quot;&gt;</span><br><span class="line">      &#123;&#123; todo.text &#125;&#125;</span><br><span class="line">      &lt;button @click=&quot;removeTodo(todo)&quot;&gt;X&lt;/button&gt;</span><br><span class="line">    &lt;/li&gt;</span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">&lt;script setup&gt;</span><br><span class="line">import &#123; ref, computed &#125; from &#x27;vue&#x27; // 从 Vue 中导入 ref 和 computed 函数</span><br><span class="line"></span><br><span class="line">let id = 0 // 初始化一个 id 变量，用于唯一标识每个 todo 项</span><br><span class="line"></span><br><span class="line">const newTodo = ref(&#x27;&#x27;) // 创建一个 ref 用于绑定新待办事项的输入值</span><br><span class="line">const hideCompleted = ref(false) // 创建一个 ref 用于控制是否隐藏已完成的待办事项</span><br><span class="line">const todos = ref([ // 创建一个 ref 用于存储待办事项列表</span><br><span class="line">  &#123; id: id++, text: &#x27;Learn HTML&#x27;, done: true &#125;, // 示例待办事项1，已完成</span><br><span class="line">  &#123; id: id++, text: &#x27;Learn JavaScript&#x27;, done: true &#125;, // 示例待办事项2，已完成</span><br><span class="line">  &#123; id: id++, text: &#x27;Learn Vue&#x27;, done: false &#125; // 示例待办事项3，未完成</span><br><span class="line">])</span><br><span class="line"></span><br><span class="line">const filteredTodos = computed(() =&gt; &#123; // 创建一个 computed 属性，用于计算过滤后的待办事项列表</span><br><span class="line">  return hideCompleted.value // 根据 hideCompleted 的值判断是否隐藏已完成的待办事项</span><br><span class="line">    ? todos.value.filter((t) =&gt; !t.done) // 如果 hideCompleted 为 true，则只返回未完成的待办事项</span><br><span class="line">    : todos.value // 如果 hideCompleted 为 false，则返回所有待办事项</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">function addTodo() &#123; // 定义一个函数用于添加新的待办事项</span><br><span class="line">  todos.value.push(&#123; id: id++, text: newTodo.value, done: false &#125;) // 将新待办事项添加到待办事项列表</span><br><span class="line">  newTodo.value = &#x27;&#x27; // 重置 newTodo 的值</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function removeTodo(todo) &#123; // 定义一个函数用于移除指定的待办事项</span><br><span class="line">  todos.value = todos.value.filter((t) =&gt; t !== todo) // 过滤掉指定的待办事项</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;form @submit.prevent=&quot;addTodo&quot;&gt; &lt;!-- 表单用于输入新的待办事项，阻止默认提交行为，调用 addTodo --&gt;</span><br><span class="line">    &lt;input v-model=&quot;newTodo&quot; required placeholder=&quot;new todo&quot;&gt; &lt;!-- 输入框绑定 newTodo --&gt;</span><br><span class="line">    &lt;button&gt;Add Todo&lt;/button&gt; &lt;!-- 添加按钮 --&gt;</span><br><span class="line">  &lt;/form&gt;</span><br><span class="line">  &lt;ul&gt;</span><br><span class="line">    &lt;li v-for=&quot;todo in filteredTodos&quot; :key=&quot;todo.id&quot;&gt; &lt;!-- 遍历 filteredTodos 列表，渲染每个待办事项 --&gt;</span><br><span class="line">      &lt;input type=&quot;checkbox&quot; v-model=&quot;todo.done&quot;&gt; &lt;!-- 复选框绑定每个待办事项的 done 属性 --&gt;</span><br><span class="line">      &lt;span :class=&quot;&#123; done: todo.done &#125;&quot;&gt;&#123;&#123; todo.text &#125;&#125;&lt;/span&gt; &lt;!-- 动态绑定类名，根据 done 属性显示文本样式 --&gt;</span><br><span class="line">      &lt;button @click=&quot;removeTodo(todo)&quot;&gt;X&lt;/button&gt; &lt;!-- 移除按钮，点击时调用 removeTodo 函数 --&gt;</span><br><span class="line">    &lt;/li&gt;</span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line">  &lt;button @click=&quot;hideCompleted = !hideCompleted&quot;&gt; &lt;!-- 按钮用于切换 hideCompleted 的值 --&gt;</span><br><span class="line">    &#123;&#123; hideCompleted ? &#x27;Show all&#x27; : &#x27;Hide completed&#x27; &#125;&#125; &lt;!-- 根据 hideCompleted 的值显示按钮文本 --&gt;</span><br><span class="line">  &lt;/button&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">.done &#123;</span><br><span class="line">  text-decoration: line-through; /* 设置已完成事项的样式，添加删除线 */</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">&lt;script setup&gt;</span><br><span class="line">import &#123; ref, watch &#125; from &#x27;vue&#x27; // 引入 Vue 的 ref 和 watch 函数</span><br><span class="line"></span><br><span class="line">const todoId = ref(1) // 声明一个响应式变量 todoId，初始值为1</span><br><span class="line">const todoData = ref(null) // 声明一个响应式变量 todoData，初始值为 null</span><br><span class="line"></span><br><span class="line">async function fetchData() &#123; // 声明一个异步函数 fetchData</span><br><span class="line">  todoData.value = null // 每次获取新数据之前，将 todoData 设为 null</span><br><span class="line">  const res = await fetch( // 发送 HTTP GET 请求，获取指定 id 的 todo 数据</span><br><span class="line">    `https://jsonplaceholder.typicode.com/todos/$&#123;todoId.value&#125;`</span><br><span class="line">  )</span><br><span class="line">  todoData.value = await res.json() // 将返回的 JSON 数据赋值给 todoData</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">fetchData() // 组件初始化时调用 fetchData 函数获取数据</span><br><span class="line"></span><br><span class="line">watch(todoId, fetchData) // 监听 todoId 变量的变化，当其改变时调用 fetchData 函数</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;p&gt;Todo id: &#123;&#123; todoId &#125;&#125;&lt;/p&gt; &lt;!-- 显示当前的 todoId --&gt;</span><br><span class="line">  &lt;button @click=&quot;todoId++&quot; :disabled=&quot;!todoData&quot;&gt;Fetch next todo&lt;/button&gt; &lt;!-- 点击按钮时 todoId 增加1，同时在 todoData 为 null 时禁用按钮 --&gt;</span><br><span class="line">  &lt;p v-if=&quot;!todoData&quot;&gt;Loading...&lt;/p&gt; &lt;!-- 当 todoData 为 null 时显示 &quot;Loading...&quot; --&gt;</span><br><span class="line">  &lt;pre v-else&gt;&#123;&#123; todoData &#125;&#125;&lt;/pre&gt; &lt;!-- 当 todoData 不为 null 时，以预格式化文本显示 todoData --&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/2024/07/06/%E9%A9%BE%E7%85%A7/" title="" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/2024/07/02/Nmap/" title="" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/%E6%9D%82%E8%A8%80/" title="杂言">
+								杂言			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+  46dd145f76e505a9a6c269068bf920ad40b558a3340574b16606fabf2fd2f4d0fcc53141661e2222cc25e406d10dba105ca71d0b93f79fbf26...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/%E6%9D%82%E8%A8%80/" title="杂言">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂言"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/%E6%9D%82%E9%A1%B9/" title="杂项">
+								杂项			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1.问题方向 2.问题分类todolist1234567891011121314151617181.木马//2.pyhton&#x27;s sql//3.java&#x27;s sql//4.ocr --  tesseract ocr...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/%E6%9D%82%E9%A1%B9/" title="杂项">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂项"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/zjnu_write_up/" title="zjnu_write_up">
+								zjnu_write_up			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1.比赛名 2.题目类别 3.题目名称 4.知识点关键词 5.知识点细节12https://ctf.a1natas.com/games/14/scoreboardhttps://ctf.a1natas.com/games/12/sco...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/zjnu_write_up/" title="zjnu_write_up">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="zjnu_write_up"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/RSA/" title="CRYPTO">
+								CRYPTO			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								RSAinverse(e, a)概念版:
+公钥的获取
+123456def get_D(e,phi):    i=1    while True:    	i = i + 1        if (e*i) % p == 1:     ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/RSA/" title="CRYPTO">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="CRYPTO"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/pwn/" title="pwn">
+								pwn			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								pwn参考链接1https://blog.csdn.net/weixin_45004513/article/details/117332121
+
+简易快速入门12345678910111213141516导入Pwntoolsfrom ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/pwn/" title="pwn">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="pwn"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/NKCTF2024/" title="NKCTF">
+								NKCTF			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+1.题目类别 2.题目名称MISCWebshell_pro1
+CRYPTOPWN来签个到1
+WEBREVERSElogin_system1
+VM？VM！1
+1VM虚拟机，我们喜欢你，我们喜欢vmware，QEMU，还有Hyper-V...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/NKCTF2024/" title="NKCTF">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="NKCTF"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/hexo/" title="hexo">
+								hexo			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								小记标题格式1title:%20(标题)
+
+目录设置1&lt;!-- toc --&gt;
+
+安装插件在D:\10_yzzob_web_again下打开git bash here
+1npm install hexo-toc --sav...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/hexo/" title="hexo">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="hexo"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+
+
+Quick Start
+Create a new post
+Run server
+Generate static files
+Deploy to remote sites
+
+
+
+
+
+Welcome to Hexo! This i...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/draft/" title="draft">
+								draft			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+  46dd145f76e505a9a6c269068bf920add17329ee7b381137cf8d07d2b9c90cbbf197cd240bb5a7eeb75a5d288900ed1b4fbc3474eda54c4290...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/draft/" title="draft">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="draft"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/different%20views/" title="different views">
+								different views			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1.题目分类2.所给内容MISC损坏的文件2.来自提瓦特的神秘文件.zip
+用010editor打开
+不全zip头:504B0304
+解压缩是奇怪的文字图片,
+根据题目可以翻译的到flag
+也可以保存下来用百度等浏览器扫扫看
+条形码
+...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/different%20views/" title="different views">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="different views"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2024, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('<br1>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>
