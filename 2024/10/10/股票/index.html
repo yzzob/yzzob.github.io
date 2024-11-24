@@ -1,0 +1,1165 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      股票 | yzzob_blog
+    
+  </title>
+  <meta name="author" content="yzz">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「股票」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+	<a href="/2024/10/10/%E8%82%A1%E7%A5%A8/" itemprop="url">
+		股票
+	</a>
+
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/2024/10/10/%E8%82%A1%E7%A5%A8/" itemprop="url">
+		<time datetime="2024-10-10T04:59:42.226Z" itemprop="dateUpdated">
+	  		2024-11-22
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<h1><span id="交易时间半导体">交易时间半导体</span></h1><p>上午时段9:30-11:30，</p>
+<p>下午时段13:00-15:00</p>
+<h1><span id="节奏">节奏</span></h1><p>防守: 银行,白酒,贵金属</p>
+<p>进攻: 科技线(游戏,芯片,光刻胶,人工智能)</p>
+<p>上证</p>
+<p>光伏,医药-&gt;银行</p>
+<h1><span id="时间节点">时间节点</span></h1><blockquote>
+<p> 美国大选 -&gt; 小商品城(600415)</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">急跌,主力资金不能出货</span><br></pre></td></tr></table></figure>
+
+<h1><span id="牛市的启动与干预">牛市的启动与干预</span></h1><p>ipo提速</p>
+<p>国有股减持</p>
+<p>官媒讲话</p>
+<p>行政手段干预</p>
+<h1><span id="k线图">k线图</span></h1><p><img src="/../img/image-20241101193616543.png" alt="image-20241101193616543"></p>
+<h1><span id="1015点位">1015点位</span></h1><blockquote>
+<p>长期</p>
+<p>3087</p>
+<p>短期</p>
+<p>3187</p>
+</blockquote>
+<p>明天必须房地产必须涨</p>
+<p>大盘高开不能买</p>
+<p>没有利好, 旅游酒店,用来套利</p>
+<blockquote>
+<p>3069</p>
+</blockquote>
+<h1><span id="1018">1018</span></h1><p>a计划,跌到了3069等到3000点全军出击</p>
+<h1><span id="1020">1020</span></h1><p>11月7号,美联储降息会议</p>
+<p>降准降息 利好 房地产,金融,商品涨价</p>
+<p>政策3个5000亿 利好 券商保险,蓝筹</p>
+<p>3个3000亿(回购股票)股息率分红超过2.25 利好 高股息的国企</p>
+<p>减持新规(破发,破净,大股东不可以减持)</p>
+<p>光伏: 低于0.68投标违法 - &gt; 利好行业的头部,利好光伏头部企业</p>
+<h2><span id="1021">1021</span></h2><p>放量下跌不要卖</p>
+<p>不要追涨</p>
+<p>国企改革</p>
+<p>光伏</p>
+<p>房地产</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">朱哥:1020</span><br><span class="line">有色白银湖南白银，光伏赛伍技术，英诺激光。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">朱哥:1021</span><br><span class="line">明天依旧首先周期，有色还看湖南白银，绿盘低吸模式，农林牧渔看博闻科技，宏辉果蔬。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">朱哥:</span><br><span class="line">明日蓝筹方面继续看券商地产，不新建仓位了，食品饮料增加一个西王食品，七寸模式。</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">朱哥:</span><br><span class="line">不是龙头,吃补涨,就走</span><br><span class="line">锂矿</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">知钊:</span><br><span class="line">光伏设备==风电设备</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">朱哥1024:</span><br><span class="line">双十一-&gt;b </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">小李:</span><br><span class="line">margin call</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jhwcl58285752</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/html/body/div[4]/div[1]/div[3]/div/div/div[1]/div/a/span</span><br></pre></td></tr></table></figure>
+
+<h1><span id="1024">1024</span></h1><blockquote>
+<p>铁矿石,螺纹钢 房地产</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">朱哥:</span><br><span class="line">房地产继续看光大，博弈二波，下方缺口补完止损。有色继续看，白银依旧首选，新增锌概念，锌业股份</span><br></pre></td></tr></table></figure>
+
+<h1><span id="1025">1025</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">朱哥:</span><br><span class="line">止损位:前几天的最低下引线</span><br><span class="line">止盈位:涨停的下引线</span><br></pre></td></tr></table></figure>
+
+<h1><span id="1027">1027</span></h1><p>有色,消费,重组</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">朱哥:</span><br><span class="line">下周跟踪固态电池，华盛锂能，传艺科技。七寸模式</span><br></pre></td></tr></table></figure>
+
+<h1><span id="1028">1028</span></h1><p>正T</p>
+<p>1:1</p>
+<p>反T</p>
+<p>卖一半,</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">西王食品:</span><br><span class="line">利空消息,</span><br><span class="line">博文:</span><br><span class="line">跌落涨停板最低点,止损</span><br><span class="line">贴着五天线,低吸</span><br><span class="line">七寸模式:跌落涨停板止损,在五天均线,低吸,在涨停板下方低吸,止损位涨停板下方低吸,目标位在前面交易密集区</span><br><span class="line"></span><br><span class="line">到目标位,涨停过的,一股都不减,没什么量,减一半</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">周期性板块,煤炭,钢铁,农林牧渔,有色</span><br><span class="line">cpi上涨:猪肉,农林牧渔上升</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">机器人</span><br><span class="line">农林牧渔可以看到年底</span><br><span class="line">重组可以卡到年底</span><br><span class="line">医药k</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">朱哥:</span><br><span class="line">券券高手看天风，新手看华西，东北和哈投这些小市值的。机器人无人问津，埋伏斯菱股份，步科股份。十厘米看低位夏厦</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">小李</span><br><span class="line">1.加速做反向</span><br><span class="line">2.第一个dd</span><br><span class="line">3.</span><br></pre></td></tr></table></figure>
+
+<h1><span id="1030">1030</span></h1><p>放量微跌(1-4),还能涨</p>
+<p>002583海能达</p>
+<p><img src="/../img/image-20241030125758176.png" alt="image-20241030125758176"></p>
+<p>603887(城池香江)</p>
+<p><img src="/../img/image-20241030130029149.png" alt="image-20241030130029149"></p>
+<p>青岛金王</p>
+<p><img src="/../img/image-20241030130119675.png" alt="image-20241030130119675"></p>
+<h1><span id="1103">1103</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">朱哥:</span><br><span class="line">妖股不要开盘割</span><br><span class="line"></span><br><span class="line">下周看1,稀土永磁2,小金属,3其他金属,4重金属</span><br><span class="line"></span><br><span class="line">下周思路小切大高切低</span><br><span class="line"></span><br><span class="line">青岛金王:跨境龙头</span><br><span class="line"></span><br><span class="line">科技菜逼</span><br><span class="line">传统厉害(券商,农林牧渔,有色金属)</span><br><span class="line"></span><br><span class="line">明天首选</span><br><span class="line">稀土永磁(17个稀有元素)</span><br><span class="line">小金属(钨)</span><br><span class="line">基本金属(铜,铝,锌)</span><br><span class="line">贵金属(最后选)</span><br><span class="line"></span><br><span class="line">机器人看到天荒地老</span><br><span class="line"></span><br><span class="line">半导体龙头:先跌(国民)</span><br><span class="line">低位半导体涨给龙头掩护c</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">知钊:</span><br><span class="line">尾盘跳大水,未来会有大跌,要跑</span><br></pre></td></tr></table></figure>
+
+<h1><span id="1107">1107</span></h1><p>该涨补涨,赶紧跑</p>
+<h1><span id="important">important</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">连板不板,先砸一半,爆量炸板,一半的一半</span><br><span class="line">星期四不跌,星期w基本张</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>名字</th>
+<th>止损</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>603259</td>
+<td>药明康德</td>
+<td>50.2</td>
+<td>59.5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h1><span id="持仓">持仓</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">掉到5天均线,可以买</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>600883</th>
+<th>博闻科技</th>
+<th>7.096</th>
+<th>6.57</th>
+<th>7.7</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>000639</td>
+<td>西王食品</td>
+<td>2.971</td>
+<td>2.7</td>
+<td>3.28</td>
+</tr>
+<tr>
+<td>603212</td>
+<td>赛伍科技</td>
+<td></td>
+<td>11.9</td>
+<td>13.5</td>
+</tr>
+<tr>
+<td>002031</td>
+<td>巨轮智能</td>
+<td>3.43</td>
+<td>3.17</td>
+<td>3.88</td>
+</tr>
+<tr>
+<td>002787</td>
+<td>华源控股</td>
+<td>10.17</td>
+<td>9.42</td>
+<td>10.71</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>名字</th>
+<th>建仓点</th>
+<th>止损</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>600392</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h1><span id="反思">反思</span></h1><h2><span id="1101">1101</span></h2><p>妖股退潮,百股跌停</p>
+<h2><span id="1106">1106</span></h2><p>到中午前起飞,下午开盘会拉,在卖</p>
+<h2><span id="1108">1108</span></h2><p>中午</p>
+<p><img src="/../img/image-20241108110113471.png" alt="image-20241108110113471"></p>
+<p>半导体成为主线</p>
+<h1><span id="板块分类">板块分类</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">科技</span><br><span class="line">	半导体</span><br><span class="line"></span><br><span class="line">白酒</span><br><span class="line">金属</span><br><span class="line">	小金属</span><br><span class="line">	贵金属</span><br><span class="line">	x</span><br><span class="line">消费</span><br><span class="line">	食品</span><br><span class="line">	旅游</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/image-20241108145817115.png" alt="image-20241108145817115"></p>
+<h1><span id="1112">1112</span></h1><p>看 机器人,种植业</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">该跌不跌视为强,该涨补涨视为弱</span><br><span class="line">明确上方压力位d</span><br></pre></td></tr></table></figure>
+
+<h1><span id="1113">1113</span></h1><p><img src="/../img/image-20241113104111388.png" alt="image-20241113104111388"></p>
+<p>护盘对进场</p>
+<p>尾盘看机器人,酒</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">明天</span><br><span class="line">游戏etf	T</span><br><span class="line">夏厦	F</span><br><span class="line">西藏矿业	T</span><br><span class="line">看涨,冲高回落</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1><span id="1114">1114</span></h1><p>五日均线低吸</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">游戏传媒 是一家</span><br><span class="line">风电,光伏,锂矿</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">敦煌种植</span><br><span class="line">雪融生物</span><br></pre></td></tr></table></figure>
+
+<h1><span id="1115">1115</span></h1><p>首选铝,备选铜</p>
+<h1><span id="1117">1117</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">朱哥:</span><br><span class="line">房地产拉了两年没拉起来,只拉股市,减轻政府的压力</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1><span id="1119">1119</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">朱哥:</span><br><span class="line">明天不板减半</span><br><span class="line"></span><br><span class="line">充电桩,英可瑞,奥特迅</span><br><span class="line">异动:一个板块有几个从水下上拉</span><br><span class="line"></span><br><span class="line">明天要放量,缩量就跑</span><br><span class="line">主声浪,能源金属,机器人</span><br><span class="line"></span><br><span class="line">锂电池:(能源金属,包装印刷,光伏,风电,固态电池)</span><br><span class="line"></span><br><span class="line">待涨(农业,小金属,药业,q)</span><br></pre></td></tr></table></figure>
+
+<p>晚盘</p>
+<p><img src="/../img/image-20241119201748449.png" alt="image-20241119201748449"></p>
+<h1><span id="1120">1120</span></h1><p>泰坦股份,纺织</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">异动:d</span><br></pre></td></tr></table></figure>
+
+<p>尾盘</p>
+<p><img src="/../img/image-20241120151520297.png" alt="image-20241120151520297"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">被巨轮洗下车了,很不爽</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/image-20241120151553364.png" alt="image-20241120151553364"></p>
+<h1><span id="1121">1121</span></h1><p>午盘</p>
+<p><img src="/../img/image-20241121113313468.png" alt="image-20241121113313468"></p>
+<p>异动</p>
+<p><img src="/../img/image-20241121130651254.png" alt="image-20241121130651254"></p>
+<h1><span id="1122">1122</span></h1><p>买了奥特迅</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.之前充电桩板块下午有异动</span><br><span class="line">2.成交量大,换手充分,今天分歧</span><br><span class="line">3.板块没有走弱</span><br><span class="line">4.大盘缩量,多数个股,无法上涨,推断抱团取暖</span><br><span class="line">5.净单流出,x</span><br></pre></td></tr></table></figure>
+
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/2024/11/22/%E5%A4%A7%E4%B8%89%E4%B8%8B%E8%80%83%E8%AF%95/" title="" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/2024/09/09/%E5%A4%A7%E4%B8%89%E4%B8%8A/" title="大三上" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/11/22/%E5%A4%A7%E4%B8%89%E4%B8%8B%E8%80%83%E8%AF%95/" title="">
+											
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								编译原理最左推导和最右推导
+根据有没有d判断用S的哪个分支
+二义性s不只一个最右(或最左)推导
+
+最右推导,短语,句柄,(直接|简单)短语叶子节点:不存在子树
+短语:每棵树对应的叶子节点
+直接短语:树对应的子节点,满足叶子节点且是两层...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/11/22/%E5%A4%A7%E4%B8%89%E4%B8%8B%E8%80%83%E8%AF%95/" title="">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/09/09/%E5%A4%A7%E4%B8%89%E4%B8%8A/" title="大三上">
+								大三上			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 9日, 2024				
+							</p>
+							<p class="relate-post-content">
+								我的编程规范123userModel:变量名create_user_model:函数名rouyi
+
+手机
+
+
+
+荣耀100pro
+redmi k70ulter
+iqooneo9pro
+一加ace3
+
+
+
+屏幕
+曲面
+直屏
+直屏
+曲面
+...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/09/09/%E5%A4%A7%E4%B8%89%E4%B8%8A/" title="大三上">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大三上"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/07/25/tools/" title="tools">
+								tools			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 25日, 2024				
+							</p>
+							<p class="relate-post-content">
+								sqlheidiSQL
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/07/25/tools/" title="tools">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="tools"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/%E6%9D%82%E8%A8%80/" title="杂言">
+								杂言			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+  46dd145f76e505a9a6c269068bf920ad40b558a3340574b16606fabf2fd2f4d0fcc53141661e2222cc25e406d10dba105ca71d0b93f79fbf26...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/%E6%9D%82%E8%A8%80/" title="杂言">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂言"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/%E6%9D%82%E9%A1%B9/" title="杂项">
+								杂项			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1.问题方向 2.问题分类todolist1234567891011121314151617181.木马//2.pyhton&#x27;s sql//3.java&#x27;s sql//4.ocr --  tesseract ocr...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/%E6%9D%82%E9%A1%B9/" title="杂项">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂项"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/zjnu_write_up/" title="zjnu_write_up">
+								zjnu_write_up			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1.比赛名 2.题目类别 3.题目名称 4.知识点关键词 5.知识点细节12https://ctf.a1natas.com/games/14/scoreboardhttps://ctf.a1natas.com/games/12/sco...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/zjnu_write_up/" title="zjnu_write_up">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="zjnu_write_up"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/RSA/" title="CRYPTO">
+								CRYPTO			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								RSAinverse(e, a)概念版:
+公钥的获取
+123456def get_D(e,phi):    i=1    while True:    	i = i + 1        if (e*i) % p == 1:     ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/RSA/" title="CRYPTO">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="CRYPTO"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/pwn/" title="pwn">
+								pwn			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								pwn参考链接1https://blog.csdn.net/weixin_45004513/article/details/117332121
+
+简易快速入门12345678910111213141516导入Pwntoolsfrom ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/pwn/" title="pwn">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="pwn"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/NKCTF2024/" title="NKCTF">
+								NKCTF			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+1.题目类别 2.题目名称MISCWebshell_pro1
+CRYPTOPWN来签个到1
+WEBREVERSElogin_system1
+VM？VM！1
+1VM虚拟机，我们喜欢你，我们喜欢vmware，QEMU，还有Hyper-V...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/NKCTF2024/" title="NKCTF">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="NKCTF"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/hexo/" title="hexo">
+								hexo			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								小记标题格式1title:%20(标题)
+
+目录设置1&lt;!-- toc --&gt;
+
+安装插件在D:\10_yzzob_web_again下打开git bash here
+1npm install hexo-toc --sav...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/hexo/" title="hexo">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="hexo"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2024, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('<br1>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>

@@ -257,7 +257,7 @@
 
 	<a href="/2024/07/06/%E5%A4%A7%E4%BA%8C%E6%9A%91%E5%81%87/" itemprop="url">
 		<time datetime="2024-07-06T02:52:49.137Z" itemprop="dateUpdated">
-	  		2024-07-23
+	  		2024-09-19
 	  </time>
 	</a> 
 
@@ -277,10 +277,295 @@
 		<div class="article-content" id="article-content">
 			<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">titile: 暑假</span><br></pre></td></tr></table></figure>
 
-<h2><span id="easy-to-explain">easy to explain</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DNS:DNS translates domain names to IP addresses</span><br><span class="line">np:Node Package Manager</span><br></pre></td></tr></table></figure>
+<h1><span id="病毒分析网站">病毒分析网站</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.virscan.org./</span><br></pre></td></tr></table></figure>
 
 
 
+<h1><span id="npm">npm</span></h1><blockquote>
+<p>node package manage</p>
+</blockquote>
+<blockquote>
+<p>update: npm install npm@latest -g</p>
+</blockquote>
+<blockquote>
+<p>latest:最新的  -g: gobal</p>
+</blockquote>
+<h1><span id="正则表达式">正则表达式</span></h1><p>正则表达式网站</p>
+<blockquote>
+<p><a href="https://regex101.com/">https://regex101.com/</a></p>
+</blockquote>
+<p><code>.</code>  :任意符 l..e -&gt; like line</p>
+<p><code>^</code> ^hello -&gt;hello world 不是 sayhello</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.开头是大小写英文字母</span><br><span class="line">2.允许英文,数字,常规特殊字符(-_!@#$%^&amp;*)</span><br><span class="line">3.允许长度 5-16</span><br><span class="line"></span><br><span class="line">/^[a-zA-Z][-_!@#$%^&amp;*a-zA-Z0123456789]&#123;4,15&#125;$/</span><br><span class="line"></span><br><span class="line">^ 表示匹配输入字符串的开始位置。</span><br><span class="line">$ 表示匹配输入字符串的结束位置。</span><br></pre></td></tr></table></figure>
+
+<h2><span id="限定符">限定符</span></h2><table>
+<thead>
+<tr>
+<th>符号</th>
+<th>例子表达式</th>
+<th>可表示字符</th>
+<th>可出现次数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>d?</td>
+<td>used?</td>
+<td>use,used</td>
+<td>0,1</td>
+</tr>
+<tr>
+<td>b*</td>
+<td>ab*c</td>
+<td>ac,abc,abbc</td>
+<td>0-n</td>
+</tr>
+<tr>
+<td>b+</td>
+<td>ab+c</td>
+<td>abc,abbc,abbbc</td>
+<td>1-n</td>
+</tr>
+<tr>
+<td>{n,m}</td>
+<td>ab{2,4}c</td>
+<td>abbc</td>
+<td>2-4</td>
+</tr>
+<tr>
+<td>()</td>
+<td>(ab)+c</td>
+<td>ababc,abababc</td>
+<td></td>
+</tr>
+<tr>
+<td>{2,}</td>
+<td>a-{2,}</td>
+<td>a–,a—-,a—-</td>
+<td>2-N</td>
+</tr>
+</tbody></table>
+<h2><span id="或运算符">或运算符</span></h2><table>
+<thead>
+<tr>
+<th>匹配表达式</th>
+<th>匹配字符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a (cat|dog)</td>
+<td>a cat,a dog</td>
+</tr>
+<tr>
+<td>a act|dog</td>
+<td>a cat,dog</td>
+</tr>
+</tbody></table>
+<h2><span id="字符类">字符类</span></h2><table>
+<thead>
+<tr>
+<th>匹配表达式</th>
+<th>匹配字符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[abc]+</td>
+<td>ab,abcc,abccc absao里面的aba</td>
+</tr>
+<tr>
+<td>[^0-9]+</td>
+<td>所有非数字字符</td>
+</tr>
+</tbody></table>
+<h2><span id="元字符">元字符</span></h2><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\s</td>
+<td>空白符</td>
+</tr>
+<tr>
+<td>\d</td>
+<td>数字字符</td>
+</tr>
+<tr>
+<td>\D</td>
+<td>非数字字符</td>
+</tr>
+<tr>
+<td>^a</td>
+<td>字符首,行首的a</td>
+</tr>
+<tr>
+<td>a$</td>
+<td>字符尾,行尾的a</td>
+</tr>
+<tr>
+<td>.</td>
+<td>任意字符</td>
+</tr>
+<tr>
+<td>?</td>
+<td>懒惰匹配</td>
+</tr>
+</tbody></table>
+<h2><span id="例子">例子</span></h2><table>
+<thead>
+<tr>
+<th>表达式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&lt;.+?&gt;</td>
+<td>所有html标签</td>
+</tr>
+<tr>
+<td>#[a-fA-F0-9]{6}\b</td>
+<td>#ffaaff</td>
+</tr>
+</tbody></table>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\d+\.\d+\.\d+\.\d+ </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">\b((25[0-5]|2[0-4]\d|1\d\d|\d|\d\d)\.)&#123;3&#125;(25[0-5]|2[0-4]\d|1\d\d|\d|\d\d)\b</span><br><span class="line"></span><br><span class="line">123</span><br><span class="line">255.255.255.255</span><br><span class="line">192.168.0.1</span><br><span class="line">0.0.0.0</span><br><span class="line">256.1.1.1</span><br><span class="line">this is a string .</span><br><span class="line">123.123.0</span><br></pre></td></tr></table></figure>
+
+<p>\d只是表示一个位置的[0-9]</p>
+<h1><span id="cdn">cdn</span></h1><blockquote>
+<p><a href="http://www.bootcdn.cn/">www.bootcdn.cn</a></p>
+</blockquote>
+<h1><span id="react">react</span></h1><h2><span id="book-api">book api</span></h2><p>get: data query</p>
+<p>post: data create</p>
+<p>put: data update</p>
+<p>delete: data delete</p>
+<h2><span id="padding-and">padding and</span></h2><p>padding: Internal spacing</p>
+<blockquote>
+<p>padding:”0px 10px”, </p>
+</blockquote>
+<p>0:up to down 10 left to right</p>
+<h2><span id="auto-rename-tag">auto rename tag</span></h2><p>在 VSCode 中实现 <code>&lt;Box&gt;</code> 和 <code>&lt;/Box&gt;</code> 标签的同步编辑，你可以使用 VSCode 的内置功能“多光标编辑”或者“选中所有相同词组”。下面是几种常见方法：</p>
+<h3><span id="方法一使用多光标编辑快捷键">方法一：使用多光标编辑（快捷键）</span></h3><ol>
+<li><strong>选择标签名</strong>：将光标放在 <code>&lt;Box&gt;</code> 的 <code>Box</code> 上，然后按下 <code>Ctrl + D</code>（Windows&#x2F;Linux）或 <code>Cmd + D</code>（Mac），这将选中下一个相同的词（即 <code>&lt;/Box&gt;</code> 中的 <code>Box</code>）。</li>
+<li><strong>同步编辑</strong>：继续输入你想要的新标签名，所有选中的 <code>Box</code> 都会同时改变。</li>
+</ol>
+<h3><span id="方法二使用选中所有相同词组">方法二：使用“选中所有相同词组”</span></h3><ol>
+<li><strong>选中标签名</strong>：选中 <code>&lt;Box&gt;</code> 标签内的 <code>Box</code>。</li>
+<li><strong>选中所有相同词</strong>：按 <code>Ctrl + Shift + L</code>（Windows&#x2F;Linux）或 <code>Cmd + Shift + L</code>（Mac），这会选中文档中所有相同的词组。</li>
+<li><strong>同步编辑</strong>：输入新的标签名，所有相同的标签都会同时改变。</li>
+</ol>
+<h3><span id="方法三手动同步">方法三：手动同步</span></h3><p>如果你希望更为精细地控制修改，你可以手动编辑每个标签，或者使用 <code>Ctrl + F</code>（Windows&#x2F;Linux）或 <code>Cmd + F</code>（Mac）查找并替换所有的 <code>Box</code> 标签。</p>
+<h3><span id="方法四使用扩展插件">方法四：使用扩展插件</span></h3><p>还有一些 VSCode 的插件可以自动同步 HTML&#x2F;XML 标签，例如：</p>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">Auto Rename Tag</a>：自动同步开始和结束标签。</li>
+</ul>
+<h2><span id="format">format</span></h2><p>variant: 1. contained (内部颜色)2. outlined (轮廓颜色)</p>
+<h2><span id="problemsolver">problemSolver</span></h2><p>q: just blank page</p>
+<p>a: try to update or install package</p>
+<blockquote>
+<p>npm install @mui&#x2F;material @mui&#x2F;icons-material</p>
+</blockquote>
+<h2><span id="finnal-conclusion">finnal conclusion</span></h2><p>set npm source:<br>(best in china)</p>
+<blockquote>
+<p>npm config set registry <a href="https://registry.npmmirror.com/">https://registry.npmmirror.com/</a><br>npx create-react-app <u>appName</u></p>
+</blockquote>
+<p>run reactApp:</p>
+<blockquote>
+<p>npm start</p>
+</blockquote>
+<p>install package</p>
+<blockquote>
+<p>npm install @mui&#x2F;material @emotion&#x2F;react @emotion&#x2F;styled</p>
+</blockquote>
+<h2><span id="create-app">create app</span></h2><p>npx create-react-app <u>my-mui-app</u></p>
+
+<p>cnpm install -g create-react-app</p>
+
+<p>create-react-app <u>my-mui-app</u></p>
+
+<h2><span id="replace-image-source">Replace image source</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PS D:\yzzob\Desktop\all_in&gt; npm config set registry https://registry.npmmirror.com/</span><br><span class="line">PS D:\yzzob\Desktop\all_in&gt; npm install -g nrm</span><br><span class="line"></span><br><span class="line">added 17 packages in 1s</span><br><span class="line"></span><br><span class="line">4 packages are looking for funding</span><br><span class="line">  run `npm fund` for details</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ps:</span><br><span class="line">Taobao Source,qh source all expired</span><br><span class="line">npm ERR! request to https://registry.npm.taobao.org/cnpm failed, reason: certificate has expired</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">cnpm config list</span><br><span class="line">这将列出所有的 cnpm 配置，包括镜像源地址和其他配置项。</span><br><span class="line"></span><br><span class="line">修改镜像源: 如果你想更改 cnpm 的镜像源，可以使用以下命令：</span><br><span class="line"></span><br><span class="line">cnpm config set registry &lt;new-registry-url&gt;</span><br><span class="line">例如，将镜像源更改为淘宝的镜像：</span><br><span class="line"></span><br><span class="line">cnpm config set registry https://registry.npm.taobao.org</span><br><span class="line">恢复默认镜像源: 如果你想恢复到默认的镜像源，可以使用：</span><br><span class="line"></span><br><span class="line">cnpm config delete registry</span><br></pre></td></tr></table></figure>
+
+<p><code>npx</code> 是一个包执行工具，它会使用当前 <code>npm</code> 配置的镜像源。如果你希望确保 <code>npx</code> 使用了正确的镜像源，你只需要检查 <code>npm</code> 的镜像源配置，因为 <code>npx</code> 直接继承 <code>npm</code> 的配置。</p>
+<h1><span id="双屏调试">双屏调试</span></h1><p>shift+windows+←将当前内容放到另一个屏幕上</p>
+<h2><span id="colorlog">colorlog</span></h2><h3><span id="colorama-支持的颜色"><code>colorama</code> 支持的颜色</span></h3><ul>
+<li><strong>基础颜色</strong>：<ul>
+<li><code>BLACK</code> : 黑色</li>
+<li><code>RED</code> : 红色</li>
+<li><code>GREEN</code> : 绿色</li>
+<li><code>YELLOW</code> : 黄色</li>
+<li><code>BLUE</code> : 蓝色</li>
+<li><code>MAGENTA</code> : 品红色</li>
+<li><code>CYAN</code> : 青色</li>
+<li><code>WHITE</code> : 白色</li>
+</ul>
+</li>
+<li><strong>亮色</strong>（通过在基础颜色前添加 <code>BRIGHT</code> 前缀）：<ul>
+<li><code>BRIGHT_BLACK</code> : 亮黑色</li>
+<li><code>BRIGHT_RED</code> : 亮红色</li>
+<li><code>BRIGHT_GREEN</code> : 亮绿色</li>
+<li><code>BRIGHT_YELLOW</code> : 亮黄色</li>
+<li><code>BRIGHT_BLUE</code> : 亮蓝色</li>
+<li><code>BRIGHT_MAGENTA</code> : 亮品红色</li>
+<li><code>BRIGHT_CYAN</code> : 亮青色</li>
+<li><code>BRIGHT_WHITE</code> : 亮白色</li>
+</ul>
+</li>
+<li><strong>样式</strong>：<ul>
+<li><code>RESET</code> : 重置颜色和样式</li>
+<li><code>BOLD</code> : 粗体</li>
+<li><code>DIM</code> : 细体</li>
+<li><code>UNDERLINE</code> : 下划线</li>
+<li><code>REVERSE</code> : 反色</li>
+</ul>
+</li>
+</ul>
+<h1><span id="full-name">Full name</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url : Uniform Resource Locator</span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="common-mistake">Common mistake</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;(&quot; 未关闭Pylance =&gt; 少了逗号</span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="yield">yield</span></h1><p>def countdown(n):<br>    while n &gt; 0:<br>        yield n<br>        n -&#x3D; 1</p>
+<h1><span id="使用生成器函数生成倒计时">使用生成器函数生成倒计时</span></h1><p>for i in countdown(5):<br>    print(i)</p>
+<h2><span id="columns-x3d-column-for-column-in-columns-if-column-not-in-select_columns">columns &#x3D; [column for column in columns if column not in select_columns]</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">columns = [column for column in columns if column not in select_columns]</span><br><span class="line"></span><br><span class="line">for column in columns:</span><br><span class="line">	if column not in select_columns:</span><br><span class="line">	columns.append(colu)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="with-openas-file">with open()as file</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#x27;r&#x27;: 只读模式。文件指针在文件的开头。文件必须存在，否则会引发 FileNotFoundError。不能写入数据。</span><br><span class="line"></span><br><span class="line">&#x27;w&#x27;: 只写模式。文件指针在文件的开头。文件存在时会覆盖文件中的内容，不存在时会创建新文件。不能读取数据。</span><br><span class="line"></span><br><span class="line">&#x27;a&#x27;: 追加模式。文件指针在文件的末尾。如果文件不存在，会创建一个新文件。数据会被追加到文件的末尾。不能读取数据。</span><br><span class="line"></span><br><span class="line">&#x27;b&#x27;: 二进制模式。用于以二进制格式读取或写入文件。例如 &#x27;rb&#x27; 代表以二进制只读模式打开文件，&#x27;wb&#x27; 代表以二进制写模式打开文件。</span><br><span class="line"></span><br><span class="line">&#x27;x&#x27;: 排他性创建模式。文件存在时会引发 FileExistsError。如果文件不存在，则创建新文件。不能读取数据。</span><br><span class="line"></span><br><span class="line">&#x27;r+&#x27;: 读写模式。文件指针在文件的开头。文件必须存在，不能创建新文件。可以同时读取和写入数据。</span><br><span class="line"></span><br><span class="line">&#x27;a+&#x27;: 读写追加模式。文件指针在文件的末尾。文件存在时可以追加数据，不会覆盖文件内容。文件不存在时会创建新文件。可以同时读取和写入数据。</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO cet46 (studentId, name, zkzh, id, listen, read, write, score, type, examDatetime, insertDatetime) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)</span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="write于writelines">write于writelines</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">with open(&#x27;example.txt&#x27;, &#x27;w&#x27;) as f:</span><br><span class="line">    f.write(&quot;Hello, World!\n&quot;)</span><br><span class="line">    f.write(&quot;This is a second line.&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">lines = [&quot;Hello, World!\n&quot;, &quot;This is a second line.\n&quot;, &quot;And this is a third line.\n&quot;]</span><br><span class="line"></span><br><span class="line">with open(&#x27;example.txt&#x27;, &#x27;w&#x27;) as f:</span><br><span class="line">    f.writelines(lines)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="react">react</span></h1><p><strong>项目创建</strong> npx create-react-app [helloworld]</p>
+<p><strong>项目搭建</strong> npm run build</p>
+<p><strong>项目运行</strong> npm start</p>
+<h2><span id="循环">循环</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">function App() &#123;</span><br><span class="line">  const list = [</span><br><span class="line">    &#123;id: 1,name: &#x27;yzz&#x27;&#125;,</span><br><span class="line">    &#123;id: 2,name: &#x27;zy&#x27;&#125;,</span><br><span class="line">    &#123;id: 3,name: &#x27;yz&#x27;&#125;</span><br><span class="line">  ] </span><br><span class="line">  const listContent = list.map(item=&gt;(</span><br><span class="line">    &lt;li key = &#123;item.id&#125;&gt;&#123;item.name&#125;&lt;/li&gt;</span><br><span class="line">  ))</span><br><span class="line">  return (</span><br><span class="line">    &lt;ul&gt;&#123;listContent&#125;&lt;/ul&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export default App;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">import &#123;Fragment&#125; from &#x27;react&#x27;</span><br><span class="line">function App() &#123;</span><br><span class="line">  const list = [</span><br><span class="line">    &#123;id: 1,name: &#x27;yzz&#x27;&#125;,</span><br><span class="line">    &#123;id: 2,name: &#x27;zy&#x27;&#125;,</span><br><span class="line">    &#123;id: 3,name: &#x27;yz&#x27;&#125;</span><br><span class="line">  ] </span><br><span class="line">  const listContent = list.map(item=&gt;(</span><br><span class="line">    &lt;Fragment key = &#123;item.id&#125;&gt;</span><br><span class="line">      &lt;li&gt;&#123;item.name&#125;&lt;/li&gt;</span><br><span class="line">      &lt;li&gt;------&lt;/li&gt;</span><br><span class="line">    &lt;/Fragment&gt;</span><br><span class="line">  ))</span><br><span class="line">  return (</span><br><span class="line">    &lt;ul&gt;&#123;listContent&#125;&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export default App;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="云服务">云服务</span></h1><p>腾讯云:云+校园</p>
+<p>阿里云:飞天加速计划</p>
+<h1><span id="easy-to-explain">easy to explain</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DNS:DNS translates domain names to IP addresses</span><br><span class="line">np:Node Package Manager</span><br><span class="line">dir_name:directory name</span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="代码增强">代码增强</span></h1><p>[] 13</p>
+<p>marscode:抖音</p>
+<p>polacode:将代码生成图片</p>
 <h1><span id="set">set</span></h1><p>[171, 172, 181]表示有顺序</p>
 <p>{171, 172, 181}没有顺序</p>
 <p>a &#x3D; [1,2,3]</p>
@@ -351,7 +636,141 @@
 <p>win+tab 窗口切换，后窗口往前切换，</p>
 <p>win +shift+tab，前窗口往后切换。</p>
 <h1><span id="csharpy">csharpy</span></h1><p>为 <code>sys.argv</code> 包含脚本的文件名作为第一个元素，所以参数总数是 6</p>
-<h1><span id="python">python</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.w3schools.com/python</span><br></pre></td></tr></table></figure>
+<h1><span id="python">python</span></h1><p>list</p>
+<p>something went wrong: can only concatenate str (not “dict”) to str</p>
+<p>logger.debug(each_note.attributes())</p>
+<p>logger.info(f”{author.attributes()}”)</p>
+<h2><span id="browsercontextpage">browser,context,page</span></h2><p>browser : 浏览器</p>
+<p>context :  浏览器界面</p>
+<p>page : 一个context里面的网页页面</p>
+<h2><span id="vscode一键转格式">vscode一键转格式</span></h2><p>shift+alt+f</p>
+<h2><span id="playwright">playwright</span></h2><h3><span id="1-browser">1. <strong>Browser</strong></span></h3><ul>
+<li><code>Browser</code> 对象表示 Playwright 创建的浏览器实例。</li>
+<li>一个 <code>Browser</code> 对象可以控制一个浏览器，并且可以打开多个页面 (<code>Page</code>)。</li>
+<li>支持不同的浏览器：Chromium、Firefox 和 WebKit。</li>
+</ul>
+<h3><span id="2-browsercontext">2. <strong>BrowserContext</strong></span></h3><ul>
+<li><code>BrowserContext</code> 是浏览器的隔离环境，每个 <code>BrowserContext</code> 可以看作是浏览器中的一个独立的窗口或用户会话。</li>
+<li>同一个浏览器实例可以创建多个 <code>BrowserContext</code>，每个 <code>Context</code> 之间是相互隔离的，具有独立的缓存、cookie 等。</li>
+<li>常用于模拟多个用户或会话。</li>
+</ul>
+<h3><span id="3-page">3. <strong>Page</strong></span></h3><ul>
+<li><code>Page</code> 是浏览器中的一个选项卡或标签页，一个 <code>BrowserContext</code> 可以包含多个 <code>Page</code>。</li>
+<li><code>Page</code> 是 Playwright 操作的核心单位，通过 <code>Page</code> 对象可以执行几乎所有的操作，如导航、交互、截屏等。</li>
+<li>这是开发者与网页进行交互的主要接口。</li>
+</ul>
+<h2><span id="extendgtltappend">extend&gt;&lt;append</span></h2><p>在 Python 中，<code>extend</code> 和 <code>append</code> 都是用于向列表中添加元素的方法，但它们的行为有所不同。</p>
+<h3><span id="1-append">1. <code>append()</code></span></h3><ul>
+<li><strong>功能</strong>：将一个元素（对象）作为单个元素<strong>追加</strong>到列表的末尾。</li>
+<li><strong>参数</strong>：只能传入一个元素，该元素可以是任意类型（如数字、字符串、列表等）。</li>
+<li><strong>结果</strong>：传入的元素会作为整个对象添加到列表的末尾，列表长度增加 1。</li>
+</ul>
+<h4><span id="示例">示例：</span></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">lst = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">lst.append([<span class="number">4</span>, <span class="number">5</span>])</span><br><span class="line"><span class="built_in">print</span>(lst)  <span class="comment"># 输出: [1, 2, 3, [4, 5]]</span></span><br></pre></td></tr></table></figure>
+
+<p>在这个例子中，<code>[4, 5]</code> 作为一个整体（子列表）被添加到了 <code>lst</code> 列表的末尾。</p>
+<h3><span id="2-extend">2. <code>extend()</code></span></h3><ul>
+<li><strong>功能</strong>：将一个可迭代对象（如列表、元组、集合等）的所有元素<strong>扩展</strong>到当前列表中。</li>
+<li><strong>参数</strong>：传入一个可迭代对象。</li>
+<li><strong>结果</strong>：传入对象的每个元素会被逐个添加到列表中，列表长度根据传入对象的长度增加。</li>
+</ul>
+<h4><span id="示例">示例：</span></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">lst = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">lst.extend([<span class="number">4</span>, <span class="number">5</span>])</span><br><span class="line"><span class="built_in">print</span>(lst)  <span class="comment"># 输出: [1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
+
+<p>在这个例子中，列表 <code>[4, 5]</code> 中的元素被逐个添加到了 <code>lst</code> 列表中。</p>
+<h3><span id="关键区别">关键区别：</span></h3><ul>
+<li><strong><code>append</code></strong> 将元素作为一个整体添加到列表中。</li>
+<li><strong><code>extend</code></strong> 将可迭代对象中的每个元素逐个添加到列表中。</li>
+</ul>
+<h4><span id="对比示例">对比示例：</span></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">lst1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">lst1.append([<span class="number">4</span>, <span class="number">5</span>])</span><br><span class="line"><span class="built_in">print</span>(lst1)  <span class="comment"># 输出: [1, 2, 3, [4, 5]]</span></span><br><span class="line"></span><br><span class="line">lst2 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">lst2.extend([<span class="number">4</span>, <span class="number">5</span>])</span><br><span class="line"><span class="built_in">print</span>(lst2)  <span class="comment"># 输出: [1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>append</code> 后，<code>lst1</code> 中有一个子列表 <code>[4, 5]</code>。</li>
+<li><code>extend</code> 后，<code>lst2</code> 中的元素直接被展开为 <code>4</code> 和 <code>5</code>，不作为子列表出现。</li>
+</ul>
+<h2><span id="playweight">playweight</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">PS D:\yzzob\Desktop\tmp_clawer\MediaCrawler-main&gt; &amp; D:/python3.12/python.exe d:/yzzob/Desktop/tmp_clawer/MediaCrawler-main/my_test/08131405.py</span><br><span class="line">[&lt;Page url=&#x27;file:///D:/4_mytools/CyberChef/CyberChef_v9.28.0.html&#x27;&gt;, &lt;Page url=&#x27;https://www.ma5hr00m.top/&#x27;&gt;, &lt;Page url=&#x27;https://wtool.com.cn/baconian.html&#x27;&gt;, &lt;Page url=&#x27;https://www.ssleye.com/ssltool/&#x27;&gt;]</span><br><span class="line">CyberChef</span><br><span class="line">PS D:\yzzob\Desktop\tmp_clawer\MediaCrawler-main&gt; &amp; D:/python3.12/python.exe d:/yzzob/Desktop/tmp_clawer/MediaCrawler-main/my_test/08131405.py</span><br><span class="line">[&lt;Page url=&#x27;file:///D:/4_mytools/CyberChef/CyberChef_v9.28.0.html&#x27;&gt;, &lt;Page url=&#x27;https://aghorler.github.io/emoji-aes/&#x27;&gt;, &lt;Page url=&#x27;https://wtool.com.cn/baconian.html&#x27;&gt;, &lt;Page url=&#x27;https://www.ssleye.com/ssltool/&#x27;&gt;]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">page = default_context.pages[0]</span><br><span class="line">根据page创建的顺序,而不是跳转的顺序</span><br></pre></td></tr></table></figure>
+
+<p><code>context</code> 是一个 <code>BrowserContext</code> 对象，表示浏览器的一个隔离环境。</p>
+<p><code>page</code> 是一个 <code>Page</code> 对象，表示在 <code>context</code> 中打开的一个网页标签。</p>
+<h2><span id="strip和split">strip和split</span></h2><p>strip,脱衣服</p>
+<p>split,分裂</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">s = &quot;  hello world  &quot;</span><br><span class="line">print(s.strip())  # 输出 &quot;hello world&quot;</span><br><span class="line"></span><br><span class="line">s = &quot;***hello***&quot;</span><br><span class="line">print(s.strip(&#x27;*&#x27;))  # 输出 &quot;hello&quot;</span><br><span class="line"></span><br><span class="line">s = &quot;hello world&quot;</span><br><span class="line">print(s.split())  # 输出 [&quot;hello&quot;, &quot;world&quot;]</span><br><span class="line"></span><br><span class="line">s = &quot;apple,banana,cherry&quot;</span><br><span class="line">print(s.split(&#x27;,&#x27;))  # 输出 [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="argparse">argparse</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">import argparse</span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    # 创建 ArgumentParser 对象</span><br><span class="line">    parser = argparse.ArgumentParser(description=&quot;A simple argument parser example.&quot;)</span><br><span class="line">    </span><br><span class="line">    # 添加命令行参数</span><br><span class="line">    parser.add_argument(&#x27;-n&#x27;, &#x27;--name&#x27;, type=str, help=&quot;The name of the person.&quot;)</span><br><span class="line">    parser.add_argument(&#x27;-a&#x27;, &#x27;--age&#x27;, type=str, help=&quot;The name of the person.&quot;)</span><br><span class="line">    parser.add_argument(&#x27;-g&#x27;,&#x27;--greeting&#x27;, type=str, default=&quot;Hello&quot;, help=&quot;The greeting to use.&quot;)</span><br><span class="line">    </span><br><span class="line">    # 解析命令行参数</span><br><span class="line">    args = parser.parse_args()</span><br><span class="line">    </span><br><span class="line">    # 使用解析的参数</span><br><span class="line">    print(f&quot;&#123;args.greeting&#125;, &#123;args.name&#125;! You are &#123;args.age&#125; years old.&quot;)</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="抽象类">抽象类</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">from abc import ABC, abstractmethod</span><br><span class="line"></span><br><span class="line">class Animal(ABC):</span><br><span class="line">    @abstractmethod</span><br><span class="line">    def make_sound(self):</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        抽象方法，子类必须实现这个方法。</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        pass</span><br><span class="line"></span><br><span class="line">class Dog(Animal):</span><br><span class="line">    def make_sound(self):</span><br><span class="line">        return &quot;Woof!&quot;</span><br><span class="line"></span><br><span class="line">class Cat(Animal):</span><br><span class="line">    def make_sound(self):</span><br><span class="line">        return &quot;Meow!&quot;</span><br><span class="line"></span><br><span class="line"># 以下代码会引发 TypeError，因为 Animal 是一个抽象类，没有实现抽象方法</span><br><span class="line"># a = Animal()</span><br><span class="line"></span><br><span class="line"># 创建 Dog 和 Cat 实例是合法的，因为它们实现了抽象方法</span><br><span class="line">dog = Dog()</span><br><span class="line">cat = Cat()</span><br><span class="line"></span><br><span class="line">print(dog.make_sound())  # 输出: Woof!</span><br><span class="line">print(cat.make_sound())  # 输出: Meow!</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="异步">异步</span></h2><p>  await asyncio.gather(task1, task2):异步运行,</p>
+<p>  await asyncio.sleep(1):</p>
+<p>​		sleep期间可以做gather里的其他任务</p>
+<p>  asyncio.run(main())是异步运行的程序路口</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import asyncio</span><br><span class="line"></span><br><span class="line">async def task(name, delay):</span><br><span class="line">    await asyncio.sleep(delay)</span><br><span class="line">    print(f&#x27;&#123;name&#125; completed&#x27;)</span><br><span class="line"></span><br><span class="line">async def main():</span><br><span class="line">    # 创建多个任务</span><br><span class="line">    task1 = asyncio.create_task(task(&#x27;Task 1&#x27;, 2))</span><br><span class="line">    task2 = asyncio.create_task(task(&#x27;Task 2&#x27;, 1))</span><br><span class="line">    task3 = asyncio.create_task(task(&#x27;Task 3&#x27;, 3))</span><br><span class="line">    </span><br><span class="line">    # 等待所有任务完成</span><br><span class="line">    await task1</span><br><span class="line">    await task2</span><br><span class="line">    await task3</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    asyncio.run(main())</span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="python运行文件快捷键">python运行文件快捷键</span></h2><p>keybindings.json</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 将键绑定放在此文件中以覆盖默认值</span><br><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;key&quot;: &quot;alt+x&quot;,</span><br><span class="line">        &quot;command&quot;: &quot;python.execInTerminal&quot;,</span><br><span class="line">        &quot;when&quot;: &quot;editorTextFocus&quot;</span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="strftimeampstrptime">strftime&amp;strptime</span></h2><p><code>strftime</code> 和 <code>strptime</code> 是处理日期和时间的两个常用方法，它们的全称分别是：</p>
+<ol>
+<li><p><strong><code>strftime</code></strong>: <strong>“string format time”</strong><br>这个方法用于将 <code>datetime</code> 对象格式化为一个字符串。通过指定格式代码，可以自定义输出的日期和时间格式。</p>
+<p><strong>用法示例</strong>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</span><br><span class="line">now = datetime.now()</span><br><span class="line">formatted_date = now.strftime(<span class="string">&quot;%Y-%m-%d %H:%M:%S&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(formatted_date)  <span class="comment"># 输出类似于 &quot;2024-08-05 15:30:00&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><code>strptime</code></strong>: <strong>“string parse time”</strong><br>这个方法用于将字符串解析为 <code>datetime</code> 对象。通过指定格式代码，可以解析不同格式的日期和时间字符串。</p>
+<p><strong>用法示例</strong>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</span><br><span class="line">date_string = <span class="string">&quot;2024-08-05 15:30:00&quot;</span></span><br><span class="line">format_string = <span class="string">&quot;%Y-%m-%d %H:%M:%S&quot;</span></span><br><span class="line">parsed_date = datetime.strptime(date_string, format_string)</span><br><span class="line"><span class="built_in">print</span>(parsed_date)  <span class="comment"># 输出类似于 &quot;2024-08-05 15:30:00&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>总结来说，<code>strftime</code> 是将 <code>datetime</code> 对象转换为字符串的方法，而 <code>strptime</code> 是将字符串转换为 <code>datetime</code> 对象的方法。</p>
+<h2><span id="html数据传输">html数据传输</span></h2><p>xhr里有数据</p>
+<p>文档里传html</p>
+<h2><span id="json和dictionary">json和dictionary</span></h2><p><strong>JSON 到 Python 字典</strong>：可以使用 <code>json.loads()</code> 方法将 JSON 字符串解析为 Python 字典。</p>
+<p><strong>Python 字典到 JSON</strong>：可以使用 <code>json.dumps()</code> 方法将 Python 字典转换为 JSON 字符串。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">JSON：键必须用双引号包围。例如：&quot;name&quot;: &quot;Alice&quot;</span><br><span class="line">Python 字典：键可以用单引号或双引号包围。例如：&#x27;name&#x27;: &#x27;Alice&#x27; 或 &quot;name&quot;: &quot;Alice&quot;</span><br><span class="line">字符串引号：</span><br><span class="line"></span><br><span class="line">JSON：字符串值必须用双引号包围。例如：&quot;name&quot;: &quot;Alice&quot;</span><br><span class="line">Python 字典：字符串值可以用单引号或双引号包围。例如：&#x27;name&#x27;: &#x27;Alice&#x27; 或 &quot;name&quot;: &quot;Alice&quot;</span><br><span class="line">特殊数据类型：</span><br><span class="line"></span><br><span class="line">JSON：不支持 Python 特有的数据类型，如 None（对应 null），和元组。</span><br><span class="line">Python 字典：支持 None，并允许使用元组作为键。例如：(1, 2): &quot;value&quot;</span><br></pre></td></tr></table></figure>
+
+<h2><span id="repr-和-str"><strong>repr</strong> 和 <strong>str</strong></span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">__repr__ 和 __str__ </span><br><span class="line"></span><br><span class="line">class Example:</span><br><span class="line">    def __repr__(self):</span><br><span class="line">        return f&quot;Example(&#123;self.value!r&#125;)&quot;</span><br><span class="line"></span><br><span class="line">obj = Example(42)</span><br><span class="line">print(repr(obj))  # 输出: Example(42)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Example:</span><br><span class="line">    def __str__(self):</span><br><span class="line">        return f&quot;Value: &#123;self.value&#125;&quot;</span><br><span class="line"></span><br><span class="line">obj = Example(42)</span><br><span class="line">print(obj)  # 输出: Value: 42</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="元组字典集合">元组,字典,集合</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">my_tuple = (1, 2, 3)</span><br><span class="line"></span><br><span class="line">字典</span><br><span class="line">my_dict = &#123;&#x27;name&#x27;: &#x27;Alice&#x27;, &#x27;age&#x27;: 30&#125;</span><br><span class="line"></span><br><span class="line">集合</span><br><span class="line">my_set = &#123;</span><br><span class="line">    &#123;&#x27;name&#x27;: &#x27;Alice&#x27;, &#x27;age&#x27;: 30&#125;,</span><br><span class="line">    &#123;&#x27;name&#x27;: &#x27;Mike&#x27;, &#x27;age&#x27;: 20&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="class">class</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">__init__,初始化</span><br><span class="line">__repr__,输出</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">class Content:</span><br><span class="line">    def __init__(self, name, rating, author, timestamp):</span><br><span class="line">        self.name = name</span><br><span class="line">        self.rating = rating</span><br><span class="line">        self.author = author</span><br><span class="line">        self.timestamp = timestamp</span><br><span class="line"></span><br><span class="line">    def __repr__(self):</span><br><span class="line">        return f&quot;FoodEntry(name=&#x27;&#123;self.name&#125;&#x27;, rating=&#x27;&#123;self.rating&#125;&#x27;, author=&#x27;&#123;self.author&#125;&#x27;, timestamp=&#x27;&#123;self.timestamp&#125;&#x27;)&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="y年m月d日-hms">‘%Y年%m月%d日, %H:%M:%S’</span></h2><p>常用的大写格式符号包括：</p>
+<ul>
+<li><code>%Y</code>：四位年份（例如：2024）</li>
+<li><code>%m</code>：两位月份（01 到 12）</li>
+<li><code>%d</code>：两位日期（01 到 31）</li>
+<li><code>%H</code>：24小时制的两位小时（00 到 23）</li>
+<li><code>%M</code>：两位分钟（00 到 59）</li>
+<li><code>%S</code>：两位秒（00 到 59）</li>
+</ul>
+<p>常用的小写格式符号包括：</p>
+<ul>
+<li><code>%p</code>：AM 或 PM（仅在12小时制时间中使用）</li>
+<li><code>%z</code>：UTC偏移量（例如：+0800）</li>
+<li><code>%a</code>：星期的缩写（例如：Mon）</li>
+<li><code>%b</code>：月份的缩写（例如：Jan）</li>
+</ul>
+<p><code>%y</code>表示两位数的年份（即，表示年份的最后两位）</p>
+<p><code>%D</code>2024年7月26日,输出: <code>07/26/24</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.w3schools.com/python</span><br></pre></td></tr></table></figure>
 
 <h2><span id="python-lambda">Python Lambda</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def myfunc(n):</span><br><span class="line">  return lambda a : a * n</span><br><span class="line"></span><br><span class="line">mytripler = myfunc(3)</span><br><span class="line"></span><br><span class="line">print(mytripler(11))</span><br></pre></td></tr></table></figure>
 
@@ -363,7 +782,31 @@
 <h2><span id="配置编译器">配置编译器</span></h2><p>ctrl+shift+p</p>
 <h2><span id="py_web">py_web</span></h2><h3><span id="flask">flask</span></h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PS D:\yzzob\Desktop\python_web_learner&gt; set FLASK_APP=app.py</span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt; python -m flask run</span></span><br><span class="line"> * Debug mode: off</span><br><span class="line">WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.</span><br><span class="line"> * Running on http://127.0.0.1:5000</span><br><span class="line">Press CTRL+C to quit</span><br><span class="line">127.0.0.1 - - [21/Jul/2024 10:51:22] &quot;GET / HTTP/1.1&quot; 200 -</span><br><span class="line">127.0.0.1 - - [21/Jul/2024 10:51:22] &quot;GET /favicon.ico HTTP/1.1&quot; 404 -</span><br></pre></td></tr></table></figure>
 
-<h1><span id="vuejs">vue.js</span></h1><h2><span id="dom">dom</span></h2><p>html是静态的各个元素的集合，JavaScript提供动态的能力，但是又没有直接操纵html的能力。所以需要引入DOM这个模型去做一个桥梁，让JS能操做html的静态元素。</p>
+<h1><span id="vuejs">vue.js</span></h1><h2><span id="运行">运行</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="elmessagebox">ElMessageBox</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">info：信息</span><br><span class="line">success：成功</span><br><span class="line">warning：警告</span><br><span class="line">error：错误</span><br></pre></td></tr></table></figure>
+
+<h2><span id="源码">源码</span></h2><p>:before-close&#x3D;”handleClose”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;el-menu default-active=&quot;2&quot; class=&quot;el-menu-vertical-demo&quot; :collapse=&quot;isCollapse&quot;&gt;</span><br><span class="line">    &lt;el-menu-item index=&quot;1&quot;&gt;</span><br><span class="line">      &lt;el-icon&gt;&lt;Key /&gt;&lt;/el-icon&gt;</span><br><span class="line">      &lt;template #title&gt;图书管理系统&lt;/template&gt;</span><br><span class="line">    &lt;/el-menu-item&gt;</span><br><span class="line">    &lt;el-menu-item index=&quot;2&quot;&gt;</span><br><span class="line">      &lt;el-icon&gt;&lt;icon-menu /&gt;&lt;/el-icon&gt;</span><br><span class="line">      &lt;template #title&gt;密码管理&lt;/template&gt;</span><br><span class="line">    &lt;/el-menu-item&gt;</span><br><span class="line">    &lt;el-menu-item index=&quot;3&quot; disabled&gt;</span><br><span class="line">      &lt;el-icon&gt;</span><br><span class="line">        &lt;document /&gt;</span><br><span class="line">      &lt;/el-icon&gt;</span><br><span class="line">      &lt;template #title&gt;Navigator Three&lt;/template&gt;</span><br><span class="line">    &lt;/el-menu-item&gt;</span><br><span class="line">    &lt;el-menu-item index=&quot;4&quot;&gt;</span><br><span class="line">      &lt;el-icon&gt;</span><br><span class="line">        &lt;setting /&gt;</span><br><span class="line">      &lt;/el-icon&gt;</span><br><span class="line">      &lt;template #title&gt;Navigator Four&lt;/template&gt;</span><br><span class="line">    &lt;/el-menu-item&gt;</span><br><span class="line">  &lt;/el-menu&gt;</span><br><span class="line">  &lt;!-- 主容器居中显示，宽度50% --&gt;</span><br><span class="line">  &lt;div style=&quot;margin: 0 auto; width: 50%;&quot;&gt;</span><br><span class="line">    &lt;!-- 页面标题 --&gt;</span><br><span class="line">    &lt;h1 style=&quot;text-align: center&quot;&gt;图书管理系统&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 添加图书按钮 --&gt;</span><br><span class="line">    &lt;el-button type=&quot;primary&quot; @click=&quot;add_dialog_visible = true&quot; size=&quot;small&quot;&gt;添加图书&lt;/el-button&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 数据表格 --&gt;</span><br><span class="line">    &lt;el-table :data=&quot;books&quot; style=&quot;margin: 20px auto;&quot;&gt;</span><br><span class="line">      &lt;!-- 编号列 --&gt;</span><br><span class="line">      &lt;el-table-column label=&quot;编号&quot; prop=&quot;book_number&quot; /&gt;</span><br><span class="line">      &lt;!-- 书名列 --&gt;</span><br><span class="line">      &lt;el-table-column label=&quot;书名&quot; prop=&quot;book_name&quot; /&gt;</span><br><span class="line">      &lt;!-- 类型列 --&gt;</span><br><span class="line">      &lt;el-table-column label=&quot;类型&quot; prop=&quot;book_type&quot; /&gt;</span><br><span class="line">      &lt;!-- 价格列 --&gt;</span><br><span class="line">      &lt;el-table-column label=&quot;价格&quot; prop=&quot;book_prize&quot; /&gt;</span><br><span class="line">      &lt;!-- 作者列 --&gt;</span><br><span class="line">      &lt;el-table-column label=&quot;作者&quot; prop=&quot;author&quot; /&gt;</span><br><span class="line">      &lt;!-- 出版社列 --&gt;</span><br><span class="line">      &lt;el-table-column label=&quot;出版社&quot; prop=&quot;book_publisher&quot; /&gt;</span><br><span class="line">      &lt;!-- 操作列，右对齐 --&gt;</span><br><span class="line">      &lt;el-table-column align=&quot;right&quot; label=&quot;操作&quot; width=&quot;200px&quot;&gt;</span><br><span class="line">        &lt;template #default=&quot;scope&quot;&gt;</span><br><span class="line">          &lt;!-- 编辑按钮 --&gt;</span><br><span class="line">          &lt;el-button size=&quot;small&quot; @click=&quot;handleEdit(scope.$index, scope.row)&quot;&gt;</span><br><span class="line">            编辑</span><br><span class="line">          &lt;/el-button&gt;</span><br><span class="line">          &lt;!-- 删除按钮 --&gt;</span><br><span class="line">          &lt;el-button size=&quot;small&quot; type=&quot;danger&quot; @click=&quot;handleDelete(scope.$index, scope.row)&quot;&gt;</span><br><span class="line">            删除</span><br><span class="line">          &lt;/el-button&gt;</span><br><span class="line">        &lt;/template&gt;</span><br><span class="line">      &lt;/el-table-column&gt;</span><br><span class="line">    &lt;/el-table&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- 添加图书页面弹窗 --&gt;</span><br><span class="line">  &lt;el-dialog title=&quot;添加图书&quot; v-model=&quot;add_dialog_visible&quot; width=&quot;30%&quot;  @open=&quot;resetForm(ruleFormRef)&quot;&gt;</span><br><span class="line">    &lt;el-form ref=&quot;ruleFormRef&quot; :model=&quot;book_form&quot; status-icon label-width=&quot;120px&quot; class=&quot;demo-ruleForm&quot;&gt;</span><br><span class="line">      &lt;!-- 编号输入框 --&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;编号&quot; prop=&quot;book_number&quot;&gt;</span><br><span class="line">        &lt;el-input v-model=&quot;book_form.book_number&quot; autocomplete=&quot;off&quot; /&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;!-- 书名输入框 --&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;书名&quot; prop=&quot;book_name&quot;&gt;</span><br><span class="line">        &lt;el-input v-model=&quot;book_form.book_name&quot; autocomplete=&quot;off&quot; /&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;!-- 类型输入框 --&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;类型&quot; prop=&quot;book_type&quot;&gt;</span><br><span class="line">        &lt;el-input v-model=&quot;book_form.book_type&quot; autocomplete=&quot;off&quot; /&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;!-- 价格输入框 --&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;价格&quot; prop=&quot;book_prize&quot;&gt;</span><br><span class="line">        &lt;el-input v-model.number=&quot;book_form.book_prize&quot; autocomplete=&quot;off&quot; /&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;!-- 作者输入框 --&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;作者&quot; prop=&quot;author&quot;&gt;</span><br><span class="line">        &lt;el-input v-model=&quot;book_form.author&quot; autocomplete=&quot;off&quot; /&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;!-- 出版社输入框 --&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;出版社&quot; prop=&quot;book_publisher&quot;&gt;</span><br><span class="line">        &lt;el-input v-model=&quot;book_form.book_publisher&quot; autocomplete=&quot;off&quot; /&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;!-- 提交和重置按钮 --&gt;</span><br><span class="line">      &lt;el-form-item&gt;</span><br><span class="line">        &lt;el-button type=&quot;primary&quot; @click=&quot;submitForm(ruleFormRef)&quot;&gt;提交&lt;/el-button&gt;</span><br><span class="line">        &lt;el-button @click=&quot;resetForm(ruleFormRef)&quot;&gt;重置&lt;/el-button&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">    &lt;/el-form&gt;</span><br><span class="line">  &lt;/el-dialog&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- 编辑图书页面弹窗 --&gt;</span><br><span class="line">  &lt;el-dialog title=&quot;编辑图书&quot; v-model=&quot;edit_dialog_visible&quot; width=&quot;30%&quot; &gt;</span><br><span class="line">    &lt;el-form ref=&quot;editFormRef&quot; :model=&quot;book_form&quot; status-icon label-width=&quot;120px&quot; class=&quot;demo-ruleForm&quot;&gt;</span><br><span class="line">      &lt;!-- 编号输入框 --&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;编号&quot; prop=&quot;book_number&quot;&gt;</span><br><span class="line">        &lt;el-input v-model=&quot;book_form.book_number&quot; autocomplete=&quot;off&quot; /&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;!-- 书名输入框 --&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;书名&quot; prop=&quot;book_name&quot;&gt;</span><br><span class="line">        &lt;el-input v-model=&quot;book_form.book_name&quot; autocomplete=&quot;off&quot; /&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;!-- 类型输入框 --&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;类型&quot; prop=&quot;book_type&quot;&gt;</span><br><span class="line">        &lt;el-input v-model=&quot;book_form.book_type&quot; autocomplete=&quot;off&quot; /&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;!-- 价格输入框 --&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;价格&quot; prop=&quot;book_prize&quot;&gt;</span><br><span class="line">        &lt;el-input v-model.number=&quot;book_form.book_prize&quot; autocomplete=&quot;off&quot; /&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;!-- 作者输入框 --&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;作者&quot; prop=&quot;author&quot;&gt;</span><br><span class="line">        &lt;el-input v-model=&quot;book_form.author&quot; autocomplete=&quot;off&quot; /&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;!-- 出版社输入框 --&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;出版社&quot; prop=&quot;book_publisher&quot;&gt;</span><br><span class="line">        &lt;el-input v-model=&quot;book_form.book_publisher&quot; autocomplete=&quot;off&quot; /&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;!-- 提交和重置按钮 --&gt;</span><br><span class="line">      &lt;el-form-item&gt;</span><br><span class="line">        &lt;el-button type=&quot;primary&quot; @click=&quot;submitEditForm(editFormRef)&quot;&gt;提交&lt;/el-button&gt;</span><br><span class="line">        &lt;el-button @click=&quot;resetForm(editFormRef)&quot;&gt;重置&lt;/el-button&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">    &lt;/el-form&gt;</span><br><span class="line">  &lt;/el-dialog&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script setup&gt;</span><br><span class="line">import axios from &#x27;axios&#x27;</span><br><span class="line">import &#123; reactive, ref, onMounted &#125; from &quot;vue&quot;;</span><br><span class="line">import &#123; ElMessageBox &#125; from &#x27;element-plus&#x27;</span><br><span class="line">import &#123;</span><br><span class="line">  Document,</span><br><span class="line">  Menu as IconMenu,</span><br><span class="line">  Location,</span><br><span class="line">  Setting,</span><br><span class="line">  Key,</span><br><span class="line">&#125; from &#x27;@element-plus/icons-vue&#x27;</span><br><span class="line">// 响应式数据</span><br><span class="line">const books = reactive([])</span><br><span class="line">const getStudents = async () =&gt; &#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    // 使用 await 等待 axios.get 完成</span><br><span class="line">    const res = await axios.get(&quot;http://192.168.0.165:5000/books&quot;);</span><br><span class="line">    // 清空旧数据，更新为新数据</span><br><span class="line">    books.splice(0, books.length);</span><br><span class="line">    books.push(...res.data.results);</span><br><span class="line">    console.log(&#x27;更新数据&#x27;);</span><br><span class="line">  &#125; catch (error) &#123;</span><br><span class="line">    console.error(&#x27;获取图书数据失败:&#x27;, error);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">onMounted(() =&gt; &#123;</span><br><span class="line">  getStudents()</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">// 删除数据</span><br><span class="line">const handleDelete = (index, scope) =&gt; &#123;</span><br><span class="line">  axios.delete(`http://192.168.0.165:5000/books/$&#123;scope.id&#125;`).then(() =&gt; &#123;</span><br><span class="line">    getStudents()</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 添加图书表单 */</span><br><span class="line">// 弹窗可见性</span><br><span class="line">const add_dialog_visible = ref(false)</span><br><span class="line">// 表单引用</span><br><span class="line">const ruleFormRef = ref()</span><br><span class="line">// 图书表单数据</span><br><span class="line">const book_form = reactive(&#123;</span><br><span class="line">  book_number: &quot;&quot;,</span><br><span class="line">  book_name: &quot;&quot;,</span><br><span class="line">  book_type: &quot;&quot;,</span><br><span class="line">  book_prize: &quot;&quot;,</span><br><span class="line">  author: &quot;&quot;,</span><br><span class="line">  book_publisher: &quot;&quot;,</span><br><span class="line">  id: &quot;&quot;,</span><br><span class="line">&#125;)</span><br><span class="line">// 表单提交事件</span><br><span class="line">const submitForm = (formEl) =&gt; &#123;</span><br><span class="line">  axios.post(&#x27;http://192.168.0.165:5000/books&#x27;, book_form).then(() =&gt; &#123;</span><br><span class="line">    add_dialog_visible.value = false</span><br><span class="line">    formEl.resetFields()</span><br><span class="line">    getStudents()</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line">// 表单重置事件</span><br><span class="line">const resetForm = (formEl) =&gt; &#123;</span><br><span class="line">  formEl.resetFields()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 弹窗关闭前确认</span><br><span class="line"></span><br><span class="line">const handleClose = (done) =&gt; &#123;</span><br><span class="line">  ElMessageBox.confirm(&#x27;是否退出?&#x27;, &#x27;提示&#x27;, &#123;</span><br><span class="line">    confirmButtonText: &#x27;是&#x27;,</span><br><span class="line">    cancelButtonText: &#x27;否&#x27;,</span><br><span class="line">    type: &#x27;warning&#x27;,</span><br><span class="line">  &#125;)</span><br><span class="line">    .then(() =&gt; &#123;</span><br><span class="line">      done();</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch(() =&gt; &#123;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 编辑图书表单 */</span><br><span class="line">// 表单引用</span><br><span class="line">const editFormRef = ref()</span><br><span class="line">// 弹窗可见性</span><br><span class="line">const edit_dialog_visible = ref(false)</span><br><span class="line">// 编辑按钮点击事件</span><br><span class="line">const handleEdit = (index, scope) =&gt; &#123;</span><br><span class="line">  for (let key in scope) &#123;</span><br><span class="line">    book_form[key] = scope[key]</span><br><span class="line">  &#125;</span><br><span class="line">  edit_dialog_visible.value = true</span><br><span class="line">&#125;</span><br><span class="line">// 编辑表单提交事件</span><br><span class="line">const submitEditForm = (formEl) =&gt; &#123;</span><br><span class="line">  axios.put(`http://192.168.0.165:5000/books/$&#123;book_form.id&#125;`, book_form).then(() =&gt; &#123;</span><br><span class="line">    formEl.resetFields()</span><br><span class="line">    edit_dialog_visible.value = false</span><br><span class="line">    getStudents()</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const isCollapse = ref(true)</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style scoped&gt;</span><br><span class="line">.el-menu-vertical-demo:not(.el-menu--collapse) &#123;</span><br><span class="line">  width: 200px;</span><br><span class="line">  min-height: 400px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="报错solver">报错solver</span></h1><p><em>Failed to resolve import “@element-plus&#x2F;icons-vue” from “src\App.vue”. Does the file exist?</em></p>
+<p><code>npm install @element-plus/icons-vue</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const handleClose = (done) =&gt; &#123;</span><br><span class="line">  ElMessageBox.confirm(&#x27;确认关闭么?&#x27;,&#x27;提示&#x27;,&#123;</span><br><span class="line">    confirmButtonText: &#x27;确定&#x27;,</span><br><span class="line">    cancelButtonText: &#x27;取消&#x27;,</span><br><span class="line">    type: &#x27;warning&#x27;,</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(() =&gt; &#123;</span><br><span class="line">    done();</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(() =&gt; &#123;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a href="http://127.0.0.1:3000/">http://127.0.0.1:3000/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">async function getlist()&#123;</span><br><span class="line">  const res = await axios(&#123;</span><br><span class="line">    url : &quot;https://q6zv39.laf.run/get_list&quot;,</span><br><span class="line">    method : &#x27;GET&#x27;</span><br><span class="line">  &#125;)</span><br><span class="line">  list.value = res.data.list</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://notes.zhengxinonly.com/">https://notes.zhengxinonly.com/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd book-fontend</span><br><span class="line">	npm install</span><br><span class="line"> 	npm run dev</span><br></pre></td></tr></table></figure>
+
+<h2><span id="reactive">reactive</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reactive 是 Vue 3 中用于创建响应式对象的一个函数。响应式对象是指当对象的属性发生变化时，Vue 会自动跟踪这些变化，并相应地更新视图。</span><br></pre></td></tr></table></figure>
+
+<h2><span id="v-model">v-model</span></h2><p><code>v-model</code> 是 Vue.js 中用于在表单控件和数据模型之间创建双向绑定的指令。它简化了表单输入和应用状态之间的同步。</p>
+<h2><span id="dom">dom</span></h2><p>html是静态的各个元素的集合，JavaScript提供动态的能力，但是又没有直接操纵html的能力。所以需要引入DOM这个模型去做一个桥梁，让JS能操做html的静态元素。</p>
 <h2><span id="练习题">练习题</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line">5-0</span><br><span class="line">&lt;script setup&gt;</span><br><span class="line">import &#123; ref &#125; from &#x27;vue&#x27;</span><br><span class="line"></span><br><span class="line">const text = ref(&#x27;&#x27;)</span><br><span class="line"></span><br><span class="line">function onInput(e) &#123;</span><br><span class="line">  text.value = e.target.value</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;input :value=&quot;text&quot; @input=&quot;onInput&quot; placeholder=&quot;Type here&quot;&gt;</span><br><span class="line">  &lt;p&gt;&#123;&#123; text &#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">5-1</span><br><span class="line">&lt;script setup&gt;</span><br><span class="line">import &#123; ref &#125; from &#x27;vue&#x27;</span><br><span class="line"></span><br><span class="line">const text = ref(&#x27;&#x27;)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;input v-model=&quot;text&quot; placeholder=&quot;Type here&quot;&gt;</span><br><span class="line">  &lt;p&gt;&#123;&#123; text &#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script setup&gt;</span><br><span class="line">import &#123; ref &#125; from &#x27;vue&#x27;</span><br><span class="line"></span><br><span class="line">const awesome = ref(true)</span><br><span class="line"></span><br><span class="line">function toggle() &#123;</span><br><span class="line">  awesome.value = !awesome.value</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">6-1</span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;button @click=&quot;toggle&quot;&gt;Toggle&lt;/button&gt;</span><br><span class="line">  &lt;h1 v-if=&quot;awesome&quot;&gt;Vue is awesome!&lt;/h1&gt;</span><br><span class="line">  &lt;h1 v-else&gt;Oh no 😢&lt;/h1&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">7.1</span><br><span class="line">&lt;script setup&gt;</span><br><span class="line">import &#123; ref &#125; from &#x27;vue&#x27;</span><br><span class="line"></span><br><span class="line">// 给每个 todo 对象一个唯一的 id</span><br><span class="line">let id = 0</span><br><span class="line"></span><br><span class="line">const newTodo = ref(&#x27;&#x27;)</span><br><span class="line">const todos = ref([</span><br><span class="line">  &#123; id: id++, text: &#x27;Learn HTML&#x27; &#125;,</span><br><span class="line">  &#123; id: id++, text: &#x27;Learn JavaScript&#x27; &#125;,</span><br><span class="line">  &#123; id: id++, text: &#x27;Learn Vue&#x27; &#125;</span><br><span class="line">])</span><br><span class="line"></span><br><span class="line">function addTodo() &#123;</span><br><span class="line">  todos.value.push(&#123;id:id++, text:newTodo.value&#125;)</span><br><span class="line">  newTodo.value=&#x27;&#x27;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function removeTodo(todo) &#123;</span><br><span class="line">  todos.value = todos.value.filter((t) =&gt; t !== todo)</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;form @submit.prevent=&quot;addTodo&quot;&gt;</span><br><span class="line">    &lt;input v-model=&quot;newTodo&quot; required placeholder=&quot;new todo&quot;&gt;</span><br><span class="line">    &lt;button&gt;Add Todo&lt;/button&gt;</span><br><span class="line">  &lt;/form&gt;</span><br><span class="line">  &lt;ul&gt;</span><br><span class="line">    &lt;li v-for=&quot;todo in todos&quot; :key=&quot;todo.id&quot;&gt;</span><br><span class="line">      &#123;&#123; todo.text &#125;&#125;</span><br><span class="line">      &lt;button @click=&quot;removeTodo(todo)&quot;&gt;X&lt;/button&gt;</span><br><span class="line">    &lt;/li&gt;</span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">&lt;script setup&gt;</span><br><span class="line">import &#123; ref, computed &#125; from &#x27;vue&#x27; // 从 Vue 中导入 ref 和 computed 函数</span><br><span class="line"></span><br><span class="line">let id = 0 // 初始化一个 id 变量，用于唯一标识每个 todo 项</span><br><span class="line"></span><br><span class="line">const newTodo = ref(&#x27;&#x27;) // 创建一个 ref 用于绑定新待办事项的输入值</span><br><span class="line">const hideCompleted = ref(false) // 创建一个 ref 用于控制是否隐藏已完成的待办事项</span><br><span class="line">const todos = ref([ // 创建一个 ref 用于存储待办事项列表</span><br><span class="line">  &#123; id: id++, text: &#x27;Learn HTML&#x27;, done: true &#125;, // 示例待办事项1，已完成</span><br><span class="line">  &#123; id: id++, text: &#x27;Learn JavaScript&#x27;, done: true &#125;, // 示例待办事项2，已完成</span><br><span class="line">  &#123; id: id++, text: &#x27;Learn Vue&#x27;, done: false &#125; // 示例待办事项3，未完成</span><br><span class="line">])</span><br><span class="line"></span><br><span class="line">const filteredTodos = computed(() =&gt; &#123; // 创建一个 computed 属性，用于计算过滤后的待办事项列表</span><br><span class="line">  return hideCompleted.value // 根据 hideCompleted 的值判断是否隐藏已完成的待办事项</span><br><span class="line">    ? todos.value.filter((t) =&gt; !t.done) // 如果 hideCompleted 为 true，则只返回未完成的待办事项</span><br><span class="line">    : todos.value // 如果 hideCompleted 为 false，则返回所有待办事项</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">function addTodo() &#123; // 定义一个函数用于添加新的待办事项</span><br><span class="line">  todos.value.push(&#123; id: id++, text: newTodo.value, done: false &#125;) // 将新待办事项添加到待办事项列表</span><br><span class="line">  newTodo.value = &#x27;&#x27; // 重置 newTodo 的值</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function removeTodo(todo) &#123; // 定义一个函数用于移除指定的待办事项</span><br><span class="line">  todos.value = todos.value.filter((t) =&gt; t !== todo) // 过滤掉指定的待办事项</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;form @submit.prevent=&quot;addTodo&quot;&gt; &lt;!-- 表单用于输入新的待办事项，阻止默认提交行为，调用 addTodo --&gt;</span><br><span class="line">    &lt;input v-model=&quot;newTodo&quot; required placeholder=&quot;new todo&quot;&gt; &lt;!-- 输入框绑定 newTodo --&gt;</span><br><span class="line">    &lt;button&gt;Add Todo&lt;/button&gt; &lt;!-- 添加按钮 --&gt;</span><br><span class="line">  &lt;/form&gt;</span><br><span class="line">  &lt;ul&gt;</span><br><span class="line">    &lt;li v-for=&quot;todo in filteredTodos&quot; :key=&quot;todo.id&quot;&gt; &lt;!-- 遍历 filteredTodos 列表，渲染每个待办事项 --&gt;</span><br><span class="line">      &lt;input type=&quot;checkbox&quot; v-model=&quot;todo.done&quot;&gt; &lt;!-- 复选框绑定每个待办事项的 done 属性 --&gt;</span><br><span class="line">      &lt;span :class=&quot;&#123; done: todo.done &#125;&quot;&gt;&#123;&#123; todo.text &#125;&#125;&lt;/span&gt; &lt;!-- 动态绑定类名，根据 done 属性显示文本样式 --&gt;</span><br><span class="line">      &lt;button @click=&quot;removeTodo(todo)&quot;&gt;X&lt;/button&gt; &lt;!-- 移除按钮，点击时调用 removeTodo 函数 --&gt;</span><br><span class="line">    &lt;/li&gt;</span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line">  &lt;button @click=&quot;hideCompleted = !hideCompleted&quot;&gt; &lt;!-- 按钮用于切换 hideCompleted 的值 --&gt;</span><br><span class="line">    &#123;&#123; hideCompleted ? &#x27;Show all&#x27; : &#x27;Hide completed&#x27; &#125;&#125; &lt;!-- 根据 hideCompleted 的值显示按钮文本 --&gt;</span><br><span class="line">  &lt;/button&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">.done &#123;</span><br><span class="line">  text-decoration: line-through; /* 设置已完成事项的样式，添加删除线 */</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -411,6 +854,98 @@
 <div class="relate-post">
 	
 		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/10/10/%E8%82%A1%E7%A5%A8/" title="股票">
+								股票			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 10日, 2024				
+							</p>
+							<p class="relate-post-content">
+								交易时间半导体上午时段9:30-11:30，
+下午时段13:00-15:00
+节奏防守: 银行,白酒,贵金属
+进攻: 科技线(游戏,芯片,光刻胶,人工智能)
+上证
+光伏,医药-&gt;银行
+时间节点
+ 美国大选 -&gt; 小商品城(...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/10/10/%E8%82%A1%E7%A5%A8/" title="股票">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="股票"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/09/09/%E5%A4%A7%E4%B8%89%E4%B8%8A/" title="大三上">
+								大三上			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 9日, 2024				
+							</p>
+							<p class="relate-post-content">
+								我的编程规范123userModel:变量名create_user_model:函数名rouyi
+
+手机
+
+
+
+荣耀100pro
+redmi k70ulter
+iqooneo9pro
+一加ace3
+
+
+
+屏幕
+曲面
+直屏
+直屏
+曲面
+...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/09/09/%E5%A4%A7%E4%B8%89%E4%B8%8A/" title="大三上">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大三上"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/07/25/tools/" title="tools">
+								tools			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 25日, 2024				
+							</p>
+							<p class="relate-post-content">
+								sqlheidiSQL
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/07/25/tools/" title="tools">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="tools"/>
+							</a>
+						</div>
+					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -577,93 +1112,6 @@ VM？VM！1
 							<a href="/2024/05/22/hexo/" title="hexo">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="hexo"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/05/22/hello-world/" title="Hello World">
-								Hello World			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								五月 22日, 2024				
-							</p>
-							<p class="relate-post-content">
-								
-
-
-Quick Start
-Create a new post
-Run server
-Generate static files
-Deploy to remote sites
-
-
-
-
-
-Welcome to Hexo! This i...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/05/22/hello-world/" title="Hello World">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/05/22/draft/" title="draft">
-								draft			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								五月 22日, 2024				
-							</p>
-							<p class="relate-post-content">
-								
-  46dd145f76e505a9a6c269068bf920add17329ee7b381137cf8d07d2b9c90cbbf197cd240bb5a7eeb75a5d288900ed1b4fbc3474eda54c4290...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/05/22/draft/" title="draft">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="draft"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2024/05/22/different%20views/" title="different views">
-								different views			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								五月 22日, 2024				
-							</p>
-							<p class="relate-post-content">
-								1.题目分类2.所给内容MISC损坏的文件2.来自提瓦特的神秘文件.zip
-用010editor打开
-不全zip头:504B0304
-解压缩是奇怪的文字图片,
-根据题目可以翻译的到flag
-也可以保存下来用百度等浏览器扫扫看
-条形码
-...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2024/05/22/different%20views/" title="different views">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="different views"/>
 							</a>
 						</div>
 					</li>												

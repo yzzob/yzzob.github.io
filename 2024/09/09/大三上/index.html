@@ -1,0 +1,1065 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      大三上 | yzzob_blog
+    
+  </title>
+  <meta name="author" content="yzz">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「大三上」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+	<a href="/2024/09/09/%E5%A4%A7%E4%B8%89%E4%B8%8A/" itemprop="url">
+		大三上
+	</a>
+
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/2024/09/09/%E5%A4%A7%E4%B8%89%E4%B8%8A/" itemprop="url">
+		<time datetime="2024-09-09T01:13:56.287Z" itemprop="dateUpdated">
+	  		2024-11-16
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<h1><span id="我的编程规范">我的编程规范</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">userModel:变量名</span><br><span class="line">create_user_model:函数名</span><br><span class="line">rouyi</span><br></pre></td></tr></table></figure>
+
+<h1><span id="手机">手机</span></h1><table>
+<thead>
+<tr>
+<th></th>
+<th>荣耀100pro</th>
+<th>redmi k70ulter</th>
+<th>iqooneo9pro</th>
+<th>一加ace3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>屏幕</td>
+<td>曲面</td>
+<td>直屏</td>
+<td>直屏</td>
+<td>曲面</td>
+</tr>
+<tr>
+<td>红外</td>
+<td>f</td>
+<td>t</td>
+<td>t</td>
+<td>f</td>
+</tr>
+<tr>
+<td>电池</td>
+<td>5000(100+66)</td>
+<td>5500(120)</td>
+<td>5160(120)</td>
+<td>5500(100)</td>
+</tr>
+<tr>
+<td>芯片</td>
+<td>8gen2</td>
+<td>9300+</td>
+<td>9300+</td>
+<td>8gen2</td>
+</tr>
+<tr>
+<td>价格</td>
+<td>(16+512)2429</td>
+<td>(12+512)2417</td>
+<td>(12+512)2318</td>
+<td>(16+512)2398</td>
+</tr>
+</tbody></table>
+<h1><span id="导出requirementstxt">导出requirements.txt</span></h1><blockquote>
+<p>pip freeze &gt; requirements.txt</p>
+</blockquote>
+<p>手里有米， 鸡自然朝你走</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /www/wwwroot/new;</span><br><span class="line">source my_flask_env/bin/activate;</span><br><span class="line">python app.py;</span><br></pre></td></tr></table></figure>
+
+<h1><span id="tuple">tuple</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Tuple</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>ordered</th>
+<th>attribute</th>
+<th>py例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tuple</td>
+<td>yes</td>
+<td></td>
+<td>(1, 2, 3)</td>
+</tr>
+<tr>
+<td>stack</td>
+<td>yes</td>
+<td>Last In First Out</td>
+<td></td>
+</tr>
+<tr>
+<td>queue</td>
+<td>yes</td>
+<td>First In First Out</td>
+<td></td>
+</tr>
+<tr>
+<td>heap</td>
+<td>yes</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dictionary</td>
+<td>no</td>
+<td>键值访问</td>
+<td>{‘name’: ‘Alice’, ‘age’: 25}</td>
+</tr>
+</tbody></table>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123; useState, useEffect &#125; from &#x27;react&#x27;;</span><br><span class="line">import &#123;</span><br><span class="line">  AppBar,</span><br><span class="line">  Box,</span><br><span class="line">  CssBaseline,</span><br><span class="line">  IconButton,</span><br><span class="line">  Toolbar,</span><br><span class="line">  Typography,</span><br><span class="line">  Table,</span><br><span class="line">  TableBody,</span><br><span class="line">  TableCell,</span><br><span class="line">  TableContainer,</span><br><span class="line">  TableHead,</span><br><span class="line">  TableRow,</span><br><span class="line">  Paper,</span><br><span class="line">  Snackbar,</span><br><span class="line">  Alert,</span><br><span class="line">  Button,</span><br><span class="line">  Dialog,</span><br><span class="line">  DialogActions,</span><br><span class="line">  DialogContent,</span><br><span class="line">  DialogTitle,</span><br><span class="line">  TextField,</span><br><span class="line">&#125; from &#x27;@mui/material&#x27;;</span><br><span class="line">import &#123;</span><br><span class="line">  Menu as MenuIcon,</span><br><span class="line">  Visibility as VisibilityIcon,</span><br><span class="line">  VisibilityOff as VisibilityOffIcon,</span><br><span class="line">  Edit as EditIcon,</span><br><span class="line">  Delete as DeleteIcon,</span><br><span class="line">&#125; from &#x27;@mui/icons-material&#x27;;</span><br><span class="line">import NavigationDrawer from &#x27;./components/NavigationDrawer&#x27;;</span><br><span class="line"></span><br><span class="line">const drawerWidth = 72;</span><br><span class="line"></span><br><span class="line">interface Password &#123;</span><br><span class="line">  id: string;</span><br><span class="line">  username: string;</span><br><span class="line">  password: string;</span><br><span class="line">  url: string;</span><br><span class="line">  else_information: string;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export default function PasswordManager() &#123;</span><br><span class="line">  const [mobileOpen, setMobileOpen] = useState(false);</span><br><span class="line">  const [passwords, setPasswords] = useState&lt;Password[]&gt;([]);</span><br><span class="line">  const [visiblePasswordId, setVisiblePasswordId] = useState&lt;string | null&gt;(null);</span><br><span class="line">  const [editingPassword, setEditingPassword] = useState&lt;Password | null&gt;(null);</span><br><span class="line">  const [isEditDialogOpen, setIsEditDialogOpen] = useState(false);</span><br><span class="line">  const [snackbar, setSnackbar] = useState(&#123; open: false, message: &#x27;&#x27;, severity: &#x27;success&#x27; as &#x27;success&#x27; | &#x27;error&#x27; &#125;);</span><br><span class="line">  </span><br><span class="line">  // 新增状态用于插入密码</span><br><span class="line">  const [newPassword, setNewPassword] = useState(&#123; username: &#x27;&#x27;, password: &#x27;&#x27;, url: &#x27;&#x27;, else_information: &#x27;&#x27; &#125;);</span><br><span class="line"></span><br><span class="line">  useEffect(() =&gt; &#123;</span><br><span class="line">    fetchPasswords();</span><br><span class="line">  &#125;, []);</span><br><span class="line"></span><br><span class="line">  const fetchPasswords = async () =&gt; &#123;</span><br><span class="line">    try &#123;</span><br><span class="line">      const response = await fetch(&#x27;http://192.168.0.244:5000/api/pwd/get_password_info&#x27;, &#123;</span><br><span class="line">        method: &#x27;POST&#x27;,</span><br><span class="line">        headers: &#123;</span><br><span class="line">          &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,</span><br><span class="line">        &#125;,</span><br><span class="line">        body: JSON.stringify(&#123; user: &quot;202231990234&quot; &#125;),</span><br><span class="line">      &#125;);</span><br><span class="line">      const data = await response.json();</span><br><span class="line">      if (data.message === &quot;User password retrieved successfully&quot; &amp;&amp; Array.isArray(data.password)) &#123;</span><br><span class="line">        const formattedPasswords = data.password.map((pwd: string[]) =&gt; (&#123;</span><br><span class="line">          id:pwd[0],</span><br><span class="line">          username: pwd[1],</span><br><span class="line">          password: pwd[2],</span><br><span class="line">          url: pwd[3],</span><br><span class="line">          else_information: pwd[4],  // 确保包含其他信息</span><br><span class="line">        &#125;));</span><br><span class="line">        setPasswords(formattedPasswords);</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        throw new Error(&#x27;Invalid data format&#x27;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; catch (error) &#123;</span><br><span class="line">      console.error(&#x27;Error fetching passwords:&#x27;, error);</span><br><span class="line">      setSnackbar(&#123; open: true, message: &#x27;获取密码信息失败&#x27;, severity: &#x27;error&#x27; &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  const handleDrawerToggle = () =&gt; &#123;</span><br><span class="line">    setMobileOpen(!mobileOpen);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  const togglePasswordVisibility = (id: string) =&gt; &#123;</span><br><span class="line">    setVisiblePasswordId(prevId =&gt; prevId === id ? null : id);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  const handleEdit = (password: Password) =&gt; &#123;</span><br><span class="line">    setEditingPassword(password);</span><br><span class="line">    setIsEditDialogOpen(true);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  const handleDelete = (id: string) =&gt; &#123;</span><br><span class="line">    setPasswords(passwords.filter(pwd =&gt; pwd.id !== id));</span><br><span class="line">    setSnackbar(&#123; open: true, message: &#x27;密码已删除&#x27;, severity: &#x27;success&#x27; &#125;);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  const handleSaveEdit = () =&gt; &#123;</span><br><span class="line">    if (editingPassword) &#123;</span><br><span class="line">      setPasswords(passwords.map(pwd =&gt; pwd.id === editingPassword.id ? editingPassword : pwd));</span><br><span class="line">      setIsEditDialogOpen(false);</span><br><span class="line">      setSnackbar(&#123; open: true, message: &#x27;密码已更新&#x27;, severity: &#x27;success&#x27; &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  // 新增的函数：插入密码</span><br><span class="line">  const handleInsertPassword = async () =&gt; &#123;</span><br><span class="line">    try &#123;</span><br><span class="line">      const response = await fetch(&#x27;http://192.168.0.244:5000/api/pwd/insert_password&#x27;, &#123;</span><br><span class="line">        method: &#x27;POST&#x27;,</span><br><span class="line">        headers: &#123;</span><br><span class="line">          &#x27;Content-Type&#x27;: &#x27;application/json&#x27;,</span><br><span class="line">        &#125;,</span><br><span class="line">        body: JSON.stringify(&#123;</span><br><span class="line">          user: &quot;1&quot;,</span><br><span class="line">          username: newPassword.username,</span><br><span class="line">          password: newPassword.password,</span><br><span class="line">          url: newPassword.url,</span><br><span class="line">          else_information: newPassword.else_information,</span><br><span class="line">        &#125;),</span><br><span class="line">      &#125;);</span><br><span class="line">      const data = await response.json();</span><br><span class="line">      if (data.message === &quot;Password inserted successfully&quot;) &#123;</span><br><span class="line">        setSnackbar(&#123; open: true, message: &#x27;密码已插入&#x27;, severity: &#x27;success&#x27; &#125;);</span><br><span class="line">        setNewPassword(&#123; username: &#x27;&#x27;, password: &#x27;&#x27;, url: &#x27;&#x27;, else_information: &#x27;&#x27; &#125;); // 重置输入框</span><br><span class="line">        fetchPasswords(); // 重新获取密码列表以更新显示</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        throw new Error(&#x27;插入密码失败&#x27;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; catch (error) &#123;</span><br><span class="line">      console.error(&#x27;Error inserting password:&#x27;, error);</span><br><span class="line">      setSnackbar(&#123; open: true, message: &#x27;插入密码失败&#x27;, severity: &#x27;error&#x27; &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  const handleCloseSnackbar = (event?: React.SyntheticEvent | Event, reason?: string) =&gt; &#123;</span><br><span class="line">    if (reason === &#x27;clickaway&#x27;) &#123;</span><br><span class="line">      return;</span><br><span class="line">    &#125;</span><br><span class="line">    setSnackbar(&#123; ...snackbar, open: false &#125;);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  return (</span><br><span class="line">    &lt;Box sx=&#123;&#123; display: &#x27;flex&#x27; &#125;&#125;&gt;</span><br><span class="line">      &lt;CssBaseline /&gt;</span><br><span class="line">      &lt;AppBar position=&quot;fixed&quot; sx=&#123;&#123; width: &#123; sm: `calc(100% - $&#123;drawerWidth&#125;px)` &#125;, ml: &#123; sm: `$&#123;drawerWidth&#125;px` &#125; &#125;&#125;&gt;</span><br><span class="line">        &lt;Toolbar&gt;</span><br><span class="line">          &lt;IconButton color=&quot;inherit&quot; aria-label=&quot;open drawer&quot; edge=&quot;start&quot; onClick=&#123;handleDrawerToggle&#125; sx=&#123;&#123; mr: 2, display: &#123; sm: &#x27;none&#x27; &#125; &#125;&#125;&gt;</span><br><span class="line">            &lt;MenuIcon /&gt;</span><br><span class="line">          &lt;/IconButton&gt;</span><br><span class="line">          &lt;Typography variant=&quot;h6&quot; noWrap component=&quot;div&quot;&gt;</span><br><span class="line">            密码管理器</span><br><span class="line">          &lt;/Typography&gt;</span><br><span class="line">        &lt;/Toolbar&gt;</span><br><span class="line">      &lt;/AppBar&gt;</span><br><span class="line"></span><br><span class="line">      &lt;NavigationDrawer mobileOpen=&#123;mobileOpen&#125; handleDrawerToggle=&#123;handleDrawerToggle&#125; /&gt;</span><br><span class="line"></span><br><span class="line">      &lt;Box component=&quot;main&quot; sx=&#123;&#123; flexGrow: 1, p: 3, width: &#123; sm: `calc(100% - $&#123;drawerWidth&#125;px)` &#125; &#125;&#125;&gt;</span><br><span class="line">        &lt;Toolbar /&gt;</span><br><span class="line">        &lt;Typography variant=&quot;h4&quot; gutterBottom&gt;</span><br><span class="line">          密码列表</span><br><span class="line">        &lt;/Typography&gt;</span><br><span class="line">        </span><br><span class="line">        &#123;/* 添加输入框和按钮以插入新密码 */&#125;</span><br><span class="line">        &lt;Box sx=&#123;&#123; marginBottom: 2 &#125;&#125;&gt;</span><br><span class="line">          &lt;TextField</span><br><span class="line">            label=&quot;用户名&quot;</span><br><span class="line">            value=&#123;newPassword.username&#125;</span><br><span class="line">            onChange=&#123;(e) =&gt; setNewPassword(&#123; ...newPassword, username: e.target.value &#125;)&#125;</span><br><span class="line">            sx=&#123;&#123; marginRight: 1 &#125;&#125;</span><br><span class="line">          /&gt;</span><br><span class="line">          &lt;TextField</span><br><span class="line">            label=&quot;密码&quot;</span><br><span class="line">            type=&quot;password&quot;</span><br><span class="line">            value=&#123;newPassword.password&#125;</span><br><span class="line">            onChange=&#123;(e) =&gt; setNewPassword(&#123; ...newPassword, password: e.target.value &#125;)&#125;</span><br><span class="line">            sx=&#123;&#123; marginRight: 1 &#125;&#125;</span><br><span class="line">          /&gt;</span><br><span class="line">          &lt;TextField</span><br><span class="line">            label=&quot;URL&quot;</span><br><span class="line">            value=&#123;newPassword.url&#125;</span><br><span class="line">            onChange=&#123;(e) =&gt; setNewPassword(&#123; ...newPassword, url: e.target.value &#125;)&#125;</span><br><span class="line">            sx=&#123;&#123; marginRight: 1 &#125;&#125;</span><br><span class="line">          /&gt;</span><br><span class="line">          &lt;TextField</span><br><span class="line">            label=&quot;其他信息&quot;</span><br><span class="line">            value=&#123;newPassword.else_information&#125;</span><br><span class="line">            onChange=&#123;(e) =&gt; setNewPassword(&#123; ...newPassword, else_information: e.target.value &#125;)&#125;</span><br><span class="line">            sx=&#123;&#123; marginRight: 1 &#125;&#125;</span><br><span class="line">          /&gt;</span><br><span class="line">          &lt;Button variant=&quot;contained&quot; color=&quot;primary&quot; onClick=&#123;handleInsertPassword&#125;&gt;</span><br><span class="line">            添加密码</span><br><span class="line">          &lt;/Button&gt;</span><br><span class="line">        &lt;/Box&gt;</span><br><span class="line"></span><br><span class="line">        &lt;TableContainer component=&#123;Paper&#125;&gt;</span><br><span class="line">          &lt;Table&gt;</span><br><span class="line">            &lt;TableHead&gt;</span><br><span class="line">              &lt;TableRow&gt;</span><br><span class="line">                &lt;TableCell&gt;用户名&lt;/TableCell&gt;</span><br><span class="line">                &lt;TableCell&gt;密码&lt;/TableCell&gt;</span><br><span class="line">                &lt;TableCell&gt;url&lt;/TableCell&gt;</span><br><span class="line">                &lt;TableCell&gt;其他信息&lt;/TableCell&gt;</span><br><span class="line">                &lt;TableCell&gt;操作&lt;/TableCell&gt;</span><br><span class="line">              &lt;/TableRow&gt;</span><br><span class="line">            &lt;/TableHead&gt;</span><br><span class="line">            &lt;TableBody&gt;</span><br><span class="line">              &#123;passwords.map((pwd) =&gt; (</span><br><span class="line">                &lt;TableRow key=&#123;pwd.id&#125;&gt;</span><br><span class="line">                  &lt;TableCell&gt;&#123;pwd.username&#125;&lt;/TableCell&gt;</span><br><span class="line">                  &lt;TableCell&gt;&#123;pwd.password&#125;&lt;/TableCell&gt;</span><br><span class="line">                  &lt;TableCell&gt;&#123;pwd.url&#125;&lt;/TableCell&gt;</span><br><span class="line">                  &lt;TableCell&gt;&#123;pwd.else_information&#125;&lt;/TableCell&gt;</span><br><span class="line">                  &lt;TableCell&gt;</span><br><span class="line">                    &#123;visiblePasswordId === pwd.id ? pwd.password : &#x27;••••••••&#x27;&#125;</span><br><span class="line">                    &lt;IconButton onClick=&#123;() =&gt; togglePasswordVisibility(pwd.id)&#125; size=&quot;small&quot;&gt;</span><br><span class="line">                      &#123;visiblePasswordId === pwd.id ? &lt;VisibilityOffIcon /&gt; : &lt;VisibilityIcon /&gt;&#125;</span><br><span class="line">                    &lt;/IconButton&gt;</span><br><span class="line">                  &lt;/TableCell&gt;</span><br><span class="line">                  &lt;TableCell&gt;</span><br><span class="line">                    &lt;IconButton onClick=&#123;() =&gt; handleEdit(pwd)&#125; size=&quot;small&quot; color=&quot;primary&quot;&gt;</span><br><span class="line">                      &lt;EditIcon /&gt;</span><br><span class="line">                    &lt;/IconButton&gt;</span><br><span class="line">                    &lt;IconButton onClick=&#123;() =&gt; handleDelete(pwd.id)&#125; size=&quot;small&quot; color=&quot;error&quot;&gt;</span><br><span class="line">                      &lt;DeleteIcon /&gt;</span><br><span class="line">                    &lt;/IconButton&gt;</span><br><span class="line">                  &lt;/TableCell&gt;</span><br><span class="line">                &lt;/TableRow&gt;</span><br><span class="line">              ))&#125;</span><br><span class="line">            &lt;/TableBody&gt;</span><br><span class="line">          &lt;/Table&gt;</span><br><span class="line">        &lt;/TableContainer&gt;</span><br><span class="line"></span><br><span class="line">        &lt;Dialog open=&#123;isEditDialogOpen&#125; onClose=&#123;() =&gt; setIsEditDialogOpen(false)&#125;&gt;</span><br><span class="line">          &lt;DialogTitle&gt;编辑密码&lt;/DialogTitle&gt;</span><br><span class="line">          &lt;DialogContent&gt;</span><br><span class="line">            &lt;TextField</span><br><span class="line">              autoFocus</span><br><span class="line">              margin=&quot;dense&quot;</span><br><span class="line">              label=&quot;用户名&quot;</span><br><span class="line">              fullWidth</span><br><span class="line">              value=&#123;editingPassword?.username || &#x27;&#x27;&#125;</span><br><span class="line">              onChange=&#123;(e) =&gt; setEditingPassword(prev =&gt; prev ? &#123;...prev, username: e.target.value&#125; : null)&#125;</span><br><span class="line">            /&gt;</span><br><span class="line">            &lt;TextField</span><br><span class="line">              margin=&quot;dense&quot;</span><br><span class="line">              label=&quot;URL&quot;</span><br><span class="line">              fullWidth</span><br><span class="line">              value=&#123;editingPassword?.url || &#x27;&#x27;&#125;</span><br><span class="line">              onChange=&#123;(e) =&gt; setEditingPassword(prev =&gt; prev ? &#123;...prev, url: e.target.value&#125; : null)&#125;</span><br><span class="line">            /&gt;</span><br><span class="line">            &lt;TextField</span><br><span class="line">              margin=&quot;dense&quot;</span><br><span class="line">              label=&quot;密码&quot;</span><br><span class="line">              fullWidth</span><br><span class="line">              type=&quot;password&quot;</span><br><span class="line">              value=&#123;editingPassword?.password || &#x27;&#x27;&#125;</span><br><span class="line">              onChange=&#123;(e) =&gt; setEditingPassword(prev =&gt; prev ? &#123;...prev, password: e.target.value&#125; : null)&#125;</span><br><span class="line">            /&gt;</span><br><span class="line">            &lt;TextField</span><br><span class="line">              margin=&quot;dense&quot;</span><br><span class="line">              label=&quot;其他信息&quot;</span><br><span class="line">              fullWidth</span><br><span class="line">              value=&#123;editingPassword?.else_information || &#x27;&#x27;&#125;</span><br><span class="line">              onChange=&#123;(e) =&gt; setEditingPassword(prev =&gt; prev ? &#123;...prev, else_information: e.target.value&#125; : null)&#125;</span><br><span class="line">            /&gt;</span><br><span class="line">          &lt;/DialogContent&gt;</span><br><span class="line">          &lt;DialogActions&gt;</span><br><span class="line">            &lt;Button onClick=&#123;() =&gt; setIsEditDialogOpen(false)&#125;&gt;取消&lt;/Button&gt;</span><br><span class="line">            &lt;Button onClick=&#123;handleSaveEdit&#125;&gt;保存&lt;/Button&gt;</span><br><span class="line">          &lt;/DialogActions&gt;</span><br><span class="line">        &lt;/Dialog&gt;</span><br><span class="line"></span><br><span class="line">        &lt;Snackbar open=&#123;snackbar.open&#125; autoHideDuration=&#123;6000&#125; onClose=&#123;handleCloseSnackbar&#125;&gt;</span><br><span class="line">          &lt;Alert onClose=&#123;handleCloseSnackbar&#125; severity=&#123;snackbar.severity&#125;&gt;</span><br><span class="line">            &#123;snackbar.message&#125;</span><br><span class="line">          &lt;/Alert&gt;</span><br><span class="line">        &lt;/Snackbar&gt;</span><br><span class="line">      &lt;/Box&gt;</span><br><span class="line">    &lt;/Box&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="nohupe">nohupe</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 后台运行程序</span><br><span class="line">nohup python3 app.py &amp;</span><br><span class="line"></span><br><span class="line">root@lavm-rfeew1wahx:/www/wwwroot/new# nohup python3 app.py &amp;</span><br><span class="line">[1] 777422</span><br><span class="line"></span><br><span class="line"># 显示运行结果</span><br><span class="line">cat nohup.out</span><br><span class="line"># 终止进程</span><br><span class="line">kill 777422</span><br><span class="line">kill -9 777422</span><br><span class="line"></span><br><span class="line"># 显示进程</span><br><span class="line">ps aux | grep python</span><br></pre></td></tr></table></figure>
+
+<h1><span id="终止程序">终止程序</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">查看在5000端口号的程序</span><br><span class="line">lsof -i :5000</span><br><span class="line">得到pid,进行kill</span><br><span class="line"></span><br><span class="line">kill &lt;pid&gt;</span><br><span class="line"></span><br><span class="line">windows</span><br><span class="line">netstat -ano | findstr :5000</span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="git">git</span></h1><h2><span id="总结">总结</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"># 显示远程仓库</span><br><span class="line">git remote -v</span><br><span class="line"># 删除git</span><br><span class="line">Remove-Item -Recurse -Force .git</span><br><span class="line"></span><br><span class="line"># 显示文件夹内容</span><br><span class="line">ls -Force</span><br><span class="line"></span><br><span class="line"># 显示分支</span><br><span class="line">git branc</span><br><span class="line"></span><br><span class="line"># 设置远程仓库</span><br><span class="line">git remote set-url origin https://gitee.com/yzzob/skl-final.git</span><br><span class="line"></span><br><span class="line"># 克隆仓库</span><br><span class="line">git clone https://github.com/yzzob/my-project.git</span><br><span class="line"></span><br><span class="line">#显示当前文件夹的远程仓库</span><br><span class="line">git remote -v</span><br><span class="line"></span><br><span class="line"># 添加更改到暂存区</span><br><span class="line">git add config/base_config.py</span><br><span class="line"></span><br><span class="line"># 提交更改</span><br><span class="line">git commit -m &quot;描述您的更改内容&quot;</span><br><span class="line"></span><br><span class="line"># 切换到 main 分支</span><br><span class="line">git checkout main</span><br><span class="line"></span><br><span class="line"># 设置仓库</span><br><span class="line">git remote add origin https://gitee.com/yzzob/f-zjnu-master.git</span><br><span class="line"></span><br><span class="line"># 克隆仓库</span><br><span class="line">git clone https://github.com/你的用户名/my-project.git</span><br><span class="line"></span><br><span class="line"># 进入仓库目录</span><br><span class="line">cd my-project</span><br><span class="line"></span><br><span class="line"># 查看状态</span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"># 添加所有更改</span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"># 提交更改</span><br><span class="line">git commit -m &quot;添加新功能&quot;</span><br><span class="line"></span><br><span class="line"># 推送到远程仓库</span><br><span class="line">git push origin main</span><br><span class="line"></span><br><span class="line"># 删除分支</span><br><span class="line">git branch -D main</span><br><span class="line"></span><br><span class="line"># h</span><br><span class="line">git pull origin main --allow-unrelated-histories</span><br><span class="line"></span><br><span class="line"># c</span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="删除git">删除git</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">windows:</span><br><span class="line">Remove-Item -Recurse -Force .git</span><br></pre></td></tr></table></figure>
+
+<h2><span id="显示文件夹内容">显示文件夹内容</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">windows:</span><br><span class="line">ls -Force</span><br><span class="line"></span><br><span class="line">linux:</span><br><span class="line">ls -a</span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="查看当前目录文件">查看当前目录文件</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+
+<p>常用指令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 设置远程仓库</span><br><span class="line">git remote set-url origin https://gitee.com/yzzob/skl-final.git</span><br><span class="line"></span><br><span class="line"># 克隆仓库</span><br><span class="line">git clone https://github.com/yzzob/my-project.git</span><br><span class="line"></span><br><span class="line">#显示当前文件夹的远程仓库</span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+
+<h2><span id="例子">例子</span></h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">PS D:\yzzob\Desktop\all_in\python\skl-final-0112&gt; git add .</span><br><span class="line"></span><br><span class="line">PS D:\yzzob\Desktop\all_in\python\skl-final-0112&gt; git commit -m &quot;09271456&quot;</span><br><span class="line">[master ef92b17] 09271456</span><br><span class="line"> 12 files changed, 8 insertions(+), 7 deletions(-)</span><br><span class="line"> </span><br><span class="line">PS D:\yzzob\Desktop\all_in\python\skl-final-0112&gt; git push origin master  </span><br><span class="line">Enumerating objects: 31, done.</span><br><span class="line">Counting objects: 100% (31/31), done.</span><br><span class="line">Delta compression using up to 16 threads</span><br><span class="line">Compressing objects: 100% (20/20), done.</span><br><span class="line">Writing objects: 100% (20/20), 16.29 KiB | 1.25 MiB/s, done.</span><br><span class="line">Total 20 (delta 8), reused 0 (delta 0), pack-reused 0</span><br><span class="line">remote: Powered by GITEE.COM [GNK-6.4]</span><br><span class="line">To https://gitee.com/yzzob/skl-final.git</span><br><span class="line">   a75d0df..ef92b17  master -&gt; master</span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="提交项目">提交项目</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"># 设置仓库</span><br><span class="line">git remote add origin https://gitee.com/yzzob/f-zjnu-master.git</span><br><span class="line"></span><br><span class="line"># 克隆仓库</span><br><span class="line">git clone https://github.com/你的用户名/my-project.git</span><br><span class="line"></span><br><span class="line"># 进入仓库目录</span><br><span class="line">cd my-project</span><br><span class="line"></span><br><span class="line"># 查看状态</span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"># 添加所有更改</span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"># 提交更改</span><br><span class="line">git commit -m &quot;添加新功能&quot;</span><br><span class="line"></span><br><span class="line"># 推送到远程仓库</span><br><span class="line">git push origin main</span><br></pre></td></tr></table></figure>
+
+<h2><span id="克隆项目">克隆项目</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b 分支名称 https://gitee.com/yzzob/skl-project.git</span><br></pre></td></tr></table></figure>
+
+<h2><span id="更换分支">更换分支</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 添加更改到暂存区</span><br><span class="line">git add config/base_config.py</span><br><span class="line"></span><br><span class="line"># 提交更改</span><br><span class="line">git commit -m &quot;描述您的更改内容&quot;</span><br><span class="line"></span><br><span class="line"># 切换到 main 分支</span><br><span class="line">git checkout main</span><br></pre></td></tr></table></figure>
+
+<h2><span id="更改远程仓库">更改远程仓库</span></h2><p>在 Git 中，如果您尝试添加一个名为 <code>origin</code> 的远程仓库，但已经存在一个同名的远程仓库，就会出现错误信息 “error: remote origin already exists.”。以下是解决这个问题的几种方法：</p>
+<ol>
+<li><p><strong>删除已存在的远程仓库</strong>：<br>如果您确定要替换现有的 <code>origin</code> 远程仓库，可以使用以下命令先删除它：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote <span class="built_in">rm</span> origin</span><br></pre></td></tr></table></figure>
+<p>然后再添加新的远程仓库：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://gitee.com/yzzob/b-zjnu-master.git</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>更改远程仓库的名称</strong>：<br>如果您想要保留现有的 <code>origin</code> 远程仓库，并添加新的远程仓库，可以为新的远程仓库指定一个不同的名称：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add new-origin https://gitee.com/yzzob/b-zjnu-master.git</span><br></pre></td></tr></table></figure>
+<p>在这里，<code>new-origin</code> 是新远程仓库的名称，您可以选择任何未被使用的名称。</p>
+</li>
+<li><p><strong>查看当前的远程仓库</strong>：<br>如果您不确定当前的远程仓库配置，可以通过以下命令查看：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+<p>这个命令会列出所有远程仓库及其 URLs。</p>
+</li>
+<li><p><strong>更新远程仓库的 URL</strong>：<br>如果您只是想要更改 <code>origin</code> 的 URL，而不是添加一个新的远程仓库，可以使用以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin https://gitee.com/yzzob/b-zjnu-master.git</span><br></pre></td></tr></table></figure>
+<p>选择上述方法之一，取决于您具体想要实现的目标。在操作之前，请确保您了解每个命令的作用，以避免意外的后果。</p>
+</li>
+</ol>
+<h2><span id="显示分支">显示分支</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
+
+<h2><span id></span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 创建 README.md 文件</span><br><span class="line">echo &quot;# skltest&quot; &gt; README.md</span><br><span class="line"></span><br><span class="line"># 添加文件到暂存区</span><br><span class="line"># git add README.md</span><br><span class="line"># 添加目录下文件到暂存区</span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"># 提交不了,可能是没有代码改动</span><br><span class="line"># 提交更改</span><br><span class="line">git commit -m &quot;Initial commit&quot;</span><br><span class="line"></span><br><span class="line"># 推送到远程仓库</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">server</span><br><span class="line">&#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name 4399521.xyz 117.72.87.152;</span><br><span class="line">    index index.html index.htm default.htm default.html;</span><br><span class="line">    root /www/wwwroot/zjnu_master_flask;</span><br><span class="line"></span><br><span class="line">    #SSL-START SSL相关配置</span><br><span class="line">    #error_page 404/404.html;</span><br><span class="line">    </span><br><span class="line">    #SSL-END</span><br><span class="line"></span><br><span class="line">    #ERROR-PAGE-START  错误页相关配置</span><br><span class="line">    #error_page 404 /404.html;</span><br><span class="line">    #error_page 502 /502.html;</span><br><span class="line">    #ERROR-PAGE-END</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    #REWRITE-START 伪静态相关配置</span><br><span class="line">    include /www/server/panel/vhost/rewrite/python_zjnu_master_flask.conf;</span><br><span class="line">    #REWRITE-END</span><br><span class="line"></span><br><span class="line">    #禁止访问的文件或目录</span><br><span class="line">    location ~ ^/(\.user.ini|\.htaccess|\.git|\.svn|\.project|LICENSE|README.md|package.json|package-lock.json|\.env) &#123;</span><br><span class="line">        return 404;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    #一键申请SSL证书验证目录相关设置</span><br><span class="line">    location /.well-known/ &#123;</span><br><span class="line">        root /www/wwwroot/java_node_ssl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    #禁止在证书验证目录放入敏感文件</span><br><span class="line">    if ( $uri ~ &quot;^/\.well-known/.*\.(php|jsp|py|js|css|lua|ts|go|zip|tar\.gz|rar|7z|sql|bak)$&quot; ) &#123;</span><br><span class="line">        return 403;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    # HTTP反向代理相关配置开始 &gt;&gt;&gt;</span><br><span class="line">    location ~ /purge(/.*) &#123;</span><br><span class="line">        proxy_cache_purge cache_one 127.0.0.1$request_uri$is_args$args;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://127.0.0.1:1;</span><br><span class="line">        proxy_set_header Host 127.0.0.1:$server_port;</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_set_header REMOTE-HOST $remote_addr;</span><br><span class="line">        add_header X-Cache $upstream_cache_status;</span><br><span class="line">        proxy_set_header X-Host $host:$server_port;</span><br><span class="line">        proxy_set_header X-Scheme $scheme;</span><br><span class="line">        proxy_connect_timeout 30s;</span><br><span class="line">        proxy_read_timeout 86400s;</span><br><span class="line">        proxy_send_timeout 30s;</span><br><span class="line">        proxy_http_version 1.1;</span><br><span class="line">        proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">        proxy_set_header Connection &quot;upgrade&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    # HTTP反向代理相关配置结束 &lt;&lt;&lt;</span><br><span class="line"></span><br><span class="line">    access_log  /www/wwwlogs/zjnu_master_flask.log;</span><br><span class="line">    error_log  /www/wwwlogs/zjnu_master_flask.error.log;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="便宜域名">便宜域名</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">9988988.xyz</span><br><span class="line">200499.xyz</span><br><span class="line">200455.xyz</span><br></pre></td></tr></table></figure>
+
+<h1><span id="java">java</span></h1><h2><span id="常见指令">常见指令</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 查看版本号</span><br><span class="line">java -version </span><br></pre></td></tr></table></figure>
+
+<h1><span id="with-openas-f">with open()as f:</span></h1><p><strong>“a+” 模式:</strong> 表示以追加模式打开文件，如果文件不存在则创建。光标初始位置在文件末尾。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">https://la.btc35000.com//mp43/1006141.mp4?st=T-DpSdnl880mniGDw804_w&amp;e=1726144043&amp;f=8863HZ2/0XeBiQlWdNEB+DqF6e8cfHcG/a0UH+mB4DkkqvfHT7MR9vEZa+WeUfx2EnbktgU31T3DdYi4yvk5Wjsaa9MXWK/2IR6CfJ0p+8o8vlnvVWYd</span><br><span class="line"></span><br><span class="line">https://la.btc35000.com//mp43/1006141.mp4?st=T-DpSdnl880mniGDw804_w&amp;e=1726144043&amp;f=8863HZ2/0XeBiQlWdNEB+DqF6e8cfHcG/a0UH+mB4DkkqvfHT7MR9vEZa+WeUfx2EnbktgU31T3DdYi4yvk5Wjsaa9MXWK/2IR6CfJ0p+8o8vlnvVWYd</span><br><span class="line"></span><br><span class="line">/html/body/div[4]/div[1]/div[3]/div/div/div[5]/div/a</span><br><span class="line">/html/body/div[4]/div[1]/div[3]/div/div/div[4]/div/a</span><br><span class="line">/html/body/div[4]/div[1]/div[3]/div/div/div[24]/div/a</span><br><span class="line">/html/body/div[4]/div[1]/div[3]/div/div/div[24]/div/a</span><br><span class="line">/html/body/div[4]/div[1]/div[3]/div/div/div[1]/div/a</span><br><span class="line"></span><br><span class="line">/html/body/div[4]/div[1]/div[2]/div/div[1]/div[1]/div/a</span><br><span class="line">/html/body/div[4]/div[1]/div[2]/div/div[1]/div[2]/div/a</span><br><span class="line"></span><br><span class="line">/html/body/div[4]/div[1]/div[3]/div/div/div[1]/div/a</span><br><span class="line">/html/body/div[4]/div[1]/div[3]/div/div/div[2]/div/a</span><br></pre></td></tr></table></figure>
+
+<h1><span id="vim">vim</span></h1><p>hjkl,左下上右</p>
+<p>i:insert,插入,光标前,</p>
+<p>I:最前面</p>
+<p>a:append,添加,光标后</p>
+<p>A:最后面</p>
+<p>正常模式,编辑模式,命令行模式</p>
+<h2><span id="json">json</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open user setting jsonb</span><br></pre></td></tr></table></figure>
+
+<h1><span id="python-run-in-linux">python run in linux</span></h1><p><img src="/../img/image-20240928191757196.png" alt="image-20240928191757196"></p>
+<h1><span id="连接mumu">连接mumu</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># l</span><br><span class="line">adb connect 127.0.0.1:7555</span><br><span class="line"># 显示</span><br><span class="line">adb devices</span><br></pre></td></tr></table></figure>
+
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/2024/10/10/%E8%82%A1%E7%A5%A8/" title="股票" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/2024/09/04/1/" title="" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/11/22/%E5%A4%A7%E4%B8%89%E4%B8%8B%E8%80%83%E8%AF%95/" title="">
+											
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								编译原理最左推导和最右推导
+根据有没有d判断用S的哪个分支
+二义性s不只一个最右(或最左)推导
+
+最右推导,短语,句柄,(直接|简单)短语叶子节点:不存在子树
+短语:每棵树对应的叶子节点
+直接短语:树对应的子节点,满足叶子节点且是两层...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/11/22/%E5%A4%A7%E4%B8%89%E4%B8%8B%E8%80%83%E8%AF%95/" title="">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/10/10/%E8%82%A1%E7%A5%A8/" title="股票">
+								股票			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 10日, 2024				
+							</p>
+							<p class="relate-post-content">
+								交易时间半导体上午时段9:30-11:30，
+下午时段13:00-15:00
+节奏防守: 银行,白酒,贵金属
+进攻: 科技线(游戏,芯片,光刻胶,人工智能)
+上证
+光伏,医药-&gt;银行
+时间节点
+ 美国大选 -&gt; 小商品城(...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/10/10/%E8%82%A1%E7%A5%A8/" title="股票">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="股票"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/07/25/tools/" title="tools">
+								tools			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 25日, 2024				
+							</p>
+							<p class="relate-post-content">
+								sqlheidiSQL
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/07/25/tools/" title="tools">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="tools"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/%E6%9D%82%E8%A8%80/" title="杂言">
+								杂言			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+  46dd145f76e505a9a6c269068bf920ad40b558a3340574b16606fabf2fd2f4d0fcc53141661e2222cc25e406d10dba105ca71d0b93f79fbf26...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/%E6%9D%82%E8%A8%80/" title="杂言">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂言"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/%E6%9D%82%E9%A1%B9/" title="杂项">
+								杂项			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1.问题方向 2.问题分类todolist1234567891011121314151617181.木马//2.pyhton&#x27;s sql//3.java&#x27;s sql//4.ocr --  tesseract ocr...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/%E6%9D%82%E9%A1%B9/" title="杂项">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="杂项"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/zjnu_write_up/" title="zjnu_write_up">
+								zjnu_write_up			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1.比赛名 2.题目类别 3.题目名称 4.知识点关键词 5.知识点细节12https://ctf.a1natas.com/games/14/scoreboardhttps://ctf.a1natas.com/games/12/sco...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/zjnu_write_up/" title="zjnu_write_up">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="zjnu_write_up"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/RSA/" title="CRYPTO">
+								CRYPTO			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								RSAinverse(e, a)概念版:
+公钥的获取
+123456def get_D(e,phi):    i=1    while True:    	i = i + 1        if (e*i) % p == 1:     ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/RSA/" title="CRYPTO">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="CRYPTO"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/pwn/" title="pwn">
+								pwn			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								pwn参考链接1https://blog.csdn.net/weixin_45004513/article/details/117332121
+
+简易快速入门12345678910111213141516导入Pwntoolsfrom ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/pwn/" title="pwn">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="pwn"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/NKCTF2024/" title="NKCTF">
+								NKCTF			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								
+1.题目类别 2.题目名称MISCWebshell_pro1
+CRYPTOPWN来签个到1
+WEBREVERSElogin_system1
+VM？VM！1
+1VM虚拟机，我们喜欢你，我们喜欢vmware，QEMU，还有Hyper-V...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/NKCTF2024/" title="NKCTF">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="NKCTF"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/05/22/hexo/" title="hexo">
+								hexo			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								小记标题格式1title:%20(标题)
+
+目录设置1&lt;!-- toc --&gt;
+
+安装插件在D:\10_yzzob_web_again下打开git bash here
+1npm install hexo-toc --sav...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/05/22/hexo/" title="hexo">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="hexo"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2024, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('<br1>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>
