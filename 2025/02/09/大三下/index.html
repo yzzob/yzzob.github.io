@@ -1,0 +1,1091 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      大三上 | yzzob_blog
+    
+  </title>
+  <meta name="author" content="yzz">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「大三上」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+	<a href="/2025/02/09/%E5%A4%A7%E4%B8%89%E4%B8%8B/" itemprop="url">
+		大三上
+	</a>
+
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/2025/02/09/%E5%A4%A7%E4%B8%89%E4%B8%8B/" itemprop="url">
+		<time datetime="2025-02-09T07:57:54.394Z" itemprop="dateUpdated">
+	  		2025-03-29
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<h1><span id="youtube下载">youtube下载</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yt-dlp -o &quot;D:\000_download\youtube\%(title)s.%(ext)s&quot; https://www.youtube.com/watch?v=_ulj_crM-TI https://www.youtube.com/watch?v=HBDhC-VUBJ8 https://www.youtube.com/watch?v=sg7ddM_cQQQ https://www.youtube.com/watch?v=Iw9Sbi7_EE4</span><br><span class="line">https://www.youtube.com/watch?v=23WjKRbpJFQ</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ARM7系列主要包括ARM7TDMI、ARM7TDMI-S、带有高速缓存处理器宏单元的ARM720T等。该系列处理器提供Thumb 16位压缩指令集和EmbeddedICE软件调试方式，适用于更大规模的SoC设计。ARM7TDMI基于ARM体系结构v4版本，是目前低端的ARM核。 </span><br><span class="line">ARM7TDMI是ARM7系列中使用最广泛的，它是从最早实现32位地址空间编程模式的ARM6内核发展而来，并增加了64位乘法指令，支持片上调试、16位Thumb指令集和EmbeddedICE观察点硬件。ARM7TDMI中的T代表Thumb架构扩展，提供两个独立的指令集；D代表内核具有Debug扩展结构；M代表EmbeddedICE逻辑；I代表增强乘法器，支持64位结果。ARM7TDMI属于ARM v4体系结构，采用冯·诺依曼结构(指令和数据在存储器中统一存放，采用同一套总线分时传输)，3级流水处理，性能平均为0.9DMIPS/MHz。不过，ARM7TDMI没有MMU(Memory Management Unit,存储管理部件)和Cache，所以仅支持那些不需要MMU和Cache的小型实时操作系统，如VxWorks、uC/oSs II和pLinux等RTOs。其他的ARM7系列内核还有ARM720T和ARM7E-S等。 </span><br><span class="line">2.ARM9系列和ARM9E系列</span><br><span class="line">ARM9系列采用哈佛体系结构，指令和数据分开存放于不同的存储器，分别采用各自的总线进行传输。ARM9TDMI相比ARM7TDMI,将流水级数提高到五级，从而增加了处理器的时钟频率，并使用指令和数据存储器分开的哈佛结构，改善了CPI，提高了处理器性</span><br></pre></td></tr></table></figure>
+
+<h1><span id="好用的vscode插件">好用的vscode插件</span></h1><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>用处</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Rainbow Brackets</td>
+<td>在括号内容下划线显示</td>
+</tr>
+<tr>
+<td>indent-rainbow</td>
+<td>在前面添加五颜六色的色块</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://marketplace.visualstudio.com/_apis/public/gallery/publishers/$&#123;itemName.fieldA&#125;/vsextensions/$&#123;itemName.fieldB&#125;/$&#123;version&#125;/vspackage</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">https://marketplace.visualstudio.com/items?itemName=tal7aouy.rainbow-bracket</span><br><span class="line"></span><br><span class="line">itemA tal7aouy</span><br><span class="line">itemB rainbow-bracket</span><br><span class="line">version 版本号</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://marketplace.visualstudio.com/_apis/public/gallery/publishers/tal7aouy/vsextensions/rainbow-bracket/1.0.2/vspackage</span><br></pre></td></tr></table></figure>
+<h1><span id="git">git</span></h1><table>
+<thead>
+<tr>
+<th>git init</th>
+<th>文件夹git初始化</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>git add .</td>
+<td>添加当前文件夹到git中</td>
+</tr>
+<tr>
+<td>git commit -m “Initial commit”</td>
+<td>提交更改</td>
+</tr>
+<tr>
+<td>Remove-Item -Recurse -Force .git</td>
+<td>删除.git文件夹</td>
+</tr>
+<tr>
+<td>git branch -m master main</td>
+<td>将master分支改为main分支</td>
+</tr>
+<tr>
+<td>git pull origin main –allow-unrelated-histories</td>
+<td>强制和远程git库合成</td>
+</tr>
+</tbody></table>
+<h1><span id="node">node</span></h1><h2><span id="nvm">nvm</span></h2><h1><span id="rust安装">Rust安装</span></h1><p><a href="https://www.bilibili.com/video/BV12RDhYPE7M/?spm_id_from=333.337.search-card.all.click&vd_source=d70e29501b7bd2c76784a2249b78c3c3">视频</a></p>
+<h1><span id="eletron">eletron</span></h1><h2><span id="窗口尺寸">窗口尺寸</span></h2><p>![[Pasted image 20250328232447.png]]</p>
+<p>D:\000_download\youtube</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">PS D:\000_download\all_in\project\my-electron-app&gt; c</span><br><span class="line">&gt;&gt; npm install electron --save-dev</span><br><span class="line">npm WARN deprecated boolean@3.2.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.</span><br><span class="line"></span><br><span class="line">added 70 packages in 16s</span><br><span class="line"></span><br><span class="line">17 packages are looking for funding</span><br><span class="line">  run `npm fund` for details</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">PS D:\000_download\all_in\project\my-electron-app&gt; npm i nodemon -D</span><br><span class="line">[##################] - reify:@types/node: timing reifyNode:node_modules/simple-update-notifier/node_modules/semver Completed in 294ms</span><br></pre></td></tr></table></figure>
+
+
+<p>解决无法下载electron<br>创建一个.npmrc文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">electron_mirror=https://npmmirror.com/mirrors/electron/</span><br><span class="line"></span><br><span class="line">electron-builder-binaries_mirror=https://npmmirror.com/mirrors/electron-builder-binaries/</span><br></pre></td></tr></table></figure>
+<h2><span id="创建electron应用">创建electron应用</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm create electron-vite</span><br></pre></td></tr></table></figure>
+
+<h2><span id="api整理">api整理</span></h2><table>
+<thead>
+<tr>
+<th>隐藏file行</th>
+<th>import { app, BrowserWindow,Menu } from ‘electron’<br>Menu.setApplicationMenu(null);</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>创建electron应用</td>
+<td>npm create electron-vite@latest</td>
+</tr>
+<tr>
+<td>简单的electron应用</td>
+<td>git clone <a href="https://www.github.com/electron/electron-quick-start">https://www.github.com/electron/electron-quick-start</a></td>
+</tr>
+</tbody></table>
+<h1><span id="开机自启动">开机自启动</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\yzz\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup</span><br></pre></td></tr></table></figure>
+
+<h1><span id="管理员打开">管理员打开</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Start-Process powershell -Verb runAs</span><br></pre></td></tr></table></figure>
+<h1><span id="npm-yarn">npm yarn</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">nrm ls</span><br><span class="line">显示国内镜像</span><br><span class="line">nrm use ...</span><br><span class="line">来选择</span><br><span class="line">yrm ls</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">PS D:\000_download\all_in\project\fast_opener&gt; nrm ls</span><br><span class="line">  npm ---------- https://registry.npmjs.org/</span><br><span class="line">  yarn --------- https://registry.yarnpkg.com/</span><br><span class="line">  tencent ------ https://mirrors.cloud.tencent.com/npm/</span><br><span class="line">* cnpm --------- https://r.cnpmjs.org/</span><br><span class="line">  taobao ------- https://registry.npmmirror.com/</span><br><span class="line">  npmMirror ---- https://skimdb.npmjs.com/registry/</span><br></pre></td></tr></table></figure>
+<h1><span id="tauri">tauri</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">mkdir my-tauri-app &amp;&amp; cd my-tauri-app</span><br><span class="line"></span><br><span class="line">npm create vite@latest my-app -- --template react-ts</span><br><span class="line"></span><br><span class="line">cd my-app</span><br><span class="line"></span><br><span class="line">npm install -g tauri-cli</span><br><span class="line"></span><br><span class="line">tauri init</span><br><span class="line"></span><br><span class="line">npm install @tauri-apps/api</span><br><span class="line"></span><br><span class="line">&#123; &quot;build&quot;: &#123; &quot;distDir&quot;: &quot;dist&quot;, &quot;devPath&quot;: &quot;http://localhost:3000&quot; &#125; &#125;</span><br><span class="line"></span><br><span class="line">tauri dev</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">打包项目</span><br><span class="line"></span><br><span class="line">npm run tauri build</span><br></pre></td></tr></table></figure>
+<h1><span id="todolist">todolist</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mitmweb -p 9000 --set web_port=9001</span><br></pre></td></tr></table></figure>
+<h1><span id="miymweb">miymweb</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mitmweb -p 9000 --set web_port=9001</span><br></pre></td></tr></table></figure>
+<h1><span id="rust下载">rust下载</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -sSf https://mirrors.ustc.edu.cn/rust-static/rustup/x86_64-pc-windows-msvc/rustup-init.exe -o rustup-init.exe</span><br><span class="line">.\rustup-init.exe</span><br></pre></td></tr></table></figure>
+
+<h2><span id="代理">代理</span></h2><p><img src="/../img/image-20250312190933840.png" alt="image-20250312190933840"></p>
+<p>127.0.0.1</p>
+<p>17890</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost;127.*;10.*;172.16.*;172.17.*;172.18.*;172.19.*;172.20.*;172.21.*;172.22.*;172.23.*;172.24.*;172.25.*;172.26.*;172.27.*;172.28.*;172.29.*;172.30.*;172.31.*;192.168.*</span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="教资">教资</span></h1><h2><span id="科目一选择题">科目一选择题</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">判断感情基调</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="笔记">笔记</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">创造性思维:</span><br><span class="line">独立性,反思性,批判性</span><br><span class="line"></span><br><span class="line">教师专业发展阶段</span><br><span class="line">关注生存阶段:新手老师,忙于处理人际关系和管理学生</span><br><span class="line">-&gt;</span><br><span class="line">关注情景阶段:注意力转移到提高教学质量上</span><br><span class="line">-&gt;</span><br><span class="line">关注学生阶段:考虑学生个体化差异,因材施教</span><br><span class="line"></span><br><span class="line">双减目的:</span><br><span class="line">1.作业布置更加科学合理</span><br><span class="line">2.校外培训机构培训行为全面规范</span><br><span class="line">3.人们群众教育满意度明显提升</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2><span id="教师观的补充">教师观的补充</span></h2><p><img src="/../img/image-20250303111323219.png" alt="image-20250303111323219"></p>
+<p><img src="/../img/image-20250303111358608.png" alt="image-20250303111358608"></p>
+<p><img src="/../img/image-20250303111513557.png" alt="image-20250303111513557"></p>
+<p>  <img src="/../img/image-20250303111726858.png" alt="image-20250303111726858"></p>
+<p> <img src="/../img/image-20250303111821908.png" alt="image-20250303111821908"></p>
+<p><img src="/../img/image-20250303112017707.png" alt="image-20250303112017707"></p>
+<p><img src="/../img/image-20250303112029344.png" alt="image-20250303112029344"></p>
+<p><img src="/../img/image-20250303112108515.png" alt="image-20250303112108515"></p>
+<p><img src="/../img/image-20250303112148441.png" alt="image-20250303112148441"></p>
+<p><img src="/../img/image-20250303112217231.png" alt="image-20250303112217231"></p>
+<p><img src="/../img/image-20250303112547288.png" alt="image-20250303112547288"></p>
+<p><img src="/../img/image-20250303112654128.png" alt="image-20250303112654128"></p>
+<p><img src="/../img/image-20250303112700421.png" alt="image-20250303112700421"></p>
+<h2><span id="中国人民共和国宪法">中国人民共和国宪法</span></h2><p><img src="/../img/image-20250303113109061.png" alt="image-20250303113109061"></p>
+<p><img src="/../img/image-20250303113133174.png" alt="image-20250303113133174"></p>
+<p><img src="/../img/image-20250303113259276.png" alt="image-20250303113259276"></p>
+<p><img src="/../img/image-20250303113324235.png" alt="image-20250303113324235"></p>
+<h2><span id="材料题">材料题</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">教育观</span><br><span class="line">1.素质教育</span><br><span class="line">01 以提高国民素质为根本宗旨</span><br><span class="line">02 面向全体学生</span><br><span class="line">03 促进学生全面发展</span><br><span class="line">04 促进学生个性发展</span><br><span class="line">05 培养学生创新精神和实践能力为重点</span><br><span class="line">2.新课改下的教学观</span><br><span class="line">01 从&#x27;教育者为中心&#x27;转向&#x27;学习者为中心&#x27;</span><br><span class="line">02 从&#x27;教会学生知识&#x27;转向&#x27;教会学生学习&#x27;</span><br><span class="line">03 从&#x27;重结论轻过程&#x27;转向&#x27;重结论更重过程&#x27;</span><br><span class="line">04 从&#x27;关注学科&#x27;转向&#x27;关注人&#x27;</span><br><span class="line"></span><br><span class="line">学生观</span><br><span class="line">1.全面发展的学生观</span><br><span class="line">促进学生的德智体美劳全面发展</span><br><span class="line">2.教育公平和学生的共同发展的学生观</span><br><span class="line">01 促进学生全面发展要遵循教育机会均等的原则</span><br><span class="line">02 要促进有差异的学生共同发展</span><br><span class="line">3.学生是发展的人</span><br><span class="line">01 学生的身心发展是有规律的</span><br><span class="line">02 学生具有巨大的发展潜能</span><br><span class="line">03 学生是处于发展过程中人</span><br><span class="line">04 学生的发展是全面的发展</span><br><span class="line">4.学生是特殊的人</span><br><span class="line">01 学生是完整的人</span><br><span class="line">02 每个学生都有自身的独特性</span><br><span class="line">03 学生与承认之间存在巨大的差异</span><br><span class="line">5.学生是有独立意义的人</span><br><span class="line">01 学生不能以老师的意志为客观转移</span><br><span class="line">02 学生是学习的主体</span><br><span class="line">03 学生是责任和权利的主体</span><br><span class="line"></span><br><span class="line">教师观</span><br><span class="line">1.教师角色的转变</span><br><span class="line">01 从教师与学生关系看,要求教师是学生学习的促进者和引导着</span><br><span class="line">02 从教学与研究的关系看,要求教师是教育教学的研究者</span><br><span class="line">03 从教学与课程的关系看,要求教师是课程的建设者和开发者</span><br><span class="line">04 从学校与社区的关系看,教师是社区型的开放教师</span><br><span class="line">2.教学行为的转变</span><br><span class="line">01 在对待师生关系上,强调尊重和赞赏学生</span><br><span class="line">02 在对待教学关系上,强调帮助和引导学生</span><br><span class="line">03 在对待自我上,强调反思</span><br><span class="line">04 在对待其他教育者的关系上,强调合作</span><br><span class="line"></span><br><span class="line">教师职业道德</span><br><span class="line">1.&lt;&lt;中小学教师职业道德规范&gt;&gt;内容</span><br><span class="line">01 爱国守法(基本要求)-对国家</span><br><span class="line">02 爱岗敬业(本质要求)-对岗位</span><br><span class="line">03 关爱学生(师德灵魂)-对学生</span><br><span class="line">04 教书育人(教师天职)-对教学</span><br><span class="line">05 为人师表(内在要求)-对自己</span><br><span class="line">06 终身学习(不竭动力)-对业务</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>答题模板</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">老师的行为是正确,符合教育观的相关要求,值得我们学习</span><br><span class="line">老师的行为是错误的,不符合教育观的相关要求,我们要引以为戒</span><br></pre></td></tr></table></figure>
+
+<h2><span id="科目二">科目二</span></h2><p><img src="/../img/image-20250303113740244.png" alt="image-20250303113740244"></p>
+<p><img src="/../img/image-20250303113818016.png" alt="image-20250303113818016"></p>
+<p><img src="/../img/image-20250303113925876.png" alt="image-20250303113925876"></p>
+<p><img src="/../img/image-20250303114010576.png" alt="image-20250303114010576"></p>
+<p><img src="/../img/image-20250303114025566.png" alt="image-20250303114025566"></p>
+<p><img src="/../img/image-20250303114104659.png" alt="image-20250303114104659"></p>
+<p><img src="/../img/image-20250303114219399.png" alt="image-20250303114219399"></p>
+<p><img src="/../img/image-20250303114308733.png" alt="image-20250303114308733"></p>
+<p><img src="/../img/image-20250303114321592.png" alt="image-20250303114321592"></p>
+<p><img src="/../img/image-20250303114415507.png" alt="image-20250303114415507"></p>
+<p><img src="/../img/image-20250303114554233.png" alt="image-20250303114554233"></p>
+<h2><span id="材料分析题目">材料分析题目</span></h2><p><img src="/../img/image-20250304191431896.png" alt="image-20250304191431896"></p>
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/2025/03/26/README1/" title="" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/2024/12/28/%E5%A4%A7%E4%B8%89%E4%B8%8Aover/" title="大三上over" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2025/03/26/README1/" title="">
+											
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 26日, 2025				
+							</p>
+							<p class="relate-post-content">
+								日后闯出祸来切莫将为师说出来就行了
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2025/03/26/README1/" title="">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/12/28/%E5%A4%A7%E4%B8%89%E4%B8%8Aover/" title="大三上over">
+								大三上over			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十二月 28日, 2024				
+							</p>
+							<p class="relate-post-content">
+								java作业1.8.1java源文件的拓展名是java,java字节码文件的拓展名是class
+1.8.2java编译器的输入和输出是什么?
+1输入是源代码文件,输出是字节码文件
+
+1.8.3编译java程序的命令是什么?
+1java...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/12/28/%E5%A4%A7%E4%B8%89%E4%B8%8Aover/" title="大三上over">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大三上over"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/11/22/%E5%A4%A7%E4%B8%89%E4%B8%8A%E8%80%83%E8%AF%95/" title="大三上考试">
+								大三上考试			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								软件项目管理题目1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/11/22/%E5%A4%A7%E4%B8%89%E4%B8%8A%E8%80%83%E8%AF%95/" title="大三上考试">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大三上考试"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/10/10/%E8%82%A1%E7%A5%A8/" title="股票">
+								股票			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 10日, 2024				
+							</p>
+							<p class="relate-post-content">
+								交易时间半导体上午时段9:30-11:30，
+下午时段13:00-15:00
+交易0323
+
+
+符号
+意义
+
+
+
+1
+海洋
+
+
+2
+可控核聚变
+
+
+3
+化工
+
+
+4
+机器人
+
+
+5
+业绩
+
+
+6
+旅游
+
+
+7
+光刻胶
+
+
+8
+ai
+
+...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/10/10/%E8%82%A1%E7%A5%A8/" title="股票">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="股票"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/07/25/tools/" title="tools">
+								tools			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 25日, 2024				
+							</p>
+							<p class="relate-post-content">
+								sqlheidiSQL
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/07/25/tools/" title="tools">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="tools"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/07/06/%E5%A4%A7%E4%BA%8C%E6%9A%91%E5%81%87/" title="大二暑假">
+								大二暑假			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 6日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1titile: 暑假
+
+病毒分析网站1https://www.virscan.org./
+
+
+
+npm
+node package manage
+
+
+update: npm install npm@latest -g
+
+
+latest...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/07/06/%E5%A4%A7%E4%BA%8C%E6%9A%91%E5%81%87/" title="大二暑假">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大二暑假"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/07/02/Nmap/" title="Nmap">
+								Nmap			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 2日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1title:Nmap
+
+软件介绍1FileLocator Pro,文件内容定位
+
+
+
+常用端口参考文档
+123456722,--top-ports-sS-A-oN 正常输出-n 不进行nss解析-e 指定网卡
+
+扫描方式
+12su进...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/07/02/Nmap/" title="Nmap">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Nmap"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/07/02/web3/" title="web3">
+								web3			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 2日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1# 名词
+DAPP（Decentralized application）:去中心化app,WEB前端
+
+
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/07/02/web3/" title="web3">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="web3"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/06/29/conclusion/" title="期末总结">
+								期末总结			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 29日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1title:期末总结
+
+
+
+202406英语听力,不会写
+写题顺序:长篇阅读,仔细阅读,翻译,选词填空
+web操作系统多媒体技术计算机网络软件工程基础出了作业题原题和最后发的复习卷,老师单独保存的题目,要注意
+数字电路智能感知技术数...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/06/29/conclusion/" title="期末总结">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="期末总结"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/06/17/9_trash/" title="9_trash">
+								9_trash			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 17日, 2024				
+							</p>
+							<p class="relate-post-content">
+								简答题1. 数据库、数据库系统与数据库管理系统的区别和联系1区别:数据库是数据的集合,数据库管理系统是提供与数据库交互的接口,数据库系统是宝海了数据库,数据库管理系统及相关应用程序的整体
+
+数据库（Database）
+定义：数据库是一...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/06/17/9_trash/" title="9_trash">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="9_trash"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2025, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('<br1>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>

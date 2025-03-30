@@ -1,0 +1,1425 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      大三上over | yzzob_blog
+    
+  </title>
+  <meta name="author" content="yzz">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「大三上over」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+	<a href="/2024/12/28/%E5%A4%A7%E4%B8%89%E4%B8%8Aover/" itemprop="url">
+		大三上over
+	</a>
+
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/2024/12/28/%E5%A4%A7%E4%B8%89%E4%B8%8Aover/" itemprop="url">
+		<time datetime="2024-12-28T11:05:20.565Z" itemprop="dateUpdated">
+	  		2025-03-30
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<h1><span id="java">java</span></h1><h2><span id="作业">作业</span></h2><h3><span id="181">1.8.1</span></h3><p>java源文件的拓展名是java,java字节码文件的拓展名是class</p>
+<h3><span id="182">1.8.2</span></h3><p>java编译器的输入和输出是什么?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输入是源代码文件,输出是字节码文件</span><br></pre></td></tr></table></figure>
+
+<h3><span id="183">1.8.3</span></h3><p>编译java程序的命令是什么?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac myfile.java</span><br></pre></td></tr></table></figure>
+
+<h3><span id="184">1.8.4</span></h3><p>运行java程序的命令是什么?</p>
+<p>java myfile</p>
+<h3><span id="1104">1.10.4</span></h3><p>如果程序需要输入整数,而用户输入了字符串,运行该程序的时候将产生什么错误?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ValueError值错误</span><br></pre></td></tr></table></figure>
+
+<p>这是哪类错误?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RuntimeException 运行时错误</span><br></pre></td></tr></table></figure>
+
+<h3><span id="232">2.3.2</span></h3><p>import java.util.Scanner;</p>
+<p>和</p>
+<p>import java.util.*;在性能上有什么差异</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import java.util.*;会增加导入的模块,从而略微降低性能</span><br></pre></td></tr></table></figure>
+
+<h3><span id="2102">2.10.2</span></h3><p>一下哪些是正确的浮点型字面值?</p>
+<p>12.3, 12.3e+2, 23.4e-2 , -334.4,20.5,39F,40D</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">12.3, 12.3e+2, 23.4e-2 , -334.4,20.5,39F是</span><br><span class="line">40D不是</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">double num = 12.3e+2;</span><br><span class="line">num = 1230</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Java 默认情况下将浮点字面值视为 double 类型，而不是 float 类型。</span><br></pre></td></tr></table></figure>
+
+
+
+<h3><span id="2104">2.10.4</span></h3><p>一下哪些是正确的字面值</p>
+<p>5_2534e+1	<em>2534	5_2	5</em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5_2534e+1	_2534	5_2</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">不允许使用 `_` 的位置：</span><br><span class="line">开头结尾</span><br><span class="line">.或e前一格,</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><strong>不能在数字的开头或结尾</strong>：<ul>
+<li><code>int num = _123;</code> &#x2F;&#x2F; 错误</li>
+<li><code>int num = 123_;</code> &#x2F;&#x2F; 错误</li>
+</ul>
+</li>
+<li><strong>不能放在小数点或指数符号的前后</strong>：<ul>
+<li><code>double num = 1_.23;</code> &#x2F;&#x2F; 错误</li>
+<li><code>double num = 1.23_;</code> &#x2F;&#x2F; 错误</li>
+<li><code>double num = 1e_3;</code> &#x2F;&#x2F; 错误</li>
+<li><code>double num = 1e3_;</code> &#x2F;&#x2F; 错误</li>
+</ul>
+</li>
+<li><strong>不能放在两个数字之间的第一个位置</strong>（即不能直接放置在两位数字之间）：<ul>
+<li><code>int num = 12_34_56;</code> &#x2F;&#x2F; 错误，不能在两个数字之间放置 <code>_</code></li>
+</ul>
+</li>
+</ol>
+<h3><span id="2193">2.19.3</span></h3><p>溢出会导致运行时错误吗?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">不会,但会导致错误结果</span><br></pre></td></tr></table></figure>
+
+<h3><span id="425">4.2.5</span></h3><p>1.编写一条表达式,返回34-55之间的一个随机整数</p>
+<p>2.编写一条表达式,返回0-999之间的一个随机整数</p>
+<p>3.编写一个表达式,返回5.5-55.5之间的一个随机数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int randomInt1 = 34 + (int)(Math.random()*22)</span><br><span class="line">int randomInt2 = (int)(Math.random()*1000)</span><br><span class="line">double randomDouble = 5.5+Math.random()*50</span><br></pre></td></tr></table></figure>
+
+<h3><span id="426">4.2.6</span></h3><p>为什么Math类不需要导入?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Math 类是属于 java.lang 包的，而 java.lang 包是一个自动导入的包</span><br></pre></td></tr></table></figure>
+
+<h3><span id="431">4.3.1</span></h3><p>以下哪些是正确的字符字面值?</p>
+<p>‘1’,’\u345dE’,’\u3fFa’,’\b’,’\t’</p>
+<p>1,\b,\t</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\u345dE不是</span><br><span class="line">\u345是</span><br></pre></td></tr></table></figure>
+
+<h3><span id="432">4.3.2</span></h3><p>如何显示字符\和”?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(&quot;\\&quot;);</span><br><span class="line">System.out.println(&quot;\&quot;?&quot;);  // 显示 &quot;?</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3><span id="681">6.8.1</span></h3><p>什么是方法重载?可以定义两个同名但参数类型不同的方法吗?</p>
+<p>可以在一个类中定义两个名称和参数列表相同,但返回值或修饰符不同的方法?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">reload,在同一个类多次写相同名不同参的函数</span><br><span class="line">可以</span><br></pre></td></tr></table></figure>
+
+<h3><span id="683">6.8.3</span></h3><p>public static double m(double x,double y)</p>
+<p>public static double m(int x,double y)</p>
+<p>对于下面的语句,两个方法中的哪个被调用</p>
+<p>a.double z&#x3D;m(4,5)</p>
+<p>b.double z&#x3D;m(4,5.4)</p>
+<p>c.double z&#x3D;m(4.5,5.4)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a.2</span><br><span class="line">b.2</span><br><span class="line">c.1</span><br></pre></td></tr></table></figure>
+
+<h3><span id="723">7.2.3</span></h3><p>判断正误</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">数组中的每个元素都有相同的类型?</span><br><span class="line">一但声明数组引用变量,,其大小就不能改变?</span><br><span class="line">一但创建数组,其大小就不能改变?</span><br><span class="line">数组中的元素必须是基本数据类型?</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>题目</th>
+<th>正误</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数组中的每个元素都有相同的类型</td>
+<td>正确</td>
+</tr>
+<tr>
+<td>一旦声明数组引用变量，数组大小就不能改变</td>
+<td>错误</td>
+</tr>
+<tr>
+<td>一旦创建数组，数组大小就不能改变</td>
+<td>正确</td>
+</tr>
+<tr>
+<td>数组中的元素必须是基本数据类型</td>
+<td>错误</td>
+</tr>
+</tbody></table>
+<h3><span id="727">7.2.7</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 正确的数组声明和初始化</span><br><span class="line">double[] d = &#123;1.2, 2.3, 3.4&#125;;</span><br><span class="line">int[] i = &#123;1, 2, 3&#125;;</span><br><span class="line">char[] c = &#123;&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;&#125;;</span><br><span class="line"></span><br><span class="line">// 也可以使用这种格式，语法是相同的</span><br><span class="line">double d2[] = &#123;1.2, 2.3, 3.4&#125;;</span><br><span class="line">int i2[] = &#123;1, 2, 3&#125;;</span><br><span class="line">char c2[] = &#123;&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3><span id="1041">10.4.1</span></h3><p>类之间通常是什么关系?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">继承,实现(接口),关联,聚集,组合</span><br></pre></td></tr></table></figure>
+
+<h3><span id="1043">10.4.3</span></h3><p>什么是关联?什么是聚集?什么是组合?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">关联:</span><br><span class="line">class Student &#123;</span><br><span class="line">    private String name;</span><br><span class="line">    private School school;  // 学生和学校之间的关联关系</span><br><span class="line"></span><br><span class="line">    public Student(String name, School school) &#123;</span><br><span class="line">        this.name = name;</span><br><span class="line">        this.school = school;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class School &#123;</span><br><span class="line">    private String name;</span><br><span class="line">    </span><br><span class="line">    public School(String name) &#123;</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">聚集:</span><br><span class="line">class Department &#123;</span><br><span class="line">    private String name;</span><br><span class="line">    private List&lt;Employee&gt; employees;  // 部门和员工之间的聚集关系</span><br><span class="line"></span><br><span class="line">    public Department(String name) &#123;</span><br><span class="line">        this.name = name;</span><br><span class="line">        this.employees = new ArrayList&lt;&gt;();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void addEmployee(Employee employee) &#123;</span><br><span class="line">        employees.add(employee);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Employee &#123;</span><br><span class="line">    private String name;</span><br><span class="line">    </span><br><span class="line">    public Employee(String name) &#123;</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">组合:</span><br><span class="line">class House &#123;</span><br><span class="line">    private String address;</span><br><span class="line">    private Room room;  // 房子和房间之间的组合关系</span><br><span class="line"></span><br><span class="line">    public House(String address) &#123;</span><br><span class="line">        this.address = address;</span><br><span class="line">        this.room = new Room(&quot;Living Room&quot;);  // 房间是房子的组成部分</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Room &#123;</span><br><span class="line">    private String name;</span><br><span class="line">    </span><br><span class="line">    public Room(String name) &#123;</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3><span id="1073">10.7.3</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public class C&#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Integer x = Integer.valueOf(3);</span><br><span class="line">        System.out.println(x.intValue());</span><br><span class="line">        System.out.println(x.compareTo(5));</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>的输出</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">-1</span><br></pre></td></tr></table></figure>
+
+<h3><span id="1175">11.7.5</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public class C&#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(Integer.parseInt(&quot;1A&quot;,16));</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>的输出?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">26</span><br></pre></td></tr></table></figure>
+
+<h3><span id="1181">11.8.1</span></h3><p>什么是自动装箱和自动拆箱?下面的语句正确吗?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Integer x = 3 + Integer.valueOf(5);</span><br><span class="line">Integer x = 3;</span><br><span class="line">Double  x = 3;</span><br><span class="line">Double x = 3.0;</span><br><span class="line">int x = Integer.valueOf(3);</span><br><span class="line">int x = Integer.valueOf(3) + Integer.valueOf(4);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Double x = 3;是错误的,其他正确</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public class C&#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Double x = 3.5;</span><br><span class="line">        System.out.println(x.intValue());</span><br><span class="line">        System.out.println(x.compareTo(4.5));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3><span id="1185">11.8.5</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public class C&#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Double x = 3.5;</span><br><span class="line">        System.out.println(x.intValue());</span><br><span class="line">        System.out.println(x.compareTo(4.5));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>的结果</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">-1</span><br></pre></td></tr></table></figure>
+
+
+
+<h3><span id="1123">11.2.3</span></h3><p>什么是单一继承?什么是多重继承?java支持多重继承吗?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">单一继承:子类只能继承一个父类</span><br><span class="line">多重继承:子类可以继承多个父类</span><br><span class="line">java不支持多重继承</span><br></pre></td></tr></table></figure>
+
+<h3><span id="1131">11.3.1</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">class A &#123;</span><br><span class="line">    public A()&#123;</span><br><span class="line">        System.out.println(&quot;A&#x27;s no-arg constructor is invoked&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class B extends A&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">public class C&#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        B b = new B();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">class A &#123;</span><br><span class="line">    public A(int x)&#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class B extends A&#123;</span><br><span class="line">    public B()&#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">public class C&#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        B b = new B();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class A &#123;</span><br><span class="line">    public A()&#123;</span><br><span class="line">        System.out.println(&quot;hi A&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class B extends A&#123;</span><br><span class="line">    public B()&#123;</span><br><span class="line">        System.out.println(&quot;hi B&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">public class C&#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        B b = new B();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">A有参数,B必须要super来给A赋值</span><br><span class="line">A无参数,B可以有参无参构造方法</span><br><span class="line"></span><br><span class="line">先运行A后运行B</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/image-20241201185818163.png" alt="image-20241201185818163"></p>
+<h3><span id="1133">11.3.3</span></h3><p>当子类调用构造方法时,其父类的无参构造方法总是会被调用?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">对</span><br><span class="line">子类必须调用父类的构造方法</span><br><span class="line"></span><br><span class="line">class A &#123;</span><br><span class="line">    public A() &#123;</span><br><span class="line">        System.out.println(&quot;A&#x27;s default constructor&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class B extends A &#123;</span><br><span class="line">    public B() &#123;</span><br><span class="line">        // 编译器会在这里自动添加 super();</span><br><span class="line">        System.out.println(&quot;B&#x27;s constructor&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class C &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        B b = new B();  // 创建B类对象</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class A &#123;</span><br><span class="line">    public A(int x) &#123;</span><br><span class="line">        System.out.println(&quot;A&#x27;s constructor with argument: &quot; + x);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class B extends A &#123;</span><br><span class="line">    public B() &#123;</span><br><span class="line">        // 必须显式调用父类A的构造方法</span><br><span class="line">        super(10);  // 传递参数</span><br><span class="line">        System.out.println(&quot;B&#x27;s constructor&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class C &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        B b = new B();  // 创建B类对象</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class A &#123;</span><br><span class="line">    // 没有显式定义构造方法，Java 会提供一个默认的无参构造方法</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class B extends A &#123;</span><br><span class="line">    public B() &#123;</span><br><span class="line">        // 父类A没有显式构造方法，Java会提供默认的无参构造方法</span><br><span class="line">        System.out.println(&quot;B&#x27;s constructor&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class C &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        B b = new B();  // 创建B类对象</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">子类会调用父类的(有参无参)构造方法</span><br></pre></td></tr></table></figure>
+
+
+
+<h3><span id="1141">11.4.1</span></h3><p>可以重写父类中定义的私有方法?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错:</span><br><span class="line">私有方法只能在它所属的类内部访问,子类无法访问父类中的私有方法</span><br></pre></td></tr></table></figure>
+
+<h3><span id="1144">11.4.4</span></h3><p>如何从子类中调用一个被重写的父类的方法?</p>
+<p>通过super实现</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">class A &#123;</span><br><span class="line">    // 父类中的方法</span><br><span class="line">    public void display() &#123;</span><br><span class="line">        System.out.println(&quot;A&#x27;s display method&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class B extends A &#123;</span><br><span class="line">    // 子类重写父类的方法</span><br><span class="line">    @Override</span><br><span class="line">    public void display() &#123;</span><br><span class="line">        System.out.println(&quot;B&#x27;s display method&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 子类中调用父类的被重写方法</span><br><span class="line">    public void callParentMethod() &#123;</span><br><span class="line">        super.display();  // 调用父类的 display() 方法</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class C &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        B b = new B();</span><br><span class="line">        b.display();  // 调用子类的 display() 方法</span><br><span class="line">        b.callParentMethod();  // 调用父类的 display() 方法</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3><span id="1152">11.5.2</span></h3><p>解释方法重写和方法重载的不同之处?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">重写:子类重新定义父类中定义过的方法</span><br><span class="line"></span><br><span class="line">重载:在同一个类中,对相同的方法名,不同的传入参数,进行多次定义</span><br></pre></td></tr></table></figure>
+
+<h3><span id="1153">11.5.3</span></h3><p>如果子类中的方法具有和其父类中的方法相同的前面,且返回值类型也相同,那么这是方法重写(overwrite)还是重载(overload)?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">方法重写</span><br></pre></td></tr></table></figure>
+
+<h3><span id="1154">11.5.4</span></h3><p>如果子类中的方法具有和其父类中的方法相同的签名,但返回值类型不相同,这会存在什么问题?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">编译错误</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Java 中的 方法重写（Overriding） 必须遵循以下规则：</span><br><span class="line"></span><br><span class="line">方法名相同。</span><br><span class="line">参数列表相同。</span><br><span class="line">返回类型相同或是父类返回类型的子类（即支持协变返回类型）。</span><br></pre></td></tr></table></figure>
+
+<h3><span id="1155">11.5.5</span></h3><p>如果子类中的方法具有和其父类中的方法相同的名字,但参数类型不同,那么这是方法重写还是重载?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">方法重载</span><br></pre></td></tr></table></figure>
+
+
+
+<h3><span id="1156">11.5.6</span></h3><p>使用@Override标注的好处是什么?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.编译时检查</span><br><span class="line">2.代码可读性和可维护性</span><br><span class="line">3.避免错误重写</span><br><span class="line">4.提高代码重构的安全性</span><br><span class="line">5.提升开发效率</span><br></pre></td></tr></table></figure>
+
+<h3><span id="1171">11.7.1</span></h3><p>面向对象程序设计的三大支柱是什么?什么是多态?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.封装 2.继承 3.多态</span><br><span class="line">多态:通过相同的接口调用，表现出不同的行为，提高代码的灵活性和扩展性。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">class Animal &#123;</span><br><span class="line">    public void sound() &#123;</span><br><span class="line">        System.out.println(&quot;Animal makes a sound&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Dog extends Animal &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void sound() &#123;</span><br><span class="line">        System.out.println(&quot;Dog barks&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Cat extends Animal &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void sound() &#123;</span><br><span class="line">        System.out.println(&quot;Cat meows&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class Test &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Animal myAnimal = new Animal();</span><br><span class="line">        Animal myDog = new Dog();</span><br><span class="line">        Animal myCat = new Cat();</span><br><span class="line"></span><br><span class="line">        myAnimal.sound();  // 输出: Animal makes a sound</span><br><span class="line">        myDog.sound();     // 输出: Dog barks</span><br><span class="line">        myCat.sound();     // 输出: Cat meows</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3><span id="1182">11.8.2</span></h3><p>描述方法匹配和方法绑定之间的不同</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">方法匹配:</span><br><span class="line">相同方法名的不同输入参数类型,造成不同输出,方法的重载</span><br><span class="line">方法绑定:父类与子类之间的方法重写</span><br></pre></td></tr></table></figure>
+
+<h3><span id="1185">11.8.5</span></h3><h3><span id="1221">12.2.1</span></h3><p>使用异常处理的优势是什么?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.分离错误逻辑</span><br><span class="line">2.提高代码的容错能力</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3><span id="1222">12.2.2</span></h3><p>下面哪些语句会抛出异常</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(1/0);</span><br><span class="line">System.out.println(1.0/0);</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">异常(ArithmeticException)运行时错误</span><br><span class="line">Infinity</span><br></pre></td></tr></table></figure>
+
+<h3><span id="1223">12.2.3</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">long value = Long.MAX_VALUE + 1;</span><br><span class="line">System.out.println(value);</span><br></pre></td></tr></table></figure>
+
+<p>会抛出什么任何异常吗?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">不会</span><br></pre></td></tr></table></figure>
+
+<p>12.3.2</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> System.out.println(1/0);</span><br><span class="line"></span><br><span class="line">String s = &quot;123&quot;;</span><br><span class="line">System.out.println(s.charAt(3));</span><br><span class="line"></span><br><span class="line"> int[] list = new int[5];</span><br><span class="line"> System.out.println(list[5]);</span><br><span class="line"></span><br><span class="line"> Object o = new Object();</span><br><span class="line"> String d = (String)o;</span><br><span class="line"></span><br><span class="line"> Object o = null;</span><br><span class="line"> System.out.println(o.toString());</span><br><span class="line"></span><br><span class="line"> System.out.println(1.0/0);</span><br></pre></td></tr></table></figure>
+
+<p>会抛出RuntimeException,那么会抛出哪种异常?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1. System.out.println(1/0);</span><br><span class="line">抛出异常: ArithmeticException(运行时错误)</span><br><span class="line">2. String s = &quot;123&quot;; System.out.println(s.charAt(3));</span><br><span class="line">抛出异常: StringIndexOutOfBoundsException(字符越界)</span><br><span class="line">3. int[] list = new int[5]; System.out.println(list[5]);</span><br><span class="line">抛出异常: ArrayIndexOutOfBoundsException(数组越界)</span><br><span class="line">4. Object o = new Object(); String d = (String)o;</span><br><span class="line">抛出异常: ClassCastException(类转换异常)</span><br><span class="line">5. Object o = null; System.out.println(o.toString());</span><br><span class="line">抛出异常: NullPointerException(空指针异常)</span><br><span class="line">6. System.out.println(1.0/0);</span><br><span class="line">输出: Infinity</span><br></pre></td></tr></table></figure>
+
+
+
+<h2><span id="jdkjrejvm">jdk,jre,jvm</span></h2><p><img src="/../img/image-20241130175946339.png" alt="image-20241130175946339"></p>
+<p>jvm将class文件翻译给不同的系统(windows,linux,ios)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">javac 编译java文件-&gt;class</span><br><span class="line">java 运行java文件</span><br></pre></td></tr></table></figure>
+
+<p>字母数字_$但是不能用数字开头</p>
+<h2><span id="super">super</span></h2><p>用于调用父类方法</p>
+<h2><span id="static">static</span></h2><p>不用实例化</p>
+<h2><span id="final">final</span></h2><p>和const差不多</p>
+<h2><span id="abstract">abstract</span></h2><p>抽象父类的抽象方法必须在子类中实现</p>
+<p><img src="/../img/image-20241130210059086.png" alt="image-20241130210059086"></p>
+<h2><span id="interface">interface</span></h2><p><img src="/../img/image-20241201145904096.png" alt="image-20241201145904096"></p>
+<h1><span id="编译原理">编译原理</span></h1><h2><span id="最左推导和最右推导">最左推导和最右推导</span></h2><p><img src="/../img/image-20241122201134348.png" alt="image-20241122201134348"></p>
+<p>根据有没有d判断用S的哪个分支</p>
+<h2><span id="二义性">二义性</span></h2><p>s不只一个最右(或最左)推导</p>
+<p><img src="/../img/image-20241122201608163.png" alt="image-20241122201608163"></p>
+<h2><span id="最右推导短语句柄直接简单短语">最右推导,短语,句柄,(直接|简单)短语</span></h2><p>叶子节点:不存在子树</p>
+<p>短语:每棵树对应的叶子节点</p>
+<p>直接短语:树对应的子节点,满足叶子节点且是两层树的最后一层</p>
+<p>​				:1.两层树的2.子节点都是叶子节点</p>
+<p>句柄:最左的直接短语</p>
+<p>素短语:</p>
+<p>三个要求：<br>① 它是个短语（复习一下<strong>什么是短语：任意子树的叶节点</strong>）<br>② 它至少一个终结符<br>③ 不含有更小的素短语</p>
+<p><img src="/../img/image-20241231200009213.png" alt="image-20241231200009213"></p>
+<p><img src="/../img/image-20241124161235320.png" alt="image-20241124161235320"></p>
+<p><img src="/../img/image-20241122202217344.png" alt="image-20241122202217344"></p>
+<p>注意(b1)和(b2)</p>
+<p><img src="/../img/image-20241122204332713.png" alt="image-20241122204332713"></p>
+<h2><span id="化简文法">化简文法</span></h2><p>删除死循环和对S没有作用的</p>
+<p><img src="/../img/image-20241122204531528.png" alt="image-20241122204531528"></p>
+<h2><span id="构造等价二义性文法">构造等价二义性文法</span></h2><p><img src="/../img/image-20241122205827956.png" alt="image-20241122205827956"></p>
+<h2><span id="状态转换图写右线性文法">状态转换图写右线性文法</span></h2><p><img src="/../img/image-20241122210350497.png" alt="image-20241122210350497"></p>
+<p>注意C-&gt;1F|1和F-&gt;0E|0</p>
+<h2><span id="矩阵转图写出文法">矩阵转图,写出文法</span></h2><p><img src="/../img/image-20241122210754629.png" alt="image-20241122210754629"></p>
+<p>(3)a<sup>n</sup>b<sup>n</sup>任意a和任意b</p>
+<h2><span id="none">none</span></h2><p>closure</p>
+<p><img src="/../img/image-20241122211209303.png" alt="image-20241122211209303"></p>
+<h2><span id="文法的产生式集合p">文法的产生式集合P</span></h2><p><img src="/../img/image-20241123200231695.png" alt="image-20241123200231695"></p>
+<h2><span id="正规式转nfa">正规式转NFA</span></h2><h3><span id="规则">规则</span></h3><p><img src="/../img/image-20241123203951482.png" alt="image-20241123203951482"></p>
+<p><img src="/../img/image-20241123205754089.png" alt="image-20241123205754089"></p>
+<p><img src="/../img/image-20241123205054297.png" alt="image-20241123205054297"></p>
+<h2><span id="nfa转dfa">NFA转DFA</span></h2><p><img src="/../img/image-20241123204409174.png" alt="image-20241123204409174"></p>
+<p><img src="/../img/image-20241123204420348.png" alt="image-20241123204420348"></p>
+<h2><span id="dfa最小化">DFA最小化</span></h2><p><img src="/../img/image-20241123210929544.png" alt="image-20241123210929544"></p>
+<p><img src="/../img/image-20241123211241904.png" alt="image-20241123211241904"></p>
+<h2><span id="first和follow和select">FIRST和FOLLOW和SELECT</span></h2><p>总结</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FIRSTVT(A) 看左边的A,右边的第一个非终结符</span><br><span class="line">FOLLOWVT(A) 看右边的A,文法开始符有#</span><br></pre></td></tr></table></figure>
+
+<p>first,第一个终结符(小写字母)</p>
+<p>follow,看右边,取后一个字符,若不存在加入follow(-&gt;前面的字符)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">first可以有#,follow不允许有</span><br><span class="line">follow主字符自带终止符#</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">first(A):A转换为终结符的第一个终结符的集合</span><br><span class="line"></span><br><span class="line">follow(A):跟在A后面的第一个终结符的集合]</span><br><span class="line"></span><br><span class="line">SELECT(A-&gt;a):(FIRST(a)-&#123;epsi&#125;) and FOLLOW(A):</span><br><span class="line"></span><br><span class="line">用这个表达式的第一个终结符集合,</span><br><span class="line">用于表示,在需要终结符时,是否可以使用该式子</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/image-20241124111910388.png" alt="image-20241124111910388"></p>
+<p><img src="/../img/image-20241124111846628.png" alt="image-20241124111846628"></p>
+<p><img src="/../img/image-20241124101737027.png" alt="image-20241124101737027"></p>
+<p><img src="/../img/image-20241124103457111.png" alt="image-20241124103457111"></p>
+<h2><span id="消除左递归和回溯">消除左递归和回溯</span></h2><p>消除左递归</p>
+<p>1.判定:存在最左边字符和右边字符一样</p>
+<p>2.化简A-&gt;Aa|b:</p>
+<p>​	2.1:去掉包含A	A-&gt;bA’</p>
+<p>​			完成A’:		A’-&gt;aA’|&epsilon;</p>
+<p><img src="/../img/image-20241228194204947.png" alt="image-20241228194204947"></p>
+<p>消除回溯</p>
+<p>1.判定:右边的左边有相同的字符</p>
+<p>2.化简,将1中的变为一类,其他字符为另一类</p>
+<p><img src="/../img/image-20241228194841094.png" alt="image-20241228194841094"></p>
+<h2><span id="ll1文法">LL1文法</span></h2><p><img src="/../img/image-20241124110708591.png" alt="image-20241124110708591"></p>
+<p>LL(1),相同前缀,推出的select的交集为空</p>
+<p><img src="/../img/image-20241124112617325.png" alt="image-20241124112617325"></p>
+<p>LL1文法的判断</p>
+<p><img src="/../img/image-20241228195857672.png" alt="image-20241228195857672"></p>
+<p><a id="2">改造文法为LL(1)文法</a></p>
+<p><img src="/../img/image-20241228202241608.png" alt="image-20241228202241608"></p>
+<h2><span id="预测分析表">预测分析表</span></h2><p>就是把所有文法填入</p>
+<p>以终结符为第一行,非终结符为第一列</p>
+<p>A-&gt;&epsilon;时考虑follow</p>
+<p><img src="/../img/image-20241124112922886.png" alt="image-20241124112922886"></p>
+<h2><span id="对输入串的分析过程">对输入串的分析过程</span></h2><p><a id="1">1</a></p>
+<p><img src="/../img/image-20241228201833295.png" alt="image-20241228201833295"></p>
+<h2><span id="firstvt和lastvt">FIRSTVT和LASTVT</span></h2><p>E的第一个终结符,如果只有终结符,则进行探寻</p>
+<p><img src="/../img/image-20241228203303623.png" alt="image-20241228203303623"></p>
+<h2><span id="算符优先文法">算符优先文法</span></h2><p><a id="3">3</a></p>
+<p><img src="/../img/image-20241228204107016.png" alt="image-20241228204107016"></p>
+<h2><span id="优先函数">优先函数</span></h2><p><img src="/../img/image-20241228210741257.png" alt="image-20241228210741257"></p>
+<h2><span id="lr0分析表">LR(0)分析表</span></h2><p><a id="4">4</a></p>
+<p><img src="/../img/image-20241229182954512.png" alt="image-20241229182954512"></p>
+<h2><span id="slr1分析表">SLR(1)分析表</span></h2><p><img src="/../img/image-20241229185113258.png" alt="image-20241229185113258"></p>
+<p><a id="dif">移进和规约的冲突</a></p>
+<p>冲突:</p>
+<p>有一个.在最后面,有.后面有终结符</p>
+<p>终结符和这个.前面的字符的FOLLOW集合</p>
+<p><img src="/../img/image-20241229193707051.png" alt="image-20241229193707051"></p>
+<h2><span id="lr1">LR(1)</span></h2><p><img src="/../img/image-20241229205600517.png" alt="image-20241229205600517"></p>
+<p><img src="/../img/image-20241229210319344.png" alt="image-20241229210319344"></p>
+<p><img src="/../img/image-20241229211427684.png" alt="image-20241229211427684"></p>
+<h1><span id="lalr1">LALR(1)</span></h1><p><img src="/../img/image-20250102110359642.png" alt="image-20250102110359642"></p>
+<h2><span id="判断lr0slr1lr1文法">判断LR(0),SLR(1),LR(1)文法</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">LR(0),不同时存在 移进项目的的终结符 和 归约项目,或 归约项目 和 归约项目 取交集</span><br><span class="line"></span><br><span class="line">SLR(1),移进项目的的终结符 和 归约项目的FOLLOW集 取交集 </span><br><span class="line"></span><br><span class="line">LR(1),移进项目的的终结符 和 归约项目的向前搜索符 或  归约项目的向前搜索符 和 归约项目的向前搜索符 取交集</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/image-20241230194644110.png" alt="image-20241230194644110"></p>
+<p><img src="/../img/image-20241230194255245.png" alt="image-20241230194255245"></p>
+<p><img src="/../img/image-20241230194330054.png" alt="image-20241230194330054"></p>
+<p><img src="/../img/image-20241230195948301.png" alt="image-20241230195948301"></p>
+<h2><span id="算符优先分析归约过程">算符优先分析归约过程</span></h2><h3><span id="算符优先关系矩阵">算符优先关系矩阵</span></h3><p><img src="/../img/image-20241231185306140.png" alt="image-20241231185306140"></p>
+<h3><span id="判断优先关系文法">判断优先关系文法</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">因为文法中任何终结符对之间的优先关系是唯一的，所以，G[B]是一个算符优先文法。</span><br></pre></td></tr></table></figure>
+
+<h3><span id="算符优先关系函数">算符优先关系函数</span></h3><p><img src="/../img/image-20241231185446879.png" alt="image-20241231185446879"></p>
+<h3><span id="对输入串的分析过程如下">对输入串的分析过程如下</span></h3><p><img src="/../img/image-20241231184828281.png" alt="image-20241231184828281"></p>
+<h2><span id="后缀式逆波兰式四元式子三元式间接三元式">后缀式(逆波兰式),四元式子,三元式,间接三元式</span></h2><p><img src="/../img/image-20250101133400285.png" alt="image-20250101133400285"></p>
+<p><img src="/../img/image-20250101134709458.png" alt="image-20250101134709458"></p>
+<h2><span id="例题">例题</span></h2><h3><span id="1-对输入串的分析过程">1 对输入串的分析过程</span></h3><p>给出输入串aad1#的分析过程</p>
+<p><img src="/../img/image-20241228201936937.png" alt="image-20241228201936937"></p>
+<p><a href="#1">答案</a></p>
+<h3><span id="2-改造文法为ll1文法">2 改造文法为LL(1)文法</span></h3><p><img src="/../img/image-20241228202201329.png" alt="image-20241228202201329"></p>
+<p><a href="#2">答案</a></p>
+<h3><span id="3-文法构造优先关系表">3 文法构造优先关系表</span></h3><p><img src="/../img/image-20241228204211394.png" alt="image-20241228204211394"></p>
+<p><a href="#3">答案</a></p>
+<h3><span id="4-构造下述文法的lr0分析表">4 构造下述文法的LR(0)分析表</span></h3><p><img src="/../img/image-20241229182847790.png" alt="image-20241229182847790"></p>
+<p><a href="#4">答案</a></p>
+<h2><span id="课件">课件</span></h2><p>5P45</p>
+<p><img src="/../img/image-20250101191208494.png" alt="image-20250101191208494"></p>
+<h2><span id="作业题">作业题</span></h2><h3><span id="p1561">p156.1</span></h3><p><img src="/../img/image-20241229200908736.png" alt="image-20241229200908736"></p>
+<p>移进和规约的冲突(.在最后面的FOLLOW(前者)和 所有 .+终结符 的终结符)</p>
+<p><a href="#dif">移进和规约的冲突</a></p>
+<p><img src="/../img/image-20241229203636262.png" alt="image-20241229203636262"></p>
+<h3><span id="p15711">P157.11</span></h3><p><img src="/../img/image-20241229203855721.png" alt="image-20241229203855721"></p>
+<p><img src="/../img/image-20241230203402224.png" alt="image-20241230203402224"></p>
+<h3><span id="p1211">P121.1</span></h3><p><img src="/../img/image-20241231193325292.png" alt="image-20241231193325292"></p>
+<p><img src="/../img/image-20241231193215697.png" alt="image-20241231193215697"></p>
+<h3><span id="p1223242">P122.3(2),4(2)</span></h3><p><img src="/../img/image-20241231200426617.png" alt="image-20241231200426617"></p>
+<h3><span id="p6413">P64.1(3)</span></h3><p><img src="/../img/image-20241231205251790.png" alt="image-20241231205251790"></p>
+<p>P64.9</p>
+<p><img src="/../img/image-20241231210733449.png" alt="image-20241231210733449"></p>
+<p><img src="/../img/image-20241231210654447.png" alt="image-20241231210654447"></p>
+<h3><span id="第八章">第八章</span></h3><p><img src="/../img/image-20250101144710039.png" alt="image-20250101144710039"></p>
+<p><img src="/../img/image-20250101222824436.png" alt="image-20250101222824436"></p>
+<p><img src="/../img/image-20250101223115220.png" alt="image-20250101223115220"></p>
+<p><img src="/../img/image-20250101224611581.png" alt="image-20250101224611581"></p>
+<p><img src="/../img/image-20250101224743924.png" alt="image-20250101224743924"></p>
+<p><img src="/../img/image-20250101225808645.png" alt="image-20250101225808645"></p>
+<p><img src="/../img/image-20250101225612110.png" alt="image-20250101225612110"></p>
+<p><img src="/../img/image-20250102123656767.png" alt="image-20250102123656767"></p>
+<h1><span id="马原">马原</span></h1><h2><span id="辩证唯物主义">辩证唯物主义</span></h2><h3><span id="1辩证唯物论">1.辩证唯物论</span></h3><p>物质与意识:</p>
+<p><img src="/../img/image-20250104104250744.png" alt="image-20250104104250744"></p>
+<h3><span id="2唯物辩证法">2.唯物辩证法</span></h3><p>1.联系,发展</p>
+<p>2.规律</p>
+<p>​	对立统一</p>
+<p>​		同一性和斗争性</p>
+<p>​		普遍性和特殊性</p>
+<p>​	量变质变</p>
+<p>​	否定</p>
+<p><img src="/../img/image-20250104105129448.png" alt="image-20250104105129448"></p>
+<h3><span id="3辩证唯物主义认识论">3.辩证唯物主义认识论</span></h3><p>1.时间与认识</p>
+<p>2.真理与价值</p>
+<p>3.认识世界改造世界</p>
+<h2><span id="历史唯物主义唯物史观">历史唯物主义(唯物史观)</span></h2><h3><span id="1社会存在和社会意识">1.社会存在和社会意识</span></h3><p>2.社会基本矛盾</p>
+<p>​	生产力 生成关系</p>
+<p>​	经济基础 上层建筑</p>
+<p>3.动力</p>
+<p>​	社会基础</p>
+<p>​	阶级斗争</p>
+<p>​	社会改革</p>
+<p>​	科技</p>
+<p>​	文化</p>
+<p>4.人们群众 创造</p>
+<h1><span id="马原">马原</span></h1><h2><span id="辩证唯物主义">辩证唯物主义</span></h2><h3><span id="1-辩证唯物论">1. 辩证唯物论</span></h3><p>物质不依赖感觉而客观存在，世界统一于物质，物质运动有规律，意识是人脑对客观世界反映。物质决定意识，意识反作用于物质，要一切从实际出发、发挥意识能动作用。</p>
+<h3><span id="2-唯物辩证法">2. 唯物辩证法</span></h3><ol>
+<li><p>联系具客观性等多特性，事物相互影响；发展是新事物取代旧事物，要用联系、发展眼光看问题。</p>
+</li>
+<li><p>规律：</p>
+</li>
+</ol>
+<ul>
+<li><ul>
+<li>对立统一：同一性指矛盾双方依存、贯通、转化；斗争性指相互排斥。二者推动事物发展。</li>
+</ul>
+</li>
+<li><ul>
+<li>普遍性即矛盾普遍存在；特殊性指矛盾各有特点。二者辩证统一，工作中要结合一般与个别。</li>
+</ul>
+</li>
+<li><ul>
+<li>量变质变：量变是渐变，质变是根本性质改变，量变引发质变，要重视积累、促成飞跃、坚持适度。</li>
+</ul>
+</li>
+<li><ul>
+<li>否定：事物自我否定，是发展、联系环节，实质是 “扬弃”，要创新。</li>
+</ul>
+</li>
+</ul>
+<h3><span id="3-辩证唯物主义认识论">3. 辩证唯物主义认识论</span></h3><ol>
+<li><p>实践改造世界，具多特征，是认识基础。认识反作用实践，认识过程有两次飞跃，具反复、无限、上升性。</p>
+</li>
+<li><p>真理是对客观规律的正确认识，有客观性、绝对性、相对性，与谬误辩证转化；价值指客体对主体意义，二者在实践中统一。</p>
+</li>
+<li><p>认识与改造世界辩证统一，改造主、客观世界也统一于实践。</p>
+</li>
+</ol>
+<h2><span id="历史唯物主义">历史唯物主义</span></h2><h3><span id="1-社会存在和社会意识">1. 社会存在和社会意识</span></h3><p>社会存在包括生产方式、地理环境、人口因素，生产方式起决定作用；社会意识反映社会存在，具相对独立性，反作用于社会存在。</p>
+<h3><span id="2-社会基本矛盾">2. 社会基本矛盾</span></h3><p>生产力决定生产关系，生产关系反作用生产力；经济基础决定上层建筑，上层建筑反作用经济基础，两对矛盾推动社会发展。</p>
+<h3><span id="3-动力">3. 动力</span></h3><p>社会基本矛盾是根本动力，阶级斗争是阶级社会直接动力，社会改革促进社会进步，科技、文化分别作为物质、精神力量推动发展且受制约，要合理利用。</p>
+<h3><span id="4-人民群众创造">4. 人民群众创造</span></h3><p>人民群众是历史创造者，是物质、精神财富创造者与社会变革决定力量，其创造受历史条件制约，党坚持群众路线取得胜利。</p>
+<h1><span id="马原">马原</span></h1><h2><span id="辩证唯物主义">辩证唯物主义</span></h2><h3><span id="1辩证唯物论">1.辩证唯物论</span></h3><p>物质与意识：</p>
+<p>物质是标志客观实在的哲学范畴，它不依赖于我们的感觉而存在，为我们的感觉所复写、摄影、反映。世界的真正统一性在于它的物质性，物质是运动的，运动是物质的根本属性和存在方式，而静止是运动的特殊状态，物质的运动是有规律的。意识是人脑的机能和属性，是客观世界的主观映象。物质决定意识，意识对物质具有能动的反作用，正确的意识能够促进事物的发展，错误的意识则阻碍事物的发展。这要求我们一切从实际出发，实事求是，同时重视发挥意识的能动作用，树立正确的思想意识。</p>
+<h3><span id="2唯物辩证法">2.唯物辩证法</span></h3><ol>
+<li>联系、发展：</li>
+</ol>
+<p>联系是指事物内部各要素之间和事物之间相互影响、相互制约和相互作用的关系。联系具有客观性、普遍性、多样性和条件性。发展是前进性、上升性的运动和变化，是新事物的产生和旧事物的灭亡，发展的实质是新事物的产生和旧事物的灭亡，原因在于新事物符合事物发展的客观规律，具有强大生命力和远大前途。我们要用联系和发展的眼光看问题，反对孤立、静止的观点。</p>
+<ol>
+<li>规律：</li>
+</ol>
+<p>对立统一规律：</p>
+<p>同一性和斗争性：同一性是矛盾双方相互依存、相互贯通的性质和趋势，它有两个方面的含义，一是矛盾着的对立面相互依存，互为存在的前提，并共处于一个统一体中；二是矛盾着的对立面之间相互贯通，在一定条件下相互转化。斗争性是矛盾着的对立面之间相互排斥、相互分离的性质和趋势。同一性与斗争性是矛盾的两种基本属性，它们相互联结、相辅相成，没有斗争性就没有同一性，没有同一性也没有斗争性，推动事物的发展。</p>
+<p>普遍性和特殊性：矛盾的普遍性即矛盾无处不在、无时不有，事事有矛盾，时时有矛盾。矛盾的特殊性是指具体事物所包含的矛盾以及每一矛盾的各个方面都有其特点，不同事物有不同的矛盾，同一事物在不同发展阶段有不同矛盾，同一矛盾的不同方面也各有特点。矛盾普遍性与特殊性辩证关系原理是矛盾问题的精髓，普遍性寓于特殊性之中，并通过特殊性表现出来，特殊性包含普遍性，二者在一定条件下相互转化，要求我们在实际工作中坚持一般号召和个别指导相结合，“从群众中来，到群众中去”等工作方法。</p>
+<p>量变质变：量变是事物数量的增减和组成要素排列次序的变动，是保持事物的质的相对稳定性的不显著变化，体现了事物发展渐进过程的连续性。质变是事物性质的根本变化，是事物由一种质态向另一种质态的飞跃，体现了事物发展渐进过程和连续性的中断。量变是质变的必要准备，质变是量变的必然结果，量变和质变是相互渗透的，一方面，质变体现和巩固量变的成果，为在新质的基础上的量变开拓道路；另一方面，在总的量变过程中有阶段性和局部性的部分质变。要求我们重视量的积累，不失时机促成事物飞跃，坚持适度原则。</p>
+<p>否定之否定：唯物辩证法的否定之否定是事物发展的规律。经历 “肯定 - 否定 - 否定之否定” 阶段，是前进性和曲折性的统一。其实质是 “扬弃”，自我否定，既是发展环节也是联系环节，让事物在曲折中自我完善、上升发展。</p>
+<h3><span id="3辩证唯物主义认识论">3.辩证唯物主义认识论</span></h3><ol>
+<li>实践与认识：</li>
+</ol>
+<p>实践是人类能动地改造世界的客观物质性活动，具有直接现实性、自觉能动性和社会历史性等基本特征。实践是认识的基础，实践对认识具有决定作用，表现在实践是认识的来源，是认识发展的动力，是检验认识真理性的唯一标准，是认识的目的。认识对实践具有反作用，正确的认识能够指导实践取得成功，错误的认识则会使实践遭受挫折。认识的过程是从感性认识到理性认识，再从理性认识到实践的两次飞跃，认识具有反复性、无限性和上升性，追求真理是一个过程。</p>
+<ol>
+<li>真理与价值：</li>
+</ol>
+<p>真理是人们对于客观事物及其规律的正确认识。真理具有客观性，真理的内容是客观的，检验真理的标准也是客观的；真理具有绝对性，任何真理都包含着同客观对象相符合的客观内容，都同谬误有原则的界限，人类认识按其本性来说，能够正确认识无限发展着的物质世界；真理又具有相对性，人们在一定条件下对客观事物及其规律的正确认识是有限的，任何真理都只能是主观对客观事物近似正确即相对正确的反映。真理与谬误相比较而存在，相斗争而发展，在一定条件下相互转化。价值是指客体对于主体的意义，具有客观性、主体性、社会历史性和多维性。真理与价值在实践基础上是辩证统一的，成功的实践必然是以真理和价值的辩证统一为前提的，一方面，价值尺度必须以真理为前提，另一方面，人类自身需要的内在尺度，推动着人们不断发现新的真理。</p>
+<ol>
+<li>认识世界改造世界：</li>
+</ol>
+<p>认识世界与改造世界是人类创造历史的两种基本活动，认识的任务不仅在于解释世界，更重要的在于改造世界。认识世界和改造世界相互依赖、相互制约，是辩证统一的。马克思主义哲学认为，改造客观世界与改造主观世界是辩证统一的，改造主观世界是为了更好地改造客观世界，人们在改造客观世界的同时也改造着自己的主观世界，二者统一的基础是实践。</p>
+<h2><span id="历史唯物主义唯物史观">历史唯物主义(唯物史观)</span></h2><h3><span id="1社会存在和社会意识">1.社会存在和社会意识</span></h3><p>社会存在也称社会物质生活条件，是社会生活的物质方面，主要是指物质生活资料的生产及生产方式，也包括地理环境和人口因素。地理环境和人口因素对社会发展起着加速或延缓的作用，但不能起决定作用，物质资料生产方式是社会发展的决定力量。社会意识是社会生活的精神方面，是社会存在的反映，社会意识具有相对独立性，它在反映社会存在的同时，还有自己特有的发展形式和规律，主要表现在社会意识与社会存在发展的不完全同步性和不平衡性、社会意识内部各种形式之间的相互影响及各自具有的历史继承性、社会意识对社会存在的能动的反作用，先进的社会意识对社会发展起积极的促进作用，落后的社会意识对社会发展起阻碍作用。</p>
+<h3><span id="2社会基本矛盾">2.社会基本矛盾</span></h3><p>生产力与生产关系：生产力是人类在生产实践中形成的改造和影响自然以使其适合社会需要的物质力量，生产力具有客观现实性和社会历史性，其基本要素包括劳动资料、劳动对象和劳动者，科学技术是第一生产力，渗透到生产力诸要素之中。生产关系是人们在物质生产过程中形成的不以人的意志为转移的经济关系，生产关系是社会关系中最基本的关系，包括生产资料所有制关系、生产中人与人的关系和产品分配关系，生产资料所有制是最基本的、决定的方面，它构成全部生产关系的基础。生产力决定生产关系，生产力的状况决定生产关系的性质和形式，生产力发展的要求决定生产关系的变革；生产关系对生产力具有能动的反作用，当生产关系适合生产力发展状况时，它对生产力的发展起推动作用，当生产关系不适合生产力发展状况时，它对生产力的发展起阻碍作用。</p>
+<p>经济基础与上层建筑：经济基础是指由社会一定发展阶段的生产力所决定的生产关系的总和，实质是社会一定发展阶段上的基本经济制度，是制度化的物质社会关系。上层建筑是建立在一定经济基础之上的意识形态以及相应的制度、组织和设施，包括政治上层建筑和观念上层建筑，政治上层建筑在整个上层建筑中居主导地位，国家政权是核心。经济基础决定上层建筑，经济基础的需要决定上层建筑的产生，经济基础的性质决定上层建筑的性质，经济基础的变化发展决定上层建筑的变化发展；上层建筑对经济基础具有反作用，集中表现在为自己的经济基础的形成和巩固服务，确立或维护其在社会中的统治地位，当上层建筑为适合生产力发展状况的经济基础服务时，它就成为推动社会发展的进步力量，反之，则成为阻碍社会发展的消极力量。生产力与生产关系、经济基础与上层建筑的矛盾，是贯穿人类社会始终的基本矛盾，它们的运动推动着人类社会的发展。</p>
+<h3><span id="3动力">3.动力</span></h3><p>社会基本矛盾：生产力与生产关系、经济基础与上层建筑的矛盾是社会发展的根本动力，生产力是社会发展的最终决定力量，两对矛盾交互作用，推动社会形态由低级向高级依次更替。</p>
+<p>阶级斗争：在阶级社会里，阶级斗争是社会基本矛盾在阶级关系上的表现，是阶级对立社会发展的直接动力。阶级斗争推动社会发展的作用突出地表现在社会形态更替的质变中，也表现在同一社会形态的量变过程中。</p>
+<p>社会改革：社会改革是在保持社会根本制度不变的前提下，对社会制度的某些方面和环节进行变革，调整不适应生产力发展要求的生产关系和上层建筑，以促进生产力发展和社会进步。改革是社会主义社会发展的直接动力，社会主义改革是一场伟大的改革，是社会主义制度的自我完善和发展。</p>
+<p>科技：科学技术作为先进生产力的重要标志，对于推动社会发展有着非常重要的作用，它是推动经济和社会发展的强大杠杆，能够促进生产力发展，引起生产方式、生活方式和思维方式的变革，但科技的作用受到一定社会条件的制约，要正确认识和合理利用科技力量。</p>
+<p>文化：文化作为一种精神力量，能够在人们认识世界、改造世界的过程中转化为物质力量，对社会发展产生深刻的影响，先进文化对社会发展起促进作用，落后文化起阻碍作用，文化与经济、政治相互交融，相互影响，要重视文化建设，发展社会主义先进文化。</p>
+<h3><span id="4人民群众创造">4.人民群众创造</span></h3><p>人民群众是社会历史的主体，是历史的创造者，这是唯物史观的一个基本原理。人民群众是指一切对社会历史发展起推动作用的人们，从质上说，人民群众是指一切顺应历史潮流、推动社会历史前进的人们，从量上说，人民群众是指社会人口中的绝大多数。人民群众创造历史主要表现在人民群众是社会物质财富的创造者，是社会精神财富的创造者，是社会变革的决定力量。人民群众创造历史的活动要受到一定社会历史条件的制约，包括经济条件、政治条件、精神文化条件等。中国共产党始终坚持群众路线，一切为了群众，一切依靠群众，从群众中来，到群众中去，这是党取得革命、建设和改革胜利的重要法宝。</p>
+<h1><span id="智能移动设备软件开发">智能移动设备软件开发</span></h1><p>题型:</p>
+<p>1.选择题20</p>
+<p>2.程序填空20</p>
+<p>3.程序改错20</p>
+<p>4.分析与设计20</p>
+<h2><span id="基于android平台的移动开发">基于Android平台的移动开发</span></h2><h2><span id="布局设计">布局设计</span></h2><h2><span id="活动activity">活动Activity</span></h2><h3><span id="34-activity间传递数据">3.4 Activity间传递数据</span></h3><p>发送方</p>
+<p><img src="/../img/image-20250104195537404.png" alt="image-20250104195537404"></p>
+<p>接收方</p>
+<p><img src="/../img/image-20250104195635319.png" alt="image-20250104195635319"></p>
+<h2><span id="本地数据存储">本地数据存储</span></h2><h3><span id="41-文件存储方式">4.1 文件存储方式</span></h3><p><img src="/../img/image-20250104200452783.png" alt="image-20250104200452783"></p>
+<p><img src="/../img/image-20250104201149842.png" alt="image-20250104201149842"></p>
+<h3><span id="42-sharedpreferences">4.2 SharedPreferences</span></h3><p><img src="/../img/image-20250104203814934.png" alt="image-20250104203814934"></p>
+<h3><span id="43-sqlite数据库">4.3 SQLite数据库</span></h3><h2><span id="广播接收者">广播接收者</span></h2><h2><span id="服务service">服务Service</span></h2><h2><span id="课堂测试">课堂测试</span></h2><h3><span id="1">1</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">题目：移动开发技术中，Android 是属于（ ）类别。</span><br><span class="line">选项：</span><br><span class="line">A. 网页 APP 开发</span><br><span class="line">B. 跨平台开发</span><br><span class="line">C. 原生开发</span><br><span class="line">正确答案：C</span><br><span class="line"></span><br><span class="line">题目：如果一个线性布局的属性 orientation 值为 “horizontal”，那么它里面的元素将：</span><br><span class="line">选项：</span><br><span class="line">A. 水平横向排列</span><br><span class="line">B. 垂直竖向排列</span><br><span class="line">正确答案：A</span><br><span class="line"></span><br><span class="line">题目：属性值 “@color/...&quot; 的省略号部分应当是（ ）。</span><br><span class="line">选项：</span><br><span class="line">A. 预定义在 color 文件中的颜色名称</span><br><span class="line">B. 十六进制表示的 RGB 值</span><br><span class="line">正确答案：A</span><br><span class="line"></span><br><span class="line">题目：Android 体系结构分为四层，其中负责硬件驱动的是（ ）。</span><br><span class="line">选项：</span><br><span class="line">A. linux 内核（Kernel）层</span><br><span class="line">B. 应用（Application）层</span><br><span class="line">C. 库（Library）层</span><br><span class="line">D. 框架（Framework）层</span><br><span class="line">正确答案：A</span><br><span class="line"></span><br><span class="line">题目：创建新样式 TextStyle 后，如要在某个控件中引用它，则在控件标签内加入：</span><br><span class="line">选项：</span><br><span class="line">A. style=&quot;@style/TextStyle&quot;</span><br><span class="line">B. android:style=&quot;@style/TextStyle&quot;</span><br><span class="line">C. app:style=&quot;@style/TextStyle&quot;</span><br><span class="line">正确答案：A</span><br><span class="line"></span><br><span class="line">题目：Android 项目打包后，得到（ ）文件。</span><br><span class="line">选项：</span><br><span class="line">A. odex</span><br><span class="line">B. apk</span><br><span class="line">C. dex</span><br><span class="line">D. class</span><br><span class="line">正确答案：B</span><br><span class="line"></span><br><span class="line">题目：如果一组单选按钮可以选中多项，则可能的原因是（ ）。</span><br><span class="line">选项：</span><br><span class="line">A. 没有设置 disable 属性</span><br><span class="line">B. 没有设置 text 属性</span><br><span class="line">C. 没有放入同一个 RadioGroup 控件容器</span><br><span class="line">D. 没有设置 checked 属性</span><br><span class="line">正确答案：C</span><br><span class="line"></span><br><span class="line">题目：下列类可以输出日志信息的是（ ）。</span><br><span class="line">选项：</span><br><span class="line">A. Toast</span><br><span class="line">B. Log</span><br><span class="line"></span><br><span class="line">正确答案：B</span><br><span class="line"></span><br><span class="line">题目：Android 项目 res 文件夹中存放（ ）。</span><br><span class="line">选项：</span><br><span class="line">A. 布局资源文件</span><br><span class="line">B. 图片</span><br><span class="line">C. 颜色值、字符串、样式等常量值</span><br><span class="line">D. 以上都是</span><br><span class="line">正确答案：D</span><br><span class="line"></span><br><span class="line">题目：为活动 Activity 关联布局资源的方法是（ ）。</span><br><span class="line">选项：</span><br><span class="line">A. setLayout()</span><br><span class="line">B. getContentView()</span><br><span class="line">C. setContentView()</span><br><span class="line">D. getLayout()</span><br><span class="line">正确答案：C</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3><span id="2">2</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line">一、单选题（共 5 题，50.0 分）</span><br><span class="line">（单选题，10.0 分）</span><br><span class="line">如果一个 activity 的启动模式为________，每次启动该 Activity 时，首先在任务栈中查找是否已经存在该 Activity 对象实例 。</span><br><span class="line">A. standard</span><br><span class="line">B. singleTop</span><br><span class="line">C. singleTask</span><br><span class="line">D. singleInstance</span><br><span class="line">C</span><br><span class="line"></span><br><span class="line">（单选题，10.0 分）</span><br><span class="line">为一个活动 Activity 类实现单击事件监听器接口，需要为它重写_____ 方法 。</span><br><span class="line">A. onCreate ()</span><br><span class="line">B. onClick ()</span><br><span class="line">C. onStart ()</span><br><span class="line">D. onDestroy ()</span><br><span class="line">B</span><br><span class="line"></span><br><span class="line">（单选题，10.0 分）</span><br><span class="line">当手机屏幕由竖屏切换为横屏时，以下说法最准确的是：______。</span><br><span class="line">A. 当前正在运行的 Activity 会保持运行状态。</span><br><span class="line">B. 当前正在运行的 Activity 会先暂停一下，然后重新回到运行态。</span><br><span class="line">C. 当前正在运行的 Activity 会先从屏幕消失一下，然后重新回到运行态。</span><br><span class="line">D. 当前正在运行的 Activity 会先被销毁，然后重新创建并回到运行态。</span><br><span class="line">B</span><br><span class="line"></span><br><span class="line">（单选题，10.0 分）</span><br><span class="line">用 Intent 对象在 Activity 之间传递一个字符串（键名为 “major”，值为 “计算机”），下列接收方代码片段正确的是：</span><br><span class="line">A. Intent intent = new Intent (); String major = intent.getExtra (&quot;major&quot;);</span><br><span class="line">B. Intent intent = getIntent (); String major = intent.getExtra (&quot;major&quot;);</span><br><span class="line">C. Intent intent = new Intent (); String major = intent.getStringExtra (&quot;major&quot;);</span><br><span class="line">D. Intent intent = getIntent (); String major = intent.getStringExtra (&quot;major&quot;);</span><br><span class="line">B</span><br><span class="line"></span><br><span class="line">（单选题，10.0 分）</span><br><span class="line">用 Intent 对象在两个 Activity 之间传递字符串，发送方要调用的方法是：</span><br><span class="line">A. setExtra ();</span><br><span class="line">B. putExtra ()</span><br><span class="line">C. setStringExtra ()</span><br><span class="line">D. putStringExtra ()</span><br><span class="line">B</span><br><span class="line"></span><br><span class="line">二、判断题（共 5 题，50.0 分）</span><br><span class="line">（判断题，10.0 分）</span><br><span class="line">用 setAction 方法配置的意图，是隐式意图。</span><br><span class="line">A. 对</span><br><span class="line">B. 错</span><br><span class="line">A</span><br><span class="line"></span><br><span class="line">（判断题，10.0 分）</span><br><span class="line">每一个新建的 activity 都对应 AndroidManifest.xml 文件中的一个&lt;activity&gt;标签，并且都配有&lt;intent-filter&gt;子标签。</span><br><span class="line">A. 对</span><br><span class="line">B. 错</span><br><span class="line">A</span><br><span class="line"></span><br><span class="line">（判断题，10.0 分）</span><br><span class="line">当一个 activity 对象从不可见重新变得可见时，首先触发的回调方法是 onStart ()。</span><br><span class="line">A. 对</span><br><span class="line">B. 错</span><br><span class="line">B</span><br><span class="line"></span><br><span class="line">（判断题，10.0 分）</span><br><span class="line">方法 startActivity () 启动 activity 时，只能启动同一个 app 项目中的 activity。</span><br><span class="line">A. 对</span><br><span class="line">B. 错</span><br><span class="line">B</span><br><span class="line"></span><br><span class="line">（判断题，10.0 分）</span><br><span class="line">用 setClass () 方法设置 Intent 对象，需要指定被启动对象的包上下文和类名。</span><br><span class="line">A. 对</span><br><span class="line">B. 错</span><br><span class="line">B</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3><span id="3">3</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line">1.(单选题，10.0 分) 为读写 “student.xml” 中的键值对数据，获取 SharedPreferences 对象的方法是</span><br><span class="line">A writeSharedPreferences (&quot;student&quot;,MODE_PRIVATE)</span><br><span class="line">B openSharedPreferences (&quot;student&quot;,MODE_PRIVATE)</span><br><span class="line">C getSharedPreferences (&quot;student&quot;,MODE_PRIVATE)</span><br><span class="line">D readSharedPreferences (&quot;student&quot;,MODE_PRIVATE)</span><br><span class="line">C</span><br><span class="line"></span><br><span class="line">2.(单选题，10.0 分) 下列代码行试图从一个名为 “students.txt” 的文件中读取数据，其中标号为______的代码行存在错误:</span><br><span class="line">try &#123;</span><br><span class="line">[1] FileInputStream fis = openFileInput (&quot;student.txt&quot;);</span><br><span class="line">[2] byte [] buffer = new byte [fis.available];</span><br><span class="line">[3] buffer = fis.read ();</span><br><span class="line">[4] fis.close ();</span><br><span class="line">&#125; catch (IOException e)&#123;</span><br><span class="line">e.printStackTrace ();</span><br><span class="line">&#125;</span><br><span class="line">A [1]</span><br><span class="line">B [3]</span><br><span class="line">C [2]</span><br><span class="line">D [4]</span><br><span class="line">B</span><br><span class="line"></span><br><span class="line">3.(单选题，10.0 分) 用文件输入输出流读写数据，读写的数据均为_______。</span><br><span class="line">A 字节流</span><br><span class="line">B 字符串</span><br><span class="line">C 字符串数组</span><br><span class="line">D 键值对</span><br><span class="line">A</span><br><span class="line"></span><br><span class="line">4.(单选题，10.0 分) 关于 ContentValues，下列说法正确的是</span><br><span class="line">A ContentValues 对象中的键值对，对应字段名 - 字段值</span><br><span class="line">B ContentValues 对象仅用在 SQLiteDatabase 的 insert () 方法中</span><br><span class="line">C 一个 ContentValues 对象仅储存一个键值对</span><br><span class="line">B</span><br><span class="line"></span><br><span class="line">5.(单选题，10.0 分) 给定一个 SQliteDatabase 对象 db，下列代码____从表 students 中删除 stuID 字段值为 &quot;20201872001&quot; 的学生数据。</span><br><span class="line">A int num = db.delete (&quot;student&quot;,&quot;stuID=?&quot;,new int []&#123;20201872001&#125;);</span><br><span class="line">B int num = db.delete (&quot;student&quot;,&quot;stuID=?&quot;,new String []&#123;&quot;20201872001&quot;&#125;);</span><br><span class="line">C int num = db.delete (&quot;student&quot;,&quot;stuID=?&quot;,&quot;20201872001&quot;);</span><br><span class="line">D int num = db.delete (&quot;student&quot;,&quot;stuID=?&quot;,new String (&quot;20201872001&quot;));</span><br><span class="line">B</span><br><span class="line"></span><br><span class="line">6.(单选题，10.0 分) SQLite 是一个轻量级数据库，是 Google 公司专为 Android 系统开发的本地数据库。</span><br><span class="line">A 正确</span><br><span class="line">B 错误</span><br><span class="line">B</span><br><span class="line"></span><br><span class="line">7.(单选题，10.0 分) 用 SharedPreferences 对象写数据，要先获取一个____接口对象，再调用它的写数据方法。</span><br><span class="line">A ContentValues</span><br><span class="line">B Editor</span><br><span class="line">C FileOutputStream</span><br><span class="line">D Intent</span><br><span class="line">B</span><br><span class="line"></span><br><span class="line">8.(单选题，10.0 分) 通常在 SQLiteOpenHelper 子类的______方法中创建数据表。</span><br><span class="line">A 构造方法</span><br><span class="line">B onUpgrade ()</span><br><span class="line">C onCreate ()</span><br><span class="line">C</span><br><span class="line"></span><br><span class="line">9.(单选题，10.0 分) 给定 SQliteDatabase 对象 db, 调用 query () 方法，查询表 stduent 中所有入学年份 year 为 2022 的信息，下列代码正确的是____。</span><br><span class="line">A Cursor cursor = db.query (&quot;student&quot;,null,&quot;year=?&quot;,new String []&#123;&quot;2022&quot;&#125;,null,null,null);</span><br><span class="line">B Cursor cursor = db.query (&quot;student&quot;,null,&quot;year=?&quot;,&quot;2022&quot;,null,null,null);</span><br><span class="line">C int position = db.query (&quot;student&quot;,null,&quot;year=?&quot;,&quot;2022&quot;,null,null,null);</span><br><span class="line">D int position = db.query (&quot;student&quot;,null,&quot;year=?&quot;,new String []&#123;&quot;2022&quot;&#125;,null,null,null);</span><br><span class="line">A</span><br><span class="line"></span><br><span class="line">10.(单选题，10.0 分) SQLiteOpenHelper 子类的____方法用于指定数据库的文件名和版本号。</span><br><span class="line">A onUpgrade</span><br><span class="line">B onCreate ()</span><br><span class="line">C 构造方法</span><br><span class="line">C</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line">(单选题，10.0 分)</span><br><span class="line">为读写 “student.xml” 中的键值对数据，获取SharedPreferences对象的方法是</span><br><span class="line">选项：</span><br><span class="line">A. writeSharedPreferences(&quot;student&quot;,MODE_PRIVATE)</span><br><span class="line">B. openSharedPreferences(&quot;student&quot;,MODE_PRIVATE)</span><br><span class="line">C. getSharedPreferences(&quot;student&quot;,MODE_PRIVATE)</span><br><span class="line">D. readSharedPreferences(&quot;student&quot;,MODE_PRIVATE)</span><br><span class="line">答案：C</span><br><span class="line">解析：在 Android 中，获取SharedPreferences对象用于读写键值对数据的方法是getSharedPreferences()。它接收两个参数，第一个参数是文件名（不包括.xml 后缀），第二个参数是操作模式（如MODE_PRIVATE）。A 选项writeSharedPreferences方法不存在。B 选项openSharedPreferences方法也不是标准的获取SharedPreferences对象用于读写键值对的方法。D 选项readSharedPreferences同样不是正确的获取该对象的方式。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">下列代码行试图从一个名为 “students.txt” 的文件中读取数据，其中标号为______的代码行存在错误:</span><br><span class="line"></span><br><span class="line">try &#123;</span><br><span class="line">    [1] FileInputStream fis = openFileInput(&quot;student.txt&quot;);</span><br><span class="line">    [2] byte[] buffer = new byte[fis.available];</span><br><span class="line">    [3] buffer = fis.read();</span><br><span class="line">    [4] fis.close();</span><br><span class="line">&#125; catch (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">选项：</span><br><span class="line">A. [1]</span><br><span class="line">B. [3]</span><br><span class="line">C. [2]</span><br><span class="line">D. [4]</span><br><span class="line">答案：B</span><br><span class="line">解析：在 [3] 处代码存在错误。fis.read()方法读取数据时，如果是读取字节数组，应该传入一个字节数组作为参数来存储读取的数据，如fis.read(buffer)，而这里直接将fis.read()的返回值赋给buffer是错误的。[1] 处openFileInput方法用于打开一个文件输入流，文件名拼写略有差异（实际文件是 “students.txt”，这里打开的是 “student.txt”），不过这可能是笔误，本身方法调用是正确的。[2] 处创建字节数组用于存储文件内容，这种方式虽然可能存在问题（fis.available获取的字节数可能不准确），但语法上是合理的。[4] 处关闭文件输入流的操作是正确的。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">用文件输入输出流读写数据，读写的数据均为_______。</span><br><span class="line">选项：</span><br><span class="line">A. 字节流</span><br><span class="line">B. 字符串</span><br><span class="line">C. 字符串数组</span><br><span class="line">D. 键值对</span><br><span class="line">答案：A</span><br><span class="line">解析：文件输入输出流（FileInputStream和FileOutputStream）在底层操作的是字节流。无论是读取文件还是写入文件，都是以字节为单位进行操作的。虽然可以将字节转换为字符串等其他形式，但最基本的数据类型是字节流。它不像SharedPreferences等是专门用于处理键值对，也不是直接操作字符串或字符串数组。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">关于ContentValues，下列说法正确的是</span><br><span class="line">选项：</span><br><span class="line">A. ContentValues对象中的键值对，对应字段名 - 字段值</span><br><span class="line">B. ContentValues对象仅用在SQLiteDatabase的insert()方法中</span><br><span class="line">C. 一个ContentValues对象仅储存一个键值对</span><br><span class="line">答案：A</span><br><span class="line">解析：ContentValues是一种用于存储键值对的数据结构，其中的键对应数据库表中的字段名，值对应字段值。它不仅仅用于SQLiteDatabase的insert()方法，在update()等操作中也会使用。而且一个ContentValues对象可以存储多个键值对，用于表示一条记录或者更新记录的多个字段值。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">给定一个SQliteDatabase对象db，下列代码____从表students中删除stuID字段值为 &quot;20201872001&quot; 的学生数据。</span><br><span class="line">选项：</span><br><span class="line">A. int num = db.delete(&quot;student&quot;,&quot;stuID=?&quot;,new int[]&#123;20201872001&#125;);</span><br><span class="line">B. int num = db.delete(&quot;student&quot;,&quot;stuID=?&quot;,new String[]&#123;&quot;20201872001&quot;&#125;);</span><br><span class="line">C. int num = db.delete(&quot;student&quot;,&quot;stuID=?&quot;,&quot;20201872001&quot;);</span><br><span class="line">D. int num = db.delete(&quot;student&quot;,&quot;stuID=?&quot;,new String(&quot;20201872001&quot;));</span><br><span class="line">答案：B</span><br><span class="line">解析：在SQLiteDatabase的delete方法中，第三个参数是一个String数组，用于传递条件参数的值。因为stuID是字符串类型，所以需要将删除条件的值包装在String数组中传递，即new String[]&#123;&quot;20201872001&quot;&#125;。A 选项传入int数组不符合要求。C 选项第三个参数直接写字符串不符合参数要求的数组形式。D 选项new String(&quot;20201872001&quot;)这种写法是错误的，应该是new String[]&#123;&quot;20201872001&quot;&#125;。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">SQLite是一个轻量级数据库，是 Google 公司专为Android系统开发的本地数据库。</span><br><span class="line">选项：</span><br><span class="line">A. 正确</span><br><span class="line">B. 错误</span><br><span class="line">答案：B</span><br><span class="line">解析：SQLite不是 Google 公司专为Android系统开发的。SQLite是一个开源的轻量级关系型数据库，它可以在很多不同的平台和环境中使用，Android只是其中之一，它在Android中作为本地数据库被广泛应用。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">用SharedPreferences对象写数据，要先获取一个____接口对象，再调用它的写数据方法。</span><br><span class="line">选项：</span><br><span class="line">A. ContentValues</span><br><span class="line">B. Editor</span><br><span class="line">C. FileOutputStream</span><br><span class="line">D. Intent</span><br><span class="line">答案：B</span><br><span class="line">解析：使用SharedPreferences对象写数据时，首先要通过edit()方法获取一个Editor接口对象，然后使用Editor对象的各种方法（如putString、putInt等）来写入键值对数据，最后调用commit或apply方法提交更改。ContentValues主要用于数据库操作。FileOutputStream用于文件输出流操作，和SharedPreferences写数据方式不同。Intent主要用于组件间通信，与SharedPreferences写数据无关。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">通常在SQLiteOpenHelper子类的______方法中创建数据表。</span><br><span class="line">选项：</span><br><span class="line">A. 构造方法</span><br><span class="line">B. onUpgrade()</span><br><span class="line">C. onCreate()</span><br><span class="line">答案：C</span><br><span class="line">解析：在SQLiteOpenHelper子类中，onCreate()方法是在数据库首次创建时调用，通常在这个方法中编写创建数据表的代码，例如使用SQL语句创建表结构。构造方法主要用于初始化对象本身的一些属性等，不会用于创建数据表。onUpgrade()方法主要用于数据库版本升级时对数据库结构进行修改等操作。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">给定SQliteDatabase对象db，调用query()方法，查询表stduent中所有入学年份year为 2022 的信息，下列代码正确的是____。</span><br><span class="line">选项：</span><br><span class="line">A. Cursor cursor = db.query(&quot;student&quot;,null,&quot;year=?&quot;,new String[]&#123;&quot;2022&quot;&#125;,null,null,null);</span><br><span class="line">B. Cursor cursor = db.query(&quot;student&quot;,null,&quot;year=?&quot;,&quot;2022&quot;,null,null,null);</span><br><span class="line">C. int position = db.query(&quot;student&quot;,null,&quot;year=?&quot;,&quot;2022&quot;,null,null,null);</span><br><span class="line">D. int position = db.query(&quot;student&quot;,null,&quot;year=?&quot;,new String[]&#123;&quot;2022&quot;&#125;,null,null,null);</span><br><span class="line">答案：A</span><br><span class="line">解析：db.query方法用于查询数据库，返回一个Cursor对象用于遍历查询结果。它的参数中，第四个参数是条件参数的值，对于字符串类型的条件值，需要以String数组的形式传递，即new String[]&#123;&quot;2022&quot;&#125;。B 选项第四个参数直接写字符串不符合要求。C 和 D 选项query方法返回的是Cursor对象，而不是int类型的position，所以这两个选项错误。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">SQLiteOpenHelper子类的____方法用于指定数据库的文件名和版本号。</span><br><span class="line">选项：</span><br><span class="line">A. onUpgrade</span><br><span class="line">B. onCreate()</span><br><span class="line">C. 构造方法</span><br><span class="line">答案：C</span><br><span class="line">解析：在SQLiteOpenHelper子类的构造方法中，可以指定数据库的文件名、版本号等信息。onCreate()方法主要用于创建数据库表等初始化操作。onUpgrade()方法用于数据库版本升级时的操作，不是用于指定文件名和版本号的。</span><br></pre></td></tr></table></figure>
+
+
+
+<h3><span id="4">4</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">一、单选题 （共8题，80.0分）</span><br><span class="line">(单选题, 10.0分) 获取某一系统服务之前，下列操作中_____是必要的。</span><br><span class="line">A. 获取该服务对应的使用权限</span><br><span class="line">B. 创建并启动新的线程</span><br><span class="line">C. 为该服务重写onBind()方法</span><br><span class="line">A</span><br><span class="line"></span><br><span class="line">(单选题, 10.0分) 用bindService()方法启动服务，需要一个______接口对象。</span><br><span class="line">A. ContentValues</span><br><span class="line">B. Intent</span><br><span class="line">C. ServiceConnection</span><br><span class="line">C</span><br><span class="line"></span><br><span class="line">(单选题, 10.0分) 广播接收者Receiver在接收到广播Intent时，将触发其回调方法______。</span><br><span class="line">A. onReceive()</span><br><span class="line">B. onStart()</span><br><span class="line">C. onCreate()</span><br><span class="line">A</span><br><span class="line"></span><br><span class="line">(单选题, 10.0分) 动态注册广播接收者组件，通过调用IntentFilter的_____方法可以指定待接收(过滤)的广播消息。</span><br><span class="line">A. setAction()</span><br><span class="line">B. setPriority()</span><br><span class="line">C. addAction()</span><br><span class="line">D. setClass()</span><br><span class="line">C</span><br><span class="line"></span><br><span class="line">(单选题, 10.0分) 无序广播和有序广播的区别在于_____。</span><br><span class="line">A. 接收无序广播的接收者先后顺序是随机的; 接收有序广播的接收者先后顺序是按照优先级别从高到低.</span><br><span class="line">B. 无序广播不可以被abortBroadcast()拦截；有序广播可以被abortBroadcast()拦截.</span><br><span class="line">B</span><br><span class="line"></span><br><span class="line">(单选题, 10.0分) 用startService()方法启动服务，需要一个______对象作为参数。</span><br><span class="line">A. ContentValues</span><br><span class="line">B. ServiceConnection</span><br><span class="line">C. Intent</span><br><span class="line">C</span><br><span class="line"></span><br><span class="line">(单选题, 10.0分) 注册之后，一个广播接收者只能接收一类广播Intent。</span><br><span class="line">A. 错</span><br><span class="line">B. 对</span><br><span class="line">A</span><br><span class="line"></span><br><span class="line">(单选题, 10.0分) 广播接收者子类在AndroidManifest.xml文件中对应_____标签。</span><br><span class="line">A. &lt;broadcast&gt;</span><br><span class="line">B. &lt;broadcast receiver&gt;</span><br><span class="line">C. &lt;broadcast-receiver&gt;</span><br><span class="line">D. &lt;receiver&gt;</span><br><span class="line">D</span><br><span class="line"></span><br><span class="line">二、多选题 （共2题，20.0分）</span><br><span class="line">(多选题, 10.0分) bindService()方法启动服务，将依次触发该服务的回调方法:</span><br><span class="line">A. onStartCommand()</span><br><span class="line">B. onBind()</span><br><span class="line">C. onCreate()</span><br><span class="line">D. onDestroy()</span><br><span class="line">E. onUnbind()</span><br><span class="line">BC</span><br><span class="line"></span><br><span class="line">(多选题, 10.0分) startService()方法启动服务，将依次触发该服务的回调方法：</span><br><span class="line">A. onUnbind()</span><br><span class="line">B. onDestroy()</span><br><span class="line">C. onStartCommand()</span><br><span class="line">D. onBind()</span><br><span class="line">E. onCreate()</span><br><span class="line">CE</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line">(单选题，10.0 分)</span><br><span class="line">获取某一系统服务之前，下列操作中_____是必要的。</span><br><span class="line">选项：</span><br><span class="line">A. 获取该服务对应的使用权限</span><br><span class="line">B. 创建并启动新的线程</span><br><span class="line">C. 为该服务重写onBind()方法</span><br><span class="line">答案：A</span><br><span class="line">解析：在获取系统服务前，首先要获取该服务对应的使用权限，这是能够使用服务的前提条件。B 选项，创建并启动新线程与获取系统服务没有必然的前置关联，它更多是涉及到多线程相关的操作需求，并非获取服务所必需。C 选项，重写onBind()方法主要用于服务绑定的相关操作，比如在服务与组件进行绑定交互时发挥作用，不是获取服务前必须要做的事情。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">用bindService()方法启动服务，需要一个______接口对象。</span><br><span class="line">选项：</span><br><span class="line">A. ContentValues</span><br><span class="line">B. Intent</span><br><span class="line">C. ServiceConnection</span><br><span class="line">答案：C</span><br><span class="line">解析：使用bindService()方法启动服务时，需要一个ServiceConnection接口对象，这个接口用于处理服务连接相关的操作，比如在服务连接成功或者断开连接时进行相应的回调处理。A 选项ContentValues通常用于存储和操作数据库中的数据，和服务启动的接口需求无关。B 选项Intent用于组件间的通信、启动组件等，但不是bindService()专门需要的接口对象，它主要是指明启动目标等相关信息。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">广播接收者Receiver在接收到广播Intent时，将触发其回调方法______。</span><br><span class="line">选项：</span><br><span class="line">A. onReceive()</span><br><span class="line">B. onStart()</span><br><span class="line">C. onCreate()</span><br><span class="line">答案：A</span><br><span class="line">解析：广播接收者Receiver在接收到广播Intent时，会触发onReceive()方法，在这个方法中可以编写处理广播消息的逻辑，比如根据广播内容进行相应的业务操作等。B 选项onStart()方法主要用于服务启动相关的操作，像服务启动后一些初始化工作等，不是广播接收者接收广播时触发的方法。C 选项onCreate()方法是在广播接收者被创建时调用，用于一些初始化配置等，不是接收广播消息时触发的。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">动态注册广播接收者组件，通过调用IntentFilter的_____方法可以指定待接收（过滤）的广播消息。</span><br><span class="line">选项：</span><br><span class="line">A. setAction()</span><br><span class="line">B. setPriority()</span><br><span class="line">C. addAction()</span><br><span class="line">D. setClass()</span><br><span class="line">答案：C</span><br><span class="line">解析：动态注册广播接收者组件时，通过调用IntentFilter的addAction()方法可以指定待接收（过滤）的广播消息，并且可以多次调用addAction()来添加多个不同的广播动作，以此来满足接收多种广播的需求。A 选项setAction()一般用于设置一个单一的动作，不符合动态注册指定多个广播消息的要求，通常用于更特定的单一动作设置场景。B 选项setPriority()是用于设置广播接收者的优先级，用于控制广播接收顺序相关，而非指定广播消息本身。D 选项setClass()不是用于指定广播消息的方法，它和广播消息指定没有关联。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">无序广播和有序广播的区别在于_____。</span><br><span class="line">选项：</span><br><span class="line">A. 接收无序广播的接收者先后顺序是随机的；接收有序广播的接收者先后顺序是按照优先级别从高到低。</span><br><span class="line">B. 无序广播不可以被abortBroadcast()拦截；有序广播可以被abortBroadcast()拦截。</span><br><span class="line">答案：A、B</span><br><span class="line">解析：无序广播接收者接收广播的顺序是随机的，并且不能通过abortBroadcast()方法进行拦截，它就是简单地向所有符合条件的接收者发送广播，没有顺序和拦截控制机制。而有序广播接收者接收广播的顺序是按照优先级别从高到低排列的，并且可以在传播过程中使用abortBroadcast()方法进行拦截，阻止广播继续传播给其他接收者，这体现了有序广播在传播和控制上的特点。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">用startService()方法启动服务，需要一个______对象作为参数。</span><br><span class="line">选项：</span><br><span class="line">A. ContentValues</span><br><span class="line">B. ServiceConnection</span><br><span class="line">C. Intent</span><br><span class="line">答案：C</span><br><span class="line">解析：使用startService()方法启动服务时，需要一个Intent对象作为参数。Intent可以携带一些启动服务相关的信息，比如指定要启动的服务类等，通过它来告诉系统要启动哪个服务以及相关的启动参数等情况。A 选项ContentValues主要用于数据库操作相关的内容，比如插入、更新数据库记录时的数据封装，和服务启动参数无关。B 选项ServiceConnection主要用于服务绑定相关操作，不是startService()方法启动服务所需的参数，它更多用于绑定服务场景下的连接处理。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">注册之后，一个广播接收者只能接收一类广播Intent。</span><br><span class="line">选项：</span><br><span class="line">A. 错</span><br><span class="line">B. 对</span><br><span class="line">答案：A</span><br><span class="line">解析：一个广播接收者可以通过设置不同的IntentFilter来接收多种不同类型的广播Intent，也就是可以根据不同的广播动作、类别等条件进行设置，使其能响应多种广播情况，并不是只能接收一类广播Intent。</span><br><span class="line">(单选题，10.0 分)</span><br><span class="line">广播接收者子类在AndroidManifest.xml文件中对应_____标签。</span><br><span class="line">选项：</span><br><span class="line">A. &lt;broadcast&gt;</span><br><span class="line">B. &lt;broadcast receiver&gt;</span><br><span class="line">C. &lt;broadcast-receiver&gt;</span><br><span class="line">D. &lt;receiver&gt;</span><br><span class="line">答案：C</span><br><span class="line">解析：广播接收者子类在AndroidManifest.xml文件中对应&lt;broadcast - receiver&gt;标签，这是在清单文件中正确配置广播接收者的规范标签形式，用于声明广播接收者相关的属性、权限等信息。A 选项&lt;broadcast&gt;标签不是正确的广播接收者配置标签，不符合 Android 的规范用法。B 选项&lt;broadcast receiver&gt;标签写法不符合规范要求，格式上不正确。D 选项&lt;receiver&gt;标签比较笼统，在 Android 中用于广播接收者的准确标签是&lt;broadcast - receiver&gt;，它更具针对性地表示广播接收者的配置。</span><br><span class="line">二、多选题 （共 2 题，20.0 分）</span><br><span class="line">(多选题，10.0 分)</span><br><span class="line">bindService()方法启动服务，将依次触发该服务的回调方法:</span><br><span class="line">选项：</span><br><span class="line">A. onStartCommand()</span><br><span class="line">B. onBind()</span><br><span class="line">C. onCreate()</span><br><span class="line">D. onDestroy()</span><br><span class="line">E. onUnbind()</span><br><span class="line">答案：B、C</span><br><span class="line">解析：当使用bindService()方法启动服务时，首先会触发服务的onCreate()方法来创建服务实例，完成服务内部的一些初始化操作等。然后会调用onBind()方法来完成服务与组件之间的绑定操作，使得组件可以和服务进行交互通信等。A 选项onStartCommand()主要是在使用startService()方法启动服务时调用，用于处理服务启动后的相关逻辑。D 选项onDestroy()是服务销毁时调用的方法，比如服务停止运行、被系统回收等情况时触发。E 选项onUnbind()是在服务解除绑定时调用的方法，在绑定关系结束时执行相应的清理等操作。</span><br><span class="line">(多选题，10.0 分)</span><br><span class="line">startService()方法启动服务，将依次触发该服务的回调方法：</span><br><span class="line">选项：</span><br><span class="line">A. onUnbind()</span><br><span class="line">B. onDestroy()</span><br><span class="line">C. onStartCommand()</span><br><span class="line">D. onBind()</span><br><span class="line">E. onCreate()</span><br><span class="line">答案：C、E</span><br><span class="line">解析：使用startService()方法启动服务时，首先会触发onCreate()方法创建服务，进行服务相关的初始化配置等工作。接着会调用onStartCommand()方法来启动服务，使服务开始运行并执行相应的逻辑，比如处理传进来的参数、执行循环任务等。A 选项onUnbind()是在服务解除绑定时调用的方法，与startService()启动服务的流程无关。B 选项onDestroy()是服务销毁时调用的方法，在服务停止、被回收等结束场景下触发。D 选项onBind()主要是在使用bindService()方法绑定服务时调用的方法，并非startService()启动服务时调用的。</span><br></pre></td></tr></table></figure>
+
+
+
+<h1><span id="python与数据分析">python与数据分析</span></h1>	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/2025/02/09/%E5%A4%A7%E4%B8%89%E4%B8%8B/" title="大三上" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/2024/11/22/%E5%A4%A7%E4%B8%89%E4%B8%8A%E8%80%83%E8%AF%95/" title="大三上考试" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2025/03/26/README1/" title="">
+											
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								三月 26日, 2025				
+							</p>
+							<p class="relate-post-content">
+								日后闯出祸来切莫将为师说出来就行了
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2025/03/26/README1/" title="">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2025/02/09/%E5%A4%A7%E4%B8%89%E4%B8%8B/" title="大三上">
+								大三上			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								二月 9日, 2025				
+							</p>
+							<p class="relate-post-content">
+								youtube下载12yt-dlp -o &quot;D:\000_download\youtube\%(title)s.%(ext)s&quot; https://www.youtube.com/watch?v=_ulj_crM-T...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2025/02/09/%E5%A4%A7%E4%B8%89%E4%B8%8B/" title="大三上">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大三上"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/11/22/%E5%A4%A7%E4%B8%89%E4%B8%8A%E8%80%83%E8%AF%95/" title="大三上考试">
+								大三上考试			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 22日, 2024				
+							</p>
+							<p class="relate-post-content">
+								软件项目管理题目1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/11/22/%E5%A4%A7%E4%B8%89%E4%B8%8A%E8%80%83%E8%AF%95/" title="大三上考试">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大三上考试"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/10/10/%E8%82%A1%E7%A5%A8/" title="股票">
+								股票			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 10日, 2024				
+							</p>
+							<p class="relate-post-content">
+								交易时间半导体上午时段9:30-11:30，
+下午时段13:00-15:00
+交易0323
+
+
+符号
+意义
+
+
+
+1
+海洋
+
+
+2
+可控核聚变
+
+
+3
+化工
+
+
+4
+机器人
+
+
+5
+业绩
+
+
+6
+旅游
+
+
+7
+光刻胶
+
+
+8
+ai
+
+...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/10/10/%E8%82%A1%E7%A5%A8/" title="股票">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="股票"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/07/25/tools/" title="tools">
+								tools			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 25日, 2024				
+							</p>
+							<p class="relate-post-content">
+								sqlheidiSQL
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/07/25/tools/" title="tools">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="tools"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/07/06/%E5%A4%A7%E4%BA%8C%E6%9A%91%E5%81%87/" title="大二暑假">
+								大二暑假			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 6日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1titile: 暑假
+
+病毒分析网站1https://www.virscan.org./
+
+
+
+npm
+node package manage
+
+
+update: npm install npm@latest -g
+
+
+latest...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/07/06/%E5%A4%A7%E4%BA%8C%E6%9A%91%E5%81%87/" title="大二暑假">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="大二暑假"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/07/02/Nmap/" title="Nmap">
+								Nmap			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 2日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1title:Nmap
+
+软件介绍1FileLocator Pro,文件内容定位
+
+
+
+常用端口参考文档
+123456722,--top-ports-sS-A-oN 正常输出-n 不进行nss解析-e 指定网卡
+
+扫描方式
+12su进...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/07/02/Nmap/" title="Nmap">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Nmap"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/07/02/web3/" title="web3">
+								web3			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 2日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1# 名词
+DAPP（Decentralized application）:去中心化app,WEB前端
+
+
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/07/02/web3/" title="web3">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="web3"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/06/29/conclusion/" title="期末总结">
+								期末总结			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 29日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1title:期末总结
+
+
+
+202406英语听力,不会写
+写题顺序:长篇阅读,仔细阅读,翻译,选词填空
+web操作系统多媒体技术计算机网络软件工程基础出了作业题原题和最后发的复习卷,老师单独保存的题目,要注意
+数字电路智能感知技术数...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/06/29/conclusion/" title="期末总结">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="期末总结"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/06/17/9_trash/" title="9_trash">
+								9_trash			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 17日, 2024				
+							</p>
+							<p class="relate-post-content">
+								简答题1. 数据库、数据库系统与数据库管理系统的区别和联系1区别:数据库是数据的集合,数据库管理系统是提供与数据库交互的接口,数据库系统是宝海了数据库,数据库管理系统及相关应用程序的整体
+
+数据库（Database）
+定义：数据库是一...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/06/17/9_trash/" title="9_trash">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="9_trash"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2025, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('<br1>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>
