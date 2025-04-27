@@ -261,7 +261,7 @@
 
 	<a href="/2025/02/09/%E5%A4%A7%E4%B8%89%E4%B8%8B/" itemprop="url">
 		<time datetime="2025-02-09T07:57:54.394Z" itemprop="dateUpdated">
-	  		2025-04-09
+	  		2025-04-25
 	  </time>
 	</a> 
 
@@ -323,10 +323,27 @@
 </tbody></table>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://marketplace.visualstudio.com/_apis/public/gallery/publishers/$&#123;itemName.fieldA&#125;/vsextensions/$&#123;itemName.fieldB&#125;/$&#123;version&#125;/vspackage</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">https://marketplace.visualstudio.com/items?itemName=tal7aouy.rainbow-bracket</span><br><span class="line"></span><br><span class="line">itemA tal7aouy</span><br><span class="line">itemB rainbow-bracket</span><br><span class="line">version 版本号</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">https://marketplace.visualstudio.com/items?itemName=tal7aouy.rainbow-bracket</span><br><span class="line"></span><br><span class="line">itemA tal7aouy</span><br><span class="line">itemB rainbow-bracket</span><br><span class="line">version 版本号</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">https://marketplace.visualstudio.com/items?itemName=lihuiwang.vue-alias-skip</span><br></pre></td></tr></table></figure>
 
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://marketplace.visualstudio.com/_apis/public/gallery/publishers/tal7aouy/vsextensions/rainbow-bracket/1.0.2/vspackage</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">https://marketplace.visualstudio.com/_apis/public/gallery/publishers/tal7aouy/vsextensions/rainbow-bracket/1.0.2/vspackage</span><br><span class="line"></span><br><span class="line">https://marketplace.visualstudio.com/_apis/public/gallery/publishers/lihuiwang/vsextensions/vue-alias-skip/0.0.25/vspackage</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1><span id="powershell">powershell</span></h1><table>
+<thead>
+<tr>
+<th>api</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[Console]::OutputEncoding</td>
+<td>查看当前编码设置</td>
+</tr>
+<tr>
+<td>[Console]::OutputEncoding &#x3D; [System.Text.Encoding]::UTF8</td>
+<td>设置控制台输出编码为UTF-8（推荐）</td>
+</tr>
+</tbody></table>
 <h1><span id="git">git</span></h1><table>
 <thead>
 <tr>
@@ -353,6 +370,22 @@
 <tr>
 <td>git pull origin main –allow-unrelated-histories</td>
 <td>强制和远程git库合成</td>
+</tr>
+<tr>
+<td>git remote add origin <a href="https://gitee.com/yzzob/skl-auto.git">https://gitee.com/yzzob/skl-auto.git</a></td>
+<td>添加远程仓库</td>
+</tr>
+<tr>
+<td>git branch -m main</td>
+<td>将当前分支命名为main</td>
+</tr>
+<tr>
+<td>git push origin main –force</td>
+<td>删除原来的库,将当前文件夹完全加入</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
 </tr>
 </tbody></table>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;# electron-y&quot; &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git branch -M main</span><br><span class="line">git remote add origin https://github.com/yzzob/electron-y.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
@@ -520,6 +553,7 @@
 <p><img src="/../img/image-20250303114415507.png" alt="image-20250303114415507"></p>
 <p><img src="/../img/image-20250303114554233.png" alt="image-20250303114554233"></p>
 <h2><span id="材料分析题目">材料分析题目</span></h2><p><img src="/../img/image-20250304191431896.png" alt="image-20250304191431896"></p>
+<p>[^1]:</p>
 	
 		</div>
 		
@@ -564,20 +598,23 @@
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2025/03/31/2025-03-31/" title="">
+							<a class="relate-post-title" href="/2025/04/10/README/" title="">
 											
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
-								三月 31日, 2025				
+								四月 10日, 2025				
 							</p>
 							<p class="relate-post-content">
-								
+								sklAuto浙江师范大学上课啦自动签到
+日后闯出祸来切莫将为师说出来就行了 ^v^
+项目文件结构![[Pasted image 20250410193122.png]]
+使用方法1234561.pip install require...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2025/03/31/2025-03-31/" title="">				
+							<a href="/2025/04/10/README/" title="">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
 							</a>
